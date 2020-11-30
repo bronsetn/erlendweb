@@ -1,49 +1,29 @@
 <template>
-  <v-app>
-    <v-app-bar app color="primary" dark>
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
-      <v-spacer></v-spacer>
-      <h2 class="mr-2">Erlendweb</h2>
-      <v-icon>mdi-emoticon-cool</v-icon>
+  <div id="app">
+    <v-app-bar>
+      <v-btn text @click="$router.push('/Home')" color="primary">Home</v-btn>
+      <v-btn text @click="$router.push('/About')" color="primary">About </v-btn>
+      <v-btn text @click="$router.push('/Forecast')" color="primary">Forecast</v-btn>
     </v-app-bar>
-
-    <v-main>
-      <HelloWorld />
-    </v-main>
-  </v-app>
+    <router-view />
+  </div>
 </template>
-
 <script>
-import HelloWorld from "./components/HelloWorld";
-
 export default {
   name: "App",
-
-  components: {
-    HelloWorld,
-  },
-
-  data: () => ({
-    //
-  }),
 };
 </script>
+<style>
+#app {
+  font-family: "Roboto Condensed", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
