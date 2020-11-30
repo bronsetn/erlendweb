@@ -1,12 +1,20 @@
 <template>
   <body>
-    <v-app-bar hide-on-scroll flat>
+    <v-app-bar hide-on-scroll flat color="white">
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
-      <v-btn text @click="$router.push('/')" color="primary">Home</v-btn>
-      <v-btn text @click="$router.push('/about')" color="primary">About</v-btn>
-      <v-btn text @click="$router.push('/api-experiments')" color="primary"
-        >Experiments</v-btn
+      
+      <v-spacer></v-spacer>
+
+      <v-btn text link @click="$router.push('/')" color="primary"
+        >&#8544; Home</v-btn
       >
+      <v-btn text link @click="$router.push('/about')" color="primary"
+        >&#8545; About</v-btn
+      >
+      <v-btn text link @click="$router.push('/api-experiments')" color="primary"
+        >&#8546; Experiments</v-btn
+      >
+
       <v-spacer></v-spacer>
       <v-btn icon>
         <v-icon>mdi-heart</v-icon>
