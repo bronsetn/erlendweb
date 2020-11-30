@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
-import Forecast from '../views/Forecast.vue'
+import ApiExperiments from '../views/ApiExperiments.vue'
 
 Vue.use(VueRouter)
 
@@ -18,9 +18,9 @@ const routes = [{
         component: About
     },
     {
-        path: '/forecast',
-        name: 'Forecast',
-        component: Forecast
+        path: '/api-experiments',
+        name: 'ApiExperiments',
+        component: ApiExperiments
     },
 ]
 

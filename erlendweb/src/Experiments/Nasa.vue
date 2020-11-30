@@ -1,6 +1,7 @@
 <template>
   <body>
-    <v-card> jajalaåls </v-card>
+    <v-card>Nasa card</v-card>
+    <span id="spaceBackground"></span>
   </body>
 </template>
 

@@ -1,14 +1,12 @@
-
 <template>
   <body>
     <v-container>
-      <h1>About</h1>
+      <h1>Experiments</h1>
     </v-container>
   </body>
 </template>
 
 <script>
-export default {};
 </script>
 
 <style>
