@@ -1,19 +1,19 @@
 <template>
-  <v-card dark v-if="spaceData.url">
+  <v-card dark v-if="spaceData">
     <v-container>
       <v-img
-        v-if="spaceData.url"
         :lazy="spaceData.url"
         :src="spaceData.hdurl"
+        :href="spaceData.hdurl"
         aspect-ratio="1.5"
         contain
       >
         <v-card-title>{{ spaceData.title }}</v-card-title>
         <v-card-subtitle>{{ spaceData.date }}</v-card-subtitle>
       </v-img>
-      <v-img v-else src="https://picsum.photos/500/500?blur=1">
+      <!-- <v-img  src="https://picsum.photos/500/500?blur=1">
         <v-card-title>{{ spaceData.title }}</v-card-title>
-      </v-img>
+      </v-img> -->
       <v-card-text class="text-justify body-1 font-weight-light">{{
         spaceData.explanation
       }}</v-card-text>
@@ -80,8 +80,9 @@ export default {
     // https://api.nasa.gov/
 
     // Get year, month and date
-    var d = new Date();
-    var today = d.getFullYear() + "-" + d.getMonth() + "-" + d.getDate();
+    let d = new Date();
+    let today = d.getFullYear() + "-" + d.getMonth() + "-" + d.getDate();
+
 
     const apiData = {
       url: "https://api.nasa.gov/planetary/apod",
@@ -100,7 +101,9 @@ export default {
         if (Response.data.error_message) {
           console.log("error");
         } else {
-          console.log(Response);
+          // console.log("Space data:")
+          // console.log(Response);
+
           this.spaceData = Response.data;
           this.spaceImg == true;
         }
