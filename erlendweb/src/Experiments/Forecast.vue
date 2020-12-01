@@ -216,7 +216,7 @@ export default {
     getWeather(city) {
       /*Format http://api.openweathermap.org/data/2.5/forecast?q=steinkjer&units=metric&lang=no&appid={KEY}*/
       const apiData = {
-        url: "http://api.openweathermap.org/data/2.5/",
+        url: "https://api.openweathermap.org/data/2.5/",
         type: "forecast",
         location: city,
         language: "no",
