@@ -13,9 +13,12 @@ const vuetify = new Vuetify({
                 family: 'Libre Baskerville'
             },
             light: {
+                // Crimson
                 primary: '#710117',
-                secondary: '#54627B',
-                anchor: '#ECD5BB',
+                // Beige
+                secondary: '#ECD5BB',
+                // Blue grey
+                anchor: '#54627B',
             },
         },
     },
