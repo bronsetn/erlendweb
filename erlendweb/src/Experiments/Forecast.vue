@@ -14,10 +14,10 @@
 
         <v-card-text>
           <v-row align="center">
-            <v-col cols="6"
+            <v-col cols="5"
               ><p class="display-3">{{ temperature }} &deg;C</p>
             </v-col>
-            <v-col cols="6">
+            <v-col cols="5">
               <v-img :src="wicon"></v-img>
             </v-col>
           </v-row>
