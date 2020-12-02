@@ -10,12 +10,15 @@ const vuetify = new Vuetify({
     theme: {
         themes: {
             font: {
-                family: 'Libre Baskerville'
+                family: 'Roboto'
             },
             light: {
-                primary: '#710117',
-                secondary: '#54627B',
-                anchor: '#ECD5BB',
+                // Eerie black aka dark blue
+                primary: '#011627',
+                // Prune red
+                secondary: '#e71d36',
+                // Maximum blue green
+                anchor: '#2ec4b6',
             },
         },
     },

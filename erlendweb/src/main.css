@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Roboto:wght@300&display=swap');
 * {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -19,4 +19,31 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/* LLink coloring */
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
 }

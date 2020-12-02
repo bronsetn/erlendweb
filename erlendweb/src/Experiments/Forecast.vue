@@ -30,17 +30,15 @@
           <v-list-item-icon>
             <v-icon>mdi-weather-windy</v-icon>
           </v-list-item-icon>
+
           <v-list-item-subtitle
             >{{ weather.list[0].wind.speed }} m/s</v-list-item-subtitle
           >
         </v-list-item>
 
         <v-list-item>
-          <v-list-item-icon>
-            <v-icon>mdi-waves</v-icon>
-          </v-list-item-icon>
-          <v-list-item-subtitle
-            >Luftfuktighet:
+          <v-list-item-icon> Luftfuktighet: </v-list-item-icon>
+          <v-list-item-subtitle>
             {{ weather.list[0].main.humidity }}%</v-list-item-subtitle
           >
         </v-list-item>
@@ -81,10 +79,22 @@
           <v-divider></v-divider>
 
           <v-card-text>
-            <p>openweathermap</p>
-            <a href="https://openweathermap.org/api" target="_blank"
-              >https://openweathermap.org/api</a
-            >
+            <p>
+              Denne komponenten tar i bruk nettleserens geolokasjons
+              funksjonalitet for å hente ut værmelding for dine koordinater. For
+              å hente værdata er det brukt Openweathermap sin 5 dagers
+              værmeldings-API.
+              <a href="https://openweathermap.org/api" target="_blank"
+                >https://openweathermap.org/api</a
+              >
+            </p>
+            <p>
+              For å hente by eller stedsnavn tar jeg i bruk openstreetmap sin
+              API.
+              <a href="https://www.openstreetmap.org/" target="_blank"
+                >https://www.openstreetmap.org/</a
+              >
+            </p>
           </v-card-text>
         </div>
       </v-expand-transition>
@@ -95,17 +105,19 @@
         <v-card-title> Forecast </v-card-title>
         <v-card-text>
           <p class="text-justify">
-            This component uses your browser's geoloaction functionality. Enable
-            loaction acces it to get forecast for your position.
+            Denne komponenten tar i bruk nettleserens geolokasjons
+            funksjonalitet for å hente ut værmelding for dine koordinater. Skru
+            geolokasjon på for å hente værmeldingen.
           </p>
 
           <p class="text-justify">
-            For many browsers the function does not work when called after the
-            page has loader. Therefor the user needs to enable location acces
-            mannualy.
+            Flere nettlesere blokkerer funksjoner som vil ta i bruk geolokasjon
+            etter at sider er lastet. På grunn av dette må man selv aktivere
+            geolokasjonen manuelt i nettleseren.
           </p>
           <p>
-            For chrome you can enable it by following these instructions:
+            For Chrome kan geolokasjon aktiveres ved å følge instruksjonene i
+            denne linken.
             <a
               href="https://support.google.com/chrome/answer/142065?hl=en"
               target="_blank"
