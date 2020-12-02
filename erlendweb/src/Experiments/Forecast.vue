@@ -79,14 +79,18 @@
           <v-divider></v-divider>
 
           <v-card-text>
-            <p>Her er det brukt Openweathermap sin 5 dagers værmeldings API.</p>
-            <a href="https://openweathermap.org/api" target="_blank"
-              >https://openweathermap.org/api</a
-            >
             <p>
-              Jeg tar også i bruk openstreetmap for å hente by eller stedsnavn
-              fra koordinatene gitt fra nettleserens geolokasjon.
-
+              Denne komponenten tar i bruk nettleserens geolokasjons
+              funksjonalitet for å hente ut værmelding for dine koordinater. For
+              å hente værdata er det brukt Openweathermap sin 5 dagers
+              værmeldings-API.
+              <a href="https://openweathermap.org/api" target="_blank"
+                >https://openweathermap.org/api</a
+              >
+            </p>
+            <p>
+              For å hente by eller stedsnavn tar jeg i bruk openstreetmap sin
+              API.
               <a href="https://www.openstreetmap.org/" target="_blank"
                 >https://www.openstreetmap.org/</a
               >
@@ -107,11 +111,13 @@
           </p>
 
           <p class="text-justify">
-            Flere nettlesere blokkerer funksjoner som vil ta i bruk geolokasjon etter at sider er lastet. På grunn av dette må
-            man selv aktivere geolokasjonen manuelt i nettleseren.
+            Flere nettlesere blokkerer funksjoner som vil ta i bruk geolokasjon
+            etter at sider er lastet. På grunn av dette må man selv aktivere
+            geolokasjonen manuelt i nettleseren.
           </p>
           <p>
-            For Chrome kan geolokasjon aktiveres ved å følge instruksjonene i denne linken.
+            For Chrome kan geolokasjon aktiveres ved å følge instruksjonene i
+            denne linken.
             <a
               href="https://support.google.com/chrome/answer/142065?hl=en"
               target="_blank"

@@ -1,7 +1,8 @@
 <template>
   <body>
     <v-container>
-      <h1>Experiments</h1>
+      <h1>Eksperimenter</h1>
+      <br>
       <v-row class="d-flex justify-center">
         <v-col xs="12" sm="12" md="6" lg="6" xl="6">
           <Nasa></Nasa>
