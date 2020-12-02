@@ -1,5 +1,5 @@
 <template>
-  <body>
+  <v-col xs="12" sm="12" md="6" lg="6" xl="6">
     <v-card dark v-if="weather">
       <v-container>
         <v-card-title> Forecast</v-card-title>
@@ -8,23 +8,25 @@
             <v-list-item-title class="headline">
               {{ city }}
             </v-list-item-title>
-            <v-list-item-subtitle>{{ formatedDate }}</v-list-item-subtitle>
+            <v-list-item-subtitle class="pt-2">{{
+              formatedDate
+            }}</v-list-item-subtitle>
+            <p class="pt-2 text-capitalize">
+              {{ weather.list[0].weather[0].description }}
+            </p>
           </v-list-item-content>
         </v-list-item>
 
-        <v-card-text>
-          <v-row align="center">
-            <v-col cols="5"
-              ><p class="display-3">{{ temperature }} &deg;C</p>
-            </v-col>
-            <v-col cols="5">
-              <v-img :src="wicon"></v-img>
-            </v-col>
-          </v-row>
-          <p class="text-uppercase">
-            {{ weather.list[0].weather[0].description }}
-          </p>
-        </v-card-text>
+        <v-row align="center">
+          <v-col></v-col>
+          <v-col cols="5"
+            ><p class="display-3">{{ temperature }} &deg;C</p>
+          </v-col>
+          <v-col cols="5">
+            <v-img :src="wicon"></v-img>
+          </v-col>
+          <v-col></v-col>
+        </v-row>
 
         <v-list-item>
           <v-list-item-icon>
@@ -32,32 +34,41 @@
           </v-list-item-icon>
 
           <v-list-item-subtitle
-            >{{ weather.list[0].wind.speed }} m/s</v-list-item-subtitle
+            >Vindhastighet
+            {{ weather.list[0].wind.speed }} m/s</v-list-item-subtitle
           >
         </v-list-item>
 
-        <v-list-item>
-          <v-list-item-icon> Luftfuktighet: </v-list-item-icon>
+        <v-divider inset></v-divider>
+
+        <v-list-item v-if="weather.list[0].rain">
+          <v-list-item-icon>
+            <v-icon>mdi-weather-pouring</v-icon>
+          </v-list-item-icon>
           <v-list-item-subtitle>
+            Regn
+            {{ weather.list[0].rain["3h"] }} %</v-list-item-subtitle
+          >
+        </v-list-item>
+
+        <v-divider inset></v-divider>
+
+        <v-list-item>
+          <v-list-item-icon> <v-icon>mdi-water</v-icon> </v-list-item-icon>
+          <v-list-item-subtitle>
+            Luftfuktighet
             {{ weather.list[0].main.humidity }}%</v-list-item-subtitle
           >
         </v-list-item>
 
-        <v-list-item v-if="weather.list[0].rain">
-          <v-list-item-icon>
-            <v-icon>mdi-water</v-icon>
-          </v-list-item-icon>
-          <v-list-item-subtitle
-            >Nedbørsmengde:
-            {{ weather.list[0].rain["3h"] }} %</v-list-item-subtitle
-          >
-        </v-list-item>
+        <v-divider inset></v-divider>
+
         <v-list-item v-if="weather.list[0].snow">
           <v-list-item-icon>
             <v-icon>mdi-snowflake</v-icon>
           </v-list-item-icon>
-          <v-list-item-subtitle
-            >Mengde snø:
+          <v-list-item-subtitle>
+            Snømengde
             {{ weather.list[0].snow["3h"] }} %</v-list-item-subtitle
           >
         </v-list-item>
@@ -132,7 +143,7 @@
         </v-card-actions>
       </v-container>
     </v-card>
-  </body>
+  </v-col>
 </template>
 
 <script>

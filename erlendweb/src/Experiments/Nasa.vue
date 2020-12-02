@@ -1,63 +1,63 @@
 <template>
-  <v-card dark v-if="spaceData">
-    <v-container>
-      <v-img
-        :lazy="spaceData.url"
-        :src="spaceData.hdurl"
-        :href="spaceData.hdurl"
-        aspect-ratio="1.5"
-        contain
-      >
-        <v-card-title>{{ spaceData.title }}</v-card-title>
-        <v-card-subtitle>{{ spaceData.date }}</v-card-subtitle>
-      </v-img>
-      <!-- <v-img  src="https://picsum.photos/500/500?blur=1">
-        <v-card-title>{{ spaceData.title }}</v-card-title>
-      </v-img> -->
-      <v-card-text class="text-justify body-1 font-weight-light">{{
-        spaceData.explanation
-      }}</v-card-text>
-    </v-container>
+  <v-col xs="12" sm="12" md="6" lg="6" xl="6">
+    <v-card dark v-if="spaceData">
+      <v-container>
+        <v-parallax
+          :lazy="spaceData.url"
+          :src="spaceData.hdurl"
+          :href="spaceData.hdurl"
+          aspect-ratio="1.5"
+          contain
+        >
+          <v-card-title>{{ spaceData.title }}</v-card-title>
+        </v-parallax>
+        <v-card-text class="text-justify body-1 font-weight-light">{{
+          spaceData.explanation
+        }}</v-card-text>
+      </v-container>
 
-    <v-card-actions>
-      <v-btn color="orange lighten-2" text @click="show = !show">
-        Om dette
-      </v-btn>
-      <v-spacer></v-spacer>
+      <v-card-actions>
+        <v-btn color="orange lighten-2" text @click="show = !show">
+          Om dette
+        </v-btn>
+        <v-spacer></v-spacer>
 
-      <v-btn icon @click="show = !show">
-        <v-icon>{{ show ? "mdi-chevron-up" : "mdi-chevron-down" }}</v-icon>
-      </v-btn>
-    </v-card-actions>
+        <v-btn icon @click="show = !show">
+          <v-icon>{{ show ? "mdi-chevron-up" : "mdi-chevron-down" }}</v-icon>
+        </v-btn>
+      </v-card-actions>
 
-    <v-expand-transition>
-      <div v-show="show">
-        <v-divider></v-divider>
+      <v-expand-transition>
+        <div v-show="show">
+          <v-divider></v-divider>
 
-        <v-card-text>
-          <p>
-            Her har jeg brukt en av Nasa sine offentlig APIer som publiserer et
-            nytt rom-bilde pluss informasjon hver dag.
-          </p>
-          <p>
-            En liste over alle bildene publisert siden 2015 er å finne her:
-            <a href="https://apod.nasa.gov/apod/archivepix.html" target="_blank"
-              >https://apod.nasa.gov/apod/archivepix.html</a
-            >
-          </p>
-          <p>
-            For informasjon om å ta i bruk APIen har jeg hovedsaklig brukt denne
-            veiledningen:
-            <a
-              href="https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/"
-              target="_blank"
-              >https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/</a
-            >
-          </p>
-        </v-card-text>
-      </div>
-    </v-expand-transition>
-  </v-card>
+          <v-card-text>
+            <p>
+              Her har jeg brukt en av Nasa sine offentlig APIer som publiserer
+              et nytt rom-bilde pluss informasjon hver dag.
+            </p>
+            <p>
+              En liste over alle bildene publisert siden 2015 er å finne her:
+              <a
+                href="https://apod.nasa.gov/apod/archivepix.html"
+                target="_blank"
+                >https://apod.nasa.gov/apod/archivepix.html</a
+              >
+            </p>
+            <p>
+              For informasjon om å ta i bruk APIen har jeg hovedsaklig brukt
+              denne veiledningen:
+              <a
+                href="https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/"
+                target="_blank"
+                >https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/</a
+              >
+            </p>
+          </v-card-text>
+        </div>
+      </v-expand-transition>
+    </v-card>
+  </v-col>
 </template>
 
 
@@ -82,7 +82,6 @@ export default {
     // Get year, month and date
     let d = new Date();
     let today = d.getFullYear() + "-" + d.getMonth() + "-" + d.getDate();
-
 
     const apiData = {
       url: "https://api.nasa.gov/planetary/apod",

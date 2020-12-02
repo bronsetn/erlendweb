@@ -1,6 +1,8 @@
 <template>
   <body>
     <v-container>
+      <span>&#8544;</span>
+      <h1>Mine prosjekter</h1>
       <br />
 
       <v-row class="d-flex justify-center">

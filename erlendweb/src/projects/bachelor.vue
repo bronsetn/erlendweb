@@ -22,7 +22,16 @@
                 fra hvordan mange av husmannsplassene så ut i Kvam på
                 1800-tallet.
               </p>
-            </v-card-text>
+              <p>
+                For mer info om prosjektet:
+                <a
+                  href="https://erlendworkblog.wordpress.com/2020/06/11/bacheloroppgave-augmented-reality-til-a-vise-utvandringshistorie/"
+                  target="_blank"
+                  >https://erlendworkblog.wordpress.com/2020/06/11/bacheloroppgave-augmented-reality-til-a-vise-utvandringshistorie/</a
+                >
+              </p></v-card-text
+            >
+
             <v-img
               class="center"
               max-height="400"
