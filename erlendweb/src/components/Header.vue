@@ -28,8 +28,8 @@
         <v-btn text link @click="$router.push('/experiments')" color="primary"
           >&#8546; Experiments</v-btn
         >
-        <v-spacer></v-spacer>
       </div>
+      <v-spacer v-if="!$vuetify.breakpoint.mobile"></v-spacer>
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawer" absolute temporary width="100%">

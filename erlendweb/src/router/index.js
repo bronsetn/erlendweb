@@ -5,6 +5,10 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Experiments from '../views/Experiments.vue'
 
+// Project sites
+import PriosEvents from '../projects/priosEvents.vue'
+import Bachelor from '../projects/bachelor.vue'
+
 Vue.use(VueRouter)
 
 const routes = [{
@@ -21,6 +25,18 @@ const routes = [{
         path: '/experiments',
         name: 'Experiments',
         component: Experiments
+    },
+
+    // PROJECT sites
+    {
+        path: '/priosEvents',
+        name: 'PriosEvents',
+        component: PriosEvents
+    },
+    {
+        path: '/bachelor',
+        name: 'Bachelor',
+        component: Bachelor
     },
 ]
 

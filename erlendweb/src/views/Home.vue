@@ -1,8 +1,8 @@
 <template>
   <body>
     <v-container>
-      <h1>Prosjekter</h1>
       <br />
+
       <v-row class="d-flex justify-center">
         <!-- PRIOS EVENTS -->
         <v-col xs="12" sm="12" md="6" lg="4" xl="4">
@@ -21,7 +21,9 @@
               </p>
               <v-card-actions>
                 <v-spacer></v-spacer>
-                <v-btn color="orange" text>Vis mer</v-btn>
+                <v-btn color="orange" text @click="$router.push('/priosEvents')"
+                  >Vis mer</v-btn
+                >
               </v-card-actions>
             </v-card>
           </v-container>
@@ -45,7 +47,9 @@
               </p>
               <v-card-actions>
                 <v-spacer></v-spacer>
-                <v-btn color="orange" text>Vis mer</v-btn>
+                <v-btn color="orange" @click="$router.push('/bachelor')" text
+                  >Vis mer</v-btn
+                >
               </v-card-actions>
             </v-card>
           </v-container>

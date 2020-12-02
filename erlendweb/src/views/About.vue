@@ -2,6 +2,8 @@
 <template>
   <body>
     <v-container>
+      <br />
+
       <h1>Om</h1>
       <br />
       <v-row class="d-flex justify-center">
