@@ -67,13 +67,6 @@ export default {
       drawer: null,
     };
   },
-
-  // props: {
-  //   attrs: {
-  //     type: Object,
-  //     default: () => ({}),
-  //   },
-  // },
 };
 </script>
 

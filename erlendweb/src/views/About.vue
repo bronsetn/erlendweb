@@ -6,7 +6,6 @@
       <br />
       <v-row class="d-flex justify-center">
         <v-col xs="12" sm="12" md="8" lg="8" xl="8">
-          <!-- KONTAKTINFO -->
           <v-container>
             <v-img
               src="../assets/images/halden.jpg"
@@ -18,6 +17,26 @@
               <h2 class="font-weight-regular pt-4">Erlend Brønseth</h2>
             </v-img>
 
+            <!-- OM INFO -->
+            <v-card-text class="text-justify">
+              <h3>Hei!</h3>
+              <p class="text-justify">
+                Jeg er en 23 åring fra Inderøy som tar et bachelorstudium i
+                digitale medier og design på Høgskolen i Østfold. Jeg bruker
+                dette nettstedet som portefølje i tillegg til en plass å
+                ekspirementere med utvikling og design.
+              </p>
+              <h4>Digitale medier og design</h4>
+              <p class="text-justify">
+                Digitale medier og design gir opplæring i design, programmering
+                og produksjon av digitale applikasjoner. Bacheloren går gjennom
+                mange av stegene fra å ha en ide til å utvikle et ferdig
+                produkt. Noen av fagene jeg har vært innom er webutvikling,
+                programmering, 3D-modellering, spillutvikling og grafisk-design.
+              </p>
+            </v-card-text>
+
+            <!-- KONTAKTINFO -->
             <v-card-text>
               <v-list-item>
                 <v-list-item-icon>
@@ -87,24 +106,6 @@
                   <v-icon>mdi-linkedin</v-icon>
                 </v-btn>
               </v-list-item>
-            </v-card-text>
-            <!-- OM INFO -->
-            <v-card-text class="text-justify">
-              <h3>Hei!</h3>
-              <p class="text-justify">
-                Jeg er en 23 åring fra Inderøy som tar et bachelorstudium i
-                digitale medier og design på Høgskolen i Østfold. Jeg bruker
-                dette nettstedet som portefølje i tillegg til en plass å
-                ekspirementere med utvikling og design.
-              </p>
-              <h4>Digitale medier og design</h4>
-              <p class="text-justify">
-                Digitale medier og design gir opplæring i design, programmering
-                og produksjon av digitale applikasjoner. Bacheloren går gjennom
-                mange av stegene fra å ha en ide til å utvikle et ferdig
-                produkt. Noen av fagene jeg har vært innom er webutvikling,
-                programmering, 3D-modellering, spillutvikling og grafisk-design.
-              </p>
             </v-card-text>
           </v-container>
         </v-col>
