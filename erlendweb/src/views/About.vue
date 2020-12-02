@@ -10,6 +10,7 @@
           <v-container>
             <v-img
               src="../assets/images/halden.jpg"
+              lazy="../assets/images/halden.jpg"
               height="250px"
               class="white--text"
               dark
@@ -87,20 +88,17 @@
                 </v-btn>
               </v-list-item>
             </v-card-text>
-          </v-container>
-
-          <!-- OM INFO -->
-          <v-container>
+            <!-- OM INFO -->
             <v-card-text class="text-justify">
               <h3>Hei!</h3>
-              <p>
+              <p class="text-justify">
                 Jeg er en 23 åring fra Inderøy som tar et bachelorstudium i
                 digitale medier og design på Høgskolen i Østfold. Jeg bruker
-                dette nettstedet som portefølje i tillegg til for
-                ekspirementering med utvikling og design.
+                dette nettstedet som portefølje i tillegg til en plass å
+                ekspirementere med utvikling og design.
               </p>
               <h4>Digitale medier og design</h4>
-              <p>
+              <p class="text-justify">
                 Digitale medier og design gir opplæring i design, programmering
                 og produksjon av digitale applikasjoner. Bacheloren går gjennom
                 mange av stegene fra å ha en ide til å utvikle et ferdig

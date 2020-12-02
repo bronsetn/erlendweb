@@ -10,7 +10,7 @@
       <v-toolbar-title>
         <v-btn icon @click="$router.push('/')">
           <v-img
-            src="../assets/profile-icon-glitch.png"
+            src="../assets/icons/profile-icon-glitch.png"
             height="45px"
             width="45px"
             contain
