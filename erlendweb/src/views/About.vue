@@ -3,7 +3,7 @@
   <body>
     <v-container>
       <span>&#8545;</span>
-      <h1>om</h1>
+      <h1>Om</h1>
       <br />
       <v-row class="d-flex justify-center">
         <v-col xs="12" sm="12" md="8" lg="8" xl="8">
