@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <v-app>
-        <Header></Header>
-        <main>
-          <router-view />
-        </main>
+      <Header></Header>
+      <main>
+        <router-view />
+      </main>
     </v-app>
   </div>
 </template>
@@ -12,7 +12,6 @@
 
 
 <script>
-
 import Header from "./components/Header";
 
 export default {
@@ -24,10 +23,8 @@ export default {
 </script>
 
 <style>
-
 #app {
   background: #fdfefc;
 }
-
 </style>
 
