@@ -2,18 +2,37 @@
   <v-col xs="12" sm="12" md="6" lg="6" xl="6">
     <v-card dark v-if="spaceData" color="primary">
       <v-container>
+        <v-card-title>Dagens bilde fra Nasa:</v-card-title>
         <v-parallax
+          v-if="spaceData.media_type == 'image'"
           :lazy="spaceData.url"
-          :src="spaceData.hdurl"
-          :href="spaceData.hdurl"
+          :src="spaceData.url"
+          :href="spaceData.url"
           aspect-ratio="1.5"
           contain
+          height="400"
+          class="white--text align-end"
         >
-          <v-card-title>{{ spaceData.title }}</v-card-title>
         </v-parallax>
-        <v-card-text class="text-justify body-1 font-weight-light">{{
-          spaceData.explanation
-        }}</v-card-text>
+        <div v-else class="video-container">
+          <iframe :src="spaceData.url"> </iframe>
+        </div>
+        <v-card-title>{{ spaceData.title }}</v-card-title>
+
+        <v-card-text
+          ><v-clamp autoresize :max-lines="2" class="body-1 font-weight-light"
+            >{{ spaceData.explanation
+            }}<template #after="{ toggle, expanded, clamped }">
+              <a
+                href="#"
+                v-if="expanded || clamped"
+                class="ml-1 badge badge-light"
+                @click.prevent="toggle"
+                >{{ expanded ? "Less" : "More" }}</a
+              >
+            </template>
+          </v-clamp></v-card-text
+        >
       </v-container>
 
       <v-card-actions>
@@ -63,8 +82,13 @@
 
 <script>
 import axios from "axios";
+import VClamp from "vue-clamp";
 
 export default {
+  components: {
+    VClamp,
+  },
+
   data() {
     return {
       show: false,
@@ -100,8 +124,8 @@ export default {
         if (Response.data.error_message) {
           console.log("error");
         } else {
-          // console.log("Space data:")
-          // console.log(Response);
+          console.log("Space data:");
+          console.log(Response);
 
           this.spaceData = Response.data;
           this.spaceImg == true;
@@ -113,3 +137,23 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+/* For moreresponsive iframe */
+/* Ref: https://codepen.io/virtualmason/pen/BjPEaO */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  margin: 0;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>

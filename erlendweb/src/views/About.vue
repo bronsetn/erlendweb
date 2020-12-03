@@ -91,24 +91,6 @@
                 </v-list-item-content>
               </v-list-item>
 
-              <v-divider inset></v-divider>
-
-              <v-list-item>
-                <v-list-item-icon>
-                  <v-icon color="secondary"> mdi-web </v-icon>
-                </v-list-item-icon>
-
-                <v-list-item-content>
-                  <v-list-item-title
-                    ><a href="erlendworkblog.wordpress.com" target="_blank"
-                      >erlendworkblog.wordpress.com</a
-                    ></v-list-item-title
-                  >
-                  <v-list-item-subtitle
-                    >Nettsted med prosjekter fra studiet</v-list-item-subtitle
-                  >
-                </v-list-item-content>
-              </v-list-item>
             </v-card-text>
           </v-container>
         </v-col>
