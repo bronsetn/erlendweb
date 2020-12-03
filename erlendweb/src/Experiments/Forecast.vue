@@ -1,6 +1,6 @@
 <template>
   <v-col xs="12" sm="12" md="6" lg="6" xl="6">
-    <v-card dark v-if="weather">
+    <v-card dark v-if="weather"  color="primary">
       <v-container>
         <v-card-title> Forecast</v-card-title>
         <v-list-item two-line>
@@ -23,7 +23,7 @@
             ><p class="display-3">{{ temperature }} &deg;C</p>
           </v-col>
           <v-col cols="5">
-            <v-img :src="wicon"></v-img>
+            <v-img height="100" contain :src="wicon"></v-img>
           </v-col>
           <v-col></v-col>
         </v-row>

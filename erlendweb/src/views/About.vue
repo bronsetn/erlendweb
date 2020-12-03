@@ -3,7 +3,7 @@
   <body>
     <v-container>
       <span>&#8545;</span>
-      <h1> om</h1>
+      <h1>om</h1>
       <br />
       <v-row class="d-flex justify-center">
         <v-col xs="12" sm="12" md="8" lg="8" xl="8">
@@ -21,18 +21,23 @@
             <!-- OM INFO -->
             <v-card-text class="text-justify">
               <h3>Hei!</h3>
-              <p class="text-justify">
+              <p>
                 Jeg er en 23 åring fra Inderøy som tar et bachelorstudium i
                 digitale medier og design på Høgskolen i Østfold. Mitt mål med
-                studiet og prosjekter som denne siden er å bli bedre innenfor
-                front-end utvikling hovedsaklig.
+                studiet og prosjekter som dette nettstedet er å bli bedre
+                innenfor front-end utvikling hovedsaklig.
               </p>
-              <p class="text-justify">
-                Jeg bruker dette nettstedet som portefølje i tillegg til en
-                plass å ekspirementere med utvikling og design.
+              <p>
+                Tanken bak dette nettstedet er å kunne bruke det som portefølje
+                i tillegg til en plass å ekspirementere innenfor utvikling og
+                design. Inntil nylig har jeg brukt wordpress for prosjekter fra
+                studiet, det finnes fortsatt her:
+                <a dark href="https://erlendworkblog.wordpress.com"
+                  >https://erlendworkblog.wordpress.com</a
+                >
               </p>
               <h4>Digitale medier og design</h4>
-              <p class="text-justify">
+              <p>
                 Digitale medier og design gir opplæring i design, programmering
                 og produksjon av digitale applikasjoner. Bacheloren går gjennom
                 mange av stegene fra å ha en ide til å utvikle et ferdig
@@ -48,9 +53,7 @@
                   title="Facebook"
                   href="https://www.facebook.com/profile.php?id=100003582864001"
                   target="_blank"
-                  class="white--text"
-                  color="blue"
-                  fab
+                  color="indigo"
                   icon
                 >
                   <v-icon>mdi-facebook</v-icon>
@@ -59,9 +62,7 @@
                   title="Linkedin"
                   href="https://no.linkedin.com/in/erlend-brønseth-b5a99612b/en-us"
                   target="_blank"
-                  class="white--text"
                   color="blue"
-                  fab
                   icon
                 >
                   <v-icon>mdi-linkedin</v-icon>

@@ -1,11 +1,10 @@
 import Vue from 'vue';
 import Vuetify from 'vuetify/lib';
 
+
 Vue.use(Vuetify);
 
-// Palette:
-// https://www.canva.com/colors/color-palettes/lake-view/
-
+// Color Palette:
 const vuetify = new Vuetify({
     theme: {
         themes: {
@@ -17,7 +16,14 @@ const vuetify = new Vuetify({
                 primary: '#011627',
                 // Prune red
                 secondary: '#e71d36',
-                // Maximum blue green
+                // Orange
+                anchor: '#F28701',
+                // Maximum blue green  
+                accent: '#2ec4b6'
+            },
+            dark: {
+                primary: '#e71d36',
+                secondary: '#E4A346',
                 anchor: '#2ec4b6',
             },
         },

@@ -1,6 +1,6 @@
 <template>
   <body>
-    <v-app-bar hide-on-scroll color="white">
+    <v-app-bar hide-on-scroll color="#fdfefc">
       <v-app-bar-nav-icon
         v-if="$vuetify.breakpoint.mobile"
         @click.stop="drawer = !drawer"

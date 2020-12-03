@@ -1,6 +1,6 @@
 <template>
   <v-col xs="12" sm="12" md="6" lg="6" xl="6">
-    <v-card dark v-if="spaceData">
+    <v-card dark v-if="spaceData" color="primary">
       <v-container>
         <v-parallax
           :lazy="spaceData.url"
