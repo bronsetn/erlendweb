@@ -2,14 +2,14 @@
   <body>
     <v-container>
       <span>&#8544;</span>
-      <h1>Mine prosjekter</h1>
+      <h1>Prosjekter</h1>
       <br />
 
       <v-row class="d-flex justify-center">
         <!-- BACHELOR OPPGAVE -->
         <v-col xs="12" sm="12" md="6" lg="4" xl="4">
           <v-container>
-            <v-card elevation="5" color="primary" dark>
+            <v-card elevation="5" color="primary">
               <v-img
                 height="300"
                 contain
@@ -39,7 +39,7 @@
         <!-- PRIOS EVENTS -->
         <v-col xs="12" sm="12" md="6" lg="4" xl="4">
           <v-container>
-            <v-card elevation="5" color="primary" dark>
+            <v-card elevation="5" color="primary">
               <v-img
                 height="300"
                 contain
