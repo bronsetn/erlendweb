@@ -1,6 +1,6 @@
 <template>
   <v-col xs="12" sm="12" md="6" lg="6" xl="6">
-    <v-card dark v-if="weather"  color="primary">
+    <v-card v-if="weather" color="primary">
       <v-container>
         <v-card-title>Dagens værmelding:</v-card-title>
         <v-list-item two-line>
@@ -111,7 +111,7 @@
       </v-expand-transition>
     </v-card>
 
-    <v-card dark v-else>
+    <v-card v-else color="primary">
       <v-container>
         <v-card-title> Forecast </v-card-title>
         <v-card-text>

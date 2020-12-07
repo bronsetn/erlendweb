@@ -7,24 +7,31 @@ Vue.use(Vuetify);
 // Color Palette:
 const vuetify = new Vuetify({
     theme: {
+        options: {
+            customProperties: true
+        },
+        dark: true,
         themes: {
             font: {
                 family: 'Roboto'
             },
             light: {
+                primary: 'white',
+                secondary: '#e71d36',
+                anchor: '#F28701',
+                accent: 'white'
+            },
+            dark: {
                 // Eerie black aka dark blue
                 primary: '#011627',
                 // Prune red
-                secondary: '#e71d36',
+                secondary: 'white',
                 // Orange
-                anchor: '#F28701',
+                anchor: '#f29e35',
                 // Maximum blue green  
-                accent: '#2ec4b6'
-            },
-            dark: {
-                primary: '#e71d36',
-                secondary: '#E4A346',
-                anchor: '#2ec4b6',
+                accent: '#2ec4b6',
+
+
             },
         },
     },
