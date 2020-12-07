@@ -1,8 +1,7 @@
 <template>
   <body>
     <v-container>
-      <span>&#8544;</span>
-      <h1>Prosjekter</h1>
+      <span class="font-weight-light">&#8544;</span>
       <br />
 
       <v-row class="d-flex justify-center">
@@ -15,12 +14,13 @@
                 contain
                 src="../assets/images/bachelor/3d-many.png"
                 lazy="../assets/images/bachelor/3d-many.png"
+                alt="Bilde av applikasjon fra bachelor oppgaven"
               ></v-img>
 
               <v-card-title
                 ><h2 class="font-weight-regular">Bacheloroppgave</h2>
               </v-card-title>
-              <p class="subtitle-2 text-truncate text-left pl-4">
+              <p class="light text-left pl-4">
                 Augmented reality til å vise utvandringshistorie
               </p>
               <v-card-actions>
@@ -45,12 +45,13 @@
                 contain
                 src="../assets/images/prios-events/3d-wireframe.png"
                 lazy="../assets/images/prios-events/3d-wireframe.png"
+                alt="Wireframe fra Prios Events"
               ></v-img>
 
               <v-card-title
                 ><h2 class="font-weight-regular">Prios Events</h2>
               </v-card-title>
-              <p class="subtitle-2 text-truncate text-left pl-4">
+              <p class="light text-left pl-4">
                 Prios kompetanse AS
               </p>
               <v-card-actions>

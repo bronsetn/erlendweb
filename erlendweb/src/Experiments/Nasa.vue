@@ -52,7 +52,7 @@
 
           <v-card-text>
             <p>
-              Her har jeg brukt en av Nasa sine offentlig APIer som publiserer
+              Her har jeg brukt en av Nasa sine offentlige APIer som publiserer
               et nytt rom-bilde pluss informasjon hver dag.
             </p>
             <p>

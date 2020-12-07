@@ -16,16 +16,20 @@ const vuetify = new Vuetify({
                 family: 'Roboto'
             },
             light: {
-                primary: 'white',
+                // whiteish
+                primary: '#fdfefc',
+                // Prune red
                 secondary: '#e71d36',
+                // Orange
                 anchor: '#F28701',
-                accent: 'white'
+                // whiteish
+                accent: '#fdfefc'
             },
             dark: {
                 // Eerie black aka dark blue
                 primary: '#011627',
                 // Prune red
-                secondary: 'white',
+                secondary: '#fdfefc',
                 // Orange
                 anchor: '#f29e35',
                 // Maximum blue green  
