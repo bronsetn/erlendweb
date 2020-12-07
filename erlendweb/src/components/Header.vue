@@ -9,7 +9,17 @@
       <v-toolbar-title>
         <v-btn icon v-if="!$vuetify.theme.dark" @click="$router.push('/')">
           <v-img
-            src="../assets/icons/profile-icon-glitch.png"
+            src="../assets/icons/profile-icon.png"
+            lazy="../assets/icons/profile-icon.png"
+            height="45px"
+            width="45px"
+            contain
+          ></v-img>
+        </v-btn>
+        <v-btn icon v-if="$vuetify.theme.dark" @click="$router.push('/')">
+          <v-img
+            src="../assets/icons/profile-icon-w.png"
+            lazy="../assets/icons/profile-icon-w.png"
             height="45px"
             width="45px"
             contain
@@ -36,7 +46,11 @@
         @click="$vuetify.theme.dark = !$vuetify.theme.dark"
         ><v-icon>mdi-white-balance-sunny</v-icon></v-btn
       >
-      <v-btn icon v-else @click="$vuetify.theme.dark = !$vuetify.theme.dark"
+      <v-btn
+        icon
+        color="black"
+        v-else
+        @click="$vuetify.theme.dark = !$vuetify.theme.dark"
         ><v-icon>mdi-moon-waxing-crescent</v-icon></v-btn
       >
     </v-app-bar>

@@ -1,8 +1,7 @@
 <template>
   <body>
     <v-container>
-      <span>&#8546;</span>
-      <h1>Eksperimenter</h1>
+      <span class="font-weight-light">&#8546;</span>
       <br />
       <v-row class="d-flex justify-center">
         <Nasa></Nasa>
