@@ -116,15 +116,19 @@
         <v-card-title> Forecast </v-card-title>
         <v-card-text>
           <p class="text-justify">
-            Denne komponenten tar i bruk nettleserens geolokasjons
+            Denne komponenten tar i bruk nettleserens geolokasjon
             funksjonalitet for å hente ut værmelding for dine koordinater. Skru
-            geolokasjon på for å hente værmeldingen.
+            geolokasjon på for å vise værmeldingen.
           </p>
-
           <p class="text-justify">
             Flere nettlesere blokkerer funksjoner som vil ta i bruk geolokasjon
-            etter at sider er lastet. På grunn av dette må man selv aktivere
-            geolokasjonen manuelt i nettleseren.
+            etter at sider er lastet. Dette gjør feks. at knappen under sin
+            funksjon automatisk blokkeres.
+          </p>
+          <p class="text-justify">
+            På grunn av dette må geolokasjon aktiveres manuelt i nettleseren.
+            Dette kan gjøres ved å slette geolokasjonsinstillingene for denne
+            siden og deretter laste siden på nytt.
           </p>
           <p>
             For Chrome kan geolokasjon aktiveres ved å følge instruksjonene i

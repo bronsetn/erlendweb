@@ -7,11 +7,10 @@
             <br />
             <h1>Prios Events</h1>
             <br />
-            <v-card-text>
-            <p>Prosjekt under utvikling for prios kompetanse AS</p>
+            <p class="light">Prosjekt under utvikling for prios kompetanse AS</p>
             <a href="https://dev.prios.events/" target="_blank"
               >https://dev.prios.events</a
-            ></v-card-text>
+            >
             <v-img
               class="center"
               max-height="400"
