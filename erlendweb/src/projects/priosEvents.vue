@@ -7,14 +7,20 @@
             <br />
             <h1>Prios Events</h1>
             <br />
-            <p class="light">Prosjekt under utvikling for prios kompetanse AS</p>
-            <a href="https://dev.prios.events/" target="_blank"
-              >https://dev.prios.events</a
-            >
-            <p class="light">Om prosjektet</p>
-                <a href="https://prios.events" target="_blank"
-              >https://prios.events</a
-            >
+            <p class="light">
+              Prosjekt under utvikling for prios kompetanse AS
+              <br />
+              <a href="https://dev.prios.events/" target="_blank"
+                >https://dev.prios.events</a
+              >
+            </p>
+
+            <p class="light">
+              Om prosjektet 
+              <a href="https://prios.events" target="_blank"
+                >https://prios.events</a
+              >
+            </p>
             <v-img
               class="center"
               max-height="400"
