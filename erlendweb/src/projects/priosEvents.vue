@@ -11,6 +11,10 @@
             <a href="https://dev.prios.events/" target="_blank"
               >https://dev.prios.events</a
             >
+            <p class="light">Om prosjektet</p>
+                <a href="https://prios.events" target="_blank"
+              >https://prios.events</a
+            >
             <v-img
               class="center"
               max-height="400"

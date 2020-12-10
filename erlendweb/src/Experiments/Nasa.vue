@@ -2,7 +2,7 @@
   <v-col xs="12" sm="12" md="6" lg="6" xl="6">
     <v-card v-if="spaceData" color="primary">
       <v-container>
-        <v-card-title>Dagens bilde fra Nasa:</v-card-title>
+        <v-card-title>Dagens bilde fra Nasa</v-card-title>
         <v-parallax
           v-if="spaceData.media_type == 'image'"
           :lazy="spaceData.url"
@@ -21,7 +21,7 @@
 
         <v-card-text>
           Bilde: <a :href="spaceData.url">{{ spaceData.url }}</a>
-          <v-divider inset></v-divider>
+          <br />
           <p class="light">
             <v-clamp autoresize :max-lines="2" class="text-justify">
               {{ spaceData.explanation
