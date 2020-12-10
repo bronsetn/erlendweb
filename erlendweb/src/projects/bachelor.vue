@@ -2,42 +2,65 @@
   <body>
     <v-container class="colored-container" fluid>
       <v-row class="d-flex justify-center">
-        <v-col xs="12" sm="12" md="8" lg="8" xl="8">
+        <v-col xs="10" sm="10" md="8" lg="8" xl="8">
           <v-container>
             <br />
-
             <h1>Bacheloroppgave</h1>
-            <br />
-
             <div class="subtitle-1">
-              Augmented reality til å vise utvandringshistorie
+              Augmented reality til å vise utvandringshistorie i Kvam
             </div>
-            <v-card-text>
-              <p>
-                Prosjektet gikk ut på å designe og utvikle en prototype for en
-                AR-applikasjon som visualiserer utvandringen fra Kvam til
-                Amerika på 1800-tallet. Prototypen viser forlatte hustufter og
-                bygninger som skal forsterke stedsopplevelsen i Kvam.
-                Applikasjonen er utviklet i Unity og 3D-modellene er laget ut i
-                fra hvordan mange av husmannsplassene så ut i Kvam på
-                1800-tallet.
-              </p>
-              <p>
-                For mer info om prosjektet:
-                <a
-                  href="https://erlendworkblog.wordpress.com/2020/06/11/bacheloroppgave-augmented-reality-til-a-vise-utvandringshistorie/"
-                  target="_blank"
-                  >https://erlendworkblog.wordpress.com/2020/06/11/bacheloroppgave-augmented-reality-til-a-vise-utvandringshistorie/</a
-                >
-              </p></v-card-text
-            >
-
+            <br />
+            <p class="light">
+              Prosjektet gikk ut på å designe og utvikle en prototype for en
+              AR-applikasjon som visualiserer utvandringen fra Kvam til Amerika
+              på 1800-tallet. Prototypen vi laget viser forlatte hustufter laget
+              ut i fra hvordan mange av husmannsplassene så ut i Kvam på
+              1800-tallet.
+            </p>
             <v-img
-              class="center"
-              max-height="400"
               contain
+              max-height="400px"
               src="../assets/images/bachelor/3d-many.png"
               lazy="../assets/images/bachelor/3d-many.png"
+            ></v-img>
+          </v-container>
+        </v-col>
+      </v-row>
+    </v-container>
+
+    <v-container fluid>
+      <v-row class="d-flex justify-center">
+        <v-col xs="12" sm="12" md="8" lg="8" xl="8">
+          <v-container style="margin-top: 100px">
+            <p class="normal">
+              Gjennom prosjektet lagde vi en applikasjon i Unity som kunne vise
+              3D modeller forhåndsplasert via lengde og breddegrader.
+              Applikasjonen tok i bruk telefonens GPS fot å vise forskjellige 3D
+              modeller plassert på spesifikke steder.
+            </p>
+            <v-img
+              contain
+              src="../assets/images/bachelor/3d-app.png"
+              lazy="../assets/images/bachelor/3d-app.png"
+            ></v-img>
+
+            <br />
+            <p class="normal">
+              Prosjektgruppen bestod av Dylan Paul Lesperance, Henning
+              Kristoffer Borgen, Elias Bakke og meg
+            </p>
+            <p class="light">
+              For mer info om prosjektet gå til:
+              <a href="https://erlendworkblog.wordpress.com/" target="_blank"
+                >https://erlendworkblog.wordpress.com/</a
+              >
+            </p>
+            <br />
+
+            <v-img
+              contain
+              src="../assets/images/bachelor/prosjektplakat.png"
+              lazy="../assets/images/bachelor/prosjektplakat.png"
             ></v-img>
           </v-container>
         </v-col>

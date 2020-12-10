@@ -2,13 +2,13 @@
   <v-col xs="12" sm="12" md="6" lg="6" xl="6">
     <v-card v-if="spaceData" color="primary">
       <v-container>
-        <v-card-title>Dagens bilde fra Nasa:</v-card-title>
+        <v-card-title>Dagens bilde fra Nasa</v-card-title>
         <v-parallax
           v-if="spaceData.media_type == 'image'"
           :lazy="spaceData.url"
           :src="spaceData.url"
           :href="spaceData.url"
-          aspect-ratio="1.5"
+          aspect-ratio="1.8"
           contain
           height="400"
           class="white--text align-end"
@@ -19,19 +19,23 @@
         </div>
         <v-card-title>{{ spaceData.title }}</v-card-title>
 
-        <v-card-text
-          ><v-clamp autoresize :max-lines="2" class="body-1 font-weight-light"
-            >{{ spaceData.explanation
-            }}<template #after="{ toggle, expanded, clamped }">
-              <a
-                href="#"
-                v-if="expanded || clamped"
-                class="ml-1 badge badge-light"
-                @click.prevent="toggle"
-                >{{ expanded ? "Less" : "More" }}</a
-              >
-            </template>
-          </v-clamp></v-card-text
+        <v-card-text>
+          Bilde: <a :href="spaceData.url">{{ spaceData.url }}</a>
+          <br />
+          <p class="light">
+            <v-clamp autoresize :max-lines="2" class="text-justify">
+              {{ spaceData.explanation
+              }}<template #after="{ toggle, expanded, clamped }">
+                <a
+                  href="#"
+                  v-if="expanded || clamped"
+                  class="ml-1 badge badge-light"
+                  @click.prevent="toggle"
+                  >{{ expanded ? "Mindre" : "Mer" }}</a
+                >
+              </template>
+            </v-clamp>
+          </p></v-card-text
         >
       </v-container>
 
