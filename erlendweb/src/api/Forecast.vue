@@ -257,8 +257,8 @@ export default {
         if (Response.data.error_message) {
           console.log("error");
         } else {
-          console.log("Værmelding");
-          console.log(Response);
+          // console.log("Værmelding");
+          // console.log(Response);
           this.weather = Response.data;
 
           this.wicon =

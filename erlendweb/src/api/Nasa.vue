@@ -128,8 +128,8 @@ export default {
         if (Response.data.error_message) {
           console.log("error");
         } else {
-          console.log("Space data:");
-          console.log(Response);
+          // console.log("Space data:");
+          // console.log(Response);
 
           this.spaceData = Response.data;
           this.spaceImg == true;

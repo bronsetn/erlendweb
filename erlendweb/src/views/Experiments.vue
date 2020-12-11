@@ -14,8 +14,8 @@
 </template>
 
 <script>
-import Nasa from "../Apis/Nasa.vue";
-import Forecast from "../Apis/Forecast.vue";
+import Nasa from "../api/Nasa.vue";
+import Forecast from "../api/Forecast.vue";
 
 export default {
   components: {
