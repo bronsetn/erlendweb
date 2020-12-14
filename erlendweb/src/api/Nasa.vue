@@ -1,6 +1,6 @@
 <template>
-  <v-col xs="12" sm="12" md="6" lg="6" xl="6">
-    <v-card v-if="spaceData" color="primary">
+  <v-col v-if="spaceData" xs="12" sm="12" md="6" lg="6" xl="6">
+    <v-card  color="primary">
       <v-container>
         <v-card-title>Dagens bilde fra Nasa</v-card-title>
         <v-parallax

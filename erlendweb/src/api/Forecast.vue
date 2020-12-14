@@ -1,6 +1,6 @@
 <template>
-  <v-col xs="12" sm="12" md="6" lg="6" xl="6">
-    <v-card v-if="weather" color="primary">
+  <v-col v-if="weather" xs="12" sm="12" md="6" lg="6" xl="6">
+    <v-card color="primary">
       <v-container>
         <v-card-title>Dagens værmelding</v-card-title>
         <v-list-item two-line>
@@ -109,43 +109,6 @@
           </v-card-text>
         </div>
       </v-expand-transition>
-    </v-card>
-
-    <v-card v-else color="primary">
-      <v-container>
-        <v-card-title>Dagens værmelding</v-card-title>
-        <v-card-text>
-          <p class="text-justify">
-            Denne komponenten tar i bruk nettleserens geolokasjon
-            funksjonalitet for å hente ut værmelding for dine koordinater. Skru
-            geolokasjon på for å vise værmeldingen.
-          </p>
-          <p class="text-justify">
-            Flere nettlesere blokkerer funksjoner som vil ta i bruk geolokasjon
-            etter at sider er lastet. Dette gjør feks. at knappen under sin
-            funksjon automatisk blokkeres.
-          </p>
-          <p class="text-justify">
-            På grunn av dette må geolokasjon aktiveres manuelt i nettleseren.
-            Dette kan gjøres ved å slette geolokasjonsinstillingene for denne
-            siden og deretter laste siden på nytt.
-          </p>
-          <p>
-            For Chrome kan geolokasjon aktiveres ved å følge instruksjonene i
-            denne linken.
-            <a
-              href="https://support.google.com/chrome/answer/142065?hl=en"
-              target="_blank"
-              >https://support.google.com/chrome/answer/142065?hl=en</a
-            >
-          </p>
-        </v-card-text>
-        <v-divider></v-divider>
-        <v-card-actions>
-          <v-spacer></v-spacer>
-          <v-btn light @click="getLocation()">Get forecast</v-btn>
-        </v-card-actions>
-      </v-container>
     </v-card>
   </v-col>
 </template>
