@@ -1,6 +1,6 @@
 <template>
-  <v-col xs="12" sm="12" md="6" lg="6" xl="6">
-    <v-card v-if="spaceData" color="primary">
+  <v-col v-if="spaceData" xs="12" sm="12" md="6" lg="6" xl="6">
+    <v-card  color="primary">
       <v-container>
         <v-card-title>Dagens bilde fra Nasa</v-card-title>
         <v-parallax
@@ -128,8 +128,8 @@ export default {
         if (Response.data.error_message) {
           console.log("error");
         } else {
-          console.log("Space data:");
-          console.log(Response);
+          // console.log("Space data:");
+          // console.log(Response);
 
           this.spaceData = Response.data;
           this.spaceImg == true;
