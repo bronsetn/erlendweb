@@ -1,6 +1,6 @@
 <template>
   <v-col v-if="spaceData" xs="12" sm="12" md="6" lg="6" xl="6">
-    <v-card  color="primary">
+    <v-card color="primary" elevation="5">
       <v-container>
         <v-card-title>Dagens bilde fra Nasa</v-card-title>
         <v-parallax
@@ -20,12 +20,11 @@
         <v-card-title>{{ spaceData.title }}</v-card-title>
 
         <v-card-text>
-          Bilde: <a :href="spaceData.url">{{ spaceData.url }}</a>
           <br />
           <p class="light">
             <v-clamp autoresize :max-lines="2" class="text-justify">
-              {{ spaceData.explanation
-              }}<template #after="{ toggle, expanded, clamped }">
+              {{ spaceData.explanation }}
+              <template #after="{ toggle, expanded, clamped }">
                 <a
                   href="#"
                   v-if="expanded || clamped"
@@ -35,8 +34,10 @@
                 >
               </template>
             </v-clamp>
-          </p></v-card-text
-        >
+          </p>
+          Bilde:
+          <a :href="spaceData.url" target="_blank">{{ spaceData.url }}</a>
+        </v-card-text>
       </v-container>
 
       <v-card-actions>

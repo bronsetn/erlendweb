@@ -1,6 +1,6 @@
 <template>
   <body>
-    <v-app-bar hide-on-scroll color="primary">
+    <v-app-bar hide-on-scroll flat color="primary">
       <v-app-bar-nav-icon
         v-if="$vuetify.breakpoint.mobile"
         @click.stop="drawer = !drawer"
@@ -28,9 +28,19 @@
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <div v-if="!$vuetify.breakpoint.mobile">
+          <!-- <v-btn text link href="#projects" color="secondary"
+            >&#8544; Projects</v-btn
+          >
+          <v-btn text link href="#about" color="secondary">&#8545; About</v-btn>
+          <v-btn text link href="#experiments" color="secondary"
+            >&#8546; Experiments</v-btn
+          > -->
+
+                
         <v-btn text link @click="$router.push('/')" color="secondary"
           >&#8544; Projects</v-btn
         >
+
         <v-btn text link @click="$router.push('/about')" color="secondary"
           >&#8545; About</v-btn
         >
