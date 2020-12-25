@@ -5,7 +5,7 @@
     <v-container>
         <v-container class="justify-center">
         <p class="font-weight-light ma-1 pa-0">&#8545;</p>
-        <h2>Om</h2>
+        <h2>Om meg</h2>
       </v-container>
 
       <v-row class="d-flex justify-center">

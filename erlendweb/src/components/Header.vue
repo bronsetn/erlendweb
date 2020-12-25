@@ -28,16 +28,15 @@
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <div v-if="!$vuetify.breakpoint.mobile">
-          <!-- <v-btn text link href="#projects" color="secondary"
-            >&#8544; Projects</v-btn
-          >
-          <v-btn text link href="#about" color="secondary">&#8545; About</v-btn>
-          <v-btn text link href="#experiments" color="secondary"
-            >&#8546; Experiments</v-btn
-          > -->
+        <v-btn text link href="#projects" color="secondary"
+          >&#8544; Prosjekter</v-btn
+        >
+        <v-btn text link href="#about" color="secondary">&#8545; Om meg</v-btn>
+        <v-btn text link href="#experiments" color="secondary"
+          >&#8546; Annet</v-btn
+        >
 
-                
-        <v-btn text link @click="$router.push('/')" color="secondary"
+        <!-- <v-btn text link @click="$router.push('/')" color="secondary"
           >&#8544; Projects</v-btn
         >
 
@@ -46,7 +45,7 @@
         >
         <v-btn text link @click="$router.push('/experiments')" color="secondary"
           >&#8546; Experiments</v-btn
-        >
+        > -->
       </div>
       <v-spacer v-if="!$vuetify.breakpoint.mobile"></v-spacer>
       <v-btn
@@ -65,33 +64,36 @@
       >
     </v-app-bar>
 
-    <v-navigation-drawer
-      v-model="drawer"
-      absolute
-      temporary
-      width="100%"
-      color="primary"
-    >
+    <v-navigation-drawer v-model="drawer" absolute temporary color="primary">
       <v-list-item></v-list-item>
+
+      <!-- <v-btn text link href="#projects" color="secondary"
+        >&#8544; Prosjekter</v-btn
+      >
+      <v-btn text link href="#about" color="secondary">&#8545; Om meg</v-btn>
+      <v-btn text link href="#experiments" color="secondary"
+        >&#8546; Annet</v-btn
+      > -->
+
       <v-list transparent dense>
-        <v-list-item @click="$router.push('/')">
+        <v-list-item href="#projects">
           <v-list-item-icon> &#8544; </v-list-item-icon>
           <v-list-item-content>
-            <v-list-item-title>Projects</v-list-item-title>
+            <v-list-item-title>Prosjekter</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item @click="$router.push('/about')">
+        <v-list-item href="#about">
           <v-list-item-icon> &#8545; </v-list-item-icon>
           <v-list-item-content>
-            <v-list-item-title>About</v-list-item-title>
+            <v-list-item-title>Om meg</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item @click="$router.push('/experiments')">
+        <v-list-item href="#experiments">
           <v-list-item-icon> &#8545; </v-list-item-icon>
           <v-list-item-content>
-            <v-list-item-title>Experiments</v-list-item-title>
+            <v-list-item-title>Eksperiment</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>

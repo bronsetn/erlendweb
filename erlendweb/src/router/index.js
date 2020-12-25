@@ -2,9 +2,9 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Home from '../views/Home.vue'
-import About from '../views/About.vue'
-import Projects from '../views/Projects.vue'
-import Experiments from '../views/Experiments.vue'
+// import About from '../views/About.vue'
+// import Projects from '../views/Projects.vue'
+// import Experiments from '../views/Experiments.vue'
 
 // Project sites
 import PriosEvents from '../projects/priosEvents.vue'
@@ -17,21 +17,21 @@ const routes = [{
         name: 'Home',
         component: Home
     },
-    {
-        path: '/about',
-        name: 'About',
-        component: About
-    },
-    {
-        path: '/projects',
-        name: 'Projects',
-        component: Projects
-    },
-    {
-        path: '/experiments',
-        name: 'Experiments',
-        component: Experiments
-    },
+    // {
+    //     path: '/about',
+    //     name: 'About',
+    //     component: About
+    // },
+    // {
+    //     path: '/projects',
+    //     name: 'Projects',
+    //     component: Projects
+    // },
+    // {
+    //     path: '/experiments',
+    //     name: 'Experiments',
+    //     component: Experiments
+    // },
 
     // PROJECT sites
     {
@@ -49,5 +49,17 @@ const routes = [{
 const router = new VueRouter({
     routes
 })
+
+// Rediredct to set pages
+let availableSites = ["/", "/bachelor", "/priosEvents"];
+
+//If the site is not in availableSites redirect to "/"
+router.beforeEach((to, from, next) => {
+    if (availableSites.includes(to.path)) {
+        next()
+    } else {
+        next("/")
+    }
+});
 
 export default router
