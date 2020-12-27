@@ -1,6 +1,6 @@
 <template>
-  <body id="top" class="pt-16 pb-4">
-    <Projects id="projects"></Projects>
+  <body id="top">
+    <Projects id="projects" class="pt-16"></Projects>
     <About id="about"></About>
     <Experiments id="other"></Experiments>
 
@@ -11,12 +11,12 @@
         bottom
         right
         fab
-        color="secondary"
+        color="primary"
         href="#top"
         v-scroll="onScroll"
         v-show="fab"
       >
-        <v-icon color="primary"> mdi-arrow-up </v-icon>
+        <v-icon color="accent"> mdi-arrow-up </v-icon>
       </v-btn>
     </v-fade-transition>
   </body>

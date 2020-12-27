@@ -21,21 +21,6 @@ const router = new VueRouter({
             name: 'Home',
             component: Home
         },
-        // {
-        //     path: '/about',
-        //     name: 'About',
-        //     component: About
-        // },
-        // {
-        //     path: '/projects',
-        //     name: 'Projects',
-        //     component: Projects
-        // },
-        // {
-        //     path: '/experiments',
-        //     name: 'Experiments',
-        //     component: Experiments
-        // },
 
         // PROJECT sites
         {

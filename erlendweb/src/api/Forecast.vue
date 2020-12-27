@@ -75,7 +75,7 @@
       </v-container>
 
       <v-card-actions>
-        <v-btn color="orange lighten-2" text @click="show = !show">
+        <v-btn color="accent" text @click="show = !show">
           Om dette
         </v-btn>
         <v-spacer></v-spacer>

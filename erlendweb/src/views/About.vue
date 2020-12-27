@@ -15,6 +15,7 @@
               <v-col cols="12">
                 <v-avatar size="200" class="ma-4">
                   <v-img
+                    alt="Bilde av Halden kommune"
                     src="../assets/images/halden.jpg"
                     lazy="../assets/images/halden.jpg"
                     height="200"
@@ -27,7 +28,7 @@
                   title="Linkedin"
                   href="https://no.linkedin.com/in/erlend-brønseth-b5a99612b/en-us"
                   target="_blank"
-                  color="secondary"
+                  color="accent"
                   icon
                 >
                   <v-icon>mdi-linkedin</v-icon>
@@ -37,7 +38,7 @@
                   title="Facebook"
                   href="https://www.facebook.com/profile.php?id=100003582864001"
                   target="_blank"
-                  color="secondary"
+                  color="accent"
                   icon
                 >
                   <v-icon>mdi-facebook</v-icon>
@@ -77,12 +78,12 @@
               </v-col>
 
               <v-col xs="12" sm="6" md="6" lg="6" xl="6">
-                <v-icon color="secondary"> mdi-email-outline </v-icon>
+                <v-icon color="accent"> mdi-email-outline </v-icon>
                 <p class="light">bronsetherlend@gmail.com</p>
               </v-col>
 
               <v-col xs="12" sm="6" md="6" lg="6" xl="6">
-                <v-icon color="secondary"> mdi-phone-outline</v-icon>
+                <v-icon color="accent"> mdi-phone-outline</v-icon>
                 <p class="light">(+47) 45 80 44 52</p>
               </v-col>
               <v-col cols="12"></v-col>

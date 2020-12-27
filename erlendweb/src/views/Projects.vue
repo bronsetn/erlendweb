@@ -22,13 +22,13 @@
               <v-card-title
                 ><h2 class="font-weight-regular">Prios Events</h2>
               </v-card-title>
-              <p class="light text-left pl-4">Prios kompetanse AS</p>
+              <p class="light text-left pl-4">Prosjekt for Prios kompetanse AS</p>
             </v-container>
 
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn
-                color="orange lighten-2"
+                color="anchor"
                 text
                 @click="$router.push('/priosEvents')"
                 >Vis mer</v-btn
@@ -59,7 +59,7 @@
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn
-                color="orange lighten-2"
+                color="anchor"
                 @click="$router.push('/bachelor')"
                 text
                 >Vis mer</v-btn
@@ -90,7 +90,7 @@
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn
-                color="orange lighten-2"
+                color="anchor"
                 text
                 target="_blank"
                 href="https://erlendworkblog.wordpress.com/prosjekter/"

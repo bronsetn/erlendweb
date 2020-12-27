@@ -1,6 +1,6 @@
 <template>
   <body>
-    <v-container class="colored-container" fluid>
+    <v-container class="colored-container pt-16" fluid>
       <v-row class="d-flex justify-center">
         <v-col xs="12" sm="12" md="8" lg="8" xl="8">
           <v-container>
@@ -16,7 +16,7 @@
             </p>
 
             <p class="light">
-              Om prosjektet 
+              For mer info om prosjektet;
               <a href="https://prios.events" target="_blank"
                 >https://prios.events</a
               >

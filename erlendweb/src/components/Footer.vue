@@ -1,5 +1,4 @@
-<template>
-  <div class="pt-16">
+  <!-- <div class="pt-16">
     <v-footer absolute padless color="primary">
       <v-row justify="center" class="pt-3 ma-0 pa-0 footer" no-gutters>
         <v-col></v-col>
@@ -15,6 +14,15 @@
         </v-col>
 
         <v-col> </v-col>
+      </v-row>
+    </v-footer>
+  </div> -->
+
+<template>
+  <div class="pt-12">
+    <v-footer absolute padless color="primary" >
+      <v-row justify="center" class="pt-2 ma-0 pa-0" no-gutters>
+        <p class="light ma-2 pa-0">Erlend Brønseth - {{ new Date().getFullYear() }}</p>
       </v-row>
     </v-footer>
   </div>
