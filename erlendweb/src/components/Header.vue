@@ -1,6 +1,6 @@
 <template>
   <body>
-    <v-app-bar  hide-on-scroll fixed flat fluid color="primary">
+    <v-app-bar hide-on-scroll fixed flat fluid color="primary">
       <v-app-bar-nav-icon
         class="pl-4"
         color="tertiary"
@@ -11,8 +11,9 @@
       <v-toolbar-title>
         <v-btn icon v-if="!$vuetify.theme.dark" @click="$router.push('/')">
           <v-img
-            src="../assets/icons/profile-icon.png"
-            lazy="../assets/icons/profile-icon.png"
+            color="primary"
+            src="../assets/icons/logo-light.svg"
+            lazy="../assets/icons/logo-light.svg"
             height="45px"
             width="45px"
             contain
@@ -20,8 +21,9 @@
         </v-btn>
         <v-btn icon v-if="$vuetify.theme.dark" @click="$router.push('/')">
           <v-img
-            src="../assets/icons/profile-icon-w.png"
-            lazy="../assets/icons/profile-icon-w.png"
+            color="primary"
+            src="../assets/icons/logo-dark.svg"
+            lazy="../assets/icons/logo-dark.svg"
             height="45px"
             width="45px"
             contain

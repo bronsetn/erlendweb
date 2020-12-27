@@ -1,6 +1,6 @@
 <template>
   <body>
-    <v-container class="colored-container pt-16" fluid>
+    <v-container class="colored-container" fluid>
       <v-row class="d-flex justify-center">
         <v-col xs="10" sm="10" md="8" lg="8" xl="8">
           <v-container>
@@ -76,7 +76,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 .colored-container {
   height: 500px;
 }

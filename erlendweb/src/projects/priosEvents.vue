@@ -1,6 +1,6 @@
 <template>
   <body>
-    <v-container class="colored-container pt-16" fluid>
+    <v-container class="colored-container" fluid>
       <v-row class="d-flex justify-center">
         <v-col xs="12" sm="12" md="8" lg="8" xl="8">
           <v-container>
@@ -32,6 +32,28 @@
         </v-col>
       </v-row>
     </v-container>
+
+    <v-container fluid>
+      <v-row class="d-flex justify-center">
+        <v-col xs="12" sm="12" md="8" lg="8" xl="8">
+          <v-container style="margin-top: 120px">
+            <p class="normal">
+              Prios Events er plattform for å kunne holde forskjellige virtuelle
+              begivenheter. Hittil er det lagt oppp for at bedrifter kan holde
+              virtuelle jobbmesser på siden. I jobbmessen kan Bedrifter vise
+              fram innhold og media fra sin bedrift og ha samtaler med besøkende
+              brukere.
+            </p>
+            <v-img
+              contain
+              max-height="500px"
+              src="../assets/images/prios-events/events-pc.png"
+              lazy="../assets/images/prios-events-pc.png"
+            ></v-img>
+          </v-container>
+        </v-col>
+      </v-row>
+    </v-container>
   </body>
 </template>
 
@@ -40,7 +62,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 .colored-container {
   height: 500px;
 }

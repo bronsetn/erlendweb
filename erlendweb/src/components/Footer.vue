@@ -19,7 +19,7 @@
   </div> -->
 
 <template>
-  <div class="pt-12">
+  <div>
     <v-footer absolute padless color="primary" >
       <v-row justify="center" class="pt-2 ma-0 pa-0" no-gutters>
         <p class="light ma-2 pa-0">Erlend Brønseth - {{ new Date().getFullYear() }}</p>

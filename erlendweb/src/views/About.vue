@@ -46,21 +46,20 @@
               </v-col>
 
               <v-col cols="12">
-                <p class="normal text-justify pl-4 pr-4">
-                  Jeg er en 23 åring fra Inderøy som tar et bachelorstudium i
-                  digitale medier og design på Høgskolen i Østfold. Mitt mål med
-                  studiet og prosjekter som dette er å bli bedre innenfor
-                  front-end utvikling hovedsaklig.
+                <p class="normal pl-4 pr-4">
+                  Jeg er en front end juniorutvikler med en bachelor innenfor
+                  digitale medier og design.
                 </p>
-                <p class="normal text-justify pl-4 pr-4">
+                <p class="light pl-4 pr-4">
+                  Jeg er 23 år gammel og fra Inderøy kommune i Nord-Trøndelag.
                   Tanken bak dette nettstedet er å kunne bruke det som
-                  portefølje i tillegg til en plass å ekspirementere med
+                  portefølje i tillegg til en plass å ekspirementere innenfor
                   utvikling og design.
                 </p>
 
                 <h3 class="pa-4">Digitale medier og design</h3>
 
-                <p class="normal text-justify pl-4 pr-4">
+                <p class="light text-justify pl-4 pr-4">
                   Digitale medier og design gir opplæring i design,
                   programmering og produksjon av digitale applikasjoner.
                   Bacheloren går gjennom mange av stegene fra å ha en ide til å
@@ -68,7 +67,7 @@
                   er webutvikling, programmering, 3D-modellering, spillutvikling
                   og grafisk-design.
                 </p>
-                <p class="normal pl-4 pr-4">
+                <p class="light pl-4 pr-4">
                   Inntil nylig har jeg brukt wordpress for publisering av
                   prosjekter fra studiet, de finnes fortsatt her:
                   <a dark href="https://erlendworkblog.wordpress.com"

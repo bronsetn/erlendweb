@@ -19,13 +19,16 @@ const vuetify = new Vuetify({
                 family: 'Roboto'
             },
             light: {
-                primary: colors.purple.lighten5, // #F3E5F5
+                primary: colors.purple.lighten4, // #F3E5F5
                 secondary: colors.purple.lighten2, // #7B1FA2
-                tertiary:  colors.purple.darken4,
-              // For buttons and such
-              accent: colors.amber.darken3,
-              // For a tags and links
-              anchor: colors.amber.darken2,
+                tertiary: colors.purple.darken4,
+                // For buttons and such
+                accent: colors.amber.darken4,
+                // For a tags and links
+                anchor: colors.amber.darken4,
+                // Computed propery in ap main checks this value
+                background: colors.purple.lighten5,
+
             },
             dark: {
                 primary: colors.purple.darken4, // #4A148C
@@ -35,6 +38,9 @@ const vuetify = new Vuetify({
                 accent: colors.amber.accent2,
                 // For a tags and links
                 anchor: colors.amber.lighten2,
+                // Computed propery in ap main checks this value
+                background: colors.black,
+
             },
         },
     },
