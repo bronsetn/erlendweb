@@ -26,9 +26,6 @@ export default {
 </script>
 
 <style>
-/* For smooth autoscroll */
-html {
-  scroll-behavior: smooth;
-}
+
 </style>
 

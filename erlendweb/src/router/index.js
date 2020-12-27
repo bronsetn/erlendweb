@@ -12,48 +12,49 @@ import Bachelor from '../projects/bachelor.vue'
 
 Vue.use(VueRouter)
 
-const routes = [{
-        path: '/',
-        name: 'Home',
-        component: Home
-    },
-    // {
-    //     path: '/about',
-    //     name: 'About',
-    //     component: About
-    // },
-    // {
-    //     path: '/projects',
-    //     name: 'Projects',
-    //     component: Projects
-    // },
-    // {
-    //     path: '/experiments',
-    //     name: 'Experiments',
-    //     component: Experiments
-    // },
-
-    // PROJECT sites
-    {
-        path: '/priosEvents',
-        name: 'PriosEvents',
-        component: PriosEvents
-    },
-    {
-        path: '/bachelor',
-        name: 'Bachelor',
-        component: Bachelor
-    },
-]
 
 const router = new VueRouter({
-    routes
+    mode: "history",
+
+    routes: [{
+            path: '/',
+            name: 'Home',
+            component: Home
+        },
+        // {
+        //     path: '/about',
+        //     name: 'About',
+        //     component: About
+        // },
+        // {
+        //     path: '/projects',
+        //     name: 'Projects',
+        //     component: Projects
+        // },
+        // {
+        //     path: '/experiments',
+        //     name: 'Experiments',
+        //     component: Experiments
+        // },
+
+        // PROJECT sites
+        {
+            path: '/priosEvents',
+            name: 'PriosEvents',
+            component: PriosEvents
+        },
+        {
+            path: '/bachelor',
+            name: 'Bachelor',
+            component: Bachelor
+        },
+    ]
 })
 
 // Rediredct to set pages
 let availableSites = ["/", "/bachelor", "/priosEvents"];
 
-//If the site is not in availableSites redirect to "/"
+// If the site is not in availableSites redirect to 
 router.beforeEach((to, from, next) => {
     if (availableSites.includes(to.path)) {
         next()

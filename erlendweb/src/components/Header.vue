@@ -1,7 +1,8 @@
 <template>
   <body>
-    <v-app-bar hide-on-scroll flat color="primary">
+    <v-app-bar  hide-on-scroll fixed flat fluid color="primary">
       <v-app-bar-nav-icon
+        class="pl-4"
         v-if="$vuetify.breakpoint.mobile"
         @click.stop="drawer = !drawer"
       ></v-app-bar-nav-icon>
@@ -26,37 +27,47 @@
           ></v-img>
         </v-btn>
       </v-toolbar-title>
+
       <v-spacer></v-spacer>
-      <div v-if="!$vuetify.breakpoint.mobile">
+      <!-- When user is at one of the specific project pages change the links -->
+      <div
+        v-if="
+          !$vuetify.breakpoint.mobile &&
+          ['PriosEvents', 'Bachelor'].includes($route.name)
+        "
+      >
+        <v-btn text link color="secondary" @click="$router.push('/')"
+          >&#8544; Prosjekter</v-btn
+        >
+        <v-btn text link color="secondary" @click="$router.push('/')"
+          >&#8545; Om meg</v-btn
+        >
+        <v-btn text link color="secondary" @click="$router.push('/')"
+          >&#8546; Annet</v-btn
+        >
+      </div>
+
+      <!-- Else just link to the main page -->
+      <div v-else-if="!$vuetify.breakpoint.mobile">
         <v-btn text link href="#projects" color="secondary"
           >&#8544; Prosjekter</v-btn
         >
         <v-btn text link href="#about" color="secondary">&#8545; Om meg</v-btn>
-        <v-btn text link href="#experiments" color="secondary"
-          >&#8546; Annet</v-btn
-        >
-
-        <!-- <v-btn text link @click="$router.push('/')" color="secondary"
-          >&#8544; Projects</v-btn
-        >
-
-        <v-btn text link @click="$router.push('/about')" color="secondary"
-          >&#8545; About</v-btn
-        >
-        <v-btn text link @click="$router.push('/experiments')" color="secondary"
-          >&#8546; Experiments</v-btn
-        > -->
+        <v-btn text link href="#other" color="secondary">&#8546; Annet</v-btn>
       </div>
+
       <v-spacer v-if="!$vuetify.breakpoint.mobile"></v-spacer>
       <v-btn
         color="yellow"
         icon
+        fab
         v-if="$vuetify.theme.dark"
         @click="$vuetify.theme.dark = !$vuetify.theme.dark"
         ><v-icon>mdi-white-balance-sunny</v-icon></v-btn
       >
       <v-btn
         icon
+        fab
         color="black"
         v-else
         @click="$vuetify.theme.dark = !$vuetify.theme.dark"
@@ -66,16 +77,34 @@
 
     <v-navigation-drawer v-model="drawer" absolute temporary color="primary">
       <v-list-item></v-list-item>
-
-      <!-- <v-btn text link href="#projects" color="secondary"
-        >&#8544; Prosjekter</v-btn
+      <v-list
+        transparent
+        class="pl-4"
+        v-if="['PriosEvents', 'Bachelor'].includes($route.name)"
       >
-      <v-btn text link href="#about" color="secondary">&#8545; Om meg</v-btn>
-      <v-btn text link href="#experiments" color="secondary"
-        >&#8546; Annet</v-btn
-      > -->
+        <v-list-item @click="$router.push('/')">
+          <v-list-item-icon> &#8544; </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title>Prosjekter</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
 
-      <v-list transparent dense>
+        <v-list-item @click="$router.push('/')">
+          <v-list-item-icon> &#8545; </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title>Om meg</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item @click="$router.push('/')">
+          <v-list-item-icon> &#8545; </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title>Eksperiment</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+
+      <v-list transparent v-else class="pl-4">
         <v-list-item href="#projects">
           <v-list-item-icon> &#8544; </v-list-item-icon>
           <v-list-item-content>
@@ -90,7 +119,7 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item href="#experiments">
+        <v-list-item href="#other">
           <v-list-item-icon> &#8545; </v-list-item-icon>
           <v-list-item-content>
             <v-list-item-title>Eksperiment</v-list-item-title>
@@ -108,6 +137,12 @@ export default {
       drawer: null,
     };
   },
+
+  // watch: {
+  //   $route() {
+  //     console.log(this.$route);
+  //   },
+  // },
 };
 </script>
 
