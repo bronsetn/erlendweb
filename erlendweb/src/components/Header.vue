@@ -3,7 +3,7 @@
     <v-app-bar  hide-on-scroll fixed flat fluid color="primary">
       <v-app-bar-nav-icon
         class="pl-4"
-        color="accent"
+        color="tertiary"
         v-if="$vuetify.breakpoint.mobile"
         @click.stop="drawer = !drawer"
       ></v-app-bar-nav-icon>
@@ -37,29 +37,29 @@
           ['PriosEvents', 'Bachelor'].includes($route.name)
         "
       >
-        <v-btn text link color="accent" @click="$router.push('/')"
+        <v-btn text link color="tertiary" @click="$router.push('/')"
           >&#8544; Prosjekter</v-btn
         >
-        <v-btn text link color="accent" @click="$router.push('/')"
+        <v-btn text link color="tertiary" @click="$router.push('/')"
           >&#8545; Om meg</v-btn
         >
-        <v-btn text link color="accent" @click="$router.push('/')"
+        <v-btn text link color="tertiary" @click="$router.push('/')"
           >&#8546; Annet</v-btn
         >
       </div>
 
       <!-- Else just link to the main page -->
       <div v-else-if="!$vuetify.breakpoint.mobile">
-        <v-btn text link href="#projects" color="accent"
+        <v-btn text link href="#projects" color="tertiary"
           >&#8544; Prosjekter</v-btn
         >
-        <v-btn text link href="#about" color="accent">&#8545; Om meg</v-btn>
-        <v-btn text link href="#other" color="accent">&#8546; Annet</v-btn>
+        <v-btn text link href="#about" color="tertiary">&#8545; Om meg</v-btn>
+        <v-btn text link href="#other" color="tertiary">&#8546; Annet</v-btn>
       </div>
 
       <v-spacer v-if="!$vuetify.breakpoint.mobile"></v-spacer>
       <v-btn
-        color="tertiary"
+        color="accent"
         icon
         fab
         v-if="$vuetify.theme.dark"
@@ -69,7 +69,7 @@
       <v-btn
         icon
         fab
-        color="accent"
+        color="tertiary"
         v-else
         @click="$vuetify.theme.dark = !$vuetify.theme.dark"
         ><v-icon>mdi-moon-waxing-crescent</v-icon></v-btn

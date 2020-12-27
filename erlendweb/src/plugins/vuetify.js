@@ -21,16 +21,20 @@ const vuetify = new Vuetify({
             light: {
                 primary: colors.purple.lighten5, // #F3E5F5
                 secondary: colors.purple.lighten2, // #7B1FA2
-                accent: colors.purple.darken4, // #4A148C
-                tertiary: colors.yellow.lighten1, //#FFD54F
-                anchor: colors.amber.accent3, //#FF6F00
+                tertiary:  colors.purple.darken4,
+              // For buttons and such
+              accent: colors.amber.darken3,
+              // For a tags and links
+              anchor: colors.amber.darken2,
             },
             dark: {
                 primary: colors.purple.darken4, // #4A148C
                 secondary: colors.purple.darken2, // #7B1FA2
-                accent: colors.purple.lighten5, // #F3E5F5
-                tertiary: colors.amber.accent3, //#FF6F00
-                anchor: colors.yellow.lighten1, //#FFD54F
+                tertiary: colors.purple.lighten5,
+                // For buttons and such
+                accent: colors.amber.accent2,
+                // For a tags and links
+                anchor: colors.amber.lighten2,
             },
         },
     },

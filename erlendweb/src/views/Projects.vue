@@ -28,7 +28,7 @@
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn
-                color="anchor"
+                color="accent"
                 text
                 @click="$router.push('/priosEvents')"
                 >Vis mer</v-btn
@@ -59,7 +59,7 @@
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn
-                color="anchor"
+                color="accent"
                 @click="$router.push('/bachelor')"
                 text
                 >Vis mer</v-btn
@@ -90,7 +90,7 @@
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn
-                color="anchor"
+                color="accent"
                 text
                 target="_blank"
                 href="https://erlendworkblog.wordpress.com/prosjekter/"

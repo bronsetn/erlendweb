@@ -11,12 +11,12 @@
         bottom
         right
         fab
-        color="primary"
+        color="tertiary"
         href="#top"
         v-scroll="onScroll"
         v-show="fab"
       >
-        <v-icon color="accent"> mdi-arrow-up </v-icon>
+        <v-icon color="primary"> mdi-arrow-up </v-icon>
       </v-btn>
     </v-fade-transition>
   </body>
