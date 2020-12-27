@@ -1,116 +1,54 @@
 <template>
-  <body>
-    <v-container>
-      <span class="font-weight-light">&#8544;</span>
-      <br />
+  <body id="top">
+    <Projects id="projects" class="pt-16"></Projects>
+    <About id="about"></About>
+    <Experiments id="other"></Experiments>
 
-      <v-row class="d-flex justify-center">
-        <!-- PRIOS EVENTS -->
-        <v-col xs="12" sm="12" md="6" lg="4" xl="4">
-          <v-card elevation="5" color="primary">
-            <v-container>
-              <v-img
-                height="300"
-                contain
-                src="../assets/images/prios-events/3d-wireframe.png"
-                lazy="../assets/images/prios-events/3d-wireframe.png"
-                alt="Wireframe fra Prios Events"
-              ></v-img>
-
-              <v-card-title
-                ><h2 class="font-weight-regular">Prios Events</h2>
-              </v-card-title>
-              <p class="light text-left pl-4">Prios kompetanse AS</p>
-            </v-container>
-
-            <v-card-actions>
-              <v-spacer></v-spacer>
-              <v-btn
-                color="orange lighten-2"
-                text
-                @click="$router.push('/priosEvents')"
-                >Vis mer</v-btn
-              >
-            </v-card-actions>
-          </v-card>
-        </v-col>
-
-        <!-- BACHELOR OPPGAVE -->
-        <v-col xs="12" sm="12" md="6" lg="4" xl="4">
-          <v-card elevation="5" color="primary">
-            <v-container>
-              <v-img
-                height="300"
-                contain
-                src="../assets/images/bachelor/3d-many.png"
-                lazy="../assets/images/bachelor/3d-many.png"
-                alt="Bilde av applikasjon fra bachelor oppgaven"
-              ></v-img>
-
-              <v-card-title
-                ><h2 class="font-weight-regular">Bacheloroppgave</h2>
-              </v-card-title>
-              <p class="light text-left pl-4">
-                Augmented reality til å vise utvandringshistorie
-              </p>
-            </v-container>
-            <v-card-actions>
-              <v-spacer></v-spacer>
-              <v-btn
-                color="orange lighten-2"
-                @click="$router.push('/bachelor')"
-                text
-                >Vis mer</v-btn
-              >
-            </v-card-actions>
-          </v-card>
-        </v-col>
-
-        <!-- Digitale medier og design -->
-        <v-col xs="12" sm="12" md="6" lg="4" xl="4">
-          <v-card elevation="5" color="primary">
-            <v-container>
-              <v-img
-                height="300"
-                src="../assets/images/media.png"
-                lazy="../assets/images/prios-events/3d-wireframe.png"
-                alt="Wireframe fra Prios Events"
-              ></v-img>
-
-              <v-card-title
-                ><h2 class="font-weight-regular">Wordpress nettsted</h2>
-              </v-card-title>
-              <p class="light text-left pl-4">
-                Nettsted/Portefølje fra digitale medier og design
-              </p>
-            </v-container>
-
-            <v-card-actions>
-              <v-spacer></v-spacer>
-              <v-btn
-                color="orange lighten-2"
-                text
-                target="_blank"
-                href="https://erlendworkblog.wordpress.com/prosjekter/"
-                >Vis mer</v-btn
-              >
-            </v-card-actions>
-          </v-card>
-        </v-col>
-      </v-row>
-    </v-container>
+    <!-- Floating button for scrolling to the top of the page -->
+    <v-fade-transition>
+      <v-btn
+        fixed
+        bottom
+        right
+        fab
+        color="tertiary"
+        href="#top"
+        v-scroll="onScroll"
+        v-show="fab"
+      >
+        <v-icon color="primary"> mdi-arrow-up </v-icon>
+      </v-btn>
+    </v-fade-transition>
   </body>
 </template>
 
 <script>
+import Projects from "./Projects.vue";
+import About from "./About.vue";
+import Experiments from "./Experiments.vue";
+
 export default {
   data() {
-    return {};
+    return {
+      fab: false,
+    };
+  },
+  components: {
+    Projects,
+    About,
+    Experiments,
+  },
+
+  methods: {
+    onScroll() {
+      if (typeof window === "undefined") return;
+      const top = window.pageYOffset;
+      this.fab = top > 20;
+    },
   },
 };
 </script>
 
-<style>
-</style>
+
 
 

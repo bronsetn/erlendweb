@@ -1,6 +1,6 @@
 <template>
   <body>
-    <v-container class="colored-container" fluid>
+    <v-container class="colored-container pt-16" fluid>
       <v-row class="d-flex justify-center">
         <v-col xs="10" sm="10" md="8" lg="8" xl="8">
           <v-container>
@@ -37,7 +37,7 @@
     <v-container fluid>
       <v-row class="d-flex justify-center">
         <v-col xs="12" sm="12" md="8" lg="8" xl="8">
-          <v-container style="margin-top: 60px">
+          <v-container style="margin-top: 120px">
             <p class="normal">
               Gjennom prosjektet lagde vi en applikasjon i Unity som kunne vise
               3D modeller forhåndsplasert via lengde og breddegrader.
@@ -46,6 +46,7 @@
             </p>
             <v-img
               contain
+              max-height="500px"
               src="../assets/images/bachelor/3d-app.png"
               lazy="../assets/images/bachelor/3d-app.png"
             ></v-img>

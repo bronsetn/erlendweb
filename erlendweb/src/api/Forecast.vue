@@ -1,6 +1,6 @@
 <template>
   <v-col v-if="weather" xs="12" sm="12" md="6" lg="6" xl="6">
-    <v-card color="primary">
+    <v-card color="primary"  elevation="5">
       <v-container>
         <v-card-title>Dagens værmelding</v-card-title>
         <v-list-item two-line>
@@ -75,7 +75,7 @@
       </v-container>
 
       <v-card-actions>
-        <v-btn color="orange lighten-2" text @click="show = !show">
+        <v-btn color="accent" text @click="show = !show">
           Om dette
         </v-btn>
         <v-spacer></v-spacer>

@@ -1,11 +1,12 @@
 <template>
   <body>
     <v-container>
-      <span class="font-weight-light">&#8546;</span>
-      <br />
+      <v-container class="justify-center">
+        <p class="font-weight-light ma-1 pa-0">&#8546;</p>
+        <h2>Annet</h2>
+      </v-container>
 
       <v-row class="d-flex justify-center">
-        <v-col xs="12" sm="12" md="12" lg="12" xl="12">Kjekke API-er</v-col>
         <Nasa></Nasa>
         <Forecast></Forecast>
       </v-row>

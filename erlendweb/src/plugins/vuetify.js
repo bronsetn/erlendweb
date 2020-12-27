@@ -1,10 +1,13 @@
 import Vue from 'vue';
 import Vuetify from 'vuetify/lib';
 
+import colors from 'vuetify/lib/util/colors'
+
 
 Vue.use(Vuetify);
 
 // Color Palette:
+// https: //vuetifyjs.com/en/styles/colors/#material-colors
 const vuetify = new Vuetify({
     theme: {
         options: {
@@ -16,29 +19,24 @@ const vuetify = new Vuetify({
                 family: 'Roboto'
             },
             light: {
-                // whiteish
-                primary: '#fdfefc',
-                // Prune red
-                secondary: '#e71d36',
-                // Orange
-                anchor: '#F28701',
-                // whiteish
-                accent: '#fdfefc'
+                primary: colors.purple.lighten5, // #F3E5F5
+                secondary: colors.purple.lighten2, // #7B1FA2
+                tertiary:  colors.purple.darken4,
+              // For buttons and such
+              accent: colors.amber.darken3,
+              // For a tags and links
+              anchor: colors.amber.darken2,
             },
             dark: {
-                // Eerie black aka dark blue
-                primary: '#011627',
-                // Prune red
-                secondary: '#fdfefc',
-                // Orange
-                anchor: '#f29e35',
-                // Maximum blue green  
-                accent: '#2ec4b6',
-
-
+                primary: colors.purple.darken4, // #4A148C
+                secondary: colors.purple.darken2, // #7B1FA2
+                tertiary: colors.purple.lighten5,
+                // For buttons and such
+                accent: colors.amber.accent2,
+                // For a tags and links
+                anchor: colors.amber.lighten2,
             },
         },
     },
 })
-
 export default vuetify
