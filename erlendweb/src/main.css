@@ -1,26 +1,26 @@
         /* For smooth autoscroll */
+        
         html {
             scroll-behavior: smooth;
         }
-
         /* ---------- */
         /* TYPOGRAPHY */
         /* ---------- */
-
+        
         @import url('https://fonts.googleapis.com/css2?family=Domine&family=Roboto:wght@300&display=swap');
         /* * {
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             text-align: center;
         } */
-
+        
         #app {
             font-family: 'Roboto', sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             text-align: center;
         }
-
+        
         h1,
         h2,
         h3,
@@ -29,29 +29,28 @@
         h6 {
             font-family: 'Domine', serif;
         }
-
+        
         p.normal {
             font-weight: 400;
         }
-
+        
         p.light {
             font-weight: 300;
             font-size: 0.9rem;
         }
-
+        
         p.thick {
             font-weight: bold;
         }
-
         /* Others */
-
+        
         .center {
             display: flex;
             justify-content: center;
             align-items: center;
         }
-
+        
         .colored-container {
-            background-color: #011627;
+            background-color: #4A148C;
             color: white;
         }

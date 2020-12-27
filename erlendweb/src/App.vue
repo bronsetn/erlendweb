@@ -1,8 +1,11 @@
 <template>
   <div id="app">
-    <v-app>
+    <v-app id="top">
       <Header></Header>
-      <main>
+      <main
+        :style="{ background: $vuetify.theme.themes[theme].background }"
+        class="pt-16 pb-16"
+      >
         <router-view />
       </main>
       <Footer></Footer>
@@ -22,9 +25,13 @@ export default {
     Header,
     Footer,
   },
+
+  computed: {
+    theme() {
+      return this.$vuetify.theme.dark ? "dark" : "light";
+    },
+  },
 };
 </script>
 
-<style>
-</style>
 

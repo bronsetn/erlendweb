@@ -1,6 +1,6 @@
 <template>
-  <body id="top">
-    <Projects id="projects" class="pt-16"></Projects>
+  <body>
+    <Projects id="projects"></Projects>
     <About id="about"></About>
     <Experiments id="other"></Experiments>
 
