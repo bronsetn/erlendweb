@@ -36,7 +36,7 @@
     <v-container fluid>
       <v-row class="d-flex justify-center">
         <v-col xs="12" sm="12" md="8" lg="8" xl="8">
-          <v-container style="margin-top: 120px">
+          <v-container style="margin-top: 70px">
             <p class="normal">
               Prios Events er plattform for å kunne holde forskjellige virtuelle
               begivenheter. Hittil er det lagt oppp for at bedrifter kan holde
@@ -45,6 +45,7 @@
               brukere.
             </p>
             <v-img
+              class="mt-10"
               contain
               max-height="500px"
               src="../assets/images/prios-events/events-pc.png"

@@ -22,15 +22,14 @@
               <v-card-title
                 ><h2 class="font-weight-regular">Prios Events</h2>
               </v-card-title>
-              <p class="light text-left pl-4">Prosjekt for Prios kompetanse AS</p>
+              <p class="light text-left pl-4">
+                Prosjekt for Prios kompetanse AS
+              </p>
             </v-container>
 
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn
-                color="accent"
-                text
-                @click="$router.push('/priosEvents')"
+              <v-btn color="accent" text @click="$router.push('/priosEvents')"
                 >Vis mer</v-btn
               >
             </v-card-actions>
@@ -58,10 +57,7 @@
             </v-container>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn
-                color="accent"
-                @click="$router.push('/bachelor')"
-                text
+              <v-btn color="accent" @click="$router.push('/bachelor')" text
                 >Vis mer</v-btn
               >
             </v-card-actions>
@@ -73,12 +69,12 @@
           <v-card elevation="5" color="primary">
             <v-container>
               <v-img
+                contain
                 height="300"
                 src="../assets/images/media.png"
                 lazy="../assets/images/prios-events/3d-wireframe.png"
                 alt="Wireframe fra Prios Events"
               ></v-img>
-
               <v-card-title
                 ><h2 class="font-weight-regular">Wordpress nettsted</h2>
               </v-card-title>

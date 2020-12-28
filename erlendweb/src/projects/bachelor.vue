@@ -37,7 +37,7 @@
     <v-container fluid>
       <v-row class="d-flex justify-center">
         <v-col xs="12" sm="12" md="8" lg="8" xl="8">
-          <v-container style="margin-top: 120px">
+          <v-container style="margin-top: 50px">
             <p class="normal">
               Gjennom prosjektet lagde vi en applikasjon i Unity som kunne vise
               3D modeller forhåndsplasert via lengde og breddegrader.
