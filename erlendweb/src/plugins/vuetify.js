@@ -32,8 +32,8 @@ const vuetify = new Vuetify({
 
             },
             dark: {
-                primary: colors.blueGrey.darken4, // #263238
-                secondary: colors.blueGrey.darken2,
+                primary: colors.blueGrey.darken2, // #455A64
+                secondary: colors.blueGrey,
                 tertiary: colors.blue.lighten5, // #ECEFF1
                 // For buttons and such
                 accent: colors.amber.accent2,
