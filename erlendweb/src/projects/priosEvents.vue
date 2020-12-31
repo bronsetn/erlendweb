@@ -38,11 +38,11 @@
         <v-col xs="12" sm="12" md="8" lg="8" xl="8">
           <v-container style="margin-top: 70px">
             <p class="normal">
-              Prios Events er plattform for å kunne holde forskjellige virtuelle
+              Prios Events er en plattform for å holde forskjellige virtuelle
               begivenheter. Hittil er det lagt oppp for at bedrifter kan holde
-              virtuelle jobbmesser på siden. I jobbmessen kan Bedrifter vise
-              fram innhold og media fra sin bedrift og ha samtaler med besøkende
-              brukere.
+              virtuelle jobbmesser eller lignende begivenheter med forskjellige
+              stands. I jobbmessen kan Bedrifter vise fram innhold og media fra
+              sin bedrift, samt ha samtaler med de som besøker messen.
             </p>
             <v-img
               class="mt-10"
