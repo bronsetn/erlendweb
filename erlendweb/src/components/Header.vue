@@ -49,7 +49,7 @@
           >&#8546; Kontakt</v-btn
         >
         <v-btn text link color="tertiary" @click="$router.push('/')"
-          >&#8546; Annet</v-btn
+          >&#8547; Annet</v-btn
         >
       </div>
 
@@ -82,7 +82,7 @@
       >
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawer" absolute temporary color="primary">
+    <v-navigation-drawer v-model="drawer" fixed temporary color="primary">
       <v-list-item></v-list-item>
       <v-list
         transparent
@@ -104,12 +104,21 @@
         </v-list-item>
 
         <v-list-item @click="$router.push('/')">
-          <v-list-item-icon> &#8545; </v-list-item-icon>
+          <v-list-item-icon> &#8546; </v-list-item-icon>
           <v-list-item-content>
-            <v-list-item-title>Eksperiment</v-list-item-title>
+            <v-list-item-title>Kontakt</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item @click="$router.push('/')">
+          <v-list-item-icon> &#8547; </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title>Annet</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
+
+      <!-- Hvis man ikke er i prosjekt -->
 
       <v-list transparent v-else class="pl-4">
         <v-list-item href="#projects">
@@ -127,9 +136,16 @@
         </v-list-item>
 
         <v-list-item href="#other">
-          <v-list-item-icon> &#8545; </v-list-item-icon>
+          <v-list-item-icon> &#8546; </v-list-item-icon>
           <v-list-item-content>
-            <v-list-item-title>Eksperiment</v-list-item-title>
+            <v-list-item-title>Kontakt</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item href="#other">
+          <v-list-item-icon> &#8547; </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title>Annet</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
