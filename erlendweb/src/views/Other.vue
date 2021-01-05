@@ -2,7 +2,7 @@
   <body>
     <v-container>
       <v-container class="justify-center">
-        <p class="font-weight-light ma-1 pa-0">&#8546;</p>
+        <p class="font-weight-light ma-1 pa-0">&#8547;</p>
         <h2>Annet</h2>
       </v-container>
 

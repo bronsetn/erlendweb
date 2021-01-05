@@ -46,6 +46,9 @@
           >&#8545; Om meg</v-btn
         >
         <v-btn text link color="tertiary" @click="$router.push('/')"
+          >&#8546; Kontakt</v-btn
+        >
+        <v-btn text link color="tertiary" @click="$router.push('/')"
           >&#8546; Annet</v-btn
         >
       </div>
@@ -56,7 +59,8 @@
           >&#8544; Prosjekter</v-btn
         >
         <v-btn text link href="#about" color="tertiary">&#8545; Om meg</v-btn>
-        <v-btn text link href="#other" color="tertiary">&#8546; Annet</v-btn>
+        <v-btn text link href="#contact" color="tertiary">&#8546; Kontakt</v-btn>
+        <v-btn text link href="#other" color="tertiary">&#8547; Annet</v-btn>
       </div>
 
       <v-spacer v-if="!$vuetify.breakpoint.mobile"></v-spacer>
