@@ -29,6 +29,7 @@
                   href="https://no.linkedin.com/in/erlend-brønseth-b5a99612b/en-us"
                   target="_blank"
                   color="tertiary"
+                  large
                   icon
                 >
                   <v-icon>mdi-linkedin</v-icon>
@@ -39,9 +40,21 @@
                   href="https://www.facebook.com/profile.php?id=100003582864001"
                   target="_blank"
                   color="tertiary"
+                  large
                   icon
                 >
                   <v-icon>mdi-facebook</v-icon>
+                </v-btn>
+
+                <v-btn
+                  title="Gitlab"
+                  href="https://gitlab.com/bronsetn"
+                  target="_blank"
+                  color="tertiary"
+                  large
+                  icon
+                >
+                  <v-icon>mdi-gitlab</v-icon>
                 </v-btn>
               </v-col>
 
@@ -51,7 +64,7 @@
                   digitale medier og design.
                 </p>
                 <p class="light pl-4 pr-4">
-                  Jeg er 23 år gammel og fra Inderøy kommune i Nord-Trøndelag.
+                  Jeg er en 23 åring fra Inderøy kommune i Nord-Trøndelag.
                   Tanken bak dette nettstedet er å kunne bruke det som
                   portefølje i tillegg til en plass å ekspirementere innenfor
                   utvikling og design.
@@ -67,6 +80,7 @@
                   er webutvikling, programmering, 3D-modellering, spillutvikling
                   og grafisk-design.
                 </p>
+                <b>Wordpress</b>
                 <p class="light pl-4 pr-4">
                   Inntil nylig har jeg brukt wordpress for publisering av
                   prosjekter fra studiet, de finnes fortsatt her:

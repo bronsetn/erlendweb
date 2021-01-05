@@ -2,9 +2,9 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Home from '../views/Home.vue'
+// import Other from '../views/Other.vue'
 // import About from '../views/About.vue'
 // import Projects from '../views/Projects.vue'
-// import Experiments from '../views/Experiments.vue'
 
 // Project sites
 import PriosEvents from '../projects/priosEvents.vue'
@@ -21,6 +21,12 @@ const router = new VueRouter({
             name: 'Home',
             component: Home
         },
+
+        // {
+        //     path: '/other',
+        //     name: 'Other',
+        //     component: Other
+        // },
 
         // PROJECT sites
         {
