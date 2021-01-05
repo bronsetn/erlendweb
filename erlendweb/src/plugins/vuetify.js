@@ -32,7 +32,7 @@ const vuetify = new Vuetify({
 
             },
             dark: {
-                primary: colors.blueGrey.darken4, // #263238
+                primary: colors.grey.darken4, // #263238
                 secondary: colors.blueGrey.lighten1,
                 tertiary: colors.blue.lighten5, // #ECEFF1
                 // For buttons and such
