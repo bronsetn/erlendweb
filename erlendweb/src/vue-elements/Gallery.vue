@@ -2,7 +2,7 @@
   <v-col xs="12" sm="12" md="6" lg="6" xl="6">
     <v-card color="primary" elevation="5">
       <v-card-title
-        >Galleri <v-spacer></v-spacer
+        >Galleri layout <v-spacer></v-spacer
         ><v-icon color="secondary">mdi-vuetify</v-icon></v-card-title
       >
       <v-parallax :src="images[1].link" height="400">
