@@ -11,39 +11,7 @@
         <v-col>
           <v-card elevation="5" color="primary">
             <v-container>
-              <!-- Netlify contact form -->
-              <!-- <form
-                name="contact"
-                method="POST"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-              >
-                <input type="hidden" name="form-name" value="contact" />
-
-                <v-text-field
-                  v-model="name"
-                  :rules="nameRules"
-                  label="Name"
-                  counter
-                ></v-text-field>
-                <v-text-field
-                  v-model="email"
-                  :rules="emailRules"
-                  label="E-mail"
-                  counter
-                ></v-text-field>
-                <v-textarea
-                  v-model="message"
-                  :rules="messageRules"
-                  counter
-                  maxlength="1000"
-                ></v-textarea>
-
-                <v-btn type="submit" :disabled="invalid"
-                  >Send<v-icon>mdi-telegram</v-icon></v-btn
-                >
-              </form> -->
-
+          
               <form
                 @submit.prevent="handleSubmit"
                 name="contact"
@@ -129,7 +97,7 @@ export default {
       fetch("/", {
         method: "post",
         headers: {
-          "Content-Type": "application/x-www-urlencoded",
+          "Content-Type": "application/x-www-form-urlencoded",
         },
         body: this.encode({
           "form-name": "contact",
