@@ -13,7 +13,7 @@ const vuetify = new Vuetify({
             customProperties: true
         },
 
-        dark: true,
+        dark: false,
 
         themes: {
             font: {
@@ -21,7 +21,7 @@ const vuetify = new Vuetify({
             },
             light: {
                 primary: colors.grey.lighten4, // #F5F5F5
-                secondary: colors.blueGrey.lighten2,
+                secondary: colors.blueGrey.darken1,
                 tertiary: colors.blueGrey.darken4,
                 // For buttons and such
                 accent: colors.amber.darken4, // #263238
@@ -32,8 +32,8 @@ const vuetify = new Vuetify({
 
             },
             dark: {
-                primary: colors.blueGrey.darken2, // #455A64
-                secondary: colors.blueGrey,
+                primary: colors.blueGrey.darken4, // #263238
+                secondary: colors.blueGrey.lighten1,
                 tertiary: colors.blue.lighten5, // #ECEFF1
                 // For buttons and such
                 accent: colors.amber.accent2,

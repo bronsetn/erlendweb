@@ -64,16 +64,16 @@
           </v-card>
         </v-col>
 
-        <!-- Digitale medier og design -->
+        <!-- Wordpress -->
         <v-col xs="12" sm="12" md="6" lg="4" xl="4">
           <v-card elevation="5" color="primary">
             <v-container>
-              <v-img
+               <v-img
                 contain
                 height="300"
-                src="../assets/images/media.png"
-                lazy="../assets/images/prios-events/3d-wireframe.png"
-                alt="Wireframe fra Prios Events"
+                src="../assets/images/wordpress/wordpress.png"
+                lazy="../assets/images/wordpress/wordpress.png"
+                alt="Screenshot of wordpress site"
               ></v-img>
               <v-card-title
                 ><h2 class="font-weight-regular">Wordpress nettsted</h2>

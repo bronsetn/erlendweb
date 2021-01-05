@@ -48,8 +48,15 @@
               class="mt-10"
               contain
               max-height="500px"
-              src="../assets/images/prios-events/events-pc.png"
-              lazy="../assets/images/prios-events-pc.png"
+              src="../assets/images/prios-events/events-reception.png"
+              lazy="../assets/images/prios-events/events-reception.png"
+            ></v-img>
+            <v-img
+              class="mt-10"
+              contain
+              max-height="500px"
+              src="../assets/images/prios-events/events-profile.png"
+              lazy="../assets/images/prios-events-profile.png"
             ></v-img>
           </v-container>
         </v-col>
