@@ -13,93 +13,97 @@
           <v-card elevation="5" color="primary">
             <v-row class="d-flex justify-center">
               <v-col cols="12">
-                <v-avatar size="200" class="ma-4">
-                  <v-img
-                    alt="Bilde av Halden kommune"
-                    src="../assets/images/halden.jpg"
-                    lazy="../assets/images/halden.jpg"
-                    height="200"
-                  >
-                  </v-img
-                ></v-avatar>
-                <h2 class="pb-2">Erlend Brønseth</h2>
+                <v-container class="pl-8 pr-8">
+                  <v-avatar size="200">
+                    <v-img
+                      alt="Bilde av Halden kommune"
+                      src="../assets/images/halden.jpg"
+                      lazy="../assets/images/halden.jpg"
+                      height="200"
+                    >
+                    </v-img
+                  ></v-avatar>
+                  <h1 class="pa-4">Erlend Brønseth</h1>
 
-                <v-btn
-                  title="Linkedin"
-                  href="https://no.linkedin.com/in/erlend-brønseth-b5a99612b/en-us"
-                  target="_blank"
-                  color="tertiary"
-                  large
-                  icon
-                >
-                  <v-icon>mdi-linkedin</v-icon>
-                </v-btn>
+                  <p class="normal">
+                    Jeg er en front-end juniorutvikler med en bachelor innenfor
+                    digitale medier og design.
+                  </p>
+                  <p class="light">
+                    Jeg er en 23 åring fra Inderøy med ambisjoner for å bli
+                    mindre tafatt innenfor front-end utvikling. Tanken bak dette
+                    nettstedet er å kunne bruke det som portefølje i tillegg til
+                    en plass å ekspirementere innenfor utvikling og design.
+                  </p>
 
-                <v-btn
-                  title="Facebook"
-                  href="https://www.facebook.com/profile.php?id=100003582864001"
-                  target="_blank"
-                  color="tertiary"
-                  large
-                  icon
-                >
-                  <v-icon>mdi-facebook</v-icon>
-                </v-btn>
+                  <b class="pa-2">Digitale medier og design</b>
+                  <p class="light">
+                    Digitale medier og design gir opplæring i design,
+                    programmering og produksjon av digitale applikasjoner.
+                    Bacheloren går gjennom mange av stegene fra å ha en ide til
+                    å utvikle et ferdig produkt. Noen av fagene jeg har vært
+                    innom er webutvikling, programmering, 3D-modellering,
+                    spillutvikling og grafisk-design.
+                  </p>
+                  <b>Wordpress</b>
+                  <p class="light">
+                    Inntil nylig har jeg brukt wordpress for publisering av
+                    prosjekter fra studiet, de finnes fortsatt her:
+                    <a dark href="https://erlendworkblog.wordpress.com"
+                      >https://erlendworkblog.wordpress.com</a
+                    >
+                  </p>
+                </v-container>
+                <v-divider></v-divider>
 
-                <v-btn
-                  title="Gitlab"
-                  href="https://gitlab.com/bronsetn"
-                  target="_blank"
-                  color="tertiary"
-                  large
-                  icon
-                >
-                  <v-icon>mdi-gitlab</v-icon>
-                </v-btn>
+                <v-container>
+                  <h2>Her er jeg tilgjengelig</h2>
+
+                  <v-row class="justify-center pt-4">
+                    <v-btn
+                      title="Linkedin"
+                      href="https://no.linkedin.com/in/erlend-brønseth-b5a99612b/en-us"
+                      target="_blank"
+                      color="tertiary"
+                      x-large
+                      icon
+                    >
+                      <v-icon>mdi-linkedin</v-icon>
+                    </v-btn>
+                    <v-btn
+                      title="Facebook"
+                      href="https://www.facebook.com/profile.php?id=100003582864001"
+                      target="_blank"
+                      color="tertiary"
+                      x-large
+                      icon
+                    >
+                      <v-icon>mdi-facebook</v-icon>
+                    </v-btn>
+                    <v-btn
+                      title="Gitlab"
+                      href="https://gitlab.com/bronsetn"
+                      target="_blank"
+                      color="tertiary"
+                      x-large
+                      icon
+                    >
+                      <v-icon>mdi-gitlab</v-icon>
+                    </v-btn>
+                  </v-row>
+
+                  <v-row class="justify-center pt-4">
+                    <v-col xs="12" sm="12" md="3" lg="3" xl="3">
+                      <v-icon color="tertiary"> mdi-email</v-icon>
+                      <p>bronsetherlend@gmail.com</p>
+                    </v-col>
+                    <v-col xs="12" sm="12" md="3" lg="3" xl="3">
+                      <v-icon color="tertiary"> mdi-phone</v-icon>
+                      <p>(+47) 45 80 44 52</p>
+                    </v-col>
+                  </v-row>
+                </v-container>
               </v-col>
-
-              <v-col cols="12">
-                <p class="normal pl-4 pr-4">
-                  Jeg er en front end juniorutvikler med en bachelor innenfor
-                  digitale medier og design.
-                </p>
-                <p class="light pl-4 pr-4">
-                  Jeg er en 23 åring fra Inderøy kommune i Nord-Trøndelag.
-                  Tanken bak dette nettstedet er å kunne bruke det som
-                  portefølje i tillegg til en plass å ekspirementere innenfor
-                  utvikling og design.
-                </p>
-
-                <h3 class="pa-4">Digitale medier og design</h3>
-
-                <p class="light text-justify pl-4 pr-4">
-                  Digitale medier og design gir opplæring i design,
-                  programmering og produksjon av digitale applikasjoner.
-                  Bacheloren går gjennom mange av stegene fra å ha en ide til å
-                  utvikle et ferdig produkt. Noen av fagene jeg har vært innom
-                  er webutvikling, programmering, 3D-modellering, spillutvikling
-                  og grafisk-design.
-                </p>
-                <b>Wordpress</b>
-                <p class="light pl-4 pr-4">
-                  Inntil nylig har jeg brukt wordpress for publisering av
-                  prosjekter fra studiet, de finnes fortsatt her:
-                  <a dark href="https://erlendworkblog.wordpress.com"
-                    >https://erlendworkblog.wordpress.com</a
-                  >
-                </p>
-              </v-col>
-
-              <v-col xs="12" sm="6" md="6" lg="6" xl="6">
-                <v-icon color="tertiary"> mdi-email-outline </v-icon>
-                <p class="light">bronsetherlend@gmail.com</p>
-              </v-col>
-
-              <v-col xs="12" sm="6" md="6" lg="6" xl="6">
-                <v-icon color="tertiary"> mdi-phone-outline</v-icon>
-                <p class="light">(+47) 45 80 44 52</p>
-              </v-col>
-              <v-col cols="12"></v-col>
             </v-row>
           </v-card>
         </v-col>

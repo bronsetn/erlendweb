@@ -7,15 +7,15 @@
       <v-col cols="6" class="pt-4">
         <v-row>
           <v-col>
-            <v-icon color="tertiary"> mdi-account </v-icon>
+            <v-icon color="tertiary"> mdi-account</v-icon>
             <p class="light">Erlend Brønseth</p>
           </v-col>
           <v-col>
-            <v-icon color="tertiary"> mdi-email-outline </v-icon>
+            <v-icon color="tertiary"> mdi-email</v-icon>
             <p class="light">bronsetherlend@gmail.com</p>
           </v-col>
           <v-col>
-            <v-icon color="tertiary"> mdi-phone-outline</v-icon>
+            <v-icon color="tertiary"> mdi-phone</v-icon>
             <p class="light">(+47) 45 80 44 52</p>
           </v-col>
         </v-row>

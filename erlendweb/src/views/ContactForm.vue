@@ -10,7 +10,7 @@
       <v-row class="d-flex justify-center">
         <v-col>
           <v-card elevation="5" color="primary">
-            <v-container>
+            <v-card-text>
               <form
                 @submit.prevent="handleSubmit"
                 name="contact"
@@ -23,26 +23,44 @@
                     >Don't fill this out if youre human <input name="bot-field"
                   /></label>
                 </p>
+
                 <v-text-field
+                  class="ma-2"
+                  v-model="form.subject"
+                  type="text"
+                  name="subject"
+                  label="Tema"
+                ></v-text-field>
+                <v-text-field
+                  class="ma-2"
                   v-model="form.name"
                   type="text"
                   name="name"
-                  label="Name"
+                  label="Navn"
                 ></v-text-field>
                 <v-text-field
+                  class="ma-2"
                   v-model="form.email"
                   type="email"
                   name="email"
-                  label="Email"
+                  label="Epost"
                 ></v-text-field>
                 <v-textarea
+                  class="ma-2"
+                  auto-grow
                   v-model="form.message"
                   name="message"
-                  label="Message"
+                  label="Meldingstekst"
                 ></v-textarea>
-                <v-btn type="submit">Send <v-icon>mdi-telegram</v-icon></v-btn>
+                <p>
+                  Beskjeder herfra sendes direkte til bronsetherlend@gmail.com
+                </p>
+
+                <v-btn outlined color="tertiary" type="submit"
+                  >Send <v-icon>mdi-telegram</v-icon></v-btn
+                >
               </form>
-            </v-container>
+            </v-card-text>
           </v-card>
         </v-col>
       </v-row>
@@ -52,17 +70,10 @@
 
 <script>
 export default {
-  // data: () => ({
-  //   form: {
-  //     name: "",
-  //     email: "",
-  //     message: "",
-  //   },
-  // }),
-
   data() {
     return {
       form: {
+        subject: "",
         name: "",
         email: "",
         message: "",
@@ -71,6 +82,9 @@ export default {
   },
 
   methods: {
+    // Tutorial showing how to set up the form:
+    // https://www.youtube.com/watch?v=omoYqKfvdfQ
+
     encode(data) {
       return Object.keys(data)
         .map(
