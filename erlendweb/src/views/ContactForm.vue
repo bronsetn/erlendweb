@@ -11,7 +11,6 @@
         <v-col>
           <v-card elevation="5" color="primary">
             <v-container>
-          
               <form
                 @submit.prevent="handleSubmit"
                 name="contact"
@@ -53,36 +52,23 @@
 
 <script>
 export default {
-  data: () => ({
-    form: {
-      name: "",
-      email: "",
-      message: "",
-    },
-  }),
+  // data: () => ({
+  //   form: {
+  //     name: "",
+  //     email: "",
+  //     message: "",
+  //   },
+  // }),
 
-  // data() {
-  //   return {
-  // name: "",
-  // nameRules: [
-  //   (v) => !!v || "Name is required",
-  //   (v) => (v && v.length <= 30) || "Name must be less than 50 characters",
-  // ],
-  // email: "",
-  // emailRules: [
-  //   (v) => !!v || "E-mail is required",
-  //   (v) => (v && v.length <= 30) || "Email must be less than 50 characters",
-  //   (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
-  // ],
-  // message: "",
-  // messageRules: [
-  //   (v) => !!v || "Name is required",
-  //   (v) =>
-  //     (v && v.length <= 1000) ||
-  //     "Message must be less than 1000 characters",
-  // ],
-  //   };
-  // },
+  data() {
+    return {
+      form: {
+        name: "",
+        email: "",
+        message: "",
+      },
+    };
+  },
 
   methods: {
     encode(data) {
