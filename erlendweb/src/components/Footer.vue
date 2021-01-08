@@ -2,7 +2,7 @@
   <v-footer padless color="primary">
     <v-row class="center" no-gutters>
       <v-col cols="12">
-        <!-- <v-divider ></v-divider> -->
+        <v-divider ></v-divider>
       </v-col>
       <v-col cols="6" class="pt-4">
         <v-row>

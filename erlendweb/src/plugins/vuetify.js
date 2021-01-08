@@ -20,9 +20,9 @@ const vuetify = new Vuetify({
                 family: 'Roboto'
             },
             light: {
-                primary: colors.shades.white, // #F5F5F5
+                primary: colors.grey.lighten4,
                 secondary: colors.grey.lighten4,
-                tertiary: colors.blueGrey.darken4,
+                tertiary: '#010B14',
                 // For buttons and such
                 accent: colors.amber.darken4, // #263238
                 // For a tags and links
