@@ -226,7 +226,7 @@ export default {
           this.weather = Response.data;
 
           this.wicon =
-            "http://openweathermap.org/img/wn/" +
+            "https://openweathermap.org/img/wn/" +
             Response.data.list[0].weather[0].icon +
             "@2x.png";
 

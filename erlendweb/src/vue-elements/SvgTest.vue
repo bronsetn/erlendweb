@@ -2,7 +2,7 @@
   <v-col xs="12" sm="12" md="6" lg="6" xl="6">
     <v-card color="secondary" elevation="5">
       <v-card-title
-        >SVG test <v-spacer></v-spacer
+        >SVG animasjonstest <v-spacer></v-spacer
         ><v-icon color="tertiary">mdi-svg</v-icon></v-card-title
       >
       <v-card-text>

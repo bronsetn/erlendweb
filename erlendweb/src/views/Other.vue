@@ -10,8 +10,8 @@
         <Nasa></Nasa>
         <Forecast></Forecast>
 
-        <Gallery></Gallery>
         <SvgTest></SvgTest>
+        <Gallery></Gallery>
       </v-row>
     </v-container>
   </body>
