@@ -11,7 +11,9 @@
         <v-col>
           <v-card elevation="5" color="secondary">
             <v-card-text>
-              <form
+              <v-form
+                ref="form"
+                v-model="validate"
                 @submit.prevent="handleSubmit"
                 name="contact"
                 method="POST"
@@ -26,17 +28,11 @@
 
                 <v-text-field
                   class="ma-2"
-                  v-model="form.subject"
-                  type="text"
-                  name="subject"
-                  label="Tema"
-                ></v-text-field>
-                <v-text-field
-                  class="ma-2"
                   v-model="form.name"
                   type="text"
                   name="name"
                   label="Navn"
+                  :rules="rules.required"
                 ></v-text-field>
                 <v-text-field
                   class="ma-2"
@@ -44,22 +40,46 @@
                   type="email"
                   name="email"
                   label="Epost"
+                  :rules="rules.required && rules.email"
+                ></v-text-field>
+                <v-text-field
+                  class="ma-2"
+                  v-model="form.subject"
+                  type="text"
+                  name="subject"
+                  label="Tema"
                 ></v-text-field>
                 <v-textarea
+                  counter="500"
                   class="ma-2"
                   auto-grow
                   v-model="form.message"
                   name="message"
                   label="Meldingstekst"
+                  :rules="rules.required"
                 ></v-textarea>
+
                 <p>
                   Beskjeder herfra sendes direkte til bronsetherlend@gmail.com
                 </p>
 
-                <v-btn outlined color="tertiary" type="submit"
-                  >Send <v-icon>mdi-telegram</v-icon></v-btn
+                <v-btn
+                  title="Submit"
+                  outlined
+                  color="tertiary"
+                  type="submit"
+                  :disabled="!validate"
+                  ><v-icon>mdi-telegram</v-icon></v-btn
                 >
-              </form>
+                <v-alert
+                  text
+                  class="mt-4 ma-0 pa-1"
+                  transition="scale-transition"
+                  :type="alert.type"
+                  :value="alert.value"
+                  >{{ alert.text }}
+                </v-alert>
+              </v-form>
             </v-card-text>
           </v-card>
         </v-col>
@@ -73,18 +93,29 @@ export default {
   data() {
     return {
       form: {
-        subject: "",
-        name: "",
-        email: "",
-        message: "",
+        name: null,
+        email: null,
+        subject: null,
+        message: null,
+      },
+
+      validate: false,
+      alert: {
+        value: false,
+        type: "success",
+        text: "",
+      },
+
+      rules: {
+        required: [(v) => !!v || "Feltet må fylles ut"],
+        email: [(v) => /.+@.+\..+/.test(v) || "Eposten må være riktig format"],
       },
     };
   },
 
   methods: {
-    // Tutorial showing how to set up the form:
+    // Tutorial showing how to set up the netlify form:
     // https://www.youtube.com/watch?v=omoYqKfvdfQ
-
     encode(data) {
       return Object.keys(data)
         .map(
@@ -104,8 +135,19 @@ export default {
           ...this.form,
         }),
       })
-        .then(() => console.log("Stuff sent"))
-        .catch((e) => console.error(e));
+        .then(() => {
+          this.alert.value = true;
+          this.alert.type = "info";
+          this.alert.text = "Melding ble sendt";
+
+          console.log("Message sent");
+        })
+        .catch((error) => {
+          console.log(error.message);
+          this.alert.value = true;
+          this.alert.type = "warning";
+          this.alert.text = error.message;
+        });
     },
   },
 };
