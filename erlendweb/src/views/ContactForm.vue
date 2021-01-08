@@ -4,12 +4,12 @@
     <v-container>
       <v-container class="justify-center">
         <p class="font-weight-light ma-1 pa-0">&#8546;</p>
-        <h2>Ta kontakt</h2>
+        <h1>Ta kontakt</h1>
       </v-container>
 
       <v-row class="d-flex justify-center">
         <v-col>
-          <v-card elevation="5" color="primary">
+          <v-card elevation="5" color="secondary">
             <v-card-text>
               <form
                 @submit.prevent="handleSubmit"

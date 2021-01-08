@@ -3,13 +3,13 @@
     <v-container>
       <v-container class="justify-center">
         <p class="font-weight-light ma-1 pa-0">&#8544;</p>
-        <h2>Prosjekter</h2>
+        <h1>Prosjekter</h1>
       </v-container>
 
       <v-row class="d-flex justify-center">
         <!-- PRIOS EVENTS -->
         <v-col xs="12" sm="12" md="6" lg="4" xl="4">
-          <v-card elevation="5" color="primary">
+          <v-card elevation="5" color="secondary">
             <v-container>
               <v-img
                 height="300"
@@ -38,7 +38,7 @@
 
         <!-- BACHELOR OPPGAVE -->
         <v-col xs="12" sm="12" md="6" lg="4" xl="4">
-          <v-card elevation="5" color="primary">
+          <v-card elevation="5" color="secondary">
             <v-container>
               <v-img
                 height="300"
@@ -66,7 +66,7 @@
 
         <!-- Wordpress -->
         <v-col xs="12" sm="12" md="6" lg="4" xl="4">
-          <v-card elevation="5" color="primary">
+          <v-card elevation="5" color="secondary">
             <v-container>
                <v-img
                 contain

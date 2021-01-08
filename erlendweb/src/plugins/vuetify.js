@@ -13,34 +13,35 @@ const vuetify = new Vuetify({
             customProperties: true
         },
 
-        dark: false,
+        dark: true,
 
         themes: {
             font: {
                 family: 'Roboto'
             },
             light: {
-                primary: colors.grey.lighten4, // #F5F5F5
-                secondary: colors.blueGrey.darken1,
+                primary: colors.shades.white, // #F5F5F5
+                secondary: colors.grey.lighten4,
                 tertiary: colors.blueGrey.darken4,
                 // For buttons and such
                 accent: colors.amber.darken4, // #263238
                 // For a tags and links
-                anchor: colors.amber.darken4,
-                // Computed propery in ap main checks this value
-                background: colors.blueGrey.lighten4,
+                anchor: '#CC7700',
+                // Computed propery in app main checks this value
+                background: '#ECF5FE',
 
             },
+            // https://coolors.co/010b14-fdfffc-2ec4b6-e71d36-ff9f1c
             dark: {
-                primary: colors.grey.darken4, // #263238
-                secondary: colors.blueGrey.lighten1,
-                tertiary: colors.blue.lighten5, // #ECEFF1
+                primary: colors.shades.black, // #263238
+                secondary: '#010B14',
+                tertiary: '#FDFFFC',
                 // For buttons and such
                 accent: colors.amber.accent2,
                 // For a tags and links
-                anchor: colors.amber.lighten2,
+                anchor: '#FF9F1C',
                 // Computed propery in ap main checks this value
-                background: colors.blueGrey.accent4,
+                background: colors.shades.black,
 
             },
         },

@@ -1,18 +1,24 @@
 <template>
   <v-col xs="12" sm="12" md="6" lg="6" xl="6">
-    <v-card color="primary" elevation="5">
+    <v-card color="secondary" elevation="5">
       <v-card-title
         >Galleri layout <v-spacer></v-spacer
-        ><v-icon color="secondary">mdi-vuetify</v-icon></v-card-title
+        ><v-icon color="tertiary">mdi-vuetify</v-icon></v-card-title
       >
-      <v-parallax :src="images[1].link" height="400">
-        <v-row justify="center" align="center">
-          <v-btn x-large fab outlined @click="show = !show" color="tertiary"
-            ><v-icon class="display-2" color="primary">
-              {{ show ? "mdi-chevron-up" : "mdi-chevron-down" }}
-            </v-icon>
-          </v-btn>
-        </v-row>
+      <v-parallax
+        :src="images[1].link"
+        height="400"
+        gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+      >
+        <v-overlay value="true" absolute opacity="0.8">
+          <v-row justify="center" align="center">
+            <v-btn x-large icon @click="show = !show"
+              ><v-icon class="display-2" color="white">
+                {{ show ? "mdi-chevron-up" : "mdi-plus" }}
+              </v-icon>
+            </v-btn>
+          </v-row>
+        </v-overlay>
       </v-parallax>
     </v-card>
 
@@ -37,7 +43,7 @@
             >
               <template v-slot:activator="{ on: { click } }">
                 <!-- Image box -->
-                <v-card elevation="5" color="primary" @click="click">
+                <v-card elevation="5" color="secondary" @click="click">
                   <v-img
                     @click="dialog[index] = true"
                     class="pointer"
@@ -66,7 +72,7 @@
               </template>
 
               <!-- Image pop-up -->
-              <v-card>
+              <v-card color="primary">
                 <v-img
                   max-height="80vh"
                   max-width="80vw"

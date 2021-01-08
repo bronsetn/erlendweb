@@ -3,7 +3,7 @@
     <v-container>
       <v-container class="justify-center">
         <p class="font-weight-light ma-1 pa-0">&#8547;</p>
-        <h2>Annet</h2>
+        <h1>Annet</h1>
       </v-container>
 
       <v-row class="d-flex justify-center">

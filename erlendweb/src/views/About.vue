@@ -5,15 +5,15 @@
     <v-container>
       <v-container class="justify-center">
         <p class="font-weight-light ma-1 pa-0">&#8545;</p>
-        <h2>Om meg</h2>
+        <h1>Om meg</h1>
       </v-container>
 
       <v-row class="d-flex justify-center">
         <v-col>
-          <v-card elevation="5" color="primary">
+          <v-card elevation="5" color="secondary">
             <v-row class="d-flex justify-center">
-              <v-col cols="12">
-                <v-container class="pl-8 pr-8">
+              <v-col xs="12" sm="12" md="8" lg="8" xl="6">
+                <v-container>
                   <v-avatar size="200">
                     <v-img
                       alt="Bilde av Halden kommune"
@@ -30,7 +30,7 @@
                     digitale medier og design.
                   </p>
                   <p class="light">
-                    Jeg er en 23 åring fra Inderøy med ambisjoner for å bli
+                    Jeg er en 23 åring fra Inderøy med ambisjon for å bli
                     mindre tafatt innenfor front-end utvikling. Tanken bak dette
                     nettstedet er å kunne bruke det som portefølje i tillegg til
                     en plass å ekspirementere innenfor utvikling og design.
@@ -56,7 +56,7 @@
                 </v-container>
                 <v-divider></v-divider>
 
-                <v-container>
+                <v-container class="mt-8">
                   <h2>Her er jeg tilgjengelig</h2>
 
                   <v-row class="justify-center pt-4">

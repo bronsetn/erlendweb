@@ -1,10 +1,10 @@
 <template>
   <v-col v-if="spaceData" xs="12" sm="12" md="6" lg="6" xl="6">
-    <v-card color="primary" elevation="5">
+    <v-card color="secondary" elevation="5">
       <v-container>
         <v-card-title
           >Dagens bilde fra Nasa <v-spacer></v-spacer
-          ><v-icon color="secondary">mdi-api</v-icon></v-card-title
+          ><v-icon color="tertiary">mdi-api</v-icon></v-card-title
         >
         <v-parallax
           v-if="spaceData.media_type == 'image'"
