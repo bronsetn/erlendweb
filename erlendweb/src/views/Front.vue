@@ -2,7 +2,7 @@
   <div>
     <v-parallax
       class="frontImage"
-      height="600"
+      height="800"
       src="../assets/images/front.jpg"
     >
       <v-row no-gutters align="center">
