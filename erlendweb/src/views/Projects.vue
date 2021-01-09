@@ -68,7 +68,7 @@
         <v-col xs="12" sm="12" md="6" lg="4" xl="4">
           <v-card elevation="5" color="secondary">
             <v-container>
-               <v-img
+              <v-img
                 contain
                 height="300"
                 src="../assets/images/wordpress/wordpress.png"

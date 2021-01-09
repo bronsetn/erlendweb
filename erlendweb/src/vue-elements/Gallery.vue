@@ -65,7 +65,7 @@
                   <v-card-title
                     ><h3 class="font-weight-regular">{{ item.title }}</h3>
                   </v-card-title>
-                  <v-card-text>
+                  <v-card-text class="pb-1">
                     <p class="light text-left">{{ item.description }}</p>
                   </v-card-text>
                 </v-card>
@@ -113,22 +113,22 @@ export default {
         {
           link: "https://picsum.photos/700/700",
           title: "Bildetittel",
-          description: "Bilde beskrivelse for bildet",
+          description: "Bildebeskrivelse",
         },
         {
           link: "https://picsum.photos/500/500",
           title: "Bildetittel",
-          description: "Bilde beskrivelse for bildet",
+          description: "Bildebeskrivelse",
         },
         {
           link: "https://picsum.photos/800/800",
           title: "Bildetittel",
-          description: "Bilde beskrivelse for bildet",
+          description: "Bildebeskrivelse",
         },
         {
           link: "https://picsum.photos/600/600",
           title: "Bildetittel",
-          description: "Bilde beskrivelse for bildet",
+          description: "Bildebeskrivelse",
         },
       ],
     };

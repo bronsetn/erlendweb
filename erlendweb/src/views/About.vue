@@ -44,7 +44,7 @@
                   er webutvikling, programmering, 3D-modellering, spillutvikling
                   og grafisk-design.
                 </p>
-                <b>Wordpress</b>
+                <b class="pa-2">Wordpress</b>
                 <p class="light">
                   Inntil nylig har jeg brukt wordpress for publisering av
                   prosjekter fra studiet, de finnes fortsatt her:
@@ -53,11 +53,9 @@
                   >
                 </p>
 
-                <v-divider></v-divider>
+                <h2 class="pt-8">Her er jeg tilgjengelig:</h2>
 
-                <h2 class="pt-8">Her er jeg tilgjengelig</h2>
-
-                <v-row class="justify-center pt-4">
+                <v-row class="justify-center pt-4" no-gutters>
                   <v-btn
                     title="Linkedin"
                     href="https://no.linkedin.com/in/erlend-brønseth-b5a99612b/en-us"
