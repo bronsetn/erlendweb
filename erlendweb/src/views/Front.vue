@@ -1,10 +1,7 @@
 <template>
   <div>
-    <v-parallax
-      height="850"
-      src="../assets/images/front.jpg"
-    >
-      <v-row class="imageItems" no-gutters style="margin-bottom: 25%">
+    <v-parallax height="850" src="../assets/images/front.jpg">
+      <v-row class="imageItems" no-gutters style="margin-bottom: 20%">
         <v-col xs="12" sm="12" md="3" lg="2" xl="2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -35,18 +32,14 @@
               Junior front-end utvikler
             </h4>
             <v-row class="text-md-left" v-if="$vuetify.breakpoint.mdAndUp">
-              <v-icon class="ma-2">mdi-language-html5</v-icon>
-              <v-icon class="ma-2">mdi-language-javascript</v-icon>
-              <v-icon class="ma-2">mdi-language-css3</v-icon>
-              <v-icon class="ma-2">mdi-vuejs</v-icon>
-              <v-icon class="ma-2">mdi-vuetify</v-icon>
+              <div v-for="(item, index) in techs" :item="item" :key="index">
+                <v-icon class="ma-2" style="color: #fff;">{{ item }}</v-icon>
+              </div>
             </v-row>
             <v-row justify="center" v-else>
-              <v-icon class="ma-2">mdi-language-html5</v-icon>
-              <v-icon class="ma-2">mdi-language-javascript</v-icon>
-              <v-icon class="ma-2">mdi-language-css3</v-icon>
-              <v-icon class="ma-2">mdi-vuejs</v-icon>
-              <v-icon class="ma-2">mdi-vuetify</v-icon>
+              <div v-for="(item, index) in techs" :item="item" :key="index">
+                <v-icon class="ma-2" style="color: #fff;">{{ item }}</v-icon>
+              </div>
             </v-row>
           </v-container>
         </v-col>
@@ -59,7 +52,15 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      techs: [
+        "mdi-mdi-language-html5",
+        "mdi-language-javascript",
+        "mdi-language-css3",
+        "mdi-vuejs",
+        "mdi-vuetify",
+      ],
+    };
   },
 };
 </script>

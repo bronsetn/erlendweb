@@ -53,7 +53,7 @@
                   >
                 </p>
 
-                <h2 class="pt-8">Her er jeg tilgjengelig:</h2>
+                <h2 class="pt-8">Her er jeg tilgjengelig</h2>
 
                 <v-row class="justify-center pt-4" no-gutters>
                   <v-btn
@@ -88,14 +88,22 @@
                   </v-btn>
                 </v-row>
 
-                <v-row class="justify-center pt-4">
-                  <v-col xs="12" sm="12" md="6" lg="5" xl="4">
-                    <v-icon color="tertiary"> mdi-email</v-icon>
-                    <p>bronsetherlend@gmail.com</p>
+                <v-row class="pt-4" justify="center">
+                  <v-col xs="12" sm="12" md="6" lg="4" xl="4">
+                    <v-list-item>
+                      <v-list-item-content>
+                        <v-icon color="tertiary"> mdi-email</v-icon>
+                        <p>bronsetherlend@gmail.com</p>
+                      </v-list-item-content>
+                    </v-list-item>
                   </v-col>
-                  <v-col xs="12" sm="12" md="6" lg="5" xl="4">
-                    <v-icon color="tertiary"> mdi-phone</v-icon>
-                    <p>(+47) 45 80 44 52</p>
+                  <v-col xs="12" sm="12" md="6" lg="4" xl="4">
+                    <v-list-item>
+                      <v-list-item-content>
+                        <v-icon color="tertiary"> mdi-phone</v-icon>
+                        <p>(+47) 45 80 44 52</p>
+                      </v-list-item-content>
+                    </v-list-item>
                   </v-col>
                 </v-row>
               </v-col>
