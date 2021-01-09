@@ -3,7 +3,7 @@
   <body>
     <v-container>
       <v-container class="justify-center">
-        <p class="font-weight-light ma-1 pa-0">&#8546;</p>
+        <div class="serif">III</div>
         <h1>Ta kontakt</h1>
       </v-container>
 

@@ -113,8 +113,8 @@ export default {
       drawer: null,
 
       navigation: [
-        { link: "#projects", icon: "I", title: "Prosjekter" },
-        { link: "#about", icon: "II", title: "Om meg" },
+        { link: "#about", icon: "I", title: "Om meg" },
+        { link: "#projects", icon: "II", title: "Prosjekter" },
         { link: "#contact", icon: "III", title: "Kontakt" },
         { link: "#other", icon: "IV", title: "Annet" },
       ],

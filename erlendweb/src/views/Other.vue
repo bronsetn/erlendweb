@@ -2,7 +2,7 @@
   <body>
     <v-container>
       <v-container class="justify-center">
-        <p class="font-weight-light ma-1 pa-0">&#8547;</p>
+        <div class="serif">IV</div>
         <h1>Annet</h1>
       </v-container>
 

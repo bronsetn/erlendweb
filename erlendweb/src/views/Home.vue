@@ -1,23 +1,26 @@
 <template>
   <body>
-    <Projects id="projects"></Projects>
+    <Front></Front>
     <About id="about"></About>
-    <Form id="contact"></Form>
+    <Projects id="projects"></Projects>
+    <ContactForm id="contact"></ContactForm>
     <Other id="other"></Other>
   </body>
 </template>
 
 <script>
-import Projects from "./Projects.vue";
+import Front from "./Front.vue";
 import About from "./About.vue";
-import Form from "./ContactForm.vue";
+import Projects from "./Projects.vue";
+import ContactForm from "./ContactForm.vue";
 import Other from "./Other.vue";
 
 export default {
   components: {
-    Projects,
+    Front,
     About,
-    Form,
+    Projects,
+    ContactForm,
     Other,
   },
 };

@@ -2,7 +2,7 @@
   <body>
     <v-container>
       <v-container class="justify-center">
-        <p class="font-weight-light ma-1 pa-0">&#8544;</p>
+        <div class="serif">II</div>
         <h1>Prosjekter</h1>
       </v-container>
 

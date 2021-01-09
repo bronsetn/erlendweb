@@ -4,7 +4,7 @@
   <body>
     <v-container>
       <v-container class="justify-center">
-        <p class="font-weight-light ma-1 pa-0">&#8545;</p>
+        <div class="serif">I</div>
         <h1>Om meg</h1>
       </v-container>
 
@@ -25,7 +25,7 @@
                 <h1 class="pa-4">Erlend Brønseth</h1>
 
                 <p class="normal">
-                  Jeg er en front-end juniorutvikler med en bachelor innenfor
+                  Jeg er en junior front-end utvikler med en bachelor innenfor
                   digitale medier og design.
                 </p>
                 <p class="light">
