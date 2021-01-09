@@ -22,17 +22,17 @@
                   >
                   </v-img
                 ></v-avatar>
-                <h1 class="pa-4">Erlend Brønseth</h1>
+                <h2 class="pa-4">Erlend Brønseth</h2>
 
                 <p class="normal">
                   Jeg er en junior front-end utvikler med en bachelor innenfor
                   digitale medier og design.
                 </p>
                 <p class="light">
-                  Jeg er en 23 åring fra Inderøy med ambisjon for å bli mindre
-                  tafatt innenfor front-end utvikling. Tanken bak dette
-                  nettstedet er å kunne bruke det som portefølje i tillegg til
-                  en plass å ekspirementere innenfor utvikling og design.
+                  Jeg er en 23 åring fra Inderøy med ambisjoner for å bli dreven
+                  innenfor front-end utvikling. Tanken bak dette nettstedet er å
+                  kunne bruke det som portefølje i tillegg til en plass å
+                  ekspirementere innenfor utvikling og design.
                 </p>
 
                 <b class="pa-2">Digitale medier og design</b>

@@ -1,12 +1,11 @@
 <template>
   <div>
     <v-parallax
-      class="frontImage"
-      height="600"
+      height="850"
       src="../assets/images/front.jpg"
     >
-      <v-row no-gutters align="center">
-        <v-col xs="12" sm="12" md="2" lg="2" xl="1">
+      <v-row class="imageItems" no-gutters style="margin-bottom: 25%">
+        <v-col xs="12" sm="12" md="3" lg="2" xl="2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 400 400"
@@ -27,16 +26,31 @@
             Sorry, your browser does not support inline SVG.
           </svg>
         </v-col>
-        <v-col xs="12" sm="12" md="4" lg="4" xl="3">
-          <v-container class="mt-10">
-            <h1>Erlend Brønseth</h1>
-            <h4>Junior front-end utvikler</h4>
-            <v-row justify="center">
-              <v-icon large>mdi-vuejs</v-icon>
-              <v-icon large>mdi-vuetify</v-icon>
+        <v-col xs="12" sm="12" md="3" lg="3" xl="3" justify="center">
+          <v-container>
+            <h1 style="font-size: 4rem" class="text-md-left">
+              Erlend Brønseth
+            </h1>
+            <h4 style="font-size: 1rem" class="text-md-left">
+              Junior front-end utvikler
+            </h4>
+            <v-row class="text-md-left" v-if="$vuetify.breakpoint.mdAndUp">
+              <v-icon class="ma-2">mdi-language-html5</v-icon>
+              <v-icon class="ma-2">mdi-language-javascript</v-icon>
+              <v-icon class="ma-2">mdi-language-css3</v-icon>
+              <v-icon class="ma-2">mdi-vuejs</v-icon>
+              <v-icon class="ma-2">mdi-vuetify</v-icon>
+            </v-row>
+            <v-row justify="center" v-else>
+              <v-icon class="ma-2">mdi-language-html5</v-icon>
+              <v-icon class="ma-2">mdi-language-javascript</v-icon>
+              <v-icon class="ma-2">mdi-language-css3</v-icon>
+              <v-icon class="ma-2">mdi-vuejs</v-icon>
+              <v-icon class="ma-2">mdi-vuetify</v-icon>
             </v-row>
           </v-container>
         </v-col>
+        <v-col> </v-col>
       </v-row>
     </v-parallax>
   </div>
@@ -74,8 +88,9 @@ export default {
   }
 }
 
-.frontImage {
-  width: 100%;
-  height: 500px;
+.imageItems {
+  align-items: center;
+  display: inherit;
+  flex: 0 auto;
 }
 </style>
