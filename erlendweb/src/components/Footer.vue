@@ -1,5 +1,5 @@
 <template>
-  <v-footer padless color="primary">
+  <v-footer padless color="secondary">
     <v-row class="center" no-gutters>
       <v-col cols="12">
         <v-divider></v-divider>

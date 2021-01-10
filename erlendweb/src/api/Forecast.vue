@@ -23,7 +23,7 @@
         <v-row align="center">
           <v-col></v-col>
           <v-col cols="5"
-            ><p class="display-3">{{ temperature }} &deg;C</p>
+            ><p class="display-1">{{ temperature }} &deg;C</p>
           </v-col>
           <v-col cols="5">
             <v-img height="100" contain :src="wicon"></v-img>

@@ -1,10 +1,20 @@
 <template>
+
   <body>
     <Front></Front>
     <About id="about"></About>
-    <Projects id="projects"></Projects>
-    <ContactForm id="contact"></ContactForm>
-    <Other id="other"></Other>
+    <Projects
+      id="projects"
+      class="pt-8"
+    ></Projects>
+    <ContactForm
+      id="contact"
+      class="pt-8"
+    ></ContactForm>
+    <Other
+      id="other"
+      class="pt-8"
+    ></Other>
   </body>
 </template>
 

@@ -54,7 +54,7 @@ export default {
   data() {
     return {
       techs: [
-        "mdi-mdi-language-html5",
+        "mdi-language-html5",
         "mdi-language-javascript",
         "mdi-language-css3",
         "mdi-vuejs",
