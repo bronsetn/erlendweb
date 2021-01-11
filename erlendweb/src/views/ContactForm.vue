@@ -72,7 +72,7 @@
                   outlined
                   color="tertiary"
                   type="submit"
-                  :disabled="!validate"
+                  :disabled="!validate  || submitted"
                 >
                   <v-icon>mdi-telegram</v-icon>
                 </v-btn>
@@ -105,6 +105,8 @@ export default {
       },
 
       validate: false,
+      submitted: false,
+
       alert: {
         value: false,
         type: "success",
@@ -146,6 +148,7 @@ export default {
           this.alert.text = "Melding ble sendt";
 
           console.log("Message sent");
+          this.submitted = true;
         })
         .catch((error) => {
           console.log(error.message);
