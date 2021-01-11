@@ -24,7 +24,7 @@
           >
             <v-container>
               <v-img
-                height="250"
+                height="280"
                 contain
                 :src="item.src"
                 lazy="../assets/images/halden.jpg"

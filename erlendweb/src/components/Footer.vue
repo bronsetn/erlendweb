@@ -1,7 +1,6 @@
 <template>
   <div>
     <v-footer
-      absolute
       padless
       color="primary"
       elevation="5"
