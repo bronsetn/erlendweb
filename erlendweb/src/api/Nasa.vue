@@ -1,11 +1,20 @@
 <template>
-  <v-col v-if="spaceData" xs="12" sm="12" md="6" lg="6" xl="6">
-    <v-card color="secondary" elevation="5">
+  <v-col
+    v-if="spaceData"
+    cols="12"
+    sm="12"
+    md="6"
+    lg="6"
+    xl="6"
+  >
+    <v-card
+      color="secondary"
+      elevation="5"
+    >
       <v-container>
-        <v-card-title
-          >Dagens bilde fra Nasa <v-spacer></v-spacer
-          ><v-icon color="tertiary">mdi-api</v-icon></v-card-title
-        >
+        <v-card-title>Dagens bilde fra Nasa <v-spacer></v-spacer>
+          <v-icon color="tertiary">mdi-api</v-icon>
+        </v-card-title>
         <v-parallax
           v-if="spaceData.media_type == 'image'"
           :lazy="spaceData.url"
@@ -17,7 +26,10 @@
           class="white--text align-end"
         >
         </v-parallax>
-        <div v-else class="video-container">
+        <div
+          v-else
+          class="video-container"
+        >
           <iframe :src="spaceData.url"> </iframe>
         </div>
         <v-card-title>{{ spaceData.title }}</v-card-title>
@@ -25,7 +37,11 @@
         <v-card-text>
           <br />
           <p class="light">
-            <v-clamp autoresize :max-lines="2" class="text-justify">
+            <v-clamp
+              autoresize
+              :max-lines="2"
+              class="text-justify"
+            >
               {{ spaceData.explanation }}
               <template #after="{ toggle, expanded, clamped }">
                 <a
@@ -33,21 +49,30 @@
                   v-if="expanded || clamped"
                   class="ml-1 badge badge-light"
                   @click.prevent="toggle"
-                  >{{ expanded ? "Mindre" : "Mer" }}</a
-                >
+                >{{ expanded ? "Mindre" : "Mer" }}</a>
               </template>
             </v-clamp>
           </p>
           Bilde:
-          <a :href="spaceData.url" target="_blank">{{ spaceData.url }}</a>
+          <a
+            :href="spaceData.url"
+            target="_blank"
+          >{{ spaceData.url }}</a>
         </v-card-text>
       </v-container>
 
       <v-card-actions>
-        <v-btn color="accent" text @click="show = !show"> Om dette </v-btn>
+        <v-btn
+          color="accent"
+          text
+          @click="show = !show"
+        > Om dette </v-btn>
         <v-spacer></v-spacer>
 
-        <v-btn icon @click="show = !show">
+        <v-btn
+          icon
+          @click="show = !show"
+        >
           <v-icon>{{ show ? "mdi-chevron-up" : "mdi-chevron-down" }}</v-icon>
         </v-btn>
       </v-card-actions>
@@ -66,8 +91,7 @@
               <a
                 href="https://apod.nasa.gov/apod/archivepix.html"
                 target="_blank"
-                >https://apod.nasa.gov/apod/archivepix.html</a
-              >
+              >https://apod.nasa.gov/apod/archivepix.html</a>
             </p>
             <p>
               For informasjon om å ta i bruk APIen har jeg hovedsaklig brukt
@@ -75,8 +99,7 @@
               <a
                 href="https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/"
                 target="_blank"
-                >https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/</a
-              >
+              >https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/</a>
             </p>
           </v-card-text>
         </div>

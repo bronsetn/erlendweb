@@ -1,19 +1,41 @@
 <template>
-  <v-col xs="12" sm="12" md="6" lg="6" xl="6">
-    <v-card color="secondary" elevation="5">
-      <v-card-title
-        >Galleri layout <v-spacer></v-spacer
-        ><v-icon color="tertiary">mdi-vuetify</v-icon></v-card-title
-      >
+  <v-col
+    cols="12"
+    sm="12"
+    md="6"
+    lg="6"
+    xl="6"
+  >
+    <v-card
+      color="secondary"
+      elevation="5"
+    >
+      <v-card-title>Galleri layout <v-spacer></v-spacer>
+        <v-icon color="tertiary">mdi-vuetify</v-icon>
+      </v-card-title>
       <v-parallax
         :src="images[1].link"
         height="400"
         gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
       >
-        <v-overlay value="true" absolute opacity="0.8">
-          <v-row justify="center" align="center">
-            <v-btn x-large icon @click="show = !show"
-              ><v-icon class="display-2" color="white">
+        <v-overlay
+          value="true"
+          absolute
+          opacity="0.8"
+        >
+          <v-row
+            justify="center"
+            align="center"
+          >
+            <v-btn
+              x-large
+              icon
+              @click="show = !show"
+            >
+              <v-icon
+                class="display-2"
+                color="white"
+              >
                 {{ show ? "mdi-chevron-up" : "mdi-plus" }}
               </v-icon>
             </v-btn>
@@ -27,7 +49,7 @@
       <div v-show="show">
         <v-row class="d-flex justify-center">
           <v-col
-            xs="12"
+            cols="12"
             sm="12"
             md="6"
             lg="6"
@@ -43,14 +65,18 @@
             >
               <template v-slot:activator="{ on: { click } }">
                 <!-- Image box -->
-                <v-card elevation="5" color="secondary" @click="click">
+                <v-card
+                  elevation="5"
+                  color="secondary"
+                  @click="click"
+                >
                   <v-img
                     @click="dialog[index] = true"
                     class="pointer"
                     height="300"
                     :src="item.link"
                     :lazy="item.link"
-                    ><template v-slot:placeholder>
+                  ><template v-slot:placeholder>
                       <v-row
                         class="fill-height ma-0"
                         align="center"
@@ -60,10 +86,10 @@
                           indeterminate
                           color="grey lighten-5"
                         ></v-progress-circular>
-                      </v-row> </template
-                  ></v-img>
-                  <v-card-title
-                    ><h3 class="font-weight-regular">{{ item.title }}</h3>
+                      </v-row>
+                    </template></v-img>
+                  <v-card-title>
+                    <h3 class="font-weight-regular">{{ item.title }}</h3>
                   </v-card-title>
                   <v-card-text class="pb-1">
                     <p class="light text-left">{{ item.description }}</p>
@@ -89,7 +115,8 @@
                     color="primary"
                     class="mt-8 pr-0"
                     @click="closeDialog(index)"
-                    ><v-icon color="tertiary">mdi-close</v-icon>
+                  >
+                    <v-icon color="tertiary">mdi-close</v-icon>
                   </v-btn>
                 </v-img>
               </v-card>

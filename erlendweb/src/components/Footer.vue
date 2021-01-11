@@ -1,5 +1,5 @@
 <template>
-  <div style="padding-top: 100px;">
+  <div>
     <v-footer
       absolute
       padless
@@ -12,7 +12,13 @@
           justify="center"
         >
           <!-- Contact -->
-          <v-col cols="4">
+          <v-col
+            cols="12"
+            sm="6"
+            md="4"
+            lg="4"
+            xl="4"
+          >
             <v-row
               class="justify-center pt-4"
               no-gutters
@@ -54,7 +60,11 @@
           </v-col>
 
           <v-col
-            cols="4"
+            cols="12"
+            sm="6"
+            md="4"
+            lg="4"
+            xl="4"
             justify="center"
             align="center"
           >
@@ -86,13 +96,13 @@
 
           <v-col
             cols="12"
-            class="pt-2"
+            class="pa-6"
           >
             <v-divider></v-divider>
           </v-col>
 
           <v-col cols="12">
-            <p class="light pt-2">Copyright © {{ new Date().getFullYear() }} | Erlend Brønseth | All Rights Reserved </p>
+            <p class="light">Copyright © {{ new Date().getFullYear() }} | Erlend Brønseth | All Rights Reserved </p>
           </v-col>
 
         </v-row>

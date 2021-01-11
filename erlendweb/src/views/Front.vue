@@ -2,7 +2,7 @@
   <div>
     <v-parallax
       height="800"
-      src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/erlendweb%2Ffront.jpg?alt=media&token=ce906a1b-ca4a-4b4d-9c3b-485d7f9799b9"
+      src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/erlendweb%2Fskate.jpg?alt=media&token=e5f57e29-354b-44bb-9b80-51c89c6e6efd"
       lazy="../assets/images/halden.jpg"
     >
       <v-row
@@ -22,13 +22,37 @@
             width="200"
           >
             <g id="drawing">
+              <filter
+                id="shadow"
+                width="200%"
+                height="200%"
+              >
+                <feOffset
+                  result="offOut"
+                  in="SourceAlpha"
+                  dx="1"
+                  dy="1"
+                />
+                <feGaussianBlur
+                  result="blurOut"
+                  in="offOut"
+                  stdDeviation="2"
+                />
+                <feBlend
+                  in="SourceGraphic"
+                  in2="blurOut"
+                  mode="normal"
+                />
+              </filter>
               <circle
                 cx="170.07"
                 cy="122.44"
                 r="59.72"
                 transform="translate(35 20)"
+                filter="url(#shadow)"
               />
               <path
+                filter="url(#shadow)"
                 d="M412.7,189.8A170.12,170.12,0,1,0,182.62,409.46c2.36,1.14,4.76,2.21,7.18,3.24a170.58,170.58,0,0,0,132.4,0c2.42-1,4.82-2.1,7.18-3.24A170.24,170.24,0,0,0,412.7,189.8ZM245.18,326.21l5.8-40.33h10l5.8,40.33L256,336ZM345.45,385c-.79-57.69-7.33-102-61.45-112.67a50.22,50.22,0,0,1-56,0c-54.12,10.66-60.66,55-61.45,112.67A157,157,0,0,1,99,256c0-86.59,70.44-157,157-157s157,70.44,157,157A157,157,0,0,1,345.45,385Z"
                 transform="translate(-50 -50)"
               />
@@ -89,7 +113,6 @@
             </v-row>
           </v-container>
         </v-col>
-        <v-col> </v-col>
       </v-row>
     </v-parallax>
   </div>
@@ -116,6 +139,8 @@ export default {
   stroke: hsl(0, 0%, 96%);
   fill: hsl(0, 0%, 96%);
 
+  border: 2px solid black;
+
   stroke-miterlimit: 10;
   stroke-width: 5px;
 
@@ -137,8 +162,7 @@ export default {
 
 .imageItems {
   align-items: center;
-  display: inherit;
-  flex: 0 auto;
-  margin-bottom: 20%;
+  padding-top: 20%;
+  margin-bottom: 0;
 }
 </style>

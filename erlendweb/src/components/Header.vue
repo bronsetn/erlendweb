@@ -48,7 +48,7 @@
       <v-spacer v-if="!$vuetify.breakpoint.mobile"></v-spacer>
 
       <!-- Else link to different content in the main page -->
-      <v-row if="!$vuetify.breakpoint.mobile">
+      <v-row v-if="!$vuetify.breakpoint.mobile">
         <div
           v-for="(item, index) in navigation"
           :item="item"

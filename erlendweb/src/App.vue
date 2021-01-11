@@ -4,12 +4,12 @@
       <Header></Header>
       <main
         :style="{ background: $vuetify.theme.themes[theme].background }"
-        class="pt-16 pb-16"
+        class="pt-10"
       >
         <router-view />
         <FloatingButton></FloatingButton>
       </main>
-      <Footer class="mt-16"></Footer>
+      <Footer style="margin-top: 380px;"></Footer>
     </v-app>
   </div>
 </template>
