@@ -121,7 +121,7 @@ export default {
       navigation: [
         { link: "#projects", icon: "I", title: "Prosjekter" },
         { link: "#about", icon: "II", title: "Om meg" },
-        { link: "#contact", icon: "III", title: "Kontakt" },
+        { link: "#contact", icon: "III", title: "Ta kontakt" },
         { link: "#other", icon: "IV", title: "Annet" },
       ],
     };

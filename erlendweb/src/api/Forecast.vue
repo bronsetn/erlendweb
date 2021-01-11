@@ -29,19 +29,25 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-row align="center">
-          <v-col></v-col>
+        <v-row
+          align="center"
+          justify="center"
+        >
           <v-col cols="5">
             <p class="display-1">{{ temperature }} &deg;C</p>
           </v-col>
           <v-col cols="5">
-            <v-img
-              height="100"
-              contain
-              :src="wicon"
-            ></v-img>
+            <v-avatar
+              color="grey lighten-1"
+              size="100"
+            >
+              <v-img
+                height="200"
+                contain
+                :src="wicon"
+              ></v-img>
+            </v-avatar>
           </v-col>
-          <v-col></v-col>
         </v-row>
 
         <v-list-item>
@@ -109,10 +115,12 @@
 
           <v-card-text>
             <p>
-              Denne komponenten tar i bruk nettleserens geolokasjons
-              funksjonalitet for å hente ut værmelding for dine koordinater. For
+              Denne komponenten tar i bruk nettleserens geolokasjon
+              for å hente ut værmeldingen for dine koordinater.
+            </p>
+            <p>For
               å hente værdata er det brukt Openweathermap sin 5 dagers
-              værmeldings-API.
+              værmelding API.
               <a
                 href="https://openweathermap.org/api"
                 target="_blank"

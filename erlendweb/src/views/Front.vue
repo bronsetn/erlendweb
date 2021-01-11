@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-parallax
-      height="800"
+      height="900"
       src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/erlendweb%2Fskate.jpg?alt=media&token=e5f57e29-354b-44bb-9b80-51c89c6e6efd"
       lazy="../assets/images/halden.jpg"
     >
@@ -30,13 +30,13 @@
                 <feOffset
                   result="offOut"
                   in="SourceAlpha"
-                  dx="1"
-                  dy="1"
+                  dx="2"
+                  dy="2"
                 />
                 <feGaussianBlur
                   result="blurOut"
                   in="offOut"
-                  stdDeviation="2"
+                  stdDeviation="1"
                 />
                 <feBlend
                   in="SourceGraphic"
@@ -81,36 +81,7 @@
             >
               Junior front-end utvikler
             </h4>
-            <v-row
-              class="text-md-left"
-              v-if="$vuetify.breakpoint.mdAndUp"
-            >
-              <div
-                v-for="(item, index) in techs"
-                :item="item"
-                :key="index"
-              >
-                <v-icon
-                  class="ma-2"
-                  style="color: #fff;"
-                >{{ item }}</v-icon>
-              </div>
-            </v-row>
-            <v-row
-              justify="center"
-              v-else
-            >
-              <div
-                v-for="(item, index) in techs"
-                :item="item"
-                :key="index"
-              >
-                <v-icon
-                  class="ma-2"
-                  style="color: #fff;"
-                >{{ item }}</v-icon>
-              </div>
-            </v-row>
+
           </v-container>
         </v-col>
       </v-row>
@@ -122,13 +93,6 @@
 export default {
   data() {
     return {
-      techs: [
-        "mdi-language-html5",
-        "mdi-language-javascript",
-        "mdi-language-css3",
-        "mdi-vuejs",
-        "mdi-vuetify",
-      ],
     };
   },
 };

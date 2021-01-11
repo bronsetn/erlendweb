@@ -70,62 +70,64 @@
                     <v-icon>mdi-gitlab</v-icon>
                   </v-btn>
                 </v-row>
+                <v-card-text>
+                  <p class="normal pt-4">
+                    Jeg er en 23 åring fra Inderøy med en bachelor innenfor
+                    digitale medier og design. Dette nettstedet er ment som en
+                    portefølje i tillegg til et sted jeg kan
+                    ekspirementere innenfor utvikling og design.
+                  </p>
+                  <p>Jeg har ambisjoner om å bli dreven
+                    innenfor front-end utvikling.
+                    Jeg har i høst arbeidet hos Prios Kompetanse AS
+                    hvor jeg har blitt kjent med bruk av rammeverket VueJs.</p>
 
-                <p class="normal pt-4">
-                  Jeg er en 23 åring fra Inderøy med en bachelor innenfor
-                  digitale medier og design. Dette nettstedet er ment som en
-                  portefølje i tillegg til et sted jeg kan
-                  ekspirementere innenfor utvikling og design.
-                </p>
-                <p>Jeg har ambisjoner om å bli dreven
-                  innenfor front-end utvikling.
-                  Jeg har i høst arbeidet hos Prios Kompetanse AS
-                  hvor jeg har blitt kjent med bruk av rammeverket VueJs.</p>
+                  <p class="thick">Teknologier</p>
 
-                <p class="thick">Teknologier</p>
-
-                <v-row
-                  justify="center"
-                  class="pa-1"
-                >
-                  <v-col
-                    v-for="(item, index) in techs"
-                    :item="item"
-                    :key="index"
+                  <v-row
+                    justify="center"
+                    class="pa-1"
                   >
-                    <v-icon color="tertiary">{{ item.icon }}</v-icon>
-                    <div> {{item.name}} </div>
-                  </v-col>
-                </v-row>
+                    <v-col
+                      v-for="(item, index) in techs"
+                      :item="item"
+                      :key="index"
+                    >
+                      <v-icon color="tertiary">{{ item.icon }}</v-icon>
+                      <div> {{item.name}} </div>
+                    </v-col>
+                  </v-row>
 
-                <v-divider></v-divider>
+                  <v-divider></v-divider>
 
-                <p class="thick pt-6">Digitale medier og design</p>
+                  <p class="thick pt-6">Digitale medier og design</p>
 
-                <p class="normal">
-                  En bachelor innenfor digitale medier og design på HIØ gir opplæring i
-                  mange av stegene innenfor utvikling av digitale ting og applikasjoner.
-                  Noen av fagene jeg har vært innom
-                  er webutvikling, programmering, 3D-modellering, spillutvikling
-                  og grafisk-design.
-                  <br>
-                  <a
-                    target="_blank"
-                    href="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/erlendweb%2FKarakterutskrift%20-%20Digitale%20medier%20og%20design.pdf?alt=media&token=e83e4807-efbd-4f48-98be-3f26a9fca847"
-                  >Dokumentasjon</a>
-                </p>
+                  <p class="normal">
+                    Bachelorstudiumet digitale medier og design på HIØ gir opplæring i
+                    mange av stegene innenfor utvikling av digitale ting og applikasjoner.
+                    Noen av fagene jeg har vært innom
+                    er webutvikling, programmering, 3D-modellering, spillutvikling
+                    og grafisk-design.
+                    <br>
+                    <a
+                      target="_blank"
+                      href="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/erlendweb%2FKarakterutskrift%20-%20Digitale%20medier%20og%20design.pdf?alt=media&token=e83e4807-efbd-4f48-98be-3f26a9fca847"
+                    >Dokumentasjon</a>
+                  </p>
 
-                <p class="thick pt-2">Wordpress</p>
+                  <p class="thick pt-2">Wordpress</p>
 
-                <p class="normal">
-                  Inntil nylig har jeg brukt wordpress for publisering av
-                  prosjekter fra studiet, de finnes fortsatt her:
-                  <br>
-                  <a
-                    target="_blank"
-                    href="https://erlendworkblog.wordpress.com"
-                  >https://erlendworkblog.wordpress.com</a>
-                </p>
+                  <p class="normal">
+                    Inntil nylig har jeg brukt wordpress for publisering av
+                    prosjekter fra studiet, de finnes fortsatt her:
+                    <br>
+                    <a
+                      target="_blank"
+                      href="https://erlendworkblog.wordpress.com"
+                    >https://erlendworkblog.wordpress.com</a>
+                  </p>
+
+                </v-card-text>
 
                 <v-row
                   class="pt-4"

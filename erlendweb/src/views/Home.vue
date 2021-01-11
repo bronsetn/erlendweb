@@ -5,15 +5,15 @@
     <Projects id="projects"></Projects>
     <About
       id="about"
-      class="pt-8"
+      class="pt-4"
     ></About>
     <ContactForm
       id="contact"
-      class="pt-8"
+      class="pt-4"
     ></ContactForm>
     <Other
       id="other"
-      class="pt-8"
+      class="pt-4"
     ></Other>
   </body>
 </template>

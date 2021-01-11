@@ -101,7 +101,7 @@
           </v-col>
 
           <v-col cols="12">
-            <p class="light">Copyright © {{ new Date().getFullYear() }} | Erlend Brønseth | All Rights Reserved </p>
+            <p class="normal">Copyright © {{ new Date().getFullYear() }} | Erlend Brønseth | All Rights Reserved </p>
           </v-col>
 
         </v-row>
@@ -118,7 +118,7 @@ export default {
       navigation: [
         { link: "#projects", icon: "I", title: "Prosjekter" },
         { link: "#about", icon: "II", title: "Om meg" },
-        { link: "#contact", icon: "III", title: "Kontakt" },
+        { link: "#contact", icon: "III", title: "Ta kontakt" },
         { link: "#other", icon: "IV", title: "Annet" },
       ],
     };
