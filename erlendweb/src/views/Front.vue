@@ -1,8 +1,21 @@
 <template>
   <div>
-    <v-parallax height="850" src="../assets/images/front.jpg">
-      <v-row class="imageItems" no-gutters style="margin-bottom: 20%">
-        <v-col xs="12" sm="12" md="3" lg="2" xl="2">
+    <v-parallax
+      height="800"
+      src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/erlendweb%2Ffront.jpg?alt=media&token=ce906a1b-ca4a-4b4d-9c3b-485d7f9799b9"
+      lazy="../assets/images/halden.jpg"
+    >
+      <v-row
+        no-gutters
+        class="imageItems"
+      >
+        <v-col
+          xs="12"
+          sm="12"
+          md="3"
+          lg="2"
+          xl="2"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 400 400"
@@ -23,22 +36,55 @@
             Sorry, your browser does not support inline SVG.
           </svg>
         </v-col>
-        <v-col xs="12" sm="12" md="3" lg="3" xl="3" justify="center">
+        <v-col
+          xs="12"
+          sm="12"
+          md="3"
+          lg="3"
+          xl="3"
+          justify="center"
+        >
           <v-container>
-            <h1 style="font-size: 4rem" class="text-md-left">
+            <h1
+              style="font-size: 4rem"
+              class="text-md-left"
+            >
               Erlend Brønseth
             </h1>
-            <h4 style="font-size: 1rem" class="text-md-left">
+            <h4
+              style="font-size: 1rem"
+              class="text-md-left"
+            >
               Junior front-end utvikler
             </h4>
-            <v-row class="text-md-left" v-if="$vuetify.breakpoint.mdAndUp">
-              <div v-for="(item, index) in techs" :item="item" :key="index">
-                <v-icon class="ma-2" style="color: #fff;">{{ item }}</v-icon>
+            <v-row
+              class="text-md-left"
+              v-if="$vuetify.breakpoint.mdAndUp"
+            >
+              <div
+                v-for="(item, index) in techs"
+                :item="item"
+                :key="index"
+              >
+                <v-icon
+                  class="ma-2"
+                  style="color: #fff;"
+                >{{ item }}</v-icon>
               </div>
             </v-row>
-            <v-row justify="center" v-else>
-              <div v-for="(item, index) in techs" :item="item" :key="index">
-                <v-icon class="ma-2" style="color: #fff;">{{ item }}</v-icon>
+            <v-row
+              justify="center"
+              v-else
+            >
+              <div
+                v-for="(item, index) in techs"
+                :item="item"
+                :key="index"
+              >
+                <v-icon
+                  class="ma-2"
+                  style="color: #fff;"
+                >{{ item }}</v-icon>
               </div>
             </v-row>
           </v-container>
@@ -93,5 +139,6 @@ export default {
   align-items: center;
   display: inherit;
   flex: 0 auto;
+  margin-bottom: 20%;
 }
 </style>

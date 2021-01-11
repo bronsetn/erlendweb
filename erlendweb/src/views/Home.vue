@@ -2,11 +2,11 @@
 
   <body>
     <Front></Front>
-    <About id="about"></About>
-    <Projects
-      id="projects"
+    <Projects id="projects"></Projects>
+    <About
+      id="about"
       class="pt-8"
-    ></Projects>
+    ></About>
     <ContactForm
       id="contact"
       class="pt-8"

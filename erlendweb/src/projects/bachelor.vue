@@ -26,8 +26,8 @@
             <v-img
               contain
               max-height="300px"
-              src="../assets/images/bachelor/3d-many.png"
-              lazy="../assets/images/bachelor/3d-many.png"
+              src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/bacheloroppgave%2F3d-many.png?alt=media&token=d147b978-ba9f-44e3-996d-5491092bb89c"
+              lazy="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/bacheloroppgave%2F3d-many.png?alt=media&token=d147b978-ba9f-44e3-996d-5491092bb89c"
             ></v-img>
           </v-container>
         </v-col>
@@ -47,8 +47,8 @@
             <v-img
               contain
               max-height="500px"
-              src="../assets/images/bachelor/3d-app.png"
-              lazy="../assets/images/bachelor/3d-app.png"
+              src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/bacheloroppgave%2F3d-app.png?alt=media&token=9a968cff-eeb0-4091-ba26-9032e059f1fd"
+              lazy="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/bacheloroppgave%2F3d-app.png?alt=media&token=9a968cff-eeb0-4091-ba26-9032e059f1fd"
             ></v-img>
 
             <br />
@@ -61,8 +61,8 @@
 
             <v-img
               contain
-              src="../assets/images/bachelor/prosjektplakat.png"
-              lazy="../assets/images/bachelor/prosjektplakat.png"
+              src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/bacheloroppgave%2Fprosjektplakat.png?alt=media&token=18a27094-dad7-4c20-b438-9a90268f5274"
+              lazy="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/bacheloroppgave%2Fprosjektplakat.png?alt=media&token=18a27094-dad7-4c20-b438-9a90268f5274"
             ></v-img>
           </v-container>
         </v-col>

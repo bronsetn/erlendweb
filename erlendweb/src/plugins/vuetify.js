@@ -13,7 +13,7 @@ const vuetify = new Vuetify({
             customProperties: true
         },
 
-        dark: true,
+        dark: false,
 
         themes: {
             font: {

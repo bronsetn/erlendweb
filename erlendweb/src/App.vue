@@ -9,7 +9,7 @@
         <router-view />
         <FloatingButton></FloatingButton>
       </main>
-      <Footer></Footer>
+      <Footer class="mt-16"></Footer>
     </v-app>
   </div>
 </template>

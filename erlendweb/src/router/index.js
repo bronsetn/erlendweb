@@ -2,16 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Home from '../views/Home.vue'
-// import Other from '../views/Other.vue'
-// import About from '../views/About.vue'
-// import Projects from '../views/Projects.vue'
-
-// Project sites
-import PriosEvents from '../projects/priosEvents.vue'
-import Bachelor from '../projects/bachelor.vue'
 
 Vue.use(VueRouter)
-
 
 const router = new VueRouter({
     mode: "history",
@@ -22,28 +14,14 @@ const router = new VueRouter({
             component: Home
         },
 
-        // {
-        //     path: '/other',
-        //     name: 'Other',
-        //     component: Other
-        // },
-
-        // PROJECT sites
-        {
-            path: '/priosEvents',
-            name: 'PriosEvents',
-            component: PriosEvents
-        },
-        {
-            path: '/bachelor',
-            name: 'Bachelor',
-            component: Bachelor
-        },
     ]
 })
 
 // Rediredct to set pages
-let availableSites = ["/", "/bachelor", "/priosEvents"];
+// use this to header if
+// v-if="['PriosEvents', 'Bachelor'].includes($route.name)"
+
+let availableSites = ["/"];
 
 // If the site is not in availableSites redirect to 
 router.beforeEach((to, from, next) => {

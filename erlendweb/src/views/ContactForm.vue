@@ -1,5 +1,6 @@
 
 <template>
+
   <body>
     <v-container>
       <v-container class="justify-center">
@@ -9,8 +10,14 @@
 
       <v-row class="d-flex justify-center">
         <v-col>
-          <v-card elevation="5" color="secondary">
+          <v-card
+            elevation="5"
+            color="secondary"
+          >
             <v-card-text>
+              <p>
+                Beskjeder herfra sendes direkte til bronsetherlend@gmail.com
+              </p>
               <v-form
                 ref="form"
                 v-model="validate"
@@ -20,10 +27,11 @@
                 data-netlify="true"
                 netlify-honeypot="bot-field"
               >
-                <p class="hidden" style="display: none">
-                  <label
-                    >Don't fill this out if youre human <input name="bot-field"
-                  /></label>
+                <p
+                  class="hidden"
+                  style="display: none"
+                >
+                  <label>Don't fill this out if youre human <input name="bot-field" /></label>
                 </p>
 
                 <v-text-field
@@ -59,25 +67,22 @@
                   :rules="rules.required"
                 ></v-textarea>
 
-                <p>
-                  Beskjeder herfra sendes direkte til bronsetherlend@gmail.com
-                </p>
-
                 <v-btn
                   title="Submit"
                   outlined
                   color="tertiary"
                   type="submit"
                   :disabled="!validate"
-                  ><v-icon>mdi-telegram</v-icon></v-btn
                 >
+                  <v-icon>mdi-telegram</v-icon>
+                </v-btn>
                 <v-alert
                   text
                   class="mt-4 ma-0 pa-1"
                   transition="scale-transition"
                   :type="alert.type"
                   :value="alert.value"
-                  >{{ alert.text }}
+                >{{ alert.text }}
                 </v-alert>
               </v-form>
             </v-card-text>
