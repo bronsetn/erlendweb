@@ -24,9 +24,9 @@ const vuetify = new Vuetify({
                 secondary: colors.shades.white,
                 tertiary: '#010B14',
                 // For buttons and such
-                accent: colors.amber.darken4, // #263238
-                // For a tags and links
-                anchor: '#CC7700',
+                accent: colors.amber.darken4,
+                // For a tags and links, not usable inline
+                anchor: colors.amber.darken4,
                 // Computed propery in app main checks this value
                 background: '#ECF5FE',
 
@@ -37,9 +37,9 @@ const vuetify = new Vuetify({
                 secondary: '#010B14',
                 tertiary: '#FDFFFC',
                 // For buttons and such
-                accent: colors.amber.accent2,
-                // For a tags and links
-                anchor: '#FF9F1C',
+                accent: colors.amber.lighten2,
+                // For a tags and links, not usable inline
+                anchor: colors.amber.lighten2,
                 // Computed propery in ap main checks this value
                 background: colors.shades.black,
 

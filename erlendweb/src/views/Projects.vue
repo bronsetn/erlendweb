@@ -101,7 +101,7 @@ export default {
         // Mariweb
         {
           link: "https://maribro.netlify.app",
-          title: "maribro.no",
+          title: "Maribro.no",
           description: "Et nettsted for å vise frem tegninger og malerier for Mari Brønseth. Laget i VueJs og satt opp med Netlify som vert.",
           date: "Vinter 2021",
           alt: "Screenshot from https://maribro.netlify.app",
@@ -128,7 +128,7 @@ export default {
         // Bachelor
         {
           link: "https://erlendworkblog.wordpress.com/2020/06/11/bacheloroppgave-augmented-reality-til-a-vise-utvandringshistorie/",
-          title: "Wordpress nettsted/portefølje",
+          title: "Wordpress nettsted",
           description: "Nettsted/Portefølje jeg brukte til publisering av prosjekter og oppgaver fra digitale medier og design.",
           date: "Sommer 2019",
           alt: "Sreenshot from https://erlendworkblog.wordpress.com",
