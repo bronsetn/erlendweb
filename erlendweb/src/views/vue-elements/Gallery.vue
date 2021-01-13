@@ -1,6 +1,10 @@
 <template>
   <v-col
-    cols="6"
+    cols="12"
+    sm="12"
+    md="6"
+    lg="6"
+    xl="6"
   >
     <v-card
       color="secondary"
@@ -45,11 +49,7 @@
       <div v-show="show">
         <v-row class="justify-center">
           <v-col
-            cols="12"
-            sm="12"
-            md="6"
-            lg="6"
-            xl="6"
+            cols="6"
             v-for="(item, index) in images"
             :item="item"
             :key="index"

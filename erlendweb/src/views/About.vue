@@ -134,7 +134,7 @@
                   justify="center"
                 >
                   <v-col
-                    xs="12"
+                    cols="12"
                     sm="12"
                     md="6"
                     lg="4"
@@ -148,7 +148,7 @@
                     </v-list-item>
                   </v-col>
                   <v-col
-                    xs="12"
+                    cols="12"
                     sm="12"
                     md="6"
                     lg="4"
