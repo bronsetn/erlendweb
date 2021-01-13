@@ -5,7 +5,7 @@
       hide-on-scroll
       fixed
       flat
-      color="primary"
+      color="secondary"
       elevation="5"
     >
       <v-app-bar-nav-icon

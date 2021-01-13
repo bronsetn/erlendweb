@@ -2,7 +2,7 @@
   <div>
     <v-footer
       padless
-      color="primary"
+      color="secondary"
       elevation="5"
     >
       <v-container fluid>

@@ -2,7 +2,10 @@
 
   <body>
     <Front></Front>
-    <Projects id="projects"></Projects>
+    <Projects
+      id="projects"
+      class="pt-4"
+    ></Projects>
     <About
       id="about"
       class="pt-4"

@@ -47,7 +47,7 @@
     <!-- Image gallery: -->
     <v-expand-transition>
       <div v-show="show">
-        <v-row class="d-flex justify-center">
+        <v-row class="justify-center">
           <v-col
             cols="12"
             sm="12"
@@ -64,7 +64,7 @@
               max-width="80vw"
             >
               <template v-slot:activator="{ on: { click } }">
-                <!-- Image box -->
+                <!-- Image gallery box -->
                 <v-card
                   elevation="5"
                   color="secondary"
