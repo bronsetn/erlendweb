@@ -1,11 +1,11 @@
 <template>
   <v-col
-    v-if="spaceData"
     cols="12"
     sm="12"
     md="6"
     lg="6"
     xl="6"
+    v-if="spaceData"
   >
     <v-card
       color="secondary"
@@ -32,11 +32,11 @@
         >
           <iframe :src="spaceData.url"> </iframe>
         </div>
-        <v-card-title>{{ spaceData.title }}</v-card-title>
-
-        <v-card-text>
-          <br />
-          <p class="light">
+        <v-card-title>{{ spaceData.title }}
+        </v-card-title>
+        <p class="caption light text-left pa-0 pl-4">Date: {{date}}</p>
+        <v-card-text class="pt-0 mt-0">
+          <p class="normal">
             <v-clamp
               autoresize
               :max-lines="2"
@@ -80,7 +80,6 @@
       <v-expand-transition>
         <div v-show="show">
           <v-divider></v-divider>
-
           <v-card-text>
             <p>
               Her har jeg brukt en av Nasa sine offentlige APIer som publiserer
@@ -124,46 +123,57 @@ export default {
 
       spaceData: null,
       spaceImg: false,
+
+      date: "",
     };
   },
 
   mounted() {
-    // Get nasa's space image of the day, because we can
-    // https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/
-    // https://api.nasa.gov/
-
-    // Get year, month and date
-    let d = new Date();
-    let today = d.getFullYear() + "-" + d.getMonth() + "-" + d.getDate();
-
-    const apiData = {
-      url: "https://api.nasa.gov/planetary/apod",
-      // Personal key pls no fuckery
-      key: "rDwFcjwwdmxeqnq0aOFJmIRwzUbd0PgSSokdcf5v",
-      // date: "2020-10-30",
-      date: today,
-    };
-
-    const { url, key, date } = apiData;
-    const apiUrl = `${url}?api_key=${key}&date=${date}`;
-
-    axios
-      .get(apiUrl)
-      .then((Response) => {
-        if (Response.data.error_message) {
-          console.log("error");
-        } else {
-          // console.log("Space data:");
-          // console.log(Response);
-
-          this.spaceData = Response.data;
-          this.spaceImg == true;
-        }
-      })
-      .catch((error) => {
-        console.log(error.message);
-      });
+    this.getSpaceData();
   },
+
+  methods: {
+    getSpaceData() {
+      // Get nasa's space image of the day, because we can
+      // https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/
+      // https://api.nasa.gov/
+
+      // Get year, month and date
+      let d = new Date();
+      let today = d.getFullYear() + "-" + d.getMonth() + 1 + "-" + d.getDate();
+
+      const apiData = {
+        url: "https://api.nasa.gov/planetary/apod",
+        // Personal key pls no fuckery
+        key: "Kc1D0rF8COldenZrRdiV0VESLYJUkhvAIPxh63ke",
+        // date: "2020-10-30",
+        date: today,
+      };
+
+      const { url, key, date } = apiData;
+      const apiUrl = `${url}?api_key=${key}&date=${date}`;
+
+      axios
+        .get(apiUrl)
+        .then((Response) => {
+          if (Response.data.error_message) {
+            console.log("error");
+          } else {
+            // console.log("Space data:");
+            // console.log(Response);
+
+            this.spaceData = Response.data;
+            this.spaceImg == true;
+            this.date = date;
+          }
+        })
+        .catch((error) => {
+          console.log(error.message);
+          console.log(apiUrl);
+          console.log(date)
+        });
+    },
+  }
 };
 </script>
 

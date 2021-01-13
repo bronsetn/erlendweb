@@ -19,11 +19,11 @@
 </template>
 
 <script>
-import Nasa from "../api/Nasa.vue";
-import Forecast from "../api/Forecast.vue";
+import Nasa from "./api/Nasa.vue";
+import Forecast from "./api/Forecast.vue";
 
-import SvgTest from "../vue-elements/SvgTest.vue";
-import Gallery from "../vue-elements/Gallery.vue";
+import SvgTest from "./vue-elements/SvgTest.vue";
+import Gallery from "./vue-elements/Gallery.vue";
 
 export default {
   components: {

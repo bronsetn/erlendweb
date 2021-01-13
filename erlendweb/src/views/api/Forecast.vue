@@ -1,6 +1,5 @@
 <template>
   <v-col
-    v-if="weather"
     cols="12"
     sm="12"
     md="6"
@@ -11,7 +10,7 @@
       color="secondary"
       elevation="5"
     >
-      <v-container>
+      <v-container v-if="weather">
         <v-card-title>Dagens værmelding<v-spacer></v-spacer>
           <v-icon color="tertiary">mdi-api</v-icon>
         </v-card-title>
@@ -91,6 +90,21 @@
             Snømengde
             {{ weather.list[0].snow["3h"] }} %</v-list-item-subtitle>
         </v-list-item>
+      </v-container>
+
+      <!-- If weatherdata doesn't load -->
+      <v-container v-else>
+        <p class="headline">Get today's weather</p>
+        <v-btn
+          fab
+          color="tertiary"
+          class="ma-2"
+          @click="getLocation()"
+        >
+          <v-icon color="primary">mdi-cached</v-icon>
+        </v-btn>
+        <p class="normal pt-2">To get weatherdata this component needs to use your browser's geolocation.
+          If nothing happens after clicking the button, try to delete the cache for this site.</p>
       </v-container>
 
       <v-card-actions>
