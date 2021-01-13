@@ -1,10 +1,6 @@
 <template>
   <v-col
-    cols="12"
-    sm="12"
-    md="6"
-    lg="6"
-    xl="6"
+    cols="6"
   >
     <v-card
       color="secondary"
