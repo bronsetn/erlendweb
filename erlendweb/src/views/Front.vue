@@ -81,7 +81,6 @@
             >
               Junior front-end utvikler
             </h4>
-
           </v-container>
         </v-col>
       </v-row>
@@ -126,7 +125,12 @@ export default {
 
 .imageItems {
   align-items: center;
-  padding-top: 20%;
-  margin-bottom: 0;
+  margin-top: 20%;
+}
+
+@media only screen and (max-height: 800px) {
+  .imageItems {
+      margin-top: 10%;
+  }
 }
 </style>
