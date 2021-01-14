@@ -30,13 +30,13 @@
             <v-btn
               x-large
               icon
-              @click="show = !show"
+              @click="showGallery = !showGallery"
             >
               <v-icon
                 class="display-2"
                 color="white"
               >
-                {{ show ? "mdi-chevron-up" : "mdi-plus" }}
+                {{ showGallery ? "mdi-chevron-up" : "mdi-plus" }}
               </v-icon>
             </v-btn>
           </v-row>
@@ -46,7 +46,7 @@
 
     <!-- Image gallery: -->
     <v-expand-transition>
-      <div v-show="show">
+      <div v-show="showGallery">
         <v-row class="justify-center">
           <v-col
             cols="6"
@@ -55,7 +55,7 @@
             :key="index"
           >
             <v-dialog
-              v-model="dialog['dialog_' + index]"
+              v-model="imageDialog['dialog_' + index]"
               max-height="80vh"
               max-width="80vw"
             >
@@ -67,11 +67,10 @@
                   @click="click"
                 >
                   <v-img
-                    @click="dialog[index] = true"
+                    @click="openImage(index); imageDialog[index] = true"
                     class="pointer"
                     height="300"
                     :src="item.link"
-                    :lazy="item.link"
                   ><template v-slot:placeholder>
                       <v-row
                         class="fill-height ma-0"
@@ -84,12 +83,9 @@
                         ></v-progress-circular>
                       </v-row>
                     </template></v-img>
-                  <v-card-title>
-                    <h3 class="font-weight-regular">{{ item.title }}</h3>
+                  <v-card-title class="pb-0">
+                    <p class="normal serif">{{ item.title }}</p>
                   </v-card-title>
-                  <v-card-text class="pb-1">
-                    <p class="light text-left">{{ item.description }}</p>
-                  </v-card-text>
                 </v-card>
               </template>
 
@@ -99,8 +95,7 @@
                   max-height="80vh"
                   max-width="80vw"
                   contain
-                  :src="item.link"
-                  :lazy="item.link"
+                  :src="images[activeImage].link"
                 >
                   <v-btn
                     small
@@ -109,12 +104,30 @@
                     right
                     fab
                     color="primary"
-                    class="mt-8 pr-0"
+                    class="mt-8"
                     @click="closeDialog(index)"
                   >
                     <v-icon color="tertiary">mdi-close</v-icon>
                   </v-btn>
+
                 </v-img>
+                <v-card-actions>
+                  <v-btn
+                    small
+                    icon
+                    @click="previousPhoto()"
+                  >
+                    <v-icon color="tertiary">mdi-arrow-left</v-icon>
+                  </v-btn>
+                  <v-spacer></v-spacer>
+                  <v-btn
+                    small
+                    fab
+                    @click="nextPhoto()"
+                  >
+                    <v-icon color="tertiary">mdi-arrow-right</v-icon>
+                  </v-btn>
+                </v-card-actions>
               </v-card>
             </v-dialog>
           </v-col>
@@ -128,38 +141,51 @@
 export default {
   data() {
     return {
-      show: false,
+      showGallery: false,
 
-      dialog: {},
+      activeImage: 0,
+
+      imageDialog: {},
 
       images: [
         {
           link: "https://picsum.photos/700/700",
           title: "Bildetittel",
-          description: "Bildebeskrivelse",
         },
         {
           link: "https://picsum.photos/500/500",
-          title: "Bildetittel",
-          description: "Bildebeskrivelse",
+          title: "Heisann",
         },
         {
           link: "https://picsum.photos/800/800",
-          title: "Bildetittel",
-          description: "Bildebeskrivelse",
+          title: "Hoisann",
         },
         {
           link: "https://picsum.photos/600/600",
-          title: "Bildetittel",
-          description: "Bildebeskrivelse",
+          title: "Heysann",
         },
       ],
     };
   },
+
+  // Codepen used for example: https://codepen.io/CSWApps/embed/YoyZJZ
   methods: {
-    closeDialog(index) {
-      this.dialog["dialog_" + index] = false;
+    openImage(index) {
+      this.activeImage = index;
     },
+
+    nextPhoto() {
+      this.activeImage = (this.activeImage + 1 < this.images.length ? this.activeImage + 1 : 0)
+    },
+
+    previousPhoto() {
+      this.activeImage = (this.activeImage - 1 >= 0 ? this.activeImage - 1 : this.images.length - 1)
+    },
+
+    closeDialog(index) {
+      this.imageDialog["dialog_" + index] = false;
+    },
+
   },
 };
 </script>

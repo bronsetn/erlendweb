@@ -18,7 +18,7 @@
           <v-list-item two-line>
             <v-list-item-content>
               <v-list-item-title class="headline">
-                {{ city }}
+                {{ weather.city.name }}
               </v-list-item-title>
               <v-list-item-subtitle class="pt-2">{{
               formatedDate
@@ -105,7 +105,7 @@
             <v-icon color="primary">mdi-cached</v-icon>
           </v-btn>
           <p class="normal pt-2">To get weatherdata this component needs to use your browser's geolocation.
-            If nothing happens after clicking the button, try to delete the cache for this site.</p>
+            If nothing happens after clicking the button, try to deletign the site's cache.</p>
         </div>
       </v-container>
 
@@ -158,7 +158,6 @@
 </template>
 
 <script>
-import axios from "axios";
 
 export default {
   data() {
@@ -199,11 +198,10 @@ export default {
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
           (position) => {
-            //   console.log("Dine koordinater:");
-            //   console.log(position.coords.latitude, position.coords.longitude);
+            // console.log("Dine koordinater:");
+            // console.log(position.coords.latitude, position.coords.longitude);
 
             this.getCity(position.coords.latitude, position.coords.longitude);
-
             this.geolocation = "true";
           },
           (error) => {
@@ -218,37 +216,33 @@ export default {
     // Get city from the coordinates
     // Format https://nominatim.openstreetmap.org/reverse?format=xml&lat=43.8338&lon=4.3596
     getCity(lat, long) {
-      axios
-        .get(
-          "https://nominatim.openstreetmap.org/reverse?format=xml" +
-          "&lat=" +
-          lat +
-          "&lon=" +
-          long +
-          "&format=geocodejson"
-        )
-        .then((Response) => {
-          if (Response.data.error_message) {
-            console.log("error");
-          } else {
-            // console.log("By/Plass:");
-            // console.log(Response.data);
-            this.city = Response.data.features[0].properties.geocoding.city;
+      fetch(
+        "https://nominatim.openstreetmap.org/reverse?format=xml" +
+        "&lat=" +
+        lat +
+        "&lon=" +
+        long +
+        "&format=geocodejson",
+      )
+        .then(response => response.json())
+        .then(json => {
 
-            this.getWeather(
-              Response.data.features[0].properties.geocoding.city
-            );
-          }
+          // console.log("By/Plass:");
+          // console.log(json.features[0].properties.geocoding.city)
+          // console.log("Hvis plassen inneholder ÆØÅ blir det vanskelig");
+
+          this.getWeather(json.features[0].properties.geocoding.city);
         })
-        .catch((error) => {
-          console.log(error.message);
+        // Catch errors
+        .catch(err => {
+          console.log('Request Failed', err)
         });
     },
 
     // Create weather from latest forecast
     /*Tutorialish: https://www.youtube.com/watch?v=tFVdxGgJPCo&list=LL70GBoeL8ASdIRG0A89Rpsg&index=2&t=4s*/
+    /*Format http://api.openweathermap.org/data/2.5/forecast?q=steinkjer&units=metric&lang=no&appid={KEY}*/
     getWeather(city) {
-      /*Format http://api.openweathermap.org/data/2.5/forecast?q=steinkjer&units=metric&lang=no&appid={KEY}*/
       const apiData = {
         url: "https://api.openweathermap.org/data/2.5/",
         type: "forecast",
@@ -260,24 +254,73 @@ export default {
       const { url, type, location, language, key } = apiData;
       const apiUrl = `${url}${type}?q=${location}&units=metric&lang=${language}&appid=${key}`;
 
-      axios.get(apiUrl).then((Response) => {
-        if (Response.data.error_message) {
-          console.log("error");
-        } else {
+      fetch(apiUrl)
+        .then(response => response.json())
+        .then((json) => {
           // console.log("Værmelding");
-          // console.log(Response);
-          this.weather = Response.data;
+          // console.log(json);
+
+          if (json.cod == 404) {
+            console.log(json.message, ", trying to get forecast from Oslo")
+            this.getForecastOslo();
+
+          }
+          else {
+            // console.log("Værmelding");
+            // console.log(json);
+
+            this.weather = json;
+
+            this.wicon =
+              "https://openweathermap.org/img/wn/" +
+              json.list[0].weather[0].icon +
+              "@2x.png";
+
+            this.temperature = new Intl.NumberFormat("en-IN", {
+              maximumSignificantDigits: 1,
+            }).format(json.list[0].main.temp);
+          }
+        })
+        // Catch errors
+        .catch(err => {
+          console.log('Request Failed', err);
+        }
+        );
+    },
+
+    getForecastOslo() {
+      const apiData = {
+        url: "https://api.openweathermap.org/data/2.5/",
+        type: "forecast",
+        location: "oslo",
+        language: "no",
+        key: "b5b8e021d8316b270eb7d264dab861c6",
+      };
+
+      const { url, type, location, language, key } = apiData;
+      const apiUrl = `${url}${type}?q=${location}&units=metric&lang=${language}&appid=${key}`;
+
+      fetch(apiUrl)
+        .then(response => response.json())
+        .then((json) => {
+          // console.log("Værmelding");
+          // console.log(json);
+
+          this.weather = json;
 
           this.wicon =
             "https://openweathermap.org/img/wn/" +
-            Response.data.list[0].weather[0].icon +
+            json.list[0].weather[0].icon +
             "@2x.png";
 
           this.temperature = new Intl.NumberFormat("en-IN", {
             maximumSignificantDigits: 1,
-          }).format(Response.data.list[0].main.temp);
-        }
-      });
+          }).format(json.list[0].main.temp);
+        })
+        // Catch errors
+        .catch(err => {
+          console.log('Request Failed', err);
+        });
     },
   },
 };
