@@ -89,11 +89,11 @@ export default {
       projects: [
         // Mariweb
         {
-          link: "https://maribro.netlify.app",
+          link: "https://maribro.no",
           title: "Maribro.no",
           description: "Et nettsted for å vise frem tegninger og malerier for Mari Brønseth. Laget i VueJs og satt opp med Netlify som vert.",
           date: "Vinter 2021",
-          alt: "Screenshot from https://maribro.netlify.app",
+          alt: "Screenshot from https://maribro.no",
           src: "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/mariweb%2Fmariweb.png?alt=media&token=48a886a3-bbd6-41b4-b297-fdbdc4ab90b9"
         },
         // Prios events
