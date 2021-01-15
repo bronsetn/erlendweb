@@ -161,6 +161,14 @@ export default {
     return {
       techs: [
         {
+          name: "VueJs",
+          icon: "mdi-vuejs",
+        },
+        {
+          name: "Vuetify",
+          icon: "mdi-vuetify",
+        },
+        {
           name: "HTML",
           icon: "mdi-language-html5",
         },
@@ -173,12 +181,8 @@ export default {
           icon: "mdi-language-css3",
         },
         {
-          name: "VueJs",
-          icon: "mdi-vuejs",
-        },
-        {
-          name: "Vuetify",
-          icon: "mdi-vuetify",
+          name: "Unity",
+          icon: "mdi-unity",
         },
       ]
     }
