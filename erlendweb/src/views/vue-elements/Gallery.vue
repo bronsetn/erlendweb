@@ -98,36 +98,41 @@
                   :src="images[activeImage].link"
                 >
                   <v-btn
-                    small
                     absolute
                     top
                     right
-                    fab
-                    color="primary"
-                    class="mt-8"
+                    icon
                     @click="closeDialog(index)"
                   >
-                    <v-icon color="tertiary">mdi-close</v-icon>
+                    <v-icon
+                      color="tertiary"
+                    >mdi-close</v-icon>
                   </v-btn>
-
-                </v-img>
-                <v-card-actions>
                   <v-btn
-                    small
+                    absolute
+                    bottom
+                    left
                     icon
                     @click="previousPhoto()"
                   >
-                    <v-icon color="tertiary">mdi-arrow-left</v-icon>
+                    <v-icon
+                      color="tertiary"
+                      large
+                    >mdi-chevron-left</v-icon>
                   </v-btn>
-                  <v-spacer></v-spacer>
                   <v-btn
-                    small
-                    fab
+                    absolute
+                    bottom
+                    right
+                    icon
                     @click="nextPhoto()"
                   >
-                    <v-icon color="tertiary">mdi-arrow-right</v-icon>
+                    <v-icon
+                      color="tertiary"
+                      large
+                    >mdi-chevron-right</v-icon>
                   </v-btn>
-                </v-card-actions>
+                </v-img>
               </v-card>
             </v-dialog>
           </v-col>

@@ -38,7 +38,7 @@
             </v-col>
             <v-col cols="5">
               <v-avatar
-                color="primary lighten-2"
+                color="primary lighten-6"
                 size="100"
               >
                 <v-img

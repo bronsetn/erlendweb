@@ -15,7 +15,7 @@
             color="secondary"
           >
             <v-card-text>
-              <p>
+              <p class="pt-4">
                 Beskjeder herfra sendes direkte til bronsetherlend@gmail.com
               </p>
               <v-form

@@ -80,6 +80,7 @@
               class="text-md-left"
             >
               Junior front-end utvikler
+              
             </h4>
           </v-container>
         </v-col>

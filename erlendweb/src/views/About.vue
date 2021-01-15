@@ -9,13 +9,13 @@
         <h1>Om meg</h1>
       </v-container>
 
-      <v-row class="d-flex justify-center">
+      <v-row class="justify-center">
         <v-col>
           <v-card
             elevation="5"
             color="secondary"
           >
-            <v-row class="d-flex justify-center">
+            <v-row class="justify-center">
               <v-col
                 xs="12"
                 sm="12"
@@ -33,45 +33,33 @@
                   </v-img>
                 </v-avatar>
 
-                <h2 class="pt-4">Erlend Brønseth</h2>
+                <h1 class="pa-4">Erlend Brønseth</h1>
 
-                <v-row
-                  class="justify-center"
-                  no-gutters
-                >
+                <v-row class="justify-center">
                   <v-btn
                     title="Linkedin"
                     href="https://no.linkedin.com/in/erlend-brønseth-b5a99612b/en-us"
                     target="_blank"
                     color="tertiary"
-                    large
+                    class="ma-1"
                     icon
                   >
-                    <v-icon>mdi-linkedin</v-icon>
+                    <v-icon large>mdi-linkedin</v-icon>
                   </v-btn>
                   <v-btn
                     title="Facebook"
                     href="https://www.facebook.com/profile.php?id=100003582864001"
                     target="_blank"
                     color="tertiary"
-                    large
+                    class="ma-1"
                     icon
                   >
-                    <v-icon>mdi-facebook</v-icon>
-                  </v-btn>
-                  <v-btn
-                    title="Gitlab"
-                    href="https://gitlab.com/bronsetn"
-                    target="_blank"
-                    color="tertiary"
-                    large
-                    icon
-                  >
-                    <v-icon>mdi-gitlab</v-icon>
+                    <v-icon large>mdi-facebook</v-icon>
                   </v-btn>
                 </v-row>
+
                 <v-card-text>
-                  <p class="normal pt-4">
+                  <p class="normal pt-2">
                     Jeg er en 23 åring fra Inderøy med en bachelor innenfor
                     digitale medier og design. Dette nettstedet er ment som en
                     portefølje i tillegg til et sted jeg kan
@@ -82,25 +70,22 @@
                     Jeg har i høst arbeidet hos Prios Kompetanse AS
                     hvor jeg har blitt kjent med bruk av rammeverket VueJs.</p>
 
-                  <p class="thick">Teknologier</p>
+                  <p class="thick pt-4">Teknologier</p>
 
-                  <v-row
-                    justify="center"
-                    class="pa-1"
-                  >
+                  <v-row justify="center">
                     <v-col
                       v-for="(item, index) in techs"
                       :item="item"
                       :key="index"
                     >
                       <v-icon color="tertiary">{{ item.icon }}</v-icon>
-                      <div> {{item.name}} </div>
+                      <p> {{item.name}} </p>
                     </v-col>
                   </v-row>
 
                   <v-divider></v-divider>
 
-                  <p class="thick pt-6">Digitale medier og design</p>
+                  <p class="thick pt-8">Digitale medier og design</p>
 
                   <p class="normal">
                     Bachelorstudiumet digitale medier og design på HIØ gir opplæring i
@@ -115,7 +100,7 @@
                     >Dokumentasjon</a>
                   </p>
 
-                  <p class="thick pt-2">Wordpress</p>
+                  <p class="thick pt-4">Wordpress</p>
 
                   <p class="normal">
                     Inntil nylig har jeg brukt wordpress for publisering av
@@ -127,41 +112,40 @@
                     >https://erlendworkblog.wordpress.com</a>
                   </p>
 
+                  <v-row
+                    class="pt-4"
+                    justify="center"
+                  >
+                    <v-col
+                      cols="12"
+                      sm="12"
+                      md="6"
+                      lg="4"
+                      xl="4"
+                    >
+                      <v-list-item>
+                        <v-list-item-content>
+                          <v-icon color="tertiary">mdi-email</v-icon>
+                          <p>bronsetherlend@gmail.com</p>
+                        </v-list-item-content>
+                      </v-list-item>
+                    </v-col>
+                    <v-col
+                      cols="12"
+                      sm="12"
+                      md="6"
+                      lg="4"
+                      xl="4"
+                    >
+                      <v-list-item>
+                        <v-list-item-content>
+                          <v-icon color="tertiary"> mdi-phone</v-icon>
+                          <p>(+47) 45 80 44 52</p>
+                        </v-list-item-content>
+                      </v-list-item>
+                    </v-col>
+                  </v-row>
                 </v-card-text>
-
-                <v-row
-                  class="pt-4"
-                  justify="center"
-                >
-                  <v-col
-                    cols="12"
-                    sm="12"
-                    md="6"
-                    lg="4"
-                    xl="4"
-                  >
-                    <v-list-item>
-                      <v-list-item-content>
-                        <v-icon color="tertiary">mdi-email</v-icon>
-                        <p>bronsetherlend@gmail.com</p>
-                      </v-list-item-content>
-                    </v-list-item>
-                  </v-col>
-                  <v-col
-                    cols="12"
-                    sm="12"
-                    md="6"
-                    lg="4"
-                    xl="4"
-                  >
-                    <v-list-item>
-                      <v-list-item-content>
-                        <v-icon color="tertiary"> mdi-phone</v-icon>
-                        <p>(+47) 45 80 44 52</p>
-                      </v-list-item-content>
-                    </v-list-item>
-                  </v-col>
-                </v-row>
               </v-col>
             </v-row>
           </v-card>

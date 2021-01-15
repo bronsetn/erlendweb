@@ -33,28 +33,17 @@
             </v-container>
 
             <v-card-title class="pb-2">
-              <h2 class="font-weight-regular ">
-                <v-clamp
-                  autoresize
-                  :max-lines="1"
-                >
-                  {{ item.title}}<template #after="{ toggle, expanded, clamped }">
-                    <a
-                      href="#"
-                      v-if="expanded || clamped"
-                      class="clamp"
-                      @click.prevent="toggle"
-                    >{{ expanded ? "mindre" : "mer" }}</a>
-                  </template>
-                </v-clamp>
+              <h2 class="text-truncate">
+                {{ item.title}}
               </h2>
             </v-card-title>
             <v-card-text>
               <p class="subtitle-2 text-left pa-0 ma-0 pb-2">
                 {{ item.date }}
               </p>
-              <p class="normal text-left">
+              <p class="text-left">
                 <v-clamp
+                  class="text--primary"
                   autoresize
                   :max-lines="2"
                 >
@@ -117,15 +106,15 @@ export default {
           src: "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/prios-events%2F3d-wireframe.png?alt=media&token=6c529375-fb00-47d4-b77a-3ccecf803f27"
         },
         // Bachelor
-        {
-          link: "https://erlendworkblog.wordpress.com/2020/06/11/bacheloroppgave-augmented-reality-til-a-vise-utvandringshistorie/",
-          title: "Bacheloroppgave",
-          description: "AR applikasjon hvor man kan se 3D modeller av byggninger fra 1800 tallet. Uviklet i Unity med Høgskolen i Østfold som oppdragsgiver.",
-          date: "Vår 2020",
-          alt: "Picture of app from the bachelor",
-          src: "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/bacheloroppgave%2F3d-many.png?alt=media&token=d147b978-ba9f-44e3-996d-5491092bb89c"
-        },
-        // Bachelor
+        // {
+        //   link: "https://erlendworkblog.wordpress.com/2020/06/11/bacheloroppgave-augmented-reality-til-a-vise-utvandringshistorie/",
+        //   title: "Bacheloroppgave",
+        //   description: "AR applikasjon hvor man kan se 3D modeller av byggninger fra 1800 tallet. Uviklet i Unity med Høgskolen i Østfold som oppdragsgiver.",
+        //   date: "Vår 2020",
+        //   alt: "Picture of app from the bachelor",
+        //   src: "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/bacheloroppgave%2F3d-many.png?alt=media&token=d147b978-ba9f-44e3-996d-5491092bb89c"
+        // },
+        // Wordpress
         {
           link: "https://erlendworkblog.wordpress.com/2020/06/11/bacheloroppgave-augmented-reality-til-a-vise-utvandringshistorie/",
           title: "Wordpress nettsted",

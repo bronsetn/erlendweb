@@ -40,15 +40,6 @@
               >
                 <v-icon>mdi-facebook</v-icon>
               </v-btn>
-              <v-btn
-                title="Gitlab"
-                href="https://gitlab.com/bronsetn"
-                target="_blank"
-                color="tertiary"
-                icon
-              >
-                <v-icon>mdi-gitlab</v-icon>
-              </v-btn>
             </v-row>
             <p class="pt-2">
               bronsetherlend@gmail.com
