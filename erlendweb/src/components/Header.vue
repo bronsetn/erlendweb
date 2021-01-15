@@ -6,7 +6,6 @@
       fixed
       flat
       color="secondary"
-      elevation="5"
     >
       <v-app-bar-nav-icon
         class="pl-4"
