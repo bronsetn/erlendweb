@@ -93,7 +93,7 @@ export default {
           description: "En side for å vise tegninger og malerier laget av Mari Brønseth. Laget i VueJs og satt opp med Netlify som vert.",
           date: "Vinter 2021",
           alt: "Screenshot from https://maribro.no",
-          src: "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/mariweb%2Fmariweb.png?alt=media&token=48a886a3-bbd6-41b4-b297-fdbdc4ab90b9"
+          src: "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/mariweb.png?alt=media&token=edcce03c-8fee-4be0-9c39-de239ff519a2"
         },
         // Prios events
         {
@@ -102,17 +102,8 @@ export default {
           description: "Side for blandt annet å kunne holde jobbmesser og lignende typer messer. Jeg arbeidet med utvikling av front-end og deisgn av siden for Prios kompetanse AS. Siden er utviklet i VueJs.",
           date: "Høst 2020",
           alt: "Screenshot from prios.events",
-          src: "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/prios-events%2F3d-wireframe.png?alt=media&token=6c529375-fb00-47d4-b77a-3ccecf803f27"
-        },
-        // Bachelor
-        // {
-        //   link: "https://erlendworkblog.wordpress.com/2020/06/11/bacheloroppgave-augmented-reality-til-a-vise-utvandringshistorie/",
-        //   title: "Bacheloroppgave",
-        //   description: "AR applikasjon hvor man kan se 3D modeller av byggninger fra 1800 tallet. Uviklet i Unity med Høgskolen i Østfold som oppdragsgiver.",
-        //   date: "Vår 2020",
-        //   alt: "Picture of app from the bachelor",
-        //   src: "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/bacheloroppgave%2F3d-many.png?alt=media&token=d147b978-ba9f-44e3-996d-5491092bb89c"
-        // },
+          src: "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/events.png?alt=media&token=89518a63-485d-439b-993f-79c4852f4870"
+        },    
         // Wordpress
         {
           link: "https://erlendworkblog.wordpress.com/2020/06/11/bacheloroppgave-augmented-reality-til-a-vise-utvandringshistorie/",
@@ -120,7 +111,7 @@ export default {
           description: "Nettsted/Portefølje jeg brukte til publisering av prosjekter og oppgaver fra bachelorstudiuet.",
           date: "Sommer 2019",
           alt: "Sreenshot from https://erlendworkblog.wordpress.com",
-          src: "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/wordpress%2Fwordpress.png?alt=media&token=74bd6fc2-a614-4a13-89bb-79f0b4fe3794"
+          src: "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/wordpress.png?alt=media&token=0b8b963f-5431-40b5-bc86-996f5f56d6c2"
         },
       ],
     };

@@ -40,6 +40,7 @@
             <v-clamp
               autoresize
               :max-lines="2"
+              class="text-justify"
             >
               {{ spaceData.explanation }}
               <template #after="{ toggle, expanded, clamped }">

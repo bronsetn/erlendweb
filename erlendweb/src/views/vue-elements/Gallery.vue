@@ -15,7 +15,7 @@
       </v-card-title>
       <v-parallax
         :src="images[1].link"
-        height="400"
+        height="350"
         gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
       >
         <v-overlay
@@ -69,7 +69,7 @@
                   <v-img
                     @click="openImage(index); imageDialog[index] = true"
                     class="pointer"
-                    height="300"
+                    height="250"
                     :src="item.link"
                   ><template v-slot:placeholder>
                       <v-row
@@ -104,9 +104,7 @@
                     icon
                     @click="closeDialog(index)"
                   >
-                    <v-icon
-                      color="tertiary"
-                    >mdi-close</v-icon>
+                    <v-icon color="tertiary">mdi-close</v-icon>
                   </v-btn>
                   <v-btn
                     absolute
@@ -168,6 +166,14 @@ export default {
         {
           link: "https://picsum.photos/600/600",
           title: "Heysann",
+        },
+        {
+          link: "https://picsum.photos/600/500",
+          title: "Haisann",
+        },
+        {
+          link: "https://picsum.photos/500/600",
+          title: "Halloen",
         },
       ],
     };

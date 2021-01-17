@@ -26,7 +26,7 @@
                 <v-avatar size="200">
                   <v-img
                     alt="Personbilde"
-                    src="../assets/images/kiz.jpg"
+                    src="../assets/images/about-image.jpg"
                     lazy-src="../assets/images/placeholder-coffee.png"
                     height="200"
                   >

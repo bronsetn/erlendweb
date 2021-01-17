@@ -2,7 +2,7 @@
   <div>
     <v-parallax
       height="900"
-      src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/erlendweb%2Fskate.jpg?alt=media&token=e5f57e29-354b-44bb-9b80-51c89c6e6efd"
+      src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/front-image.jpg?alt=media&token=6450a143-5321-4467-976c-439377308381"
       lazy-src="../assets/images/placeholder.png"
     >
       <v-row
