@@ -133,6 +133,7 @@
             <p>
               Denne komponenten tar i bruk nettleserens geolokasjon
               for å hente ut værmeldingen for dine koordinater.
+              Hvis geoloaksojn er deaktivert hentes det værmelding fra Oslo.
             </p>
             <p>For
               å hente værdata er det brukt Openweathermap sin 5 dagers
@@ -202,14 +203,17 @@ export default {
             // console.log(position.coords.latitude, position.coords.longitude);
 
             this.getCity(position.coords.latitude, position.coords.longitude);
-            this.geolocation = "true";
           },
           (error) => {
             console.log(error.message);
+            console.log("trying to get forecast from Oslo");
+            this.getForecastOslo();
           }
         );
       } else {
         console.log("Your browser does not support geolocation API ");
+        console.log("trying to get forecast from Oslo");
+        this.getForecastOslo();
       }
     },
 
@@ -261,9 +265,8 @@ export default {
           // console.log(json);
 
           if (json.cod == 404) {
-            console.log(json.message, ", trying to get forecast from Oslo")
+            console.log(json.message)
             this.getForecastOslo();
-
           }
           else {
             // console.log("Værmelding");

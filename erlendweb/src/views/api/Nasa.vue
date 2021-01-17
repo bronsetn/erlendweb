@@ -17,7 +17,7 @@
         </v-card-title>
         <v-parallax
           v-if="spaceData.media_type == 'image'"
-          :lazy="spaceData.url"
+          :lazy-src="spaceData.url"
           :src="spaceData.url"
           :href="spaceData.url"
           aspect-ratio="1.8"
@@ -40,7 +40,6 @@
             <v-clamp
               autoresize
               :max-lines="2"
-              class="text-justify"
             >
               {{ spaceData.explanation }}
               <template #after="{ toggle, expanded, clamped }">

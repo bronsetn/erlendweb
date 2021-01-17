@@ -3,7 +3,7 @@
     <v-parallax
       height="900"
       src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/erlendweb%2Fskate.jpg?alt=media&token=e5f57e29-354b-44bb-9b80-51c89c6e6efd"
-      lazy="../assets/images/halden.jpg"
+      lazy-src="../assets/images/placeholder.png"
     >
       <v-row
         no-gutters
@@ -80,7 +80,7 @@
               class="text-md-left"
             >
               Junior front-end utvikler
-              
+
             </h4>
           </v-container>
         </v-col>

@@ -22,7 +22,6 @@
         >
           <v-img
             src="../assets/icons/logo-light.svg"
-            lazy="../assets/icons/logo-light.svg"
             height="40px"
             width="40px"
             contain
@@ -35,7 +34,6 @@
         >
           <v-img
             src="../assets/icons/logo-dark.svg"
-            lazy="../assets/icons/logo-dark.svg"
             height="40px"
             width="40px"
             contain
@@ -87,7 +85,7 @@
       v-model="drawer"
       fixed
       temporary
-      color="primary"
+      color="secondary"
     >
       <v-list-item></v-list-item>
       <v-list

@@ -27,7 +27,7 @@
                   <v-img
                     alt="Personbilde"
                     src="../assets/images/kiz.jpg"
-                    lazy="../assets/images/kiz.jpg"
+                    lazy-src="../assets/images/placeholder-coffee.png"
                     height="200"
                   >
                   </v-img>
@@ -66,8 +66,8 @@
                     ekspirementere innenfor utvikling og design.
                   </p>
                   <p>Jeg har ambisjoner om å bli dreven
-                    innenfor front-end utvikling.
-                    Jeg har i høst arbeidet hos Prios Kompetanse AS
+                    innenfor front-end utvikling og
+                    har i høst arbeidet hos Prios Kompetanse AS,
                     hvor jeg har blitt kjent med bruk av rammeverket VueJs.</p>
 
                   <p class="thick pt-4">Teknologier</p>

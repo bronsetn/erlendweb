@@ -8,12 +8,6 @@
         /* ---------- */
         
         @import url('https://fonts.googleapis.com/css2?family=Domine&family=Roboto:wght@300&display=swap');
-        /* * {
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            text-align: center;
-        } */
-        
         #app {
             font-family: 'Roboto', sans-serif;
             -webkit-font-smoothing: antialiased;
@@ -32,19 +26,19 @@
         }
         
         .serif {
-            font-family: 'Domine', serif;
+            font-family: 'Domine', serif !important;
         }
         
-        p.normal {
+        .normal {
             font-weight: 400;
         }
         
-        p.light {
+        .light {
             font-weight: 300;
             font-size: 0.9rem;
         }
         
-        p.thick {
+        .thick {
             font-weight: 500;
         }
         /* Others */
@@ -53,11 +47,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-        
-        .colored-container {
-            background-color: #010B14;
-            color: white;
         }
         
         .clamp {
