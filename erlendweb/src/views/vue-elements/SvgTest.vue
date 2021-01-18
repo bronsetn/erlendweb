@@ -9,6 +9,7 @@
     <v-card
       color="secondary"
       elevation="5"
+      height="400"
     >
       <v-card-title>SVG animasjonstest <v-spacer></v-spacer>
         <v-icon color="tertiary">mdi-svg</v-icon>

@@ -9,12 +9,14 @@
     <v-card
       color="secondary"
       elevation="5"
+      height="400"
+      style="overflow:hidden;"
     >
       <v-card-title>Galleri layout <v-spacer></v-spacer>
         <v-icon color="tertiary">mdi-vuetify</v-icon>
       </v-card-title>
       <v-parallax
-        :src="images[1].link"
+        :src="images[0].link"
         height="350"
         gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
       >
