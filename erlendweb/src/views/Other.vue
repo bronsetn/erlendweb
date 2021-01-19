@@ -11,10 +11,11 @@
         <Nasa></Nasa>
         <Forecast></Forecast>
 
-        <SvgTest></SvgTest>
         <Gallery></Gallery>
-
+        
         <ModelViewer></ModelViewer>
+
+        <SvgTest></SvgTest>
       </v-row>
     </v-container>
   </body>
@@ -34,10 +35,11 @@ export default {
     Nasa,
     Forecast,
 
-    SvgTest,
+    ModelViewer,
     Gallery,
 
-    ModelViewer,
+    SvgTest,
+
   },
 };
 </script>

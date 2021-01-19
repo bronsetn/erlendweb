@@ -16,7 +16,7 @@
     ></ContactForm>
     <Other
       id="other"
-      class="pt-4"
+      class="pt-4 pb-8"
     ></Other>
   </body>
 </template>

@@ -56,7 +56,7 @@ export default {
 
       const loader = new GLTFLoader()
       loader.load(
-        '.../assets/3d/lamp.gltf',
+        './lamp.gltf',
         function (gltf) {
           this.scene.add(gltf.scene);
         },
