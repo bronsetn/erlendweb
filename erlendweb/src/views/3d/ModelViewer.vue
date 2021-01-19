@@ -16,29 +16,26 @@
         <v-icon color="tertiary">mdi-vuetify</v-icon>
       </v-card-title>
       <v-container
-        class="faded center"
         fill-height
+        class="faded center"
       >
-        <div>
-          <v-btn
-            x-large
-            outlined
-            color="white"
-            @click="dialog1 = true"
-          >
-            Show - 3D Cube
-          </v-btn>
-        </div>
-        <!-- <div class="pt-2">
-          <v-btn
+        <v-btn
+          class="mb-12"
+          x-large
+          outlined
+          color="white"
+          @click="dialog1 = true"
+        >
+          Show - 3D Cube
+        </v-btn>
+        <!-- <v-btn
             x-large
             outlined
             color="tertiary"
             @click="dialog2 = true"
           >
             3D figure
-          </v-btn>
-        </div> -->
+          </v-btn> -->
       </v-container>
     </v-card>
 
