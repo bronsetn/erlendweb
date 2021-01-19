@@ -10,7 +10,9 @@
 
 
 <script>
-//Documentation? https://stackoverflow.com/questions/47849626/import-and-use-three-js-library-in-vue-component
+//Documentation? https://threejs.org/docs/#manual/en/introduction/Loading-3D-models
+
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 // npm install --save three
 import * as Three from 'three'
@@ -24,10 +26,9 @@ export default {
       cube: null
     }
   },
-  
+
   mounted() {
     this.init();
-    this.animate();
   },
 
   created() {
@@ -45,27 +46,31 @@ export default {
         0.1,
         1000);
 
-      this.camera.position.z = 3;
+      this.camera.position.z = 5;
 
       this.scene.background = new Three.Color("rgb(212, 230, 241)")
       this.hlight = new Three.AmbientLight(0x404040, 100);
 
-      let geometry = new Three.BoxGeometry(1, 1, 1);
-      let material = new Three.MeshNormalMaterial();
-      this.cube = new Three.Mesh(geometry, material);
+      this.scene.add(this.hlight);
 
-      this.scene.add(this.cube, this.hlight);
+
+      const loader = new GLTFLoader()
+      loader.load(
+        '.../assets/3d/lamp.gltf',
+        function (gltf) {
+          this.scene.add(gltf.scene);
+        },
+        (xhr) => {
+          console.log((xhr.loaded / xhr.total * 100) + '% loaded')
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
 
       this.renderer = new Three.WebGLRenderer({ antialias: true });
       this.renderer.setSize(window.innerWidth, window.innerHeight);
       container.appendChild(this.renderer.domElement);
-    },
-
-    animate() {
-      requestAnimationFrame(this.animate);
-      this.cube.rotation.x += 0.01;
-      this.cube.rotation.y += 0.01;
-      this.renderer.render(this.scene, this.camera);
     },
 
     onWindowResize() {
