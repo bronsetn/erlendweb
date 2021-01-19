@@ -57,6 +57,7 @@
             :key="index"
           >
             <v-dialog
+              transition="scale-transition"
               v-model="imageDialog['dialog_' + index]"
               max-height="80vh"
               max-width="80vw"

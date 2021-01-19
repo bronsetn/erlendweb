@@ -13,6 +13,8 @@
 
         <SvgTest></SvgTest>
         <Gallery></Gallery>
+
+        <ModelViewer></ModelViewer>
       </v-row>
     </v-container>
   </body>
@@ -25,6 +27,8 @@ import Forecast from "./api/Forecast.vue";
 import SvgTest from "./vue-elements/SvgTest.vue";
 import Gallery from "./vue-elements/Gallery.vue";
 
+import ModelViewer from "./3d/ModelViewer.vue";
+
 export default {
   components: {
     Nasa,
@@ -32,6 +36,8 @@ export default {
 
     SvgTest,
     Gallery,
+
+    ModelViewer,
   },
 };
 </script>
