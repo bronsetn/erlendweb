@@ -1,7 +1,6 @@
 
 
 <template>
-
   <body>
     <v-container>
       <v-container class="justify-center">
@@ -10,7 +9,13 @@
       </v-container>
 
       <v-row class="justify-center">
-        <v-col>
+        <v-col
+          cols="12"
+          sm="12"
+          md="10"
+          lg="10"
+          xl="8"
+        >
           <v-card
             elevation="5"
             color="secondary"
@@ -19,9 +24,9 @@
               <v-col
                 xs="12"
                 sm="12"
-                md="8"
-                lg="8"
-                xl="6"
+                md="10"
+                lg="10"
+                xl="8"
               >
                 <v-avatar size="200">
                   <v-img
@@ -120,8 +125,8 @@
                       cols="12"
                       sm="12"
                       md="6"
-                      lg="4"
-                      xl="4"
+                      lg="6"
+                      xl="5"
                     >
                       <v-list-item>
                         <v-list-item-content>
@@ -134,8 +139,8 @@
                       cols="12"
                       sm="12"
                       md="6"
-                      lg="4"
-                      xl="4"
+                      lg="6"
+                      xl="5"
                     >
                       <v-list-item>
                         <v-list-item-content>

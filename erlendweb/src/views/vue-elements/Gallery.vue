@@ -156,27 +156,19 @@ export default {
       images: [
         {
           link: "https://picsum.photos/700/700",
-          title: "Bildetittel",
+          title: "Bildetittel-1",
         },
         {
           link: "https://picsum.photos/500/500",
-          title: "Heisann",
+          title: "Bildetittel-2",
         },
         {
           link: "https://picsum.photos/800/800",
-          title: "Hoisann",
+          title: "Bildetittel-3",
         },
         {
           link: "https://picsum.photos/600/600",
-          title: "Heysann",
-        },
-        {
-          link: "https://picsum.photos/600/500",
-          title: "Haisann",
-        },
-        {
-          link: "https://picsum.photos/500/600",
-          title: "Halloen",
+          title: "Bildetittel-4",
         },
       ],
     };

@@ -69,7 +69,7 @@
         v-if="$vuetify.theme.dark"
         @click="$vuetify.theme.dark = !$vuetify.theme.dark"
       >
-        <v-icon>mdi-moon-first-quarter</v-icon>
+        <v-icon>mdi-white-balance-sunny</v-icon>
       </v-btn>
       <v-btn
         icon
@@ -77,7 +77,7 @@
         v-else
         @click="$vuetify.theme.dark = !$vuetify.theme.dark"
       >
-        <v-icon>mdi-moon-last-quarter</v-icon>
+        <v-icon>mdi-weather-night</v-icon>
       </v-btn>
     </v-app-bar>
 

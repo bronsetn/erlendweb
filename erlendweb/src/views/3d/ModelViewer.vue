@@ -12,7 +12,7 @@
       height="400"
       style="overflow:hidden;"
     >
-      <v-card-title>3D visning med ThreeJS<v-spacer></v-spacer>
+      <v-card-title>3D visning med ThreeJs<v-spacer></v-spacer>
         <v-icon color="tertiary">mdi-vuetify</v-icon>
       </v-card-title>
       <v-container
@@ -20,13 +20,12 @@
         class="faded center"
       >
         <v-btn
-          class="mb-12"
+          class="mb-12 pa-6"
           x-large
-          outlined
-          color="white"
+          color="primary"
           @click="dialog1 = true"
         >
-          Show - 3D Cube
+          <div>Show - 3D Cube</div>
         </v-btn>
         <!-- <v-btn
             x-large
@@ -61,7 +60,7 @@
     </v-dialog>
 
     <!-- DIALOG 2 -->
-    <v-dialog
+    <!-- <v-dialog
       v-model="dialog2"
       fullscreen
       transition="dialog-bottom-transition"
@@ -79,7 +78,7 @@
         </v-btn>
         <Figure></Figure>
       </v-card>
-    </v-dialog>
+    </v-dialog> -->
   </v-col>
 </template>
 
@@ -104,7 +103,6 @@ export default {
 
 <style scoped>
 .faded {
-  background: rgb(8,14,33);
 background: linear-gradient(90deg, rgba(8,14,33,1) 0%, rgba(18,24,108,1) 10%, rgba(173,117,185,1) 20%, rgba(255,169,236,1) 30%, rgba(251,191,222,1) 40%, rgba(231,121,139,1) 50%, rgba(255,123,123,1) 60%, rgba(244,111,19,1) 70%, rgba(255,213,79,1) 80%, rgba(255,253,208,1) 90%, rgba(255,255,240,1) 100%);
 }
 </style>

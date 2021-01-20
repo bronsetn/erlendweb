@@ -6,15 +6,12 @@
       bottom
       right
       fab
-      large
       color="tertiary"
       href="#top"
       v-scroll="onScroll"
       v-show="fab"
     >
-      <v-icon
-        color="primary"
-      > mdi-chevron-up </v-icon>
+      <v-icon color="primary"> mdi-chevron-up </v-icon>
     </v-btn>
   </v-fade-transition>
 </template>
