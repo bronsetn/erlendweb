@@ -11,11 +11,10 @@
         <Nasa></Nasa>
         <Forecast></Forecast>
 
-        <Gallery></Gallery>
-        
         <ModelViewer></ModelViewer>
 
         <SvgTest></SvgTest>
+        <Gallery></Gallery>
       </v-row>
     </v-container>
   </body>
