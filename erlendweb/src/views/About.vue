@@ -1,6 +1,7 @@
 
 
 <template>
+
   <body>
     <v-container>
       <v-container class="justify-center">
@@ -71,9 +72,12 @@
                     ekspirementere innenfor utvikling og design.
                   </p>
                   <p>Jeg har ambisjoner om å bli dreven
-                    innenfor front-end utvikling og
-                    har i høst arbeidet hos Prios Kompetanse AS,
-                    hvor jeg har blitt kjent med bruk av rammeverket VueJs.</p>
+                    innenfor front-end utvikling. I høst
+                    har jeg arbeidet hos <a
+                      target="_blank"
+                      href="https://prios.no"
+                    >Prios Kompetanse AS</a>
+                    hvor jeg har blitt kjent med bruk av VueJs.</p>
 
                   <p class="thick pt-4">Teknologier</p>
 
