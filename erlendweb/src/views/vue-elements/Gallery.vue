@@ -13,7 +13,7 @@
       style="overflow:hidden;"
     >
       <v-card-title>Galleri layout <v-spacer></v-spacer>
-        <v-icon color="tertiary">mdi-vuetify</v-icon>
+        <v-icon color="tertiary">mdi-image-multiple</v-icon>
       </v-card-title>
       <v-parallax
         :src="images[0].link"

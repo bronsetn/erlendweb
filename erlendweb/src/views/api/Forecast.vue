@@ -10,104 +10,108 @@
       color="secondary"
       elevation="5"
     >
-      <v-container>
-        <v-card-title>Dagens værmelding<v-spacer></v-spacer>
-          <v-icon color="tertiary">mdi-api</v-icon>
-        </v-card-title>
-        <div v-if="weather">
-          <v-list-item two-line>
-            <v-list-item-content>
-              <v-list-item-title class="headline">
-                {{ weather.city.name }}
-              </v-list-item-title>
-              <v-list-item-subtitle class="pt-2">{{
+      <v-card-title>Dagens værmelding<v-spacer></v-spacer>
+        <v-icon color="tertiary">mdi-satellite-variant</v-icon>
+      </v-card-title>
+
+      <div v-if="weather">
+        <v-list-item two-line>
+          <v-list-item-content>
+            <v-list-item-title class="headline">
+              {{ weather.city.name }}
+            </v-list-item-title>
+            <v-list-item-subtitle class="pt-2">{{
               formatedDate
             }}</v-list-item-subtitle>
-              <p class="pt-2 text-capitalize">
-                {{ weather.list[0].weather[0].description }}
-              </p>
-            </v-list-item-content>
-          </v-list-item>
+            <p class="pt-2 text-capitalize">
+              {{ weather.list[0].weather[0].description }}
+            </p>
+          </v-list-item-content>
+        </v-list-item>
 
-          <v-row
-            align="center"
-            justify="center"
+        <v-row
+          align="center"
+          justify="center"
+        >
+          <v-col
+            cols="6"
+            md="4"
           >
-            <v-col cols="5">
-              <p class="display-1">{{ temperature }} &deg;C</p>
-            </v-col>
-            <v-col cols="5">
-              <v-avatar
-                color="primary lighten-6"
-                size="100"
-              >
-                <v-img
-                  height="200"
-                  contain
-                  :src="wicon"
-                ></v-img>
-              </v-avatar>
-            </v-col>
-          </v-row>
-
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-weather-windy</v-icon>
-            </v-list-item-icon>
-
-            <v-list-item-subtitle>Vindhastighet
-              {{ weather.list[0].wind.speed }} m/s</v-list-item-subtitle>
-          </v-list-item>
-
-          <v-divider inset></v-divider>
-
-          <v-list-item v-if="weather.list[0].rain">
-            <v-list-item-icon>
-              <v-icon>mdi-weather-pouring</v-icon>
-            </v-list-item-icon>
-            <v-list-item-subtitle>
-              Regn
-              {{ weather.list[0].rain["3h"] }} %</v-list-item-subtitle>
-          </v-list-item>
-
-          <v-divider inset></v-divider>
-
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-water</v-icon>
-            </v-list-item-icon>
-            <v-list-item-subtitle>
-              Luftfuktighet
-              {{ weather.list[0].main.humidity }}%</v-list-item-subtitle>
-          </v-list-item>
-
-          <v-divider inset></v-divider>
-
-          <v-list-item v-if="weather.list[0].snow">
-            <v-list-item-icon>
-              <v-icon>mdi-snowflake</v-icon>
-            </v-list-item-icon>
-            <v-list-item-subtitle>
-              Snømengde
-              {{ weather.list[0].snow["3h"] }} %</v-list-item-subtitle>
-          </v-list-item>
-        </div>
-
-        <!-- If weatherdata doesn't load -->
-        <div v-else>
-          <p class="Normal">Click to get today's weather</p>
-          <v-btn
-            fab
-            color="tertiary"
-            class="ma-2"
-            @click="getLocation()"
+            <p class="display-2">{{ temperature }} &deg;C</p>
+          </v-col>
+          <v-col
+            cols="6"
+            md="4"
           >
-            <v-icon color="primary">mdi-cached</v-icon>
-          </v-btn>
-          <p class="normal pt-2">To get weatherdata this component needs to use your browser's geolocation.
-            If nothing happens after clicking the button, try to deletign the site's cache.</p>
-        </div>
-      </v-container>
+            <v-avatar
+              color="primary"
+              size="150"
+            >
+              <v-img
+                height="100"
+                :src="wicon"
+              ></v-img>
+            </v-avatar>
+          </v-col>
+        </v-row>
+
+        <v-list-item>
+          <v-list-item-icon>
+            <v-icon>mdi-weather-windy</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-subtitle>Vindhastighet
+            {{ weather.list[0].wind.speed }} m/s</v-list-item-subtitle>
+        </v-list-item>
+
+        <v-divider inset></v-divider>
+
+        <v-list-item v-if="weather.list[0].rain">
+          <v-list-item-icon>
+            <v-icon>mdi-weather-pouring</v-icon>
+          </v-list-item-icon>
+          <v-list-item-subtitle>
+            Regn
+            {{ weather.list[0].rain["3h"] }} %</v-list-item-subtitle>
+        </v-list-item>
+
+        <v-divider inset></v-divider>
+
+        <v-list-item>
+          <v-list-item-icon>
+            <v-icon>mdi-water</v-icon>
+          </v-list-item-icon>
+          <v-list-item-subtitle>
+            Luftfuktighet
+            {{ weather.list[0].main.humidity }}%</v-list-item-subtitle>
+        </v-list-item>
+
+        <v-divider inset></v-divider>
+
+        <v-list-item v-if="weather.list[0].snow">
+          <v-list-item-icon>
+            <v-icon>mdi-snowflake</v-icon>
+          </v-list-item-icon>
+          <v-list-item-subtitle>
+            Snømengde
+            {{ weather.list[0].snow["3h"] }} %</v-list-item-subtitle>
+        </v-list-item>
+      </div>
+
+      <!-- If weatherdata doesn't load -->
+      <div v-else>
+        <p class="Normal">Click to get today's weather</p>
+        <v-btn
+          fab
+          color="tertiary"
+          class="ma-2"
+          @click="getLocation()"
+        >
+          <v-icon color="primary">mdi-cached</v-icon>
+        </v-btn>
+        <p class="normal pt-2">To get weatherdata this component needs to use your browser's geolocation.
+          If nothing happens after clicking the button, try to deletign the site's cache.</p>
+      </div>
 
       <v-card-actions>
         <v-btn

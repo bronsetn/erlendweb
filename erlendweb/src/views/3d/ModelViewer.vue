@@ -13,8 +13,9 @@
       style="overflow:hidden;"
     >
       <v-card-title>3D visning med ThreeJs<v-spacer></v-spacer>
-        <v-icon color="tertiary">mdi-vuetify</v-icon>
+        <v-icon color="tertiary">mdi-cube-outline</v-icon>
       </v-card-title>
+
       <v-container
         fill-height
         class="faded center"

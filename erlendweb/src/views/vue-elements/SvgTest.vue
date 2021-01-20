@@ -12,7 +12,7 @@
       height="400"
     >
       <v-card-title>SVG animasjonstest <v-spacer></v-spacer>
-        <v-icon color="tertiary">mdi-svg</v-icon>
+        <v-icon color="tertiary">mdi-coffee</v-icon>
       </v-card-title>
       <v-card-text>
         <v-container>

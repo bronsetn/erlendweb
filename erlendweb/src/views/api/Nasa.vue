@@ -11,57 +11,50 @@
       color="secondary"
       elevation="5"
     >
-      <v-card-title>Dagens bilde fra Nasa <v-spacer></v-spacer>
-        <v-icon color="tertiary">mdi-api</v-icon>
+      <v-card-title>Dagens bilde fra Nasa<v-spacer></v-spacer>
+        <v-icon color="tertiary">mdi-rocket-outline</v-icon>
       </v-card-title>
 
-      <v-parallax
+      <v-img
         v-if="spaceData.media_type == 'image'"
         :lazy-src="spaceData.url"
         :src="spaceData.url"
-        :href="spaceData.url"
-        aspect-ratio="1.8"
-        contain
-        height="400"
-        class="white--text align-end"
+        height="350"
       >
-      </v-parallax>
+      </v-img>
       <div
         v-else
         class="video-container"
       >
         <iframe :src="spaceData.url"> </iframe>
       </div>
-      <v-container>
+      <p class="light pt-2"><a
+          :href="spaceData.url"
+          target="_blank"
+        >{{ spaceData.url }}</a></p>
 
-        <v-card-title>{{ spaceData.title }}</v-card-title>
+      <v-card-title>{{ spaceData.title }}</v-card-title>
 
-        <p class="caption light text-left pa-0 pl-4">Date: {{date}}</p>
-        <v-card-text class="pt-0 mt-0">
-          <p class="normal">
-            <v-clamp
-              autoresize
-              :max-lines="2"
-              class="text-justify"
-            >
-              {{ spaceData.explanation }}
-              <template #after="{ toggle, expanded, clamped }">
-                <a
-                  href="#"
-                  v-if="expanded || clamped"
-                  class="ml-1 badge badge-light"
-                  @click.prevent="toggle"
-                >{{ expanded ? "Mindre" : "Mer" }}</a>
-              </template>
-            </v-clamp>
-          </p>
-          Bilde:
-          <a
-            :href="spaceData.url"
-            target="_blank"
-          >{{ spaceData.url }}</a>
-        </v-card-text>
-      </v-container>
+      <!-- <p class="caption light text-left pa-0 pl-4">Date: {{date}}</p> -->
+      <v-card-text class="pb-2 pt-0">
+        <p class="normal pa-0 ma-0">
+          <v-clamp
+            autoresize
+            :max-lines="2"
+            class="text-justify"
+          >
+            {{ spaceData.explanation }}
+            <template #after="{ toggle, expanded, clamped }">
+              <a
+                href="#"
+                v-if="expanded || clamped"
+                class="ml-1 badge badge-light"
+                @click.prevent="toggle"
+              >{{ expanded ? "Mindre" : "Mer" }}</a>
+            </template>
+          </v-clamp>
+        </p>
+      </v-card-text>
 
       <v-card-actions>
         <v-btn
