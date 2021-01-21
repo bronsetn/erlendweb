@@ -21,9 +21,10 @@
         class="faded center"
       >
         <v-btn
-          class="mb-12 pa-6"
+          dark
           x-large
-          color="primary"
+          class="mb-12 pa-6"
+          color="blue darken-4"
           @click="dialog1 = true"
         >
           <div>Show - 3D Cube</div>
@@ -104,6 +105,7 @@ export default {
 
 <style scoped>
 .faded {
-background: linear-gradient(90deg, rgba(8,14,33,1) 0%, rgba(18,24,108,1) 10%, rgba(173,117,185,1) 20%, rgba(255,169,236,1) 30%, rgba(251,191,222,1) 40%, rgba(231,121,139,1) 50%, rgba(255,123,123,1) 60%, rgba(244,111,19,1) 70%, rgba(255,213,79,1) 80%, rgba(255,253,208,1) 90%, rgba(255,255,240,1) 100%);
+    background: linear-gradient(90deg, rgba(8,14,33,1) 0%, rgba(18,24,108,1) 10%, rgba(173,117,185,1) 20%, rgba(255,169,236,1) 30%, rgba(251,191,222,1) 40%, 
+    rgba(231,121,139,1) 50%, rgba(255,123,123,1) 60%, rgba(244,111,19,1) 70%, rgba(255,213,79,1) 80%, rgba(255,253,208,1) 90%, rgba(255,255,240,1) 100%);
 }
 </style>

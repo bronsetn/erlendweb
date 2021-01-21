@@ -7,7 +7,7 @@
         <h1>Annet</h1>
       </v-container>
 
-      <v-row>
+      <v-row justify="center">
         <Nasa></Nasa>
         <Forecast></Forecast>
 

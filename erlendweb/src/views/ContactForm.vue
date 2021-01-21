@@ -9,7 +9,13 @@
       </v-container>
 
       <v-row class="d-flex justify-center">
-        <v-col cols="12" sm="12" md="10" lg="10" xl="8">
+        <v-col
+          cols="12"
+          sm="12"
+          md="10"
+          lg="10"
+          xl="8"
+        >
           <v-card
             elevation="5"
             color="secondary"
@@ -74,7 +80,7 @@
                   type="submit"
                   :disabled="!validate  || submitted"
                 >
-                  <v-icon>mdi-telegram</v-icon>
+                  <v-icon>mdi-send</v-icon>
                 </v-btn>
                 <v-alert
                   text

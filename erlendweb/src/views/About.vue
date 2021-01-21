@@ -29,72 +29,75 @@
                 lg="10"
                 xl="8"
               >
-                <v-avatar size="200">
-                  <v-img
-                    alt="Personbilde"
-                    src="../assets/images/about-image.jpg"
-                    lazy-src="../assets/images/placeholder-coffee.png"
-                    height="200"
+                <v-row>
+                  <v-col
+                    cols="12"
+                    class="center"
                   >
-                  </v-img>
-                </v-avatar>
+                    <v-avatar size="200">
+                      <v-img
+                        alt="Personbilde"
+                        src="../assets/images/about-image.jpg"
+                        lazy-src="../assets/images/placeholder-coffee.png"
+                      >
+                      </v-img>
+                    </v-avatar>
+                  </v-col>
+                  <v-col cols="12">
+                    <h1>Erlend Brønseth</h1>
 
-                <h1 class="pa-4">Erlend Brønseth</h1>
-
-                <v-row class="justify-center">
-                  <v-btn
-                    title="Linkedin"
-                    href="https://no.linkedin.com/in/erlend-brønseth-b5a99612b/en-us"
-                    target="_blank"
-                    color="tertiary"
-                    class="ma-1"
-                    icon
-                  >
-                    <v-icon large>mdi-linkedin</v-icon>
-                  </v-btn>
-                  <v-btn
-                    title="Facebook"
-                    href="https://www.facebook.com/profile.php?id=100003582864001"
-                    target="_blank"
-                    color="tertiary"
-                    class="ma-1"
-                    icon
-                  >
-                    <v-icon large>mdi-facebook</v-icon>
-                  </v-btn>
+                    <p class="pt-4">
+                      <v-icon
+                        small
+                        class="pb-1 pr-2"
+                        color="tertiary"
+                      >mdi-email</v-icon> bronsetherlend@gmail.com
+                    </p>
+                    <p>
+                      <v-icon
+                        small
+                        class="pb-1 pr-2"
+                        color="tertiary"
+                      >mdi-phone</v-icon> (+47) 45 80 44 52
+                    </p>
+                    <v-btn
+                      title="Linkedin"
+                      href="https://no.linkedin.com/in/erlend-brønseth-b5a99612b/en-us"
+                      target="_blank"
+                      color="tertiary"
+                      icon
+                    >
+                      <v-icon>mdi-linkedin</v-icon>
+                    </v-btn>
+                    <v-btn
+                      title="Facebook"
+                      href="https://www.facebook.com/profile.php?id=100003582864001"
+                      target="_blank"
+                      color="tertiary"
+                      icon
+                    >
+                      <v-icon>mdi-facebook</v-icon>
+                    </v-btn>
+                  </v-col>
                 </v-row>
 
                 <v-card-text>
-                  <p class="normal pt-2">
+                  <p class="normal">
                     Jeg er en 23 åring fra Inderøy med en bachelor innenfor
                     digitale medier og design. Dette nettstedet er ment som en
                     portefølje i tillegg til et sted jeg kan
                     ekspirementere innenfor utvikling og design.
                   </p>
+
                   <p>Jeg har ambisjoner om å bli dreven
-                    innenfor front-end utvikling. I høst
+                    innenfor front-end utvikling og har i høst
                     har jeg arbeidet hos <a
                       target="_blank"
                       href="https://prios.no"
-                    >Prios Kompetanse AS</a>
+                    >Prios Kompetanse AS,</a>
                     hvor jeg har blitt kjent med bruk av VueJs.</p>
 
-                  <p class="thick pt-4">Teknologier</p>
-
-                  <v-row justify="center">
-                    <v-col
-                      v-for="(item, index) in techs"
-                      :item="item"
-                      :key="index"
-                    >
-                      <v-icon color="tertiary">{{ item.icon }}</v-icon>
-                      <p> {{item.name}} </p>
-                    </v-col>
-                  </v-row>
-
-                  <v-divider></v-divider>
-
-                  <p class="thick pt-8">Digitale medier og design</p>
+                  <h3 class="thick pa-4">Digitale medier og design</h3>
 
                   <p class="normal">
                     Bachelorstudiumet digitale medier og design på HIØ gir opplæring i
@@ -109,9 +112,9 @@
                     >Dokumentasjon</a>
                   </p>
 
-                  <p class="thick pt-4">Wordpress</p>
+                  <h3 class="thick pa-4">Wordpress</h3>
 
-                  <p class="normal">
+                  <p class="normal pb-4">
                     Inntil nylig har jeg brukt wordpress for publisering av
                     prosjekter fra studiet, de finnes fortsatt her:
                     <br>
@@ -121,39 +124,24 @@
                     >https://erlendworkblog.wordpress.com</a>
                   </p>
 
+                  <v-divider></v-divider>
+
+                  <h3 class="thick pa-4 pt-8">Teknologier</h3>
+
                   <v-row
-                    class="pt-4"
                     justify="center"
+                    class="pa-2"
                   >
                     <v-col
-                      cols="12"
-                      sm="12"
-                      md="6"
-                      lg="6"
-                      xl="5"
+                      v-for="(item, index) in techs"
+                      :item="item"
+                      :key="index"
                     >
-                      <v-list-item>
-                        <v-list-item-content>
-                          <v-icon color="tertiary">mdi-email</v-icon>
-                          <p>bronsetherlend@gmail.com</p>
-                        </v-list-item-content>
-                      </v-list-item>
-                    </v-col>
-                    <v-col
-                      cols="12"
-                      sm="12"
-                      md="6"
-                      lg="6"
-                      xl="5"
-                    >
-                      <v-list-item>
-                        <v-list-item-content>
-                          <v-icon color="tertiary"> mdi-phone</v-icon>
-                          <p>(+47) 45 80 44 52</p>
-                        </v-list-item-content>
-                      </v-list-item>
+                      <v-icon color="tertiary">{{ item.icon }}</v-icon>
+                      <p> {{item.name}} </p>
                     </v-col>
                   </v-row>
+
                 </v-card-text>
               </v-col>
             </v-row>

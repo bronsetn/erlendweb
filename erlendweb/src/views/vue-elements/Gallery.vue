@@ -22,8 +22,8 @@
       >
         <v-overlay
           value="true"
+          opacity="0.9"
           absolute
-          opacity="0.8"
         >
           <v-row
             justify="center"
@@ -35,7 +35,7 @@
               @click="showGallery = !showGallery"
             >
               <v-icon
-                class="display-2"
+                class="display-3"
                 color="white"
               >
                 {{ showGallery ? "mdi-chevron-up" : "mdi-plus" }}

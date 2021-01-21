@@ -19,7 +19,7 @@
         v-if="spaceData.media_type == 'image'"
         :lazy-src="spaceData.url"
         :src="spaceData.url"
-        height="350"
+        height="305"
       >
       </v-img>
       <div
