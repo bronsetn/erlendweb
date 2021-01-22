@@ -1,6 +1,7 @@
 {
     "message": "Halloen i18n !!",
-    "nav": {
+
+    "header": {
         "projects": "Prosjekter",
         "about": "Om meg",
         "contact": "Ta kontakt",

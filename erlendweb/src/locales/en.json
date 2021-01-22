@@ -1,6 +1,7 @@
 {
     "message": "hello i18n !!",
-    "nav": {
+
+    "header": {
         "projects": "Projects",
         "about": "About",
         "contact": "Contact",

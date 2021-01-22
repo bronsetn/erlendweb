@@ -1,88 +1,138 @@
 <template>
-
-  <body>
+  <div>
     <v-app-bar
       hide-on-scroll
       fixed
       flat
       color="secondary"
     >
-      <v-app-bar-nav-icon
-        class="pl-4"
-        color="tertiary"
-        v-if="$vuetify.breakpoint.mobile"
-        @click.stop="drawer = !drawer"
-      ></v-app-bar-nav-icon>
-
-      <v-spacer v-if="$vuetify.breakpoint.mobile"></v-spacer>
-
-      <v-toolbar-title>
-        <v-btn
-          icon
-          v-if="!$vuetify.theme.dark"
-          @click="$router.push('/')"
+      <v-row
+        no-gutters
+        align="center"
+        justify="space-between"
+      >
+        <v-col
+          cols="auto"
+          md="2"
+          class="d-flex justify-start"
+          v-if="$vuetify.breakpoint.mobile"
         >
-          <v-img
-            src="../assets/icons/logo-light.svg"
-            height="40px"
-            width="40px"
-            contain
-          ></v-img>
-        </v-btn>
-        <v-btn
-          icon
-          v-if="$vuetify.theme.dark"
-          @click="$router.push('/')"
-        >
-          <v-img
-            src="../assets/icons/logo-dark.svg"
-            height="40px"
-            width="40px"
-            contain
-          ></v-img>
-        </v-btn>
-      </v-toolbar-title>
+          <v-app-bar-nav-icon
+            top
+            left
+            color="tertiary"
+            @click.stop="drawer = !drawer"
+          ></v-app-bar-nav-icon>
+        </v-col>
 
-      <v-spacer></v-spacer>
-      <v-spacer v-if="!$vuetify.breakpoint.mobile"></v-spacer>
-
-      <!-- Else link to different content in the main page -->
-      <v-row v-if="!$vuetify.breakpoint.mobile">
-        <div
-          v-for="(item, index) in navigation"
-          :item="item"
-          :key="index"
+        <v-col
+          cols="auto"
+          md="2"
+          class="d-flex justify-start"
+          v-if="!$vuetify.breakpoint.mobile"
         >
           <v-btn
-            :href="item.link1"
-            color="tertiary"
-            text
+            top
+            left
+            icon
+            v-if="!$vuetify.theme.dark"
+            @click="$router.push('/')"
           >
-            <div class="serif">{{ item.icon }}</div>
-            <div class="pl-1">{{ item.title }}</div>
+            <v-img
+              src="../assets/icons/logo-light.svg"
+              height="40px"
+              width="40px"
+              contain
+            ></v-img>
           </v-btn>
-        </div>
+          <v-btn
+            icon
+            v-if="$vuetify.theme.dark"
+            @click="$router.push('/')"
+          >
+            <v-img
+              src="../assets/icons/logo-dark.svg"
+              height="40px"
+              width="40px"
+              contain
+            ></v-img>
+          </v-btn>
+        </v-col>
+
+        <v-col
+          cols="auto"
+          md="8"
+        >
+          <v-row
+            v-if="!$vuetify.breakpoint.mobile"
+            class="d-flex justify-center"
+          >
+            <v-btn
+              href="#projects"
+              color="tertiary"
+              text
+            >
+              <div class="serif">I</div>
+              <div class="pl-1">{{ $t('header.projects') }}</div>
+            </v-btn>
+            <v-btn
+              href="#about"
+              color="tertiary"
+              text
+            >
+              <div class="serif">II</div>
+              <div class="pl-1">{{ $t('header.about') }}</div>
+            </v-btn>
+            <v-btn
+              href="#contact"
+              color="tertiary"
+              text
+            >
+              <div class="serif">III</div>
+              <div class="pl-1">{{ $t('header.contact') }}</div>
+            </v-btn>
+            <v-btn
+              href="#other"
+              color="tertiary"
+              text
+            >
+              <div class="serif">IV</div>
+              <div class="pl-1">{{ $t('header.other') }}</div>
+            </v-btn>
+          </v-row>
+        </v-col>
+
+        <v-col
+          cols="auto"
+          md="2"
+        >
+          <v-row class="d-flex justify-end">
+
+            <div>
+              <LanguageSwitch></LanguageSwitch>
+            </div>
+
+            <div>
+              <v-btn
+                color="accent"
+                icon
+                v-if="$vuetify.theme.dark"
+                @click="$vuetify.theme.dark = !$vuetify.theme.dark"
+              >
+                <v-icon>mdi-weather-night</v-icon>
+              </v-btn>
+              <v-btn
+                icon
+                v-else
+                @click="$vuetify.theme.dark = !$vuetify.theme.dark"
+              >
+                <v-icon>mdi-weather-night</v-icon>
+              </v-btn>
+            </div>
+          </v-row>
+
+        </v-col>
       </v-row>
-
-      <v-spacer v-if="!$vuetify.breakpoint.mobile"></v-spacer>
-
-      <LanguageSwitch></LanguageSwitch>
-
-      <v-btn
-        color="accent"
-        icon
-        v-if="$vuetify.theme.dark"
-        @click="$vuetify.theme.dark = !$vuetify.theme.dark"
-      >
-        <v-icon>mdi-weather-night</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        v-else
-        @click="$vuetify.theme.dark = !$vuetify.theme.dark"
-      >
-        <v-icon>mdi-weather-night</v-icon>
-      </v-btn>
     </v-app-bar>
 
     <v-navigation-drawer
@@ -96,21 +146,33 @@
         transparent
         class="pl-4"
       >
-        <div
-          v-for="(item, index) in navigation"
-          :item="item"
-          :key="index"
-        >
-          <v-list-item :href="item.link1">
-            <v-list-item-icon class="serif">{{ item.icon }}</v-list-item-icon>
-            <v-list-item-content>
-              {{ item.title }}
-            </v-list-item-content>
-          </v-list-item>
-        </div>
+        <v-list-item href="#projects">
+          <v-list-item-icon class="serif">I</v-list-item-icon>
+          <v-list-item-content>
+            {{ $t('header.projects') }}
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item href="#about">
+          <v-list-item-icon class="serif">II</v-list-item-icon>
+          <v-list-item-content>
+            {{ $t('header.about') }}
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item href="#contact">
+          <v-list-item-icon class="serif">III</v-list-item-icon>
+          <v-list-item-content>
+            {{ $t('header.contact') }}
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item href="#other">
+          <v-list-item-icon class="serif">IV</v-list-item-icon>
+          <v-list-item-content>
+            {{ $t('header.other') }}
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
-  </body>
+  </div>
 </template>
 
 <script>
@@ -124,13 +186,6 @@ export default {
   data() {
     return {
       drawer: null,
-
-      navigation: [
-        { link1: "#projects", link2: "/#projects", icon: "I", title: "Prosjekter" },
-        { link1: "#about", link2: "/#about", icon: "II", title: "Om meg" },
-        { link1: "#contact", link2: "/#contact", icon: "III", title: "Ta kontakt" },
-        { link1: "#other", link2: "/#other", icon: "IV", title: "Annet" },
-      ],
     };
   },
 };

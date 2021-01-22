@@ -1,14 +1,16 @@
 <template>
-  <div class="pr-2">
-    <v-menu offset-y>
+  <div>
+    <v-menu
+      offset-y
+      left
+    >
       <template v-slot:activator="{ on, attrs }">
         <v-btn
+          icon
           v-bind="attrs"
           v-on="on"
-          icon
-          small
         >
-          <v-avatar size="28">
+          <v-avatar size="25">
             <v-img
               :src="`/flag_${$i18n.locale}.svg`"
               alt="Site language flag"
@@ -16,6 +18,7 @@
           </v-avatar>
         </v-btn>
       </template>
+
       <v-list
         color="secondary"
         dense
@@ -46,7 +49,6 @@
       </v-list>
     </v-menu>
   </div>
-
 </template>
 
 

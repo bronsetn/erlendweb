@@ -4,6 +4,7 @@ import VueI18n from 'vue-i18n'
 Vue.use(VueI18n)
 
 // Tutorial used to set up multilanguage support: https://www.youtube.com/watch?v=CFGjn3yKMNc
+// Documentation: https://kazupon.github.io/vue-i18n/started.html
 
 function loadLocaleMessages() {
     const locales = require.context('./locales', true, /[A-Za-z0-9-_,\s]+\.json$/i)
