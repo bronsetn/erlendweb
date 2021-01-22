@@ -1,15 +1,24 @@
 {
-    "message": "hello i18n !!",
-
     "header": {
         "projects": "Projects",
         "about": "About",
         "contact": "Contact",
         "other": "Other"
     },
+    "front": {
+        "subtitle": "Junior front-end developer"
+    },
     "about": {
-        "title": "About",
-        "content1": "I am 23 years old and from Inderøy with a bachelor in digital media & design. Dette nettstedet er ment som en portefølje i tillegg til et sted jeg kan ekspirementere innenfor utvikling og design.",
-        "content2": "Jeg har ambisjoner om å bli dreven innenfor front - end utvikling og har i høst har jeg arbeidet hos <a target='_blank' href='https://prios.no' >Prios Kompetanse AS</a>, hvor jeg har blitt kjent med bruk av VueJs."
+        "intro1": "I am a 23 year old guy from Norway with a bachelor in digital media & design. This site is meant as a portefolio aswell as a place I can experiment with development and design.",
+        "intro2": "My goal is to get better at front-end development and I have this autumn worked at <a target='_blank' href='https://prios.no'> Prios Kompetanse AS </a>, where i have gotten to know VueJs.",
+        "bachelor": "Digital Media and Design",
+        "bachelorDescription": "A bachelor in digitale media and design at HIØ involves an introduction to many of the steps included in development and design of digital applications. Some of the courses I have been trough are web-development, programming, 3D-modelling and graphical design.",
+        "wordpress": "Wordpress",
+        "wordpressDescription": "Until recently I have used wordpress to publish projects from my course, they are still here:",
+        "skills": "Skills"
+    },
+    "contact": {
+        "description": "Messages from here are sent to bronsetherlend@gmail.com"
     }
+
 }

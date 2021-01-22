@@ -1,15 +1,23 @@
 {
-    "message": "Halloen i18n !!",
-
     "header": {
         "projects": "Prosjekter",
         "about": "Om meg",
         "contact": "Ta kontakt",
         "other": "Annet"
     },
+    "front": {
+        "subtitle": "Junior front-end utvikler"
+    },
     "about": {
-        "title": "Om meg",
-        "content1": "Jeg er en 23 åring fra Inderøy med en bachelor innenfor digitale medier og design. Dette nettstedet er ment som en portefølje i tillegg til et sted jeg kan ekspirementere innenfor utvikling og design.",
-        "content2": "Jeg har ambisjoner om å bli dreven innenfor front - end utvikling og har i høst har jeg arbeidet hos <a target='_blank' href='https://prios.no' >Prios Kompetanse AS</a>, hvor jeg har blitt kjent med bruk av VueJs."
+        "intro1": "Jeg er en 23 åring fra Inderøy med en bachelor innenfor digitale medier og design. Dette nettstedet er ment som en portefølje i tillegg til et sted jeg kan ekspirementere innenfor utvikling og design.",
+        "intro2": "Jeg har ambisjoner om å bli dreven innenfor front-end utvikling og har i høst arbeidet hos <a target='_blank' href='https://prios.no' >Prios Kompetanse AS</a>, hvor jeg har blitt kjent med bruk av VueJs.",
+        "bachelor": "Digitale medier og design",
+        "bachelorDescription": "Bachelorstudiumet digitale medier og design på HIØ gir opplæring i mange av stegene innenfor utvikling av digitale ting og applikasjoner. Noen av fagene jeg har vært innom er webutvikling, programmering, 3D-modellering, spillutvikling og grafisk-design.",
+        "wordpress": "Wordpress",
+        "wordpressDescription": " Inntil nylig har jeg brukt wordpress for publisering av prosjekter fra studiet, de finnes fortsatt her:",
+        "skills": "Ferdigheter"
+    },
+    "contact": {
+        "description": "Beskjeder herfra sendes direkte til bronsetherlend@gmail.com"
     }
 }

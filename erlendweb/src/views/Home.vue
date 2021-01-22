@@ -10,10 +10,10 @@
       id="about"
       class="pt-4"
     ></About>
-    <ContactForm
+    <Contact
       id="contact"
       class="pt-4"
-    ></ContactForm>
+    ></Contact>
     <Other
       id="other"
       class="pt-4 pb-8"
@@ -25,7 +25,7 @@
 import Front from "./Front.vue";
 import About from "./About.vue";
 import Projects from "./Projects.vue";
-import ContactForm from "./ContactForm.vue";
+import Contact from "./Contact.vue";
 import Other from "./Other.vue";
 
 export default {
@@ -33,7 +33,7 @@ export default {
     Front,
     About,
     Projects,
-    ContactForm,
+    Contact,
     Other,
   },
 

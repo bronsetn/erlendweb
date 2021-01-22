@@ -5,7 +5,7 @@
     <v-container>
       <v-container class="justify-center">
         <div class="serif">III</div>
-        <h1>Ta kontakt</h1>
+        <h1>{{ $t('header.contact') }}</h1>
       </v-container>
 
       <v-row class="d-flex justify-center">
@@ -21,9 +21,8 @@
             color="secondary"
           >
             <v-card-text>
-              <p class="pt-4">
-                Beskjeder herfra sendes direkte til bronsetherlend@gmail.com
-              </p>
+              <p class="pt-4">{{ $t('contact.description') }} </p>
+
               <v-form
                 ref="form"
                 v-model="validate"
@@ -45,7 +44,7 @@
                   v-model="form.name"
                   type="text"
                   name="name"
-                  label="Navn"
+                  label="Name"
                   :rules="rules.required"
                 ></v-text-field>
                 <v-text-field
@@ -53,7 +52,7 @@
                   v-model="form.email"
                   type="email"
                   name="email"
-                  label="Epost"
+                  label="Email"
                   :rules="rules.required && rules.email"
                 ></v-text-field>
                 <v-text-field
@@ -61,7 +60,7 @@
                   v-model="form.subject"
                   type="text"
                   name="subject"
-                  label="Tema"
+                  label="Subject"
                 ></v-text-field>
                 <v-textarea
                   counter="500"
@@ -69,7 +68,7 @@
                   auto-grow
                   v-model="form.message"
                   name="message"
-                  label="Meldingstekst"
+                  label="Message"
                   :rules="rules.required"
                 ></v-textarea>
 
@@ -120,8 +119,8 @@ export default {
       },
 
       rules: {
-        required: [(v) => !!v || "Feltet må fylles ut"],
-        email: [(v) => /.+@.+\..+/.test(v) || "Eposten må være riktig format"],
+        required: [(v) => !!v || "This field is required"],
+        email: [(v) => /.+@.+\..+/.test(v) || "The email must be formated correctly"],
       },
     };
   },
@@ -151,7 +150,7 @@ export default {
         .then(() => {
           this.alert.value = true;
           this.alert.type = "info";
-          this.alert.text = "Melding ble sendt";
+          this.alert.text = "Message was sent";
 
           console.log("Message sent");
           this.submitted = true;

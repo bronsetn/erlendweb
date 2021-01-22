@@ -4,7 +4,7 @@
     <v-container>
       <v-container class="justify-center">
         <div class="serif">I</div>
-        <h1>Prosjekter</h1>
+        <h1>{{ $t('header.projects') }}</h1>
       </v-container>
 
       <v-row class="d-flex justify-center">

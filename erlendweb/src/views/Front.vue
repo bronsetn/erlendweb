@@ -79,8 +79,7 @@
               style="font-size: 1rem"
               class="text-md-left"
             >
-              Junior front-end utvikler
-
+              {{ $t('front.subtitle') }}
             </h4>
           </v-container>
         </v-col>

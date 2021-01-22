@@ -4,7 +4,7 @@
     <v-container>
       <v-container class="justify-center">
         <div class="serif">IV</div>
-        <h1>Annet</h1>
+        <h1>{{ $t('header.other') }}</h1>
       </v-container>
 
       <v-row justify="center">

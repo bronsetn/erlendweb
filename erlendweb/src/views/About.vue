@@ -6,8 +6,7 @@
     <v-container>
       <v-container class="justify-center">
         <div class="serif">II</div>
-        <h1> {{ $t('about.title') }}
-        </h1>
+        <h1> {{ $t('header.about') }}</h1>
       </v-container>
 
       <v-row class="justify-center">
@@ -84,34 +83,26 @@
 
                 <v-card-text>
                   <p class="normal">
-                    {{ $t('about.content1') }}
+                    {{ $t('about.intro1') }}
                   </p>
 
                   <p
                     class="normal"
-                    v-html="$t('about.content2')"
+                    v-html="$t('about.intro2')"
                   ></p>
 
-                  <h3 class="thick pa-4">Digitale medier og design</h3>
+                  <h3 class="thick pa-4"> {{ $t('about.bachelor') }}
+                  </h3>
 
-                  <p class="normal">
-                    Bachelorstudiumet digitale medier og design på HIØ gir opplæring i
-                    mange av stegene innenfor utvikling av digitale ting og applikasjoner.
-                    Noen av fagene jeg har vært innom
-                    er webutvikling, programmering, 3D-modellering, spillutvikling
-                    og grafisk-design.
-                    <br>
-                    <a
-                      target="_blank"
-                      href="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/erlendweb%2FKarakterutskrift%20-%20Digitale%20medier%20og%20design.pdf?alt=media&token=e83e4807-efbd-4f48-98be-3f26a9fca847"
-                    >Dokumentasjon</a>
-                  </p>
+                  <p
+                    class="normal"
+                    v-html="$t('about.bachelorDescription')"
+                  ></p>
 
-                  <h3 class="thick pa-4">Wordpress</h3>
+                  <h3 class="thick pa-4">{{ $t('about.wordpress') }}</h3>
 
                   <p class="normal pb-4">
-                    Inntil nylig har jeg brukt wordpress for publisering av
-                    prosjekter fra studiet, de finnes fortsatt her:
+                    {{ $t('about.wordpressDescription') }}
                     <br>
                     <a
                       target="_blank"
@@ -121,7 +112,7 @@
 
                   <v-divider></v-divider>
 
-                  <h3 class="thick pa-4 pt-8">Teknologier</h3>
+                  <h3 class="thick pa-4 pt-8">{{ $t('about.skills') }}</h3>
 
                   <v-row
                     justify="center"
