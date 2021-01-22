@@ -114,13 +114,12 @@
       </div>
 
       <v-card-actions>
+        <v-spacer></v-spacer>
         <v-btn
           color="accent"
           text
           @click="show = !show"
         > Om dette </v-btn>
-        <v-spacer></v-spacer>
-
         <v-btn
           icon
           @click="show = !show"

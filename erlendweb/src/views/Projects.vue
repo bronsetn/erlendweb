@@ -103,12 +103,12 @@ export default {
           date: "Høst 2020",
           alt: "Screenshot from prios.events",
           src: "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/events.png?alt=media&token=89518a63-485d-439b-993f-79c4852f4870"
-        },    
+        },
         // Wordpress
         {
           link: "https://erlendworkblog.wordpress.com/2020/06/11/bacheloroppgave-augmented-reality-til-a-vise-utvandringshistorie/",
           title: "Wordpress nettsted",
-          description: "Nettsted/Portefølje jeg brukte til publisering av prosjekter og oppgaver fra bachelorstudiuet.",
+          description: "Nettsted jeg brukte til publisering av prosjekter og oppgaver fra bachelorstudiuet. Satt opp som en standard wordpress blogg.",
           date: "Sommer 2019",
           alt: "Sreenshot from https://erlendworkblog.wordpress.com",
           src: "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/wordpress.png?alt=media&token=0b8b963f-5431-40b5-bc86-996f5f56d6c2"
