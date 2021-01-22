@@ -9,6 +9,7 @@
         <v-row
           no-gutters
           justify="center"
+          class="pt-4"
         >
           <!-- Contact -->
           <v-col
@@ -19,7 +20,7 @@
             xl="4"
           >
             <v-row
-              class="justify-center pt-4"
+              class="justify-center"
               no-gutters
             >
               <v-btn
@@ -55,7 +56,7 @@
             md="4"
             lg="4"
             xl="4"
-            justify="center"
+            class="justify-center"
             align="center"
           >
 
@@ -65,22 +66,38 @@
               align="center"
               class="mt-8"
             >
-              <div
-                v-for="(item, index) in navigation"
-                :item="item"
-                :key="index"
+              <v-btn
+                href="#projects"
+                color="tertiary"
+                text
               >
-                <v-list-item>
-                  <v-btn
-                    :href="item.link"
-                    text
-                  >
-                    <div class="serif">{{ item.icon }}</div>
-                    <div class="pl-1">{{ item.title }}
-                    </div>
-                  </v-btn>
-                </v-list-item>
-              </div>
+                <div class="serif">I</div>
+                <div class="pl-1">{{ $t('header.projects') }}</div>
+              </v-btn>
+              <v-btn
+                href="#about"
+                color="tertiary"
+                text
+              >
+                <div class="serif">II</div>
+                <div class="pl-1">{{ $t('header.about') }}</div>
+              </v-btn>
+              <v-btn
+                href="#contact"
+                color="tertiary"
+                text
+              >
+                <div class="serif">III</div>
+                <div class="pl-1">{{ $t('header.contact') }}</div>
+              </v-btn>
+              <v-btn
+                href="#other"
+                color="tertiary"
+                text
+              >
+                <div class="serif">IV</div>
+                <div class="pl-1">{{ $t('header.other') }}</div>
+              </v-btn>
             </v-row>
           </v-col>
 
