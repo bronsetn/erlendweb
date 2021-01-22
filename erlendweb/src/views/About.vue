@@ -6,7 +6,8 @@
     <v-container>
       <v-container class="justify-center">
         <div class="serif">II</div>
-        <h1>Om meg</h1>
+        <h1> {{ $t('about.title') }}
+        </h1>
       </v-container>
 
       <v-row class="justify-center">
@@ -83,19 +84,13 @@
 
                 <v-card-text>
                   <p class="normal">
-                    Jeg er en 23 åring fra Inderøy med en bachelor innenfor
-                    digitale medier og design. Dette nettstedet er ment som en
-                    portefølje i tillegg til et sted jeg kan
-                    ekspirementere innenfor utvikling og design.
+                    {{ $t('about.content1') }}
                   </p>
 
-                  <p>Jeg har ambisjoner om å bli dreven
-                    innenfor front-end utvikling og har i høst
-                    har jeg arbeidet hos <a
-                      target="_blank"
-                      href="https://prios.no"
-                    >Prios Kompetanse AS,</a>
-                    hvor jeg har blitt kjent med bruk av VueJs.</p>
+                  <p
+                    class="normal"
+                    v-html="$t('about.content2')"
+                  ></p>
 
                   <h3 class="thick pa-4">Digitale medier og design</h3>
 

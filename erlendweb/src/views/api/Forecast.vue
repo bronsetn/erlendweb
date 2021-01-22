@@ -209,13 +209,13 @@ export default {
           },
           (error) => {
             console.log(error.message);
-            console.log("trying to get forecast from Oslo");
+            console.log("Trying to get forecast from Oslo instead");
             this.getForecastOslo();
           }
         );
       } else {
         console.log("Your browser does not support geolocation API ");
-        console.log("trying to get forecast from Oslo");
+        console.log("Trying to get forecast from Oslo instead");
         this.getForecastOslo();
       }
     },

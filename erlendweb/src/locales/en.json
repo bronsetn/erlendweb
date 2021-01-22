@@ -1,0 +1,14 @@
+{
+    "message": "hello i18n !!",
+    "nav": {
+        "projects": "Projects",
+        "about": "About",
+        "contact": "Contact",
+        "other": "Other"
+    },
+    "about": {
+        "title": "About",
+        "content1": "I am 23 years old and from Inderøy with a bachelor in digital media & design. Dette nettstedet er ment som en portefølje i tillegg til et sted jeg kan ekspirementere innenfor utvikling og design.",
+        "content2": "Jeg har ambisjoner om å bli dreven innenfor front - end utvikling og har i høst har jeg arbeidet hos <a target='_blank' href='https://prios.no' >Prios Kompetanse AS</a>, hvor jeg har blitt kjent med bruk av VueJs."
+    }
+}

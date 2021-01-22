@@ -36,6 +36,13 @@ export default {
     ContactForm,
     Other,
   },
+
+  mounted() {
+    console.log("~~~~~~~~~~~~~~~~~~~~~")
+    console.log("Welcome to erlendweb!")
+    console.log("~~~~~~~~~~~~~~~~~~~~~")
+
+  },
 };
 </script>
 

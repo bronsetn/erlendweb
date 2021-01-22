@@ -13,7 +13,9 @@
         v-if="$vuetify.breakpoint.mobile"
         @click.stop="drawer = !drawer"
       ></v-app-bar-nav-icon>
+
       <v-spacer v-if="$vuetify.breakpoint.mobile"></v-spacer>
+
       <v-toolbar-title>
         <v-btn
           icon
@@ -52,7 +54,7 @@
           :key="index"
         >
           <v-btn
-            :href="item.link"
+            :href="item.link1"
             color="tertiary"
             text
           >
@@ -63,6 +65,9 @@
       </v-row>
 
       <v-spacer v-if="!$vuetify.breakpoint.mobile"></v-spacer>
+
+      <LanguageSwitch></LanguageSwitch>
+
       <v-btn
         color="accent"
         icon
@@ -96,7 +101,7 @@
           :item="item"
           :key="index"
         >
-          <v-list-item :href="item.link">
+          <v-list-item :href="item.link1">
             <v-list-item-icon class="serif">{{ item.icon }}</v-list-item-icon>
             <v-list-item-content>
               {{ item.title }}
@@ -109,25 +114,25 @@
 </template>
 
 <script>
+import LanguageSwitch from "./LanguageSwitch.vue";
+
 export default {
+  components: {
+    LanguageSwitch,
+  },
+
   data() {
     return {
       drawer: null,
 
       navigation: [
-        { link: "#projects", icon: "I", title: "Prosjekter" },
-        { link: "#about", icon: "II", title: "Om meg" },
-        { link: "#contact", icon: "III", title: "Ta kontakt" },
-        { link: "#other", icon: "IV", title: "Annet" },
+        { link1: "#projects", link2: "/#projects", icon: "I", title: "Prosjekter" },
+        { link1: "#about", link2: "/#about", icon: "II", title: "Om meg" },
+        { link1: "#contact", link2: "/#contact", icon: "III", title: "Ta kontakt" },
+        { link1: "#other", link2: "/#other", icon: "IV", title: "Annet" },
       ],
     };
   },
-
-  // watch: {
-  //   $route() {
-  //     console.log(this.$route);
-  //   },
-  // },
 };
 </script>
 
