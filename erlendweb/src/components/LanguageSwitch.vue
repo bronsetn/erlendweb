@@ -24,8 +24,7 @@
         dense
         nav
       >
-        <v-list-item-group         mandatory
-color="tertiary">
+        <v-list-item-group color="tertiary">
           <v-list-item @click.prevent="setLocale('no')">
             <v-list-item-content>
               NO

@@ -28,7 +28,7 @@
     "projects": [
         {
         "title": "Maribro.no",
-        "description": "A website to show of the art and graphics made by Mari Brønseth. The site is made with VueJs and hosted on Netlify.",
+        "description": "A website made to show of the art made by Mari Brønseth. The site is made with VueJs and hosted on Netlify.",
         "date": "Winter 2021",
         "link": "https://maribro.no",
         "alt": "Screenshot from https://maribro.no",
@@ -36,7 +36,7 @@
         },
         {
         "title": "Prios Events",
-        "description": "Site meant for job fairs and similar types of events. I worked with the development of the front-end and design of the site for Prios Kompetanse AS. The site was one of my first real projects working with VueJs.", 
+        "description": "Site meant for job fairs and similar types of events. I worked with the development of the front-end and design of the site for Prios Kompetanse AS. The site is one of my first real projects working with VueJs.", 
         "date": "Autumn 2020",
         "link": "https://dev.prios.events",
         "alt": "Screenshot from prios.events",
@@ -44,7 +44,7 @@
         },   
         {
         "title": "Wordpress webpage",
-        "description": "Website used for publishing some of the projects from my bachelor study. Set up as standard Wordpress blogg site.",
+        "description": "Website used for publishing some of the projects from my bachelor study. Set up using Wordpresses cms for blogg sites.",
         "date": "Summer 2019",
          "link": "https://erlendworkblog.wordpress.com/",
          "alt": "Sreenshot from https://erlendworkblog.wordpress.com",
@@ -53,7 +53,7 @@
      ],
     "other": {
         "nasa": "Daily image from Nasa",
-        "nasaDescription": "Here I have used one of Nasa's public API's that gives out a new space-related image each day.",
+        "nasaDescription": "Here i have used one of Nasa's public API's that gives out a new space-related image each day.",
         "nasaSources": "For a list of all images published since 2015. <a href='https://apod.nasa.gov/apod/archivepix.html' target='_blank' >https://apod.nasa.gov/apod/archivepix.html</a><br>For information about using the API i have used this tutorial. <a href='https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/' target='_blank'>https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/</a>",
 
         "forecast": "Today's forecast",
