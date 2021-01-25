@@ -10,7 +10,7 @@
           v-bind="attrs"
           v-on="on"
         >
-          <v-avatar size="25">
+          <v-avatar size="24">
             <v-img
               :src="`/flag_${$i18n.locale}.svg`"
               alt="Site language flag"
@@ -22,30 +22,34 @@
       <v-list
         color="secondary"
         dense
+        nav
       >
-        <v-list-item @click.prevent="setLocale('no')">
-          <v-list-item-content>
-            NO
-          </v-list-item-content>
-          <v-list-item-avatar size="30">
-            <img
-              src="/flag_no.svg"
-              alt="Norway's flag - Set language to norwegian"
-            >
-          </v-list-item-avatar>
+        <v-list-item-group         mandatory
+color="tertiary">
+          <v-list-item @click.prevent="setLocale('no')">
+            <v-list-item-content>
+              NO
+            </v-list-item-content>
+            <v-list-item-avatar size="25">
+              <img
+                src="/flag_no.svg"
+                alt="Norway's flag - Set language to norwegian"
+              >
+            </v-list-item-avatar>
 
-        </v-list-item>
-        <v-list-item @click.prevent="setLocale('en')">
-          <v-list-item-content>
-            EN
-          </v-list-item-content>
-          <v-list-item-avatar size="30">
-            <img
-              src="/flag_en.svg"
-              alt="English flag - Set language to english"
-            >
-          </v-list-item-avatar>
-        </v-list-item>
+          </v-list-item>
+          <v-list-item @click.prevent="setLocale('en')">
+            <v-list-item-content>
+              EN
+            </v-list-item-content>
+            <v-list-item-avatar size="25">
+              <img
+                src="/flag_en.svg"
+                alt="English flag - Set language to english"
+              >
+            </v-list-item-avatar>
+          </v-list-item>
+        </v-list-item-group>
       </v-list>
     </v-menu>
   </div>
