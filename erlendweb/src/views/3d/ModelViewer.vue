@@ -12,7 +12,7 @@
       height="400"
       style="overflow:hidden;"
     >
-      <v-card-title>3D visning med ThreeJs<v-spacer></v-spacer>
+      <v-card-title>{{ $t('other.threeJs') }}<v-spacer></v-spacer>
         <v-icon color="tertiary">mdi-cube-outline</v-icon>
       </v-card-title>
 
@@ -27,16 +27,8 @@
           color="blue darken-4"
           @click="dialog1 = true"
         >
-          <div>Show - 3D Cube</div>
+          <div>{{ $t('other.threeJsButton') }}</div>
         </v-btn>
-        <!-- <v-btn
-            x-large
-            outlined
-            color="tertiary"
-            @click="dialog2 = true"
-          >
-            3D figure
-          </v-btn> -->
       </v-container>
     </v-card>
 
@@ -61,43 +53,20 @@
       </v-card>
     </v-dialog>
 
-    <!-- DIALOG 2 -->
-    <!-- <v-dialog
-      v-model="dialog2"
-      fullscreen
-      transition="dialog-bottom-transition"
-    >
-      <v-card>
-        <v-btn
-          absolute
-          top
-          right
-          icon
-          large
-          @click="dialog2 = false"
-        >
-          <v-icon color="white">mdi-close</v-icon>
-        </v-btn>
-        <Figure></Figure>
-      </v-card>
-    </v-dialog> -->
   </v-col>
 </template>
 
 <script>
 import Cube from "./Cube.vue";
-// import Figure from "./Figure.vue";
 
 export default {
   components: {
     Cube,
-    // Figure,
   },
 
   data() {
     return {
       dialog1: false,
-      dialog2: false,
     }
   },
 }

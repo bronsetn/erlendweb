@@ -11,7 +11,7 @@
       color="secondary"
       elevation="5"
     >
-      <v-card-title>Dagens bilde fra Nasa<v-spacer></v-spacer>
+      <v-card-title>{{ $t('other.nasa') }}<v-spacer></v-spacer>
         <v-icon color="tertiary">mdi-rocket-outline</v-icon>
       </v-card-title>
 
@@ -62,7 +62,7 @@
           color="accent"
           text
           @click="show = !show"
-        > Om dette </v-btn>
+        > {{ $t('misc.about') }}</v-btn>
         <v-btn
           icon
           @click="show = !show"
@@ -75,25 +75,8 @@
         <div v-show="show">
           <v-divider></v-divider>
           <v-card-text>
-            <p>
-              Her har jeg brukt en av Nasa sine offentlige APIer som publiserer
-              et nytt rom-bilde pluss informasjon hver dag.
-            </p>
-            <p>
-              En liste over alle bildene publisert siden 2015 er å finne her:
-              <a
-                href="https://apod.nasa.gov/apod/archivepix.html"
-                target="_blank"
-              >https://apod.nasa.gov/apod/archivepix.html</a>
-            </p>
-            <p>
-              For informasjon om å ta i bruk APIen har jeg hovedsaklig brukt
-              denne veiledningen:
-              <a
-                href="https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/"
-                target="_blank"
-              >https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/</a>
-            </p>
+            <p>{{ $t('other.nasaDescription') }}</p>
+            <p v-html="$t('other.nasaSources')"></p>
           </v-card-text>
         </div>
       </v-expand-transition>

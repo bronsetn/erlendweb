@@ -12,7 +12,7 @@
       height="400"
       style="overflow:hidden;"
     >
-      <v-card-title>Galleri layout <v-spacer></v-spacer>
+      <v-card-title>{{ $t('other.gallery') }}<v-spacer></v-spacer>
         <v-icon color="tertiary">mdi-image-multiple</v-icon>
       </v-card-title>
       <v-parallax

@@ -10,7 +10,7 @@
       color="secondary"
       elevation="5"
     >
-      <v-card-title>Dagens værmelding<v-spacer></v-spacer>
+      <v-card-title>{{ $t('other.forecast') }}<v-spacer></v-spacer>
         <v-icon color="tertiary">mdi-satellite-variant</v-icon>
       </v-card-title>
 
@@ -59,9 +59,10 @@
           <v-list-item-icon>
             <v-icon>mdi-weather-windy</v-icon>
           </v-list-item-icon>
-
-          <v-list-item-subtitle>Vindhastighet
-            {{ weather.list[0].wind.speed }} m/s</v-list-item-subtitle>
+          <v-list-item-subtitle>
+            Wind speed
+            {{ weather.list[0].wind.speed }} m/s
+          </v-list-item-subtitle>
         </v-list-item>
 
         <v-divider inset></v-divider>
@@ -71,19 +72,21 @@
             <v-icon>mdi-weather-pouring</v-icon>
           </v-list-item-icon>
           <v-list-item-subtitle>
-            Regn
-            {{ weather.list[0].rain["3h"] }} %</v-list-item-subtitle>
+            Rain
+            {{ weather.list[0].rain["3h"] }} %
+          </v-list-item-subtitle>
         </v-list-item>
 
         <v-divider inset></v-divider>
 
         <v-list-item>
           <v-list-item-icon>
-            <v-icon>mdi-water</v-icon>
+            <v-icon>mdi-waves</v-icon>
           </v-list-item-icon>
           <v-list-item-subtitle>
-            Luftfuktighet
-            {{ weather.list[0].main.humidity }}%</v-list-item-subtitle>
+            Humidity
+            {{ weather.list[0].main.humidity }}%
+          </v-list-item-subtitle>
         </v-list-item>
 
         <v-divider inset></v-divider>
@@ -93,8 +96,9 @@
             <v-icon>mdi-snowflake</v-icon>
           </v-list-item-icon>
           <v-list-item-subtitle>
-            Snømengde
-            {{ weather.list[0].snow["3h"] }} %</v-list-item-subtitle>
+            Snow
+            {{ weather.list[0].snow["3h"] }} %
+          </v-list-item-subtitle>
         </v-list-item>
       </div>
 
@@ -119,7 +123,7 @@
           color="accent"
           text
           @click="show = !show"
-        > Om dette </v-btn>
+        >{{ $t('misc.about') }}</v-btn>
         <v-btn
           icon
           @click="show = !show"
@@ -133,27 +137,8 @@
           <v-divider></v-divider>
 
           <v-card-text>
-            <p>
-              Denne komponenten tar i bruk nettleserens geolokasjon
-              for å hente ut værmeldingen for dine koordinater.
-              Hvis geoloaksojn er deaktivert hentes det værmelding fra Oslo.
-            </p>
-            <p>For
-              å hente værdata er det brukt Openweathermap sin 5 dagers
-              værmelding API.
-              <a
-                href="https://openweathermap.org/api"
-                target="_blank"
-              >https://openweathermap.org/api</a>
-            </p>
-            <p>
-              For å hente by eller stedsnavn tar jeg i bruk openstreetmap sin
-              API.
-              <a
-                href="https://www.openstreetmap.org/"
-                target="_blank"
-              >https://www.openstreetmap.org/</a>
-            </p>
+            <p>{{ $t('other.forecastDescription') }}</p>
+            <p v-html="$t('other.forecastSources')"></p>
           </v-card-text>
         </div>
       </v-expand-transition>
@@ -254,7 +239,7 @@ export default {
         url: "https://api.openweathermap.org/data/2.5/",
         type: "forecast",
         location: city,
-        language: "no",
+        language: "en",
         key: "b5b8e021d8316b270eb7d264dab861c6",
       };
 
@@ -299,7 +284,7 @@ export default {
         url: "https://api.openweathermap.org/data/2.5/",
         type: "forecast",
         location: "oslo",
-        language: "no",
+        language: "en",
         key: "b5b8e021d8316b270eb7d264dab861c6",
       };
 

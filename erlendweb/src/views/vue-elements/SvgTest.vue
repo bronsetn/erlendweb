@@ -11,7 +11,7 @@
       elevation="5"
       height="400"
     >
-      <v-card-title>SVG animasjonstest <v-spacer></v-spacer>
+      <v-card-title>{{ $t('other.svgTest') }}<v-spacer></v-spacer>
         <v-icon color="tertiary">mdi-coffee</v-icon>
       </v-card-title>
       <v-card-text>

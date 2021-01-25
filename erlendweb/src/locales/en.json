@@ -1,4 +1,9 @@
 {
+    "misc": {
+        "about": "About",
+        "visit": "Visit site"
+    },
+
     "header": {
         "projects": "Projects",
         "about": "About",
@@ -9,7 +14,7 @@
         "subtitle": "Junior front-end developer"
     },
     "about": {
-        "intro1": "I am a 23 year old guy from Norway with a bachelor in digital media & design. This site is meant as a portefolio aswell as a place I can experiment with development and design.",
+        "intro1": "I am a 23 year old guy from Inderøy, Norway with a bachelor in digital media & design. This site is meant as a portefolio aswell as a place I can experiment with development and design.",
         "intro2": "My goal is to get better at front-end development and I have this autumn worked at <a target='_blank' href='https://prios.no'> Prios Kompetanse AS </a>, where i have gotten to know VueJs.",
         "bachelor": "Digital Media and Design",
         "bachelorDescription": "A bachelor in digitale media and design at HIØ involves an introduction to many of the steps included in development and design of digital applications. Some of the courses I have been trough are web-development, programming, 3D-modelling and graphical design.",
@@ -19,6 +24,47 @@
     },
     "contact": {
         "description": "Messages from here are sent to bronsetherlend@gmail.com"
+    },
+    "projects": [
+        {
+        "title": "Maribro.no",
+        "description": "A website to show of the art and graphics made by Mari Brønseth. The site is made with VueJs and hosted on Netlify.",
+        "date": "Winter 2021",
+        "link": "https://maribro.no",
+        "alt": "Screenshot from https://maribro.no",
+        "src": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/mariweb.png?alt=media&token=edcce03c-8fee-4be0-9c39-de239ff519a2"
+        },
+        {
+        "title": "Prios Events",
+        "description": "Site meant for job fairs and similar types of events. I worked with the development of the front-end and design of the site for Prios Kompetanse AS. The site was one of my first real projects working with VueJs.", 
+        "date": "Autumn 2020",
+        "link": "https://dev.prios.events",
+        "alt": "Screenshot from prios.events",
+        "src": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/events.png?alt=media&token=89518a63-485d-439b-993f-79c4852f4870"
+        },   
+        {
+        "title": "Wordpress webpage",
+        "description": "Website used for publishing some of the projects from my bachelor study. Set up as standard Wordpress blogg site.",
+        "date": "Summer 2019",
+         "link": "https://erlendworkblog.wordpress.com/",
+         "alt": "Sreenshot from https://erlendworkblog.wordpress.com",
+         "src": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/wordpress.png?alt=media&token=0b8b963f-5431-40b5-bc86-996f5f56d6c2"
+         }
+     ],
+    "other": {
+        "nasa": "Daily image from Nasa",
+        "nasaDescription": "Here I have used one of Nasa's public API's that gives out a new space-related image each day.",
+        "nasaSources": "For a list of all images published since 2015. <a href='https://apod.nasa.gov/apod/archivepix.html' target='_blank' >https://apod.nasa.gov/apod/archivepix.html</a><br>For information about using the API i have used this tutorial. <a href='https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/' target='_blank'>https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/</a>",
+
+        "forecast": "Today's forecast",
+        "forecastDescription": "This component uses the browsers geolocation to get a forecast for your coordinates. If geolocation is disabled a forecast for Oslo is used instead.",
+        "forecastSources": "To get watherdata Openweathermap's 5 day forecast API is used. <a href='https://openweathermap.org/api' target='_blank'>https://openweathermap.org/api</a><br>To get the city or place name Openstreetmap's API is used. <a href='https://www.openstreetmap.org/' target='_blank'>https://www.openstreetmap.org/</a>",
+
+        "threeJs": "3D display with ThreeJs",
+        "threeJsButton": "Show 3D box",
+
+        "svgTest": "SVG animation-test",
+        "gallery": "Gallery layout with Vuetify"
     }
 
 }
