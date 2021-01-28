@@ -53,7 +53,7 @@
                   type="email"
                   name="email"
                   label="Email"
-                  :rules="rules.required && rules.email"
+                  :rules="rules.email"
                 ></v-text-field>
                 <v-text-field
                   class="ma-2"
@@ -61,34 +61,39 @@
                   type="text"
                   name="subject"
                   label="Subject"
+                  :rules="rules.required"
                 ></v-text-field>
                 <v-textarea
-                  counter="500"
+                  counter="800"
                   class="ma-2"
                   auto-grow
                   v-model="form.message"
                   name="message"
                   label="Message"
-                  :rules="rules.required"
+                  :rules="rules.length"
                 ></v-textarea>
-
-                <v-btn
-                  title="Submit"
-                  outlined
-                  color="tertiary"
-                  type="submit"
-                  :disabled="!validate  || submitted"
-                >
-                  <v-icon>mdi-send</v-icon>
-                </v-btn>
-                <v-alert
-                  text
-                  class="mt-4 ma-0 pa-1"
-                  transition="scale-transition"
-                  :type="alert.type"
-                  :value="alert.value"
-                >{{ alert.text }}
-                </v-alert>
+                <v-row justify="center">
+                  <v-col cols="12">
+                    <v-alert
+                      text
+                      class="pa-4"
+                      transition="scale-transition"
+                      :type="alert.type"
+                      :color="alert.color"
+                      :value="alert.value"
+                    >{{ alert.text }}
+                    </v-alert>
+                  </v-col>
+                  <v-btn
+                    title="Submit"
+                    outlined
+                    color="tertiary"
+                    type="submit"
+                    :disabled="!validate || submitted"
+                  >
+                    <v-icon>mdi-send</v-icon>
+                  </v-btn>
+                </v-row>
               </v-form>
             </v-card-text>
           </v-card>
@@ -114,13 +119,16 @@ export default {
 
       alert: {
         value: false,
-        type: "success",
-        text: "",
+        color: "warning",
+        type: "warning",
+        text: "Something went wrong",
       },
 
       rules: {
-        required: [(v) => !!v || "This field is required"],
-        email: [(v) => /.+@.+\..+/.test(v) || "The email must be formated correctly"],
+        required: [(v) => !!v || "This field is required", (v) => (v && v.length <= 50) || "Must be less than 50 characters"],
+        email: [(v) => /.+@.+\..+/.test(v) || "The email must be formated correctly", (v) => (v && v.length <= 50) || "Must be less than 50 characters"],
+        length: [(v) => !!v || "This field is required", (v) => (v && v.length <= 800) || 'Message must be less than 800 characters'],
+
       },
     };
   },
@@ -149,7 +157,8 @@ export default {
       })
         .then(() => {
           this.alert.value = true;
-          this.alert.type = "info";
+          this.alert.type = "success";
+          this.alert.color = "success";
           this.alert.text = "Message was sent";
 
           console.log("Message sent");
@@ -159,6 +168,7 @@ export default {
           console.log(error.message);
           this.alert.value = true;
           this.alert.type = "warning";
+          this.alert.color = "warning";
           this.alert.text = error.message;
         });
     },
