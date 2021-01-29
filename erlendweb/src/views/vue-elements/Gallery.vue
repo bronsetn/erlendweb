@@ -16,13 +16,12 @@
         <v-icon color="tertiary">mdi-image-multiple</v-icon>
       </v-card-title>
       <v-parallax
-        :src="images[0].link"
+        :src="images[activeImage].link"
         height="350"
-        gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
       >
         <v-overlay
           value="true"
-          opacity="0.9"
+          opacity="0.5"
           absolute
         >
           <v-row
@@ -30,12 +29,11 @@
             align="center"
           >
             <v-btn
-              x-large
-              icon
+              outlined
               @click="showGallery = !showGallery"
             >
               <v-icon
-                class="display-3"
+                large
                 color="white"
               >
                 {{ showGallery ? "mdi-chevron-up" : "mdi-plus" }}
@@ -48,133 +46,148 @@
 
     <!-- Image gallery: -->
     <v-expand-transition>
-      <div v-show="showGallery">
-        <v-row class="justify-center">
-          <v-col
-            cols="6"
-            v-for="(item, index) in images"
-            :item="item"
-            :key="index"
+      <v-row v-show="showGallery">
+        <v-col
+          cols="6"
+          v-for="(item, index) in images"
+          :item="item"
+          :key="index"
+        >
+          <!-- Image gallery box -->
+          <v-card
+            elevation="5"
+            color="secondary"
+            @click="openImage(index); imageDialog = true"
           >
-            <v-dialog
-              transition="scale-transition"
-              v-model="imageDialog['dialog_' + index]"
-              max-height="80vh"
-              max-width="80vw"
-            >
-              <template v-slot:activator="{ on: { click } }">
-                <!-- Image gallery box -->
-                <v-card
-                  elevation="5"
-                  color="secondary"
-                  @click="click"
+            <v-img
+              class="pointer"
+              height="250"
+              :src="item.link"
+            ><template v-slot:placeholder>
+                <v-row
+                  class="fill-height ma-0"
+                  align="center"
+                  justify="center"
                 >
-                  <v-img
-                    @click="openImage(index); imageDialog[index] = true"
-                    class="pointer"
-                    height="250"
-                    :src="item.link"
-                  ><template v-slot:placeholder>
-                      <v-row
-                        class="fill-height ma-0"
-                        align="center"
-                        justify="center"
-                      >
-                        <v-progress-circular
-                          indeterminate
-                          color="grey lighten-5"
-                        ></v-progress-circular>
-                      </v-row>
-                    </template></v-img>
-                  <v-card-title class="pb-0">
-                    <p class="normal serif">{{ item.title }}</p>
-                  </v-card-title>
-                </v-card>
+                  <v-progress-circular
+                    indeterminate
+                    color="grey lighten-5"
+                  ></v-progress-circular>
+                </v-row>
               </template>
+            </v-img>
+          </v-card>
+        </v-col>
 
-              <!-- Image pop-up -->
-              <v-card color="primary">
-                <v-img
-                  max-height="80vh"
-                  max-width="80vw"
-                  contain
-                  :src="images[activeImage].link"
+        <v-dialog
+          v-model="imageDialog"
+          height="80vh"
+          width="80vw"
+        >
+          <v-card color="primary">
+            <v-img
+              class="dialogImg"
+              max-height="80vh"
+              contain
+              :src="images[activeImage].link"
+            >
+              <v-row
+                class="fill-height ma-0"
+                align="center"
+                justify="center"
+              >
+                <div class="pa-2 serif normal card-text">
+                  {{ images[activeImage].title }}
+                </div>
+                <v-btn
+                  absolute
+                  top
+                  right
+                  icon
+                  @click=" imageDialog = false"
                 >
-                  <v-btn
-                    absolute
-                    top
-                    right
-                    icon
-                    @click="closeDialog(index)"
-                  >
-                    <v-icon color="tertiary">mdi-close</v-icon>
-                  </v-btn>
-                  <v-btn
-                    absolute
-                    bottom
-                    left
-                    icon
-                    @click="previousPhoto()"
-                  >
-                    <v-icon
-                      color="tertiary"
-                      large
-                    >mdi-chevron-left</v-icon>
-                  </v-btn>
-                  <v-btn
-                    absolute
-                    bottom
-                    right
-                    icon
-                    @click="nextPhoto()"
-                  >
-                    <v-icon
-                      color="tertiary"
-                      large
-                    >mdi-chevron-right</v-icon>
-                  </v-btn>
-                </v-img>
-              </v-card>
-            </v-dialog>
-          </v-col>
-        </v-row>
-      </div>
+                  <v-icon color="tertiary">mdi-close</v-icon>
+                </v-btn>
+                <v-btn
+                  absolute
+                  left
+                  icon
+                  @click="previousPhoto()"
+                >
+                  <v-icon
+                    color="tertiary"
+                    large
+                  >mdi-chevron-left</v-icon>
+                </v-btn>
+                <v-btn
+                  absolute
+                  right
+                  icon
+                  @click="nextPhoto()"
+                >
+                  <v-icon
+                    color="tertiary"
+                    large
+                  >mdi-chevron-right</v-icon>
+                </v-btn>
+              </v-row>
+            </v-img>
+          </v-card>
+        </v-dialog>
+
+      </v-row>
     </v-expand-transition>
   </v-col>
 </template>
 
+<style scoped>
+
+.dialogImg:hover .card-text {
+  opacity: 100%;
+}
+
+.card-text {
+  color: white;
+  background-color: hsla(226, 62%, 4%, 0.2);
+  opacity: 0%;
+  transition: 0.5s;
+}
+
+</style>
+
 <script>
 export default {
+
   data() {
     return {
       showGallery: false,
 
       activeImage: 0,
 
-      imageDialog: {},
+      imageDialog: false,
 
       images: [
         {
           link: "https://picsum.photos/700/700",
-          title: "Bildetittel-1",
+          title: "Placeholder-1",
         },
         {
           link: "https://picsum.photos/500/500",
-          title: "Bildetittel-2",
+          title: "Placeholder-2",
         },
         {
           link: "https://picsum.photos/800/800",
-          title: "Bildetittel-3",
+          title: "Placeholder-3",
         },
         {
           link: "https://picsum.photos/600/600",
-          title: "Bildetittel-4",
+          title: "Placeholder-4",
         },
       ],
     };
   },
 
-  // Codepen used for example: https://codepen.io/CSWApps/embed/YoyZJZ
+  // Codepen for funtions: https://codepen.io/CSWApps/embed/YoyZJZ
   methods: {
     openImage(index) {
       this.activeImage = index;

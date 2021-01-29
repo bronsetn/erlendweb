@@ -38,7 +38,7 @@
                       <v-img
                         alt="Personbilde"
                         src="../assets/images/about-image.jpg"
-                        lazy-src="../assets/images/placeholder-coffee.png"
+                        lazy-src="../assets/images/about-image.jpg"
                       >
                       </v-img>
                     </v-avatar>

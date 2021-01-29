@@ -27,7 +27,7 @@
                 height="300"
                 contain
                 :src="item.src"
-                lazy-src="../assets/images/placeholder-coffee.png"
+                :lazy-src="item.src"
               ></v-img>
             </v-container>
 
