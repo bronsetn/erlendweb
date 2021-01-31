@@ -3,7 +3,7 @@
     <v-parallax
       height="900"
       src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/front-image.jpg?alt=media&token=6450a143-5321-4467-976c-439377308381"
-      lazy-src="../assets/images/placeholder.png"
+      lazy-src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/front-image.jpg?alt=media&token=6450a143-5321-4467-976c-439377308381"
     >
       <v-row
         no-gutters
