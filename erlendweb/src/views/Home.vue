@@ -41,7 +41,8 @@ export default {
     console.log("~~~~~~~~~~~~~~~~~~~~~")
     console.log("Welcome to erlendweb!")
     console.log("~~~~~~~~~~~~~~~~~~~~~")
-
+    console.log(" ")
+    console.log(" ")
   },
 };
 </script>

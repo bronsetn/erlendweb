@@ -187,8 +187,8 @@ export default {
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
           (position) => {
-            // console.log("Dine koordinater:");
-            // console.log(position.coords.latitude, position.coords.longitude);
+            console.log("Your coordinates are:");
+            console.log(position.coords.latitude, position.coords.longitude);
 
             this.getCity(position.coords.latitude, position.coords.longitude);
           },
@@ -219,9 +219,9 @@ export default {
         .then(response => response.json())
         .then(json => {
 
-          // console.log("By/Plass:");
-          // console.log(json.features[0].properties.geocoding.city)
-          // console.log("Hvis plassen inneholder ÆØÅ blir det vanskelig");
+          console.log("City/Place:");
+          console.log(json.features[0].properties.geocoding.city)
+          console.log("If the name uses ÆØÅ the funtion might fail");
 
           this.getWeather(json.features[0].properties.geocoding.city);
         })
@@ -257,8 +257,8 @@ export default {
             this.getForecastOslo();
           }
           else {
-            // console.log("Værmelding");
-            // console.log(json);
+            console.log("Forecast:" );
+            console.log(json);
 
             this.weather = json;
 
@@ -294,8 +294,8 @@ export default {
       fetch(apiUrl)
         .then(response => response.json())
         .then((json) => {
-          // console.log("Værmelding");
-          // console.log(json);
+          console.log("Forecast Oslo:");
+          console.log(json);
 
           this.weather = json;
 

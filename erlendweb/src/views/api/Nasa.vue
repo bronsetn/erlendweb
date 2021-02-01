@@ -117,7 +117,7 @@ export default {
 
       // Get year, month and date
       let d = new Date();
-      let today = d.getFullYear() + "-" + (d.getMonth()+1) + "-" + d.getDate();
+      let today = d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
 
       const apiData = {
         url: "https://api.nasa.gov/planetary/apod",
@@ -136,7 +136,8 @@ export default {
           if (Response.data.error_message) {
             console.log("error");
           } else {
-            console.log("Space data for: ", date );
+            console.log(" ");
+            console.log("Space data for: ", date);
             console.log(Response);
 
             this.spaceData = Response.data;
@@ -145,9 +146,10 @@ export default {
           }
         })
         .catch((error) => {
+          console.log(" ");
           console.log(error.message);
-          console.log(apiUrl);
-          console.log(date)
+          // console.log(apiUrl);
+          // console.log(date)
         });
     },
   }
