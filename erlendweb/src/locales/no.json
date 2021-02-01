@@ -32,7 +32,8 @@
         "date": "Vinter 2021",
         "link": "https://maribro.no",
         "alt": "Screenshot from https://maribro.no",
-        "src": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/mariweb.png?alt=media&token=edcce03c-8fee-4be0-9c39-de239ff519a2"
+        "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb-c.png?alt=media&token=08f0da3b-4ea0-41dc-81c4-4848a203923d",
+        "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb-l.png?alt=media&token=36b35eac-d016-4bc2-9224-11fb4f360e02"
         },
         {
         "title": "Prios Events",
@@ -40,7 +41,8 @@
         "date": "Høst 2020",
         "link": "https://dev.prios.events",
         "alt": "Screenshot from prios.events",
-        "src": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/events.png?alt=media&token=89518a63-485d-439b-993f-79c4852f4870"
+        "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-c.png?alt=media&token=1bfb24da-73be-404d-9a51-1c832183e9df",
+        "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-l.png?alt=media&token=5e66efc8-7f3c-447f-b622-798e751dd897"
         },   
         {
         "title": "Wordpress nettsted",
@@ -48,7 +50,8 @@
         "date": "Sommer 2019",
         "link": "https://erlendworkblog.wordpress.com/",
         "alt": "Sreenshot from https://erlendworkblog.wordpress.com",
-        "src": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/wordpress.png?alt=media&token=0b8b963f-5431-40b5-bc86-996f5f56d6c2"
+        "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwordpress-c.png?alt=media&token=a9f8695f-3b05-4fc7-8aec-0cd546f1b402",
+        "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwordpress-l.png?alt=media&token=f3355e2d-aa1f-4159-bd77-183f12ffa9bc"
         }
     ],
     "other": {

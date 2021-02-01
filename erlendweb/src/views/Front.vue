@@ -2,8 +2,8 @@
   <div>
     <v-parallax
       height="900"
-      src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/front-image.jpg?alt=media&token=6450a143-5321-4467-976c-439377308381"
-      lazy-src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/front-image.jpg?alt=media&token=6450a143-5321-4467-976c-439377308381"
+      src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/front-image-c.jpg?alt=media&token=81cb16fb-857c-4ac8-83fd-dc8a7e7f3429"
+      lazy-src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/front-image-c.jpg?alt=media&token=81cb16fb-857c-4ac8-83fd-dc8a7e7f3429"
     >
       <v-row
         no-gutters

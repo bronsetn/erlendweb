@@ -26,8 +26,8 @@
               <v-img
                 height="300"
                 contain
-                :src="item.src"
-                :lazy-src="item.src"
+                :src="item.imageCompressed"
+                :lazy-src="item.imageCompressed"
               ></v-img>
             </v-container>
 
