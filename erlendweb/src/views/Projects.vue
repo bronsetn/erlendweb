@@ -63,6 +63,7 @@
               <v-btn
                 color="accent"
                 text
+                rel="noopener"
                 target="_blank"
                 :href="item.link"
               >{{ $t('misc.visit') }}</v-btn>

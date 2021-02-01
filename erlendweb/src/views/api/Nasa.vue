@@ -30,6 +30,7 @@
       </div>
       <p class="light pt-2"><a
           :href="spaceData.url"
+          rel="noopener"
           target="_blank"
         >{{ spaceData.url }}</a></p>
 
@@ -136,7 +137,6 @@ export default {
           if (Response.data.error_message) {
             console.log("error");
           } else {
-            console.log(" ");
             console.log("Space data for: ", date);
             console.log(Response);
 
@@ -146,7 +146,6 @@ export default {
           }
         })
         .catch((error) => {
-          console.log(" ");
           console.log(error.message);
           // console.log(apiUrl);
           // console.log(date)

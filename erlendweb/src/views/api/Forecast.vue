@@ -102,20 +102,20 @@
         </v-list-item>
       </div>
 
-      <!-- If weatherdata doesn't load -->
-      <div v-else>
-        <p class="Normal">Click to get today's weather</p>
+      <!-- Shown before/if weatherdata is not loaded -->
+      <v-container
+        class="faded center"
+        v-else
+      >
+        <p class="display-2 normal pa-4"></p>
         <v-btn
-          fab
-          color="tertiary"
-          class="ma-2"
+          outlined
+          x-large
+          color="white"
+          :loading="loading"
           @click="getLocation()"
-        >
-          <v-icon color="primary">mdi-cached</v-icon>
-        </v-btn>
-        <p class="normal pt-2">To get weatherdata this component needs to use your browser's geolocation.
-          If nothing happens after clicking the button, try to deletign the site's cache.</p>
-      </div>
+        >{{ $t('other.forecastCaption') }}</v-btn>
+      </v-container>
 
       <v-card-actions>
         <v-spacer></v-spacer>
@@ -153,6 +153,8 @@ export default {
     return {
       show: false,
 
+      loading: false,
+
       weather: null,
       temperature: null,
       wicon: false,
@@ -165,24 +167,24 @@ export default {
   },
 
   mounted() {
-    this.getLocation();
+    // Get year, month and date
+    let date = new Date();
+    let format = {
+      weekday: "long",
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+    };
+    this.formatedDate = date.toLocaleTimeString("metric", format);
   },
 
   methods: {
     // Get user longitude and latitude from browser geodata on startup
     // https://www.youtube.com/watch?v=_pRSfB17_7Y
     getLocation() {
-      // Get year, month and date
-      let date = new Date();
-      let format = {
-        weekday: "long",
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-        hour: "2-digit",
-        minute: "2-digit",
-      };
-      this.formatedDate = date.toLocaleTimeString("metric", format);
+      this.loading = true;
 
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
@@ -257,8 +259,10 @@ export default {
             this.getForecastOslo();
           }
           else {
-            console.log("Forecast:" );
+            console.log("Forecast:");
             console.log(json);
+
+            this.loading = false;
 
             this.weather = json;
 
@@ -274,6 +278,7 @@ export default {
         })
         // Catch errors
         .catch(err => {
+          this.loading = false;
           console.log('Request Failed', err);
         }
         );
@@ -297,6 +302,8 @@ export default {
           console.log("Forecast Oslo:");
           console.log(json);
 
+          this.loading = false;
+
           this.weather = json;
 
           this.wicon =
@@ -310,6 +317,7 @@ export default {
         })
         // Catch errors
         .catch(err => {
+          this.loading = false;
           console.log('Request Failed', err);
         });
     },
@@ -317,5 +325,22 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.faded {
+    min-height: 330px;
+    background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+}
+
+.custom-loader {
+    animation: loader 1s infinite;
+    display: flex;
+  }
+  @-moz-keyframes loader {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 </style>
