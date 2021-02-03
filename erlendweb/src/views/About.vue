@@ -59,6 +59,17 @@
                       >mdi-phone</v-icon> (+47) 45 80 44 52
                     </p>
                     <v-btn
+                      title="Github"
+                      href="https://github.com/bronsetn?tab=repositories"
+                      rel="noopener"
+                      target="_blank"
+                      color="tertiary"
+                      icon
+                    >
+                      <v-icon large>mdi-github</v-icon>
+                    </v-btn>
+                    <v-btn
+                      class="mr-4 ml-4"
                       title="Linkedin"
                       href="https://no.linkedin.com/in/erlend-brønseth-b5a99612b/en-us"
                       rel="noopener"
@@ -66,7 +77,7 @@
                       color="tertiary"
                       icon
                     >
-                      <v-icon>mdi-linkedin</v-icon>
+                      <v-icon large>mdi-linkedin</v-icon>
                     </v-btn>
                     <v-btn
                       title="Facebook"
@@ -76,7 +87,7 @@
                       color="tertiary"
                       icon
                     >
-                      <v-icon>mdi-facebook</v-icon>
+                      <v-icon large>mdi-facebook</v-icon>
                     </v-btn>
                   </v-col>
                 </v-row>
