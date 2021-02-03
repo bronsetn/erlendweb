@@ -1,5 +1,4 @@
-# Erlendweb
-https://erlendweb.no
+## https://erlendweb.no
 
 Made by: 
 
@@ -10,13 +9,13 @@ Erlendweb is meant as a portefolio aswell as a place for experimentation with de
 
 
 
-To run locally with npm:
+## To run locally with npm:
 
 cd erlendweb
 
 npm run serve
 
-
+/*------------------------*/
 
 
 ## Project setup
@@ -24,17 +23,17 @@ npm run serve
 npm install
 ```
 
-### Compiles and hot-reloads for development
+Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+Compiles and minifies for production
 ```
 npm run build
 ```
 
-### Lints and fixes files
+ Lints and fixes files
 ```
 npm run lint
 ```
