@@ -24,15 +24,16 @@
               no-gutters
             >
               <v-btn
-                title="Linkedin"
-                href="https://no.linkedin.com/in/erlend-brønseth-b5a99612b/en-us"
+                title="Github"
+                href="https://github.com/bronsetn?tab=repositories"
                 rel="noopener"
                 target="_blank"
                 color="tertiary"
                 icon
               >
-                <v-icon>mdi-linkedin</v-icon>
+                <v-icon>mdi-github</v-icon>
               </v-btn>
+
               <v-btn
                 title="Facebook"
                 href="https://www.facebook.com/profile.php?id=100003582864001"
@@ -43,6 +44,18 @@
               >
                 <v-icon>mdi-facebook</v-icon>
               </v-btn>
+
+              <v-btn
+                title="Linkedin"
+                href="https://no.linkedin.com/in/erlend-brønseth-b5a99612b/en-us"
+                rel="noopener"
+                target="_blank"
+                color="tertiary"
+                icon
+              >
+                <v-icon>mdi-linkedin</v-icon>
+              </v-btn>
+
             </v-row>
             <p class="pt-2">
               bronsetherlend@gmail.com
