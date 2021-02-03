@@ -16,10 +16,10 @@ cd erlendweb
 
 npm run serve
 
+/*------------------------*/
 
 
-
-Project setup
+## Project setup
 ```
 npm install
 ```
