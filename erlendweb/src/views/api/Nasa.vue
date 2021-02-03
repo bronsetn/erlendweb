@@ -121,7 +121,7 @@ export default {
 
       const apiData = {
         url: "https://api.nasa.gov/planetary/apod",
-        // Personal key pls no fuckery
+        // Personal key
         key: "Kc1D0rF8COldenZrRdiV0VESLYJUkhvAIPxh63ke",
         // date: "2020-10-30",
         date: today,

@@ -1,5 +1,5 @@
+  <!-- Fixed button for scrolling back to the top of the page -->
 <template>
-  <!-- Floating button for scrolling to the top of the page -->
   <v-fade-transition>
     <v-btn
       fixed
@@ -33,6 +33,3 @@ export default {
   },
 };
 </script>
-
-<style>
-</style>

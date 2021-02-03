@@ -10,7 +10,7 @@
 
 
 <script>
-//Documentation? https://stackoverflow.com/questions/47849626/import-and-use-three-js-library-in-vue-component
+//Tips from https://stackoverflow.com/questions/47849626/import-and-use-three-js-library-in-vue-component
 
 // npm install --save three
 import * as Three from 'three'

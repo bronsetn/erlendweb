@@ -251,7 +251,7 @@ export default {
       fetch(apiUrl)
         .then(response => response.json())
         .then((json) => {
-          // console.log("Værmelding");
+          // console.log("Forecast");
           // console.log(json);
 
           if (json.cod == 404) {
