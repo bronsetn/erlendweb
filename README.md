@@ -1,4 +1,3 @@
-## Erlendweb
 ## https://erlendweb.no
 
 Made by: 
@@ -10,7 +9,7 @@ Erlendweb is meant as a portefolio aswell as a place for experimentation with de
 
 
 
-To run locally with npm:
+## To run locally with npm:
 
 cd erlendweb
 
