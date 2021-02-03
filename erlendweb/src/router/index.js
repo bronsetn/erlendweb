@@ -9,11 +9,28 @@ Vue.use(Router)
 export default new Router({
     mode: 'history',
     base: process.env.BASE_URL,
+
+    // Enables automatic scrolling to ID's across pages
+    scrollBehavior(to, from, savedPosition) {
+        if (savedPosition) {
+            return savedPosition
+        } else {
+            const position = {}
+            if (to.hash) {
+                position.selector = to.hash
+                if(document.querySelector(to.hash)) {
+                    return position;
+                }
+                return false;
+            }
+        }
+    },
+
     routes: [
         // Redirect to configured language in i18n config
         {
             path: '/',
-            redirect: `/${i18n.locale}`
+            redirect: `/${i18n.locale}/`
         },
         // Adding language variable as a route parameter
         {
@@ -21,18 +38,20 @@ export default new Router({
             component: {
                 render(c) { return c('router-view') }
             },
-            children: [{
+            children: [
+                {
                 path: '/',
                 name: 'home',
                 component: Home
-            }]
+            },
+          ]
         }
     ]
 })
 
 
 // Rediredct to set pages
-// use this to header if
+// use this to v-if change in links or something when on different pages
 // v-if="['PriosEvents', 'Bachelor'].includes($route.name)"
 
 // let availableSites = ["/"];

@@ -68,23 +68,31 @@
             class="d-flex justify-center"
           >
             <v-btn
-              href="#projects"
+              :to="{
+              hash: 'projects'
+            }"
               color="tertiary"
               text
             >
               <div class="serif">I</div>
               <div class="pl-1">{{ $t('header.projects') }}</div>
             </v-btn>
+
             <v-btn
-              href="#about"
+              :to="{
+                hash: 'about'
+               }"
               color="tertiary"
               text
             >
               <div class="serif">II</div>
               <div class="pl-1">{{ $t('header.about') }}</div>
             </v-btn>
+
             <v-btn
-              href="#contact"
+              :to="{
+                hash: 'contact'
+               }"
               color="tertiary"
               text
             >
@@ -92,7 +100,9 @@
               <div class="pl-1">{{ $t('header.contact') }}</div>
             </v-btn>
             <v-btn
-              href="#other"
+              :to="{
+                hash: 'other'
+               }"
               color="tertiary"
               text
             >
@@ -146,25 +156,33 @@
         transparent
         class="pl-4"
       >
-        <v-list-item href="#projects">
+        <v-list-item :to="{
+              hash: 'projects'
+            }">
           <v-list-item-icon class="serif">I</v-list-item-icon>
           <v-list-item-content>
             {{ $t('header.projects') }}
           </v-list-item-content>
         </v-list-item>
-        <v-list-item href="#about">
+        <v-list-item :to="{
+                hash: 'about'
+               }">
           <v-list-item-icon class="serif">II</v-list-item-icon>
           <v-list-item-content>
             {{ $t('header.about') }}
           </v-list-item-content>
         </v-list-item>
-        <v-list-item href="#contact">
+        <v-list-item :to="{
+                hash: 'contact'
+               }">
           <v-list-item-icon class="serif">III</v-list-item-icon>
           <v-list-item-content>
             {{ $t('header.contact') }}
           </v-list-item-content>
         </v-list-item>
-        <v-list-item href="#other">
+        <v-list-item :to="{
+                hash: 'other'
+               }">
           <v-list-item-icon class="serif">IV</v-list-item-icon>
           <v-list-item-content>
             {{ $t('header.other') }}

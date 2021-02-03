@@ -10,9 +10,11 @@
         "contact": "Ta kontakt",
         "other": "Annet"
     },
+
     "front": {
         "subtitle": "Junior frontend utvikler"
     },
+
     "about": {
         "intro1": "Jeg er en 23 åring fra Inderøy med en bachelor innenfor digitale medier og design. Dette nettstedet er ment som en portefølje i tillegg til et sted jeg kan ekspirementere innenfor utvikling og design.",
         "intro2": "Jeg har ambisjoner om å bli dreven innenfor frontend utvikling og har i høst arbeidet hos <a target='_blank' href='https://prios.no' >Prios Kompetanse AS</a>, hvor jeg har blitt kjent med bruk av VueJs.",
@@ -22,9 +24,11 @@
         "wordpressDescription": " Inntil nylig har jeg brukt wordpress for publisering av prosjekter fra studiet, de finnes fortsatt her:",
         "skills": "Ferdigheter"
     },
+
     "contact": {
         "description": "Beskjeder herfra sendes direkte til bronsetherlend@gmail.com"
     },
+
     "projects": [
         {
         "title": "Maribro.no",
@@ -37,7 +41,7 @@
         },
         {
         "title": "Prios Events",
-        "description": "Side for blandt annet å kunne holde jobbmesser og lignende typer messer. Jeg arbeidet med utvikling av front-end og deisgn av siden for Prios kompetanse AS. Siden var et av mine første prosjekter i VueJs.",
+        "description": "Side for blant annet å kunne holde jobbmesser og lignende typer messer. Jeg arbeidet med utvikling av frontend og design av siden for Prios kompetanse AS. Siden var et av mine første prosjekter i VueJs.",
         "date": "Høst 2020",
         "link": "https://dev.prios.events",
         "alt": "Screenshot from prios.events",
@@ -46,7 +50,7 @@
         },   
         {
         "title": "Wordpress nettsted",
-        "description": "Nettsted jeg brukte til publisering av prosjekter og oppgaver fra bachelorstudiuet. Satt opp som en standard wordpress blogg.",
+        "description": "Nettsted jeg brukte til publisering av prosjekter og oppgaver fra bachelorstudiet. Satt opp som en standard wordpress blogg.",
         "date": "Sommer 2019",
         "link": "https://erlendworkblog.wordpress.com/",
         "alt": "Sreenshot from https://erlendworkblog.wordpress.com",
@@ -54,6 +58,7 @@
         "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwordpress-l.png?alt=media&token=f3355e2d-aa1f-4159-bd77-183f12ffa9bc"
         }
     ],
+
     "other": {
         "nasa": "Dagens bilde fra Nasa",
         "nasaDescription": "Her har jeg brukt en av Nasa sine offentlige APIer som publiserer et nytt rom-bilde pluss informasjon hver dag.",
