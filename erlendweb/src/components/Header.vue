@@ -36,7 +36,7 @@
             left
             icon
             v-if="!$vuetify.theme.dark"
-            @click="$router.push('/')"
+            :to="{hash: 'home'}"
           >
             <v-img
               src="../assets/icons/logo-light.svg"
@@ -48,7 +48,7 @@
           <v-btn
             icon
             v-if="$vuetify.theme.dark"
-            @click="$router.push('/')"
+            :to="{hash: 'home'}"
           >
             <v-img
               src="../assets/icons/logo-dark.svg"

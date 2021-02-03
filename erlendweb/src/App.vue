@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <v-app id="top">
+    <v-app id="home">
       <Header></Header>
       <main
         :style="{ background: $vuetify.theme.themes[theme].background }"
