@@ -37,7 +37,7 @@
                 <feGaussianBlur
                   result="blurOut"
                   in="offOut"
-                  stdDeviation="1"
+                  stdDeviation="2"
                 />
                 <feBlend
                   in="SourceGraphic"
@@ -76,7 +76,7 @@
               Erlend Brønseth
             </h1>
             <h4
-              style="font-size: 1rem"
+              style="font-size: 1.2rem"
               class="text-md-left"
             >
               {{ $t('front.subtitle') }}
@@ -102,7 +102,7 @@ export default {
   stroke: hsl(0, 0%, 96%);
   fill: hsl(0, 0%, 96%);
 
-  border: 2px solid black;
+  border: 10px solid black;
 
   stroke-miterlimit: 10;
   stroke-width: 5px;
@@ -121,6 +121,10 @@ export default {
     stroke-dashoffset: 0;
     fill: hsl(0, 0%, 96%);
   }
+}
+
+h1, h2 {
+  text-shadow: 1px 1px 2px black;
 }
 
 .imageItems {
