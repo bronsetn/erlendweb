@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-parallax
-      height="900"
+      height="800"
       src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/front-image-c.jpg?alt=media&token=81cb16fb-857c-4ac8-83fd-dc8a7e7f3429"
       lazy-src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/front-image-c.jpg?alt=media&token=81cb16fb-857c-4ac8-83fd-dc8a7e7f3429"
     >
@@ -20,6 +20,7 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 400 400"
             width="200"
+            heigth="200"
           >
             <g id="drawing">
               <filter
@@ -66,9 +67,8 @@
           md="3"
           lg="3"
           xl="3"
-          justify="center"
         >
-          <v-container>
+          <v-container justify="center">
             <h1
               style="font-size: 4rem"
               class="text-md-left"
@@ -126,11 +126,15 @@ export default {
 .imageItems {
   align-items: center;
   margin-top: 20%;
+  padding: 0;
 }
 
-@media only screen and (max-height: 800px) {
+/* 960px is the height for md breakpoint */
+@media (max-width: 960px) and (max-height: 960px) {
   .imageItems {
-      margin-top: 10%;
+      align-items: flex-start;
+      margin-top: 0%;
+      flex: none;
   }
 }
 </style>
