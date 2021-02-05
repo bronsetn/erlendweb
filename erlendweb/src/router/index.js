@@ -18,7 +18,7 @@ export default new Router({
             const position = {}
             if (to.hash) {
                 position.selector = to.hash
-                if(document.querySelector(to.hash)) {
+                if (document.querySelector(to.hash)) {
                     return position;
                 }
                 return false;
@@ -38,31 +38,11 @@ export default new Router({
             component: {
                 render(c) { return c('router-view') }
             },
-            children: [
-                {
+            children: [{
                 path: '/',
                 name: 'home',
                 component: Home
-            },
-          ]
+            }, ]
         }
     ]
 })
-
-
-// Rediredct to set pages
-// use this to v-if change in links or something when on different pages
-// v-if="['PriosEvents', 'Bachelor'].includes($route.name)"
-
-// let availableSites = ["/"];
-
-// // If the site is not in availableSites redirect to 
-// router.beforeEach((to, from, next) => {
-//     if (availableSites.includes(to.path)) {
-//         next()
-//     } else {
-//         next("/")
-//     }
-// });
-
-// export default router
