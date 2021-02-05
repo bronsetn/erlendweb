@@ -1,9 +1,12 @@
 {
     "misc": {
+        "more": "Mer",
+        "less": "Mindre",
+
         "about": "Om dette",
         "visit": "Besøk"
     },
-    
+
     "header": {
         "projects": "Prosjekter",
         "about": "Om meg",
@@ -29,33 +32,35 @@
         "description": "Beskjeder herfra sendes direkte til bronsetherlend@gmail.com"
     },
 
-    "projects": [
-        {
-        "title": "Maribro.no",
-        "description": "En side for å vise tegninger og malerier laget av Mari Brønseth. Laget i VueJs og satt opp med Netlify som vert.",
-        "date": "Vinter 2021",
-        "link": "https://maribro.no",
-        "alt": "Screenshot from https://maribro.no",
-        "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb-c.png?alt=media&token=08f0da3b-4ea0-41dc-81c4-4848a203923d",
-        "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb-l.png?alt=media&token=36b35eac-d016-4bc2-9224-11fb4f360e02"
+    "projects": [{
+            "title": "Maribro.no",
+            "description": "En side for å vise tegninger og malerier laget av Mari Brønseth. Laget i VueJs og satt opp med Netlify som vert.",
+            "content": "",
+            "date": "Vinter 2021",
+            "link": "https://maribro.no",
+            "alt": "Screenshot from https://maribro.no",
+            "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb-c.png?alt=media&token=08f0da3b-4ea0-41dc-81c4-4848a203923d",
+            "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb-l.png?alt=media&token=36b35eac-d016-4bc2-9224-11fb4f360e02"
         },
         {
-        "title": "Prios Events",
-        "description": "Side for blant annet å kunne holde jobbmesser og lignende typer messer. Jeg arbeidet med utvikling av frontend og design av siden for Prios kompetanse AS. Siden var et av mine første prosjekter i VueJs.",
-        "date": "Høst 2020",
-        "link": "https://dev.prios.events",
-        "alt": "Screenshot from prios.events",
-        "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-c.png?alt=media&token=1bfb24da-73be-404d-9a51-1c832183e9df",
-        "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-l.png?alt=media&token=5e66efc8-7f3c-447f-b622-798e751dd897"
-        },   
+            "title": "Prios Events",
+            "description": "Side for blant annet å kunne holde jobbmesser og lignende typer messer. Jeg arbeidet med utvikling av frontend og design av siden for Prios kompetanse AS. ",
+            "content": "Siden er et av mine første prosjekter i VueJs og er fortsatt under utvikling hos Prios.",
+            "date": "Høst 2020",
+            "link": "https://dev.prios.events",
+            "alt": "Screenshot from prios.events",
+            "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-c.png?alt=media&token=1bfb24da-73be-404d-9a51-1c832183e9df",
+            "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-l.png?alt=media&token=5e66efc8-7f3c-447f-b622-798e751dd897"
+        },
         {
-        "title": "Wordpress nettsted",
-        "description": "Nettsted jeg brukte til publisering av prosjekter og oppgaver fra bachelorstudiet. Satt opp som en standard wordpress blogg.",
-        "date": "Sommer 2019",
-        "link": "https://erlendworkblog.wordpress.com/",
-        "alt": "Sreenshot from https://erlendworkblog.wordpress.com",
-        "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwordpress-c.png?alt=media&token=a9f8695f-3b05-4fc7-8aec-0cd546f1b402",
-        "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwordpress-l.png?alt=media&token=f3355e2d-aa1f-4159-bd77-183f12ffa9bc"
+            "title": "Wordpress nettsted",
+            "description": "Nettsted jeg brukte til publisering av prosjekter og oppgaver fra bachelorstudiet. Siden er satt opp som en standard wordpress blogg.",
+            "content": "",
+            "date": "Sommer 2019",
+            "link": "https://erlendworkblog.wordpress.com/",
+            "alt": "Sreenshot from https://erlendworkblog.wordpress.com",
+            "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwordpress-c.png?alt=media&token=a9f8695f-3b05-4fc7-8aec-0cd546f1b402",
+            "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwordpress-l.png?alt=media&token=f3355e2d-aa1f-4159-bd77-183f12ffa9bc"
         }
     ],
 
@@ -75,5 +80,5 @@
         "svgTest": "SVG animasjonstest",
         "gallery": "Galleri layout med Vuetify"
     }
-    
+
 }

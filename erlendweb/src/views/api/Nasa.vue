@@ -50,7 +50,7 @@
                 v-if="expanded || clamped"
                 class="ml-1 badge badge-light"
                 @click.prevent="toggle"
-              >{{ expanded ? "Mindre" : "Mer" }}</a>
+              >{{ expanded ? $t('misc.less'): $t('misc.more') }}</a>
             </template>
           </v-clamp>
         </p>

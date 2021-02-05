@@ -24,6 +24,7 @@
           >
             <v-container>
               <v-img
+                alt="Image of website, from earlier projects"
                 height="300"
                 contain
                 :src="item.imageCompressed"
@@ -43,30 +44,73 @@
               <p class="text-left">
                 <v-clamp
                   class="text--primary"
-                  autoresize
                   :max-lines="2"
-                >
-                  {{item.description}} <template #after="{ toggle, expanded, clamped }">
-                    <a
-                      href="#"
-                      v-if="expanded || clamped"
-                      class="clamp"
-                      @click.prevent="toggle"
-                    >{{ expanded ? "mindre" : "mer" }}</a>
-                  </template>
+                >{{item.description}}
                 </v-clamp>
               </p>
             </v-card-text>
 
             <v-card-actions class="ma-0">
               <v-spacer></v-spacer>
-              <v-btn
-                color="accent"
-                text
-                rel="noopener"
-                target="_blank"
-                :href="item.link"
-              >{{ $t('misc.visit') }}</v-btn>
+              <v-dialog v-model="dialog['dialog_' + index]">
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn
+                    color="accent"
+                    text
+                    v-bind="attrs"
+                    v-on="on"
+                  >
+                    {{ $t('misc.more') }}
+                  </v-btn>
+                </template>
+                <v-card color="secondary">
+                  <v-btn
+                    absolute
+                    top
+                    right
+                    icon
+                    color="tertiary"
+                    title="Close project page"
+                    @click="closeDialog(index)"
+                  >
+                    <v-icon>mdi-close</v-icon>
+                  </v-btn>
+                  <v-container>
+                    <h1 class="pt-4 pb-2">{{ item.title}}</h1>
+                    <v-img
+                      alt="Image of website, from earlier projects"
+                      max-height="600px"
+                      contain
+                      :src="item.imageCompressed"
+                      :lazy-src="item.imageCompressed"
+                    ></v-img>
+                    <v-card-text>
+                      <v-row justify="center">
+                        <v-col
+                          cols="12"
+                          sm="12"
+                          md="10"
+                          lg="8"
+                          xl="8"
+                        >
+                          <p class="text--primary">
+                            {{item.description}}
+                          </p>
+                          <v-btn
+                            color="accent"
+                            text
+                            rel="noopener"
+                            target="_blank"
+                            :href="item.link"
+                          >{{ $t('misc.visit') }}
+                            <v-icon>mdi-chevron-right</v-icon>
+                          </v-btn>
+                        </v-col>
+                      </v-row>
+                    </v-card-text>
+                  </v-container>
+                </v-card>
+              </v-dialog>
             </v-card-actions>
           </v-card>
         </v-col>
@@ -82,5 +126,17 @@ export default {
   components: {
     VClamp,
   },
+  data() {
+    return {
+      dialog: {},
+    }
+  },
+
+  methods: {
+    closeDialog(index) {
+      this.dialog["dialog_" + index] = false;
+    },
+
+  }
 };
 </script>
