@@ -100,7 +100,7 @@ export default {
       submitted: false,
 
       alert: {
-        value: true,
+        value: false,
         color: "warning",
         type: "warning",
         text: "Something went wrong",
