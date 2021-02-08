@@ -30,33 +30,33 @@
     },
     "projects": [{
             "title": "Maribro.no",
-            "description": "A website made to show of the art made by Mari Brønseth. The site is made with VueJs and hosted on Netlify.",
-            "content": "",
+            "description": "A website made to show of the art made by Mari Brønseth. The site is made with VueJs and hosted on Netlify. The site consist of a page to present the artist aswell as a image-gallery for many of the artworks she's made.",
+            "content": "One of the challenges with the development of the site was to find a good solution for presenting the different versions of each design. In the beginning the gallery consisted of all the images in the database listed one after the other. But I decided to to change it so that each design has it's own cluster, consisting of all of it's versions.",
             "date": "Winter 2021",
             "link": "https://maribro.no",
             "alt": "Screenshot from https://maribro.no",
             "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb-c.png?alt=media&token=08f0da3b-4ea0-41dc-81c4-4848a203923d",
-            "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb-l.png?alt=media&token=36b35eac-d016-4bc2-9224-11fb4f360e02"
+            "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb-gallery-c.png?alt=media&token=7466e583-dedf-4c9c-b39e-d8e3d4d26b17"
         },
         {
             "title": "Prios Events",
-            "description": "Site meant for job fairs and similar types of events. I worked with the development of the front-end and design of the site for Prios Kompetanse AS.",
-            "content": "The site is one of my first projects working with VueJs and is still under development at Prios.",
+            "description": "Website meant for job fairs and similar types of events. I worked with the development of the front-end and design of the site for Prios Kompetanse AS. The site is one of my first projects working with VueJS and it is still being devolped at Prios.",
+            "content": "Through this project I got to work with implimenting one of Prios's systems in to a new website, I also got some insight into the tools and methods used in modern web development. Experience I have made us of when developing erlendweb.no.",
             "date": "Autumn 2020",
             "link": "https://dev.prios.events",
             "alt": "Screenshot from prios.events",
             "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-c.png?alt=media&token=1bfb24da-73be-404d-9a51-1c832183e9df",
-            "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-l.png?alt=media&token=5e66efc8-7f3c-447f-b622-798e751dd897"
+            "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-profile.png?alt=media&token=93c95cc5-f5b6-4fad-b88d-d4e6b4885941"
         },
         {
-            "title": "Wordpress webpage",
-            "description": "Website used for publishing some of the projects from my bachelor study. The site is set up using Wordpresses cms for blogg sites.",
-            "content": "",
+            "title": "Wordpress website",
+            "description": "Website used for publishing some of the projects from my bachelor study. The process of setting up the wordpress-site is relativly easy as you can simply use Wordpresses UX, at the same time it's also a lot less exiting as there are many restrictions with using a CMS.",
+            "content": "I have tried to carry over many of the design choises and elements from the wordpress site to erlendweb.no. Some of the similarities between the site's is the color palette used and some of the graphic elements used such as the logo.",
             "date": "Summer 2019",
             "link": "https://erlendworkblog.wordpress.com/",
             "alt": "Sreenshot from https://erlendworkblog.wordpress.com",
             "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwordpress-c.png?alt=media&token=a9f8695f-3b05-4fc7-8aec-0cd546f1b402",
-            "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwordpress-l.png?alt=media&token=f3355e2d-aa1f-4159-bd77-183f12ffa9bc"
+            "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwordpress-collage.png?alt=media&token=bed681d8-f31a-40c1-b66b-638a2c5fc86e"
         }
     ],
     "other": {

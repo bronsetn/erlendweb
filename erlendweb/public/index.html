@@ -19,11 +19,9 @@
     </noscript>
     <div id="app">
 
-        <!-- Hidden form for vue/netlify rendering -->
+        <!-- Hidden form for netlify bots used for the contact form, the rendered form is in Contact.vue -->
         <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
             <input type="hidden" name="bot-field" />
-            <input type="text" name="subject" />
-            <input type="text" name="name" />
             <input type="email" name="email" />
             <textarea name="message"></textarea>
             <button type="submit">Send</button>

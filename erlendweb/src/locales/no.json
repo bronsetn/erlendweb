@@ -1,6 +1,6 @@
 {
     "misc": {
-        "more": "Mer",
+        "more": "Les mer",
         "less": "Mindre",
 
         "about": "Om dette",
@@ -34,33 +34,33 @@
 
     "projects": [{
             "title": "Maribro.no",
-            "description": "En side for å vise tegninger og malerier laget av Mari Brønseth. Laget i VueJs og satt opp med Netlify som vert.",
-            "content": "",
+            "description": "En side for å vise tegninger og malerier laget av Mari Brønseth. Laget i VueJs og satt opp med Netlify som vert. Nettstedet består av en side for å presentere artisten i tilleg til et bildegalleri for kunstverkene hun har laget.",
+            "content": "Noe av det som var utfordrende ved utviklingen av siden var å tenke ut en god måte å presentere de forskjellige versjonene som var av vært motiv. I starten bestod galleriet av alle bildene i databasen listet opp etter hverandre, men jeg endte opp med å forandre det til at hvert motiv har sin egen klynge på siden med alle sine versjoner.",
             "date": "Vinter 2021",
             "link": "https://maribro.no",
             "alt": "Screenshot from https://maribro.no",
             "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb-c.png?alt=media&token=08f0da3b-4ea0-41dc-81c4-4848a203923d",
-            "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb-l.png?alt=media&token=36b35eac-d016-4bc2-9224-11fb4f360e02"
+            "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb-gallery-c.png?alt=media&token=7466e583-dedf-4c9c-b39e-d8e3d4d26b17"
         },
         {
             "title": "Prios Events",
-            "description": "Side for blant annet å kunne holde jobbmesser og lignende typer messer. Jeg arbeidet med utvikling av frontend og design av siden for Prios kompetanse AS. ",
-            "content": "Siden er et av mine første prosjekter i VueJs og er fortsatt under utvikling hos Prios.",
+            "description": "Nettsted for blant annet å kunne holde jobbmesser og lignende typer messer. Jeg arbeidet med utvikling av frontend og design av nettstedet for Prios kompetanse AS. Nettstedet er et av mine første prosjekter med bruk av VueJs og er fortsatt under utvikling hos Prios.",
+            "content": "Gjennom prosjekt fikk jeg jobbet med implimentering av ett av Prios sine systemer inn i et nytt nettsted, jeg fikk også et innblikk i flere verktøy og metoder for moderne webutvikling. Erfaring jeg blant annet har kunnet tatt i bruk for å sette opp erlendweb.no.",
             "date": "Høst 2020",
             "link": "https://dev.prios.events",
             "alt": "Screenshot from prios.events",
             "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-c.png?alt=media&token=1bfb24da-73be-404d-9a51-1c832183e9df",
-            "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-l.png?alt=media&token=5e66efc8-7f3c-447f-b622-798e751dd897"
+            "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-profile.png?alt=media&token=93c95cc5-f5b6-4fad-b88d-d4e6b4885941"
         },
         {
             "title": "Wordpress nettsted",
-            "description": "Nettsted jeg brukte til publisering av prosjekter og oppgaver fra bachelorstudiet. Siden er satt opp som en standard wordpress blogg.",
-            "content": "",
+            "description": "Nettsted jeg brukte til publisering av prosjekter og oppgaver fra bachelorstudiet. Prossesen med å sette opp wordpress-nettstedet er relativt enkelt på grunn av Wordpress sitt grensesnitt, men også noe mindre spennende på grunn av restriksjonene som kommer med CMS løsninger.",
+            "content": "Jeg har forsøkt å videreføre noen av designvalgene og elementene fra wordpress siden videre på erlendweb. Noen av de større likhetene mellom sidene er fargevalget og diverse grafiske elementer som logoen. ",
             "date": "Sommer 2019",
             "link": "https://erlendworkblog.wordpress.com/",
             "alt": "Sreenshot from https://erlendworkblog.wordpress.com",
             "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwordpress-c.png?alt=media&token=a9f8695f-3b05-4fc7-8aec-0cd546f1b402",
-            "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwordpress-l.png?alt=media&token=f3355e2d-aa1f-4159-bd77-183f12ffa9bc"
+            "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwordpress-collage.png?alt=media&token=bed681d8-f31a-40c1-b66b-638a2c5fc86e"
         }
     ],
 

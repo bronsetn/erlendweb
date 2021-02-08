@@ -20,70 +20,43 @@
             elevation="5"
             color="secondary"
           >
-            <v-card-text>
-              <p class="pt-4">{{ $t('contact.description') }} </p>
+            <p class="pt-6 pb-2 text--secondary">{{ $t('contact.description') }} </p>
 
-              <v-form
-                ref="form"
-                v-model="validate"
-                @submit.prevent="handleSubmit"
-                name="contact"
-                method="POST"
-                data-netlify="true"
-                netlify-honeypot="bot-field"
+            <v-form
+              ref="form"
+              v-model="validate"
+              @submit.prevent="handleSubmit"
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+            >
+              <p
+                class="hidden"
+                style="display: none"
               >
-                <p
-                  class="hidden"
-                  style="display: none"
-                >
-                  <label>Don't fill this out if youre human <input name="bot-field" /></label>
-                </p>
-
-                <v-text-field
-                  class="ma-2"
-                  v-model="form.name"
-                  type="text"
-                  name="name"
-                  label="Name"
-                  :rules="rules.required"
-                ></v-text-field>
-                <v-text-field
-                  class="ma-2"
-                  v-model="form.email"
-                  type="email"
-                  name="email"
-                  label="Email"
-                  :rules="rules.email"
-                ></v-text-field>
-                <v-text-field
-                  class="ma-2"
-                  v-model="form.subject"
-                  type="text"
-                  name="subject"
-                  label="Subject"
-                  :rules="rules.required"
-                ></v-text-field>
-                <v-textarea
-                  counter="800"
-                  class="ma-2"
-                  auto-grow
-                  v-model="form.message"
-                  name="message"
-                  label="Message"
-                  :rules="rules.length"
-                ></v-textarea>
-                <v-row justify="center">
-                  <v-col cols="12">
-                    <v-alert
-                      text
-                      class="pa-4"
-                      transition="scale-transition"
-                      :type="alert.type"
-                      :color="alert.color"
-                      :value="alert.value"
-                    >{{ alert.text }}
-                    </v-alert>
-                  </v-col>
+                <label>Don't fill this out if youre human <input name="bot-field" /></label>
+              </p>
+              <v-text-field
+                class="ma-2 pa-2"
+                v-model="form.email"
+                type="email"
+                name="email"
+                label="Email"
+                :rules="rules.email"
+              ></v-text-field>
+              <v-textarea
+                counter="800"
+                class="ma-2 pa-2"
+                auto-grow
+                backround-color="tertiary"
+                v-model="form.message"
+                name="message"
+                label="Message"
+                :rules="rules.message"
+              ></v-textarea>
+              <v-row justify="center">
+                <v-col cols=12>
                   <v-btn
                     title="Submit"
                     outlined
@@ -93,9 +66,20 @@
                   >
                     <v-icon>mdi-send</v-icon>
                   </v-btn>
-                </v-row>
-              </v-form>
-            </v-card-text>
+                </v-col>
+                <v-col cols=12>
+                  <v-alert
+                    outlined
+                    class="mr-4 ml-4"
+                    transition="scale-transition"
+                    :type="alert.type"
+                    :color="alert.color"
+                    :value="alert.value"
+                  >{{ alert.text }}
+                  </v-alert>
+                </v-col>
+              </v-row>
+            </v-form>
           </v-card>
         </v-col>
       </v-row>
@@ -108,9 +92,7 @@ export default {
   data() {
     return {
       form: {
-        name: null,
         email: null,
-        subject: null,
         message: null,
       },
 
@@ -118,16 +100,15 @@ export default {
       submitted: false,
 
       alert: {
-        value: false,
+        value: true,
         color: "warning",
         type: "warning",
         text: "Something went wrong",
       },
 
       rules: {
-        required: [(v) => !!v || "This field is required", (v) => (v && v.length <= 50) || "Must be less than 50 characters"],
         email: [(v) => /.+@.+\..+/.test(v) || "The email must be formated correctly", (v) => (v && v.length <= 50) || "Must be less than 50 characters"],
-        length: [(v) => !!v || "This field is required", (v) => (v && v.length <= 800) || 'Message must be less than 800 characters'],
+        message: [(v) => !!v || "This field is required", (v) => (v && v.length <= 800) || 'Message must be less than 800 characters'],
 
       },
     };
