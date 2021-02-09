@@ -37,6 +37,7 @@
                 {{ item.title}}
               </h2>
             </v-card-title>
+            
             <v-card-text>
               <p class="subtitle-2 text-left pa-0 ma-0 pb-2">
                 {{ item.date }}
@@ -49,7 +50,6 @@
                 </v-clamp>
               </p>
             </v-card-text>
-
             <v-card-actions class="ma-0">
               <v-spacer></v-spacer>
 
@@ -84,6 +84,7 @@
                   </v-btn>
                   <v-row
                     justify="center"
+                    class="skewed"
                     no-gutters
                   >
                     <v-col
@@ -99,6 +100,7 @@
                     >{{ item.link }}
                     </a>
                   </v-row>
+
                   <v-container>
                     <v-img
                       max-height="500px"
@@ -292,3 +294,18 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.skewed {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100% ;
+  height: 100% ;
+  background: var(--v-primary-base);
+  transform: skewY(5deg);
+  transform-origin: top right;
+}
+</style>
