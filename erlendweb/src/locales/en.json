@@ -65,7 +65,7 @@
         "nasaSources": "For a list of all images published since 2015. <a href='https://apod.nasa.gov/apod/archivepix.html' target='_blank' >https://apod.nasa.gov/apod/archivepix.html</a><br>For information about using the API i have used this tutorial. <a href='https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/' target='_blank'>https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/</a>",
 
         "forecast": "Today's forecast",
-        "forecastCaption": "Get today's forecast",
+        "forecastCaption": "Get forecast",
         "forecastDescription": "This component uses the browsers geolocation to get a forecast for your coordinates. If geolocation is disabled a forecast from Oslo is fetched instead.",
         "forecastSources": "To get watherdata Openweathermap's 5 day forecast API is used. <a href='https://openweathermap.org/api' target='_blank'>https://openweathermap.org/api</a><br>To get the city or place name Openstreetmap's API is used. <a href='https://www.openstreetmap.org/' target='_blank'>https://www.openstreetmap.org/</a>",
 
