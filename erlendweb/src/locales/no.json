@@ -4,7 +4,7 @@
         "less": "Mindre",
 
         "about": "Om dette",
-        "visit": "Besøk"
+        "visit": "Besøk siden"
     },
 
     "header": {
@@ -45,7 +45,7 @@
         {
             "title": "Prios Events",
             "description": "Nettsted for blant annet å kunne holde jobbmesser og lignende typer messer. Jeg arbeidet med utvikling av frontend og design av nettstedet for Prios kompetanse AS. Nettstedet er et av mine første prosjekter med bruk av VueJs og er fortsatt under utvikling hos Prios.",
-            "content": "Gjennom prosjekt fikk jeg jobbet med implimentering av ett av Prios sine systemer inn i et nytt nettsted, jeg fikk også et innblikk i flere verktøy og metoder for moderne webutvikling. Erfaring jeg blant annet har kunnet tatt i bruk for å sette opp erlendweb.no.",
+            "content": "Gjennom prosjekt fikk jeg jobbet med implimentering av ett av Prios sine systemer inn i et nytt nettsted, jeg fikk også et innblikk i flere verktøy og metoder for moderne webutvikling. Erfaring jeg blant annet har kunnet tatt i bruk for å sette opp erlendweb",
             "date": "Høst 2020",
             "link": "https://dev.prios.events",
             "alt": "Screenshot from prios.events",

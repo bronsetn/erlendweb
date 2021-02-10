@@ -41,7 +41,7 @@
         {
             "title": "Prios Events",
             "description": "Website meant for job fairs and similar types of events. I worked with the development of the front-end and design of the site for Prios Kompetanse AS. The site is one of my first projects working with VueJS and it is still being devolped at Prios.",
-            "content": "Through this project I got to work with implimenting one of Prios's systems in to a new website, I also got some insight into the tools and methods used in modern web development. Experience I have made us of when developing erlendweb.no.",
+            "content": "Through this project I got to work with implimenting one of Prios's systems in to a new website, I also got some insight into the tools and methods used in modern web development. Experience I have made us of when developing erlendweb.",
             "date": "Autumn 2020",
             "link": "https://dev.prios.events",
             "alt": "Screenshot from prios.events",
