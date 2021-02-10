@@ -8,13 +8,12 @@
       </v-container>
 
       <v-row justify="center">
+        <SvgTest></SvgTest>
+        <ModelViewer></ModelViewer>
         <Nasa></Nasa>
         <Forecast></Forecast>
-
-        <ModelViewer></ModelViewer>
-
-        <SvgTest></SvgTest>
         <Gallery></Gallery>
+
       </v-row>
     </v-container>
   </body>

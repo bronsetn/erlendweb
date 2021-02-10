@@ -41,7 +41,7 @@
         {
             "title": "Prios Events",
             "description": "Website meant for job fairs and similar types of events. I worked with the development of the front-end and design of the site for Prios Kompetanse AS. The site is one of my first projects working with VueJS and it is still being devolped at Prios.",
-            "content": "Through this project I got to work with implimenting one of Prios's systems in to a new website, I also got some insight into the tools and methods used in modern web development. Experience I have made us of when developing erlendweb.no.",
+            "content": "Through this project I got to work with implimenting one of Prios's systems in to a new website, I also got some insight into the tools and methods used in modern web development. Experience I have made us of when developing erlendweb.",
             "date": "Autumn 2020",
             "link": "https://dev.prios.events",
             "alt": "Screenshot from prios.events",
@@ -65,7 +65,7 @@
         "nasaSources": "For a list of all images published since 2015. <a href='https://apod.nasa.gov/apod/archivepix.html' target='_blank' >https://apod.nasa.gov/apod/archivepix.html</a><br>For information about using the API i have used this tutorial. <a href='https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/' target='_blank'>https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/</a>",
 
         "forecast": "Today's forecast",
-        "forecastCaption": "Get today's forecast",
+        "forecastCaption": "Get forecast",
         "forecastDescription": "This component uses the browsers geolocation to get a forecast for your coordinates. If geolocation is disabled a forecast from Oslo is fetched instead.",
         "forecastSources": "To get watherdata Openweathermap's 5 day forecast API is used. <a href='https://openweathermap.org/api' target='_blank'>https://openweathermap.org/api</a><br>To get the city or place name Openstreetmap's API is used. <a href='https://www.openstreetmap.org/' target='_blank'>https://www.openstreetmap.org/</a>",
 

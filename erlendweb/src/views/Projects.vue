@@ -37,6 +37,7 @@
                 {{ item.title}}
               </h2>
             </v-card-title>
+
             <v-card-text>
               <p class="subtitle-2 text-left pa-0 ma-0 pb-2">
                 {{ item.date }}
@@ -49,7 +50,6 @@
                 </v-clamp>
               </p>
             </v-card-text>
-
             <v-card-actions class="ma-0">
               <v-spacer></v-spacer>
 
@@ -69,45 +69,53 @@
                     {{ $t('misc.more') }}
                   </v-btn>
                 </template>
-                <v-card color="secondary">
-                  <v-btn
-                    class="mt-4 ml-4"
-                    absolute
-                    top
-                    left
-                    icon
-                    color="tertiary"
-                    title="Go back"
-                    @click="closeDialog(index)"
+                <v-card
+                  color="secondary"
+                  class="pb-8"
+                >
+                  <div
+                    class="skewedContainer"
+                    style="padding: 100px 0 0 0"
                   >
-                    <v-icon large>mdi-arrow-left-bold</v-icon>
-                  </v-btn>
-                  <v-row
-                    justify="center"
-                    no-gutters
-                  >
-                    <v-col
-                      cols="12"
-                      class="pb-0 pt-2"
-                    >
-                      <h1 class="pa-2">{{ item.title}}</h1>
-                    </v-col>
-                    <a
-                      rel="noopener"
-                      target="_blank"
-                      :href="item.link"
-                    >{{ item.link }}
-                    </a>
-                  </v-row>
-                  <v-container>
-                    <v-img
-                      max-height="500px"
-                      contain
-                      :alt="item.alt"
-                      :src="item.imageCompressed"
-                      :lazy-src="item.imageCompressed"
-                    ></v-img>
-                  </v-container>
+                    <div class="content">
+                      <v-btn
+                        class="mml-4"
+                        absolute
+                        top
+                        left
+                        icon
+                        color="tertiary"
+                        title="Go back"
+                        @click="closeDialog(index)"
+                      >
+                        <v-icon large>mdi-arrow-left-bold</v-icon>
+                      </v-btn>
+                      <v-row
+                        justify="center"
+                        class="pb-8"
+                        no-gutters
+                      >
+                        <v-col cols="12">
+                          <h1 class="pa-4">{{ item.title}}</h1>
+                        </v-col>
+                        <a
+                          rel="noopener"
+                          target="_blank"
+                          :href="item.link"
+                        >{{ item.link }}
+                        </a>
+                      </v-row>
+                      <v-container>
+                        <v-img
+                          max-height="500px"
+                          contain
+                          :alt="item.alt"
+                          :src="item.imageCompressed"
+                          :lazy-src="item.imageCompressed"
+                        ></v-img>
+                      </v-container>
+                    </div>
+                  </div>
                   <v-card-text>
                     <v-row justify="center">
                       <v-col
@@ -139,7 +147,7 @@
                         lg="6"
                         xl="6"
                       >
-                        <p class="text--primary">{{ item.content }}</p>
+                        <p class="text--primary pt-8 pb-4">{{ item.content }}</p>
                         <v-btn
                           color="accent"
                           text
@@ -176,43 +184,53 @@
                     {{ $t('misc.more') }}
                   </v-btn>
                 </template>
-                <v-card color="secondary">
-                  <v-btn
-                    absolute
-                    top
-                    left
-                    icon
-                    color="tertiary"
-                    title="Go back"
-                    @click="closeDialog(index)"
+                <v-card
+                  color="secondary"
+                  class="pb-16"
+                >
+
+                  <div
+                    class="skewedContainer"
+                    style="padding: 25px 0 0 0"
                   >
-                    <v-icon large>mdi-arrow-left-bold</v-icon>
-                  </v-btn>
-                  <v-row
-                    justify="center"
-                    no-gutters
-                  >
-                    <v-col
-                      cols="12"
-                      class="pb-0 pt-12"
-                    >
-                      <h1 class="pa-2">{{ item.title}}</h1>
-                    </v-col>
-                    <a
-                      rel="noopener"
-                      target="_blank"
-                      :href="item.link"
-                    >{{ item.link }}
-                    </a>
-                  </v-row>
-                  <v-container>
-                    <v-img
-                      contain
-                      :alt="item.alt"
-                      :src="item.imageCompressed"
-                      :lazy-src="item.imageCompressed"
-                    ></v-img>
-                  </v-container>
+                    <div class="content">
+                      <v-btn
+                        absolute
+                        top
+                        left
+                        icon
+                        color="tertiary"
+                        title="Go back"
+                        @click="closeDialog(index)"
+                      >
+                        <v-icon large>mdi-arrow-left-bold</v-icon>
+                      </v-btn>
+                      <v-row
+                        justify="center"
+                        no-gutters
+                        class="pt-16 pb-8"
+                      >
+                        <v-col cols="12">
+                          <h1 class="pa-4">{{ item.title}}</h1>
+                        </v-col>
+                        <a
+                          rel="noopener"
+                          target="_blank"
+                          :href="item.link"
+                        >{{ item.link }}
+                        </a>
+                      </v-row>
+                      <v-container>
+                        <v-img
+                          contain
+                          :alt="item.alt"
+                          :src="item.imageCompressed"
+                          :lazy-src="item.imageCompressed"
+                        ></v-img>
+                      </v-container>
+                    </div>
+                  </div>
+
                   <v-card-text>
                     <v-row justify="center">
                       <v-col
@@ -243,7 +261,7 @@
                         lg="6"
                         xl="6"
                       >
-                        <p class="text--primary">{{ item.content }}</p>
+                        <p class="text--primary pt-8 pb-4">{{ item.content }}</p>
                         <v-btn
                           color="accent"
                           text
@@ -292,3 +310,17 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+
+.skewedContainer {
+  background: var(--v-primary-base);
+  transform: skew(0deg, 4deg);
+  transform-origin: top right;
+}
+/* Skew back the content */
+.content {
+    transform: skew(0deg, -4deg);
+}
+
+</style>

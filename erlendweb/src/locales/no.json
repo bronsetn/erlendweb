@@ -4,7 +4,7 @@
         "less": "Mindre",
 
         "about": "Om dette",
-        "visit": "Besøk"
+        "visit": "Besøk siden"
     },
 
     "header": {
@@ -45,7 +45,7 @@
         {
             "title": "Prios Events",
             "description": "Nettsted for blant annet å kunne holde jobbmesser og lignende typer messer. Jeg arbeidet med utvikling av frontend og design av nettstedet for Prios kompetanse AS. Nettstedet er et av mine første prosjekter med bruk av VueJs og er fortsatt under utvikling hos Prios.",
-            "content": "Gjennom prosjekt fikk jeg jobbet med implimentering av ett av Prios sine systemer inn i et nytt nettsted, jeg fikk også et innblikk i flere verktøy og metoder for moderne webutvikling. Erfaring jeg blant annet har kunnet tatt i bruk for å sette opp erlendweb.no.",
+            "content": "Gjennom prosjekt fikk jeg jobbet med implimentering av ett av Prios sine systemer inn i et nytt nettsted, jeg fikk også et innblikk i flere verktøy og metoder for moderne webutvikling. Erfaring jeg blant annet har kunnet tatt i bruk for å sette opp erlendweb",
             "date": "Høst 2020",
             "link": "https://dev.prios.events",
             "alt": "Screenshot from prios.events",
@@ -70,7 +70,7 @@
         "nasaSources": "En liste over alle bildene publisert siden 2015 er å finne her. <a href='https://apod.nasa.gov/apod/archivepix.html' target='_blank' >https://apod.nasa.gov/apod/archivepix.html</a><br>For informasjon om å ta i bruk APIen har jeg hovedsaklig brukt denne veiledningen. <a href='https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/' target='_blank'>https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/</a>",
 
         "forecast": "Dagens værmelding",
-        "forecastCaption": "Hent dagens værmelding",
+        "forecastCaption": "Hent værmelding",
         "forecastDescription": "Denne komponenten tar i bruk nettleserens geolokasjon for å hente ut værmeldingen for dine koordinater. Hvis geoloaksjon er deaktivert hentes det værmelding fra Oslo istedet.",
         "forecastSources": "For å hente værdata er det brukt Openweathermap sin 5 dagers værmeldingsAPI. <a href='https://openweathermap.org/api' target='_blank'>https://openweathermap.org/api</a><br>For å hente by eller stedsnavn tar jeg i bruk openstreetmap sin API. <a href='https://www.openstreetmap.org/' target='_blank'>https://www.openstreetmap.org/</a>",
 
