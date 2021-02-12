@@ -92,18 +92,20 @@
                       </v-btn>
                       <v-row
                         justify="center"
-                        class="pb-8"
                         no-gutters
                       >
                         <v-col cols="12">
-                          <h1 class="pa-4">{{ item.title}}</h1>
+                          <h1 class="pt-4 pb-2">{{ item.title}}</h1>
+                          <p><a
+                              rel="noopener"
+                              target="_blank"
+                              :href="item.link"
+                            >{{ item.link }}
+                            </a></p>
+                          <p class="text--secondary">
+                            {{ item.date }}
+                          </p>
                         </v-col>
-                        <a
-                          rel="noopener"
-                          target="_blank"
-                          :href="item.link"
-                        >{{ item.link }}
-                        </a>
                       </v-row>
                       <v-container>
                         <v-img
@@ -188,7 +190,6 @@
                   color="secondary"
                   class="pb-16"
                 >
-
                   <div
                     class="skewedContainer"
                     style="padding: 25px 0 0 0"
@@ -208,17 +209,20 @@
                       <v-row
                         justify="center"
                         no-gutters
-                        class="pt-16 pb-8"
+                        class="pt-16"
                       >
                         <v-col cols="12">
-                          <h1 class="pa-4">{{ item.title}}</h1>
+                          <h1 class="pt-4 pb-2">{{ item.title}}</h1>
+                          <p><a
+                              rel="noopener"
+                              target="_blank"
+                              :href="item.link"
+                            >{{ item.link }}
+                            </a></p>
+                          <p class="text--secondary">
+                            {{ item.date }}
+                          </p>
                         </v-col>
-                        <a
-                          rel="noopener"
-                          target="_blank"
-                          :href="item.link"
-                        >{{ item.link }}
-                        </a>
                       </v-row>
                       <v-container>
                         <v-img

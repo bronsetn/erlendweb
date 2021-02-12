@@ -32,7 +32,7 @@ const vuetify = new Vuetify({
                 background: '#BDC9EF',
 
             },
-            // https://coolors.co/010b14-fdfffc-2ec4b6-e71d36-ff9f1c
+            // Scheme: https://coolors.co/010b14-fdfffc-2ec4b6-e71d36-ff9f1c
             dark: {
                 primary: '#040711',
                 secondary: '#080E21',

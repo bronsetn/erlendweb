@@ -18,11 +18,13 @@
     },
     "about": {
         "intro1": "I am a 23 year old guy from Inderøy, Norway with a bachelor in digital media & design. This site is meant as a portefolio aswell as a place I can experiment with development and design.",
-        "intro2": "My goal is to get better at front-end development and I have this autumn worked at <a target='_blank' href='https://prios.no'> Prios Kompetanse AS </a>, where i have gotten to know VueJs.",
+        "intro2": "My goal is to get better at front-end development and I have this autumn worked at <a target='_blank' href='https://prios.no'> Prios Kompetanse AS </a>, where i have gotten to know VueJS.",
         "bachelor": "Digital Media and Design",
         "bachelorDescription": "A bachelor in digitale media and design at HIØ involves an introduction to many of the steps included in development and design of digital applications. Some of the courses I have been trough are web-development, programming, 3D-modelling and graphical design.",
         "wordpress": "Wordpress",
-        "wordpressDescription": "Until recently I have used wordpress to publish projects from my course, they are still here:",
+        "wordpressDescription": "Until recently I have used wordpress to publish projects from my course, they are still here:<br><a target='_blank' rel='noopener' href='https://erlendworkblog.wordpress.com'>https://erlendworkblog.wordpress.com</a>",
+        "erlendweb": "Erlendweb",
+        "erlendwebDescription": "Erlendweb is made with VueJS and hosted on Netlify. The source code for this page is public at:<br><a target='_blank' rel='noopener' href='https://github.com/bronsetn/erlendweb'>https://github.com/bronsetn/erlendweb</a>",
         "skills": "Skills"
     },
     "contact": {
@@ -40,10 +42,10 @@
         },
         {
             "title": "Prios Events",
-            "description": "Website meant for job fairs and similar types of events. I worked with the development of the front-end and design of the site for Prios Kompetanse AS. The site is one of my first projects working with VueJS and it is still being devolped at Prios.",
+            "description": "Website meant for job fairs and similar types of events. I worked with the development of the front-end and design of the site for Prios Kompetanse AS. The site is one of my first projects working with VueJS and is still being devolped further at Prios.",
             "content": "Through this project I got to work with implimenting one of Prios's systems in to a new website, I also got some insight into the tools and methods used in modern web development. Experience I have made us of when developing erlendweb.",
             "date": "Autumn 2020",
-            "link": "https://dev.prios.events",
+            "link": "https://prios-events.netlify.app/",
             "alt": "Screenshot from prios.events",
             "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-c.png?alt=media&token=1bfb24da-73be-404d-9a51-1c832183e9df",
             "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-profile.png?alt=media&token=93c95cc5-f5b6-4fad-b88d-d4e6b4885941"

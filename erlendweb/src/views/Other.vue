@@ -12,7 +12,7 @@
         <ModelViewer></ModelViewer>
         <Nasa></Nasa>
         <Forecast></Forecast>
-        <Gallery></Gallery>
+        <!-- <Gallery></Gallery> -->
 
       </v-row>
     </v-container>
@@ -24,7 +24,7 @@ import Nasa from "./api/Nasa.vue";
 import Forecast from "./api/Forecast.vue";
 
 import SvgTest from "./vue-elements/SvgTest.vue";
-import Gallery from "./vue-elements/Gallery.vue";
+// import Gallery from "./vue-elements/Gallery.vue";
 
 import ModelViewer from "./3d/ModelViewer.vue";
 
@@ -34,7 +34,7 @@ export default {
     Forecast,
 
     ModelViewer,
-    Gallery,
+    // Gallery,
 
     SvgTest,
 

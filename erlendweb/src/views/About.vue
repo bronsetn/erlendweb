@@ -49,14 +49,17 @@
                         small
                         class="pb-1 pr-2"
                         color="tertiary"
-                      >mdi-email</v-icon> bronsetherlend@gmail.com
+                      >mdi-email</v-icon>
+                      <a href="mailto:bronsetherlend@gmail.com">
+                        bronsetherlend@gmail.com
+                      </a>
                     </p>
                     <p>
                       <v-icon
                         small
                         class="pb-1 pr-2"
                         color="tertiary"
-                      >mdi-phone</v-icon> (+47) 45 80 44 52
+                      >mdi-phone</v-icon>(+47) 45 80 44 52
                     </p>
                     <v-btn
                       class="ma-2"
@@ -68,17 +71,6 @@
                       icon
                     >
                       <v-icon large>mdi-github</v-icon>
-                    </v-btn>
-                    <v-btn
-                      class="ma-2"
-                      title="Facebook"
-                      href="https://www.facebook.com/profile.php?id=100003582864001"
-                      rel="noopener"
-                      target="_blank"
-                      color="tertiary"
-                      icon
-                    >
-                      <v-icon large>mdi-facebook</v-icon>
                     </v-btn>
                     <v-btn
                       class="ma-2"
@@ -104,26 +96,27 @@
                     v-html="$t('about.intro2')"
                   ></p>
 
-                  <h3 class="thick pa-4"> {{ $t('about.bachelor') }}
+                  <!-- <h3 class="thick pa-4"> {{ $t('about.bachelor') }}
                   </h3>
-
                   <p
                     class="normal"
                     v-html="$t('about.bachelorDescription')"
-                  ></p>
-
+                  ></p> -->
                   <h3 class="thick pa-4">{{ $t('about.wordpress') }}</h3>
 
-                  <p class="normal pb-4">
-                    {{ $t('about.wordpressDescription') }}
-                    <br>
-                    <a
-                      rel="noopener"
-                      target="_blank"
-                      href="https://erlendworkblog.wordpress.com"
-                    >https://erlendworkblog.wordpress.com</a>
+                  <p
+                    class="normal"
+                    v-html="$t('about.wordpressDescription')"
+                  ></p>
+
+                  <h3 class="thick pa-4">{{ $t('about.erlendweb') }}</h3>
+
+                  <p
+                    class="normal pb-2"
+                    v-html="$t('about.erlendwebDescription')"
+                  >
                   </p>
-                  
+
                   <br>
 
                   <v-divider></v-divider>
@@ -159,14 +152,7 @@ export default {
   data() {
     return {
       techs: [
-        {
-          name: "VueJs",
-          icon: "mdi-vuejs",
-        },
-        {
-          name: "Vuetify",
-          icon: "mdi-vuetify",
-        },
+
         {
           name: "HTML",
           icon: "mdi-language-html5",
@@ -178,6 +164,14 @@ export default {
         {
           name: "CSS",
           icon: "mdi-language-css3",
+        },
+        {
+          name: "VueJS",
+          icon: "mdi-vuejs",
+        },
+        {
+          name: "Vuetify",
+          icon: "mdi-vuetify",
         },
         {
           name: "Unity",
