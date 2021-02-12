@@ -77,7 +77,7 @@
         "forecastSources": "For å hente værdata er det brukt Openweathermap sin 5 dagers værmeldingsAPI. <a href='https://openweathermap.org/api' target='_blank'>https://openweathermap.org/api</a><br>For å hente by eller stedsnavn tar jeg i bruk openstreetmap sin API. <a href='https://www.openstreetmap.org/' target='_blank'>https://www.openstreetmap.org/</a>",
 
         "threeJs": "3D visning med ThreeJs",
-        "threeJsButton": "Hvis 3D box",
+        "threeJsButton": "Vis 3D box",
 
         "svgTest": "SVG animasjonstest",
         "gallery": "Galleri layout med Vuetify"
