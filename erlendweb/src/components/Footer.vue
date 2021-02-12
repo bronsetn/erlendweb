@@ -35,17 +35,6 @@
               </v-btn>
 
               <v-btn
-                title="Facebook"
-                href="https://www.facebook.com/profile.php?id=100003582864001"
-                rel="noopener"
-                target="_blank"
-                color="tertiary"
-                icon
-              >
-                <v-icon>mdi-facebook</v-icon>
-              </v-btn>
-
-              <v-btn
                 title="Linkedin"
                 href="https://no.linkedin.com/in/erlend-brønseth-b5a99612b/en-us"
                 rel="noopener"

@@ -74,17 +74,6 @@
                     </v-btn>
                     <v-btn
                       class="ma-2"
-                      title="Facebook"
-                      href="https://www.facebook.com/profile.php?id=100003582864001"
-                      rel="noopener"
-                      target="_blank"
-                      color="tertiary"
-                      icon
-                    >
-                      <v-icon large>mdi-facebook</v-icon>
-                    </v-btn>
-                    <v-btn
-                      class="ma-2"
                       title="Linkedin"
                       href="https://no.linkedin.com/in/erlend-brønseth-b5a99612b/en-us"
                       rel="noopener"
@@ -107,24 +96,25 @@
                     v-html="$t('about.intro2')"
                   ></p>
 
-                  <h3 class="thick pa-4"> {{ $t('about.bachelor') }}
+                  <!-- <h3 class="thick pa-4"> {{ $t('about.bachelor') }}
                   </h3>
-
                   <p
                     class="normal"
                     v-html="$t('about.bachelorDescription')"
-                  ></p>
-
+                  ></p> -->
                   <h3 class="thick pa-4">{{ $t('about.wordpress') }}</h3>
 
-                  <p class="normal pb-4">
-                    {{ $t('about.wordpressDescription') }}
-                    <br>
-                    <a
-                      rel="noopener"
-                      target="_blank"
-                      href="https://erlendworkblog.wordpress.com"
-                    >https://erlendworkblog.wordpress.com</a>
+                  <p
+                    class="normal"
+                    v-html="$t('about.wordpressDescription')"
+                  ></p>
+
+                  <h3 class="thick pa-4">{{ $t('about.erlendweb') }}</h3>
+
+                  <p
+                    class="normal pb-2"
+                    v-html="$t('about.erlendwebDescription')"
+                  >
                   </p>
 
                   <br>
@@ -176,7 +166,7 @@ export default {
           icon: "mdi-language-css3",
         },
         {
-          name: "Vue.js",
+          name: "VueJS",
           icon: "mdi-vuejs",
         },
         {
