@@ -40,10 +40,10 @@
         },
         {
             "title": "Prios Events",
-            "description": "Website meant for job fairs and similar types of events. I worked with the development of the front-end and design of the site for Prios Kompetanse AS. The site is one of my first projects working with VueJS and it is still being devolped at Prios.",
+            "description": "Website meant for job fairs and similar types of events. I worked with the development of the front-end and design of the site for Prios Kompetanse AS. The site is one of my first projects working with VueJS and is still being devolped further at Prios.",
             "content": "Through this project I got to work with implimenting one of Prios's systems in to a new website, I also got some insight into the tools and methods used in modern web development. Experience I have made us of when developing erlendweb.",
             "date": "Autumn 2020",
-            "link": "https://dev.prios.events",
+            "link": "https://prios-events.netlify.app/",
             "alt": "Screenshot from prios.events",
             "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-c.png?alt=media&token=1bfb24da-73be-404d-9a51-1c832183e9df",
             "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-profile.png?alt=media&token=93c95cc5-f5b6-4fad-b88d-d4e6b4885941"

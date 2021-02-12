@@ -3,7 +3,7 @@ import VueI18n from 'vue-i18n'
 
 Vue.use(VueI18n)
 
-// Tutorial used to set up multilanguage support: https://www.youtube.com/watch?v=CFGjn3yKMNc
+// Tutorial used to set up multilanguage suppor with i18n: https://www.youtube.com/watch?v=CFGjn3yKMNc
 // Documentation: https://kazupon.github.io/vue-i18n/started.html
 
 function loadLocaleMessages() {
@@ -19,6 +19,7 @@ function loadLocaleMessages() {
     return messages
 }
 
+// Norwegian set as default langue
 export default new VueI18n({
     locale: 'no',
     fallbackLocale: 'no',

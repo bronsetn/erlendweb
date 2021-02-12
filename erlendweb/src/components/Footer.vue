@@ -58,7 +58,8 @@
 
             </v-row>
             <p class="pt-2">
-              bronsetherlend@gmail.com
+              <a href="mailto:bronsetherlend@gmail.com">
+                bronsetherlend@gmail.com</a>
             </p>
             <p>
               (+47) 45 80 44 52

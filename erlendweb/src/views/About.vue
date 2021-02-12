@@ -49,14 +49,17 @@
                         small
                         class="pb-1 pr-2"
                         color="tertiary"
-                      >mdi-email</v-icon> bronsetherlend@gmail.com
+                      >mdi-email</v-icon>
+                      <a href="mailto:bronsetherlend@gmail.com">
+                        bronsetherlend@gmail.com
+                      </a>
                     </p>
                     <p>
                       <v-icon
                         small
                         class="pb-1 pr-2"
                         color="tertiary"
-                      >mdi-phone</v-icon> (+47) 45 80 44 52
+                      >mdi-phone</v-icon>(+47) 45 80 44 52
                     </p>
                     <v-btn
                       class="ma-2"
@@ -123,7 +126,7 @@
                       href="https://erlendworkblog.wordpress.com"
                     >https://erlendworkblog.wordpress.com</a>
                   </p>
-                  
+
                   <br>
 
                   <v-divider></v-divider>
@@ -159,14 +162,7 @@ export default {
   data() {
     return {
       techs: [
-        {
-          name: "VueJs",
-          icon: "mdi-vuejs",
-        },
-        {
-          name: "Vuetify",
-          icon: "mdi-vuetify",
-        },
+
         {
           name: "HTML",
           icon: "mdi-language-html5",
@@ -178,6 +174,14 @@ export default {
         {
           name: "CSS",
           icon: "mdi-language-css3",
+        },
+        {
+          name: "Vue.js",
+          icon: "mdi-vuejs",
+        },
+        {
+          name: "Vuetify",
+          icon: "mdi-vuetify",
         },
         {
           name: "Unity",
