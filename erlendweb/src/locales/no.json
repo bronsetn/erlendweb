@@ -4,7 +4,10 @@
         "less": "Mindre",
 
         "about": "Om dette",
-        "visit": "Besøk siden"
+        "visit": "Besøk siden",
+
+        "next": "Neste",
+        "previous": "Forrige"
     },
 
     "header": {
@@ -36,7 +39,7 @@
 
     "projects": [{
             "title": "Maribro.no",
-            "description": "En side for å vise tegninger og malerier laget av Mari Brønseth. Laget i VueJs og satt opp med Netlify som vert. Nettstedet består av en side for å presentere artisten i tilleg til et bildegalleri for kunstverkene hun har laget.",
+            "description": "Nettsted for å vise tegninger og malerier laget av Mari Brønseth. Laget i VueJs og satt opp med Netlify som vert. Nettstedet består av en side for å presentere artisten i tilleg til et bildegalleri for kunstverkene hun har laget.",
             "content": "Noe av det som var utfordrende ved utviklingen av siden var å tenke ut en god måte å presentere de forskjellige versjonene som var av vært motiv. I starten bestod galleriet av alle bildene i databasen listet opp etter hverandre, men jeg endte opp med å forandre det til at hvert motiv har sin egen klynge på siden med alle sine versjoner.",
             "date": "Vinter 2021",
             "link": "https://maribro.no",
@@ -77,7 +80,7 @@
         "forecastSources": "For å hente værdata er det brukt Openweathermap sin 5 dagers værmeldingsAPI. <a href='https://openweathermap.org/api' target='_blank'>https://openweathermap.org/api</a><br>For å hente by eller stedsnavn tar jeg i bruk openstreetmap sin API. <a href='https://www.openstreetmap.org/' target='_blank'>https://www.openstreetmap.org/</a>",
 
         "threeJs": "3D visning med ThreeJs",
-        "threeJsButton": "Hvis 3D box",
+        "threeJsButton": "Vis 3D box",
 
         "svgTest": "SVG animasjonstest",
         "gallery": "Galleri layout med Vuetify"

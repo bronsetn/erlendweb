@@ -4,7 +4,7 @@
     sm="12"
     md="6"
     lg="6"
-    xl="6"
+    xl="4"
     v-if="spaceData"
   >
     <v-card

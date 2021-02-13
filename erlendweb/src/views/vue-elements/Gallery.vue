@@ -4,7 +4,7 @@
     sm="12"
     md="6"
     lg="6"
-    xl="6"
+    xl="4"
   >
     <v-card
       color="secondary"
@@ -204,7 +204,6 @@ export default {
     closeDialog(index) {
       this.imageDialog["dialog_" + index] = false;
     },
-
   },
 };
 </script>

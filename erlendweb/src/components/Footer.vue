@@ -28,7 +28,7 @@
                 href="https://github.com/bronsetn?tab=repositories"
                 rel="noopener"
                 target="_blank"
-                color="tertiary"
+                color="accent"
                 icon
               >
                 <v-icon>mdi-github</v-icon>
@@ -39,7 +39,7 @@
                 href="https://no.linkedin.com/in/erlend-brønseth-b5a99612b/en-us"
                 rel="noopener"
                 target="_blank"
-                color="tertiary"
+                color="accent"
                 icon
               >
                 <v-icon>mdi-linkedin</v-icon>
