@@ -9,6 +9,8 @@
     <v-card
       color="secondary"
       elevation="5"
+      height="400"
+      style="overflow: hidden;"
     >
       <v-card-title>{{ $t('other.threeJs') }}<v-spacer></v-spacer>
         <v-icon color="tertiary">mdi-cube-outline</v-icon>
@@ -71,7 +73,7 @@ export default {
 
 <style scoped>
 .faded {
-    min-height: 330px;
+    height: 350px;
     background-image: linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%);
   }
 </style>

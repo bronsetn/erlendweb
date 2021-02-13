@@ -1,7 +1,8 @@
 {
     "misc": {
-        "more": "Les mer",
-        "less": "Mindre",
+        "clickForMore": "Klikk for mer info",
+        "more": "Vis mer",
+        "less": "Vis mindre",
 
         "about": "Om dette",
         "visit": "Besøk siden",

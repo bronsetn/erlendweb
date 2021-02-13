@@ -9,6 +9,7 @@
     <v-card
       color="secondary"
       elevation="5"
+      height="400"
     >
       <v-card-title>{{ $t('other.svgTest') }}<v-spacer></v-spacer>
         <v-icon color="tertiary">mdi-coffee</v-icon>

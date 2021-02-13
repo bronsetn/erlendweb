@@ -104,39 +104,34 @@
 
       <!-- Shown before/if weatherdata is not loaded -->
       <v-container
+        fill-height
         class="faded center"
         v-else
       >
-        <p class="display-2 normal pa-4"></p>
         <v-btn
           outlined
           x-large
           color="white"
           :loading="loading"
           @click="getLocation()"
-        >{{ $t('other.forecastCaption') }}</v-btn>
+        >{{ $t('other.forecastCaption') }}
+        </v-btn>
       </v-container>
 
       <v-card-actions>
         <v-spacer></v-spacer>
         <v-btn
-          color="accent"
+          color="tertiary"
           text
           @click="show = !show"
-        >{{ $t('misc.about') }}</v-btn>
-        <v-btn
-          icon
-          @click="show = !show"
-        >
-          <v-icon>{{ show ? "mdi-chevron-up" : "mdi-chevron-down" }}</v-icon>
+        >{{ $t('misc.about') }}<v-icon class="pl-1">{{ show ? "mdi-chevron-up" : "mdi-chevron-down" }}</v-icon>
         </v-btn>
       </v-card-actions>
 
       <v-expand-transition>
         <div v-show="show">
           <v-divider></v-divider>
-
-          <v-card-text>
+          <v-card-text class="pa-4">
             <p>{{ $t('other.forecastDescription') }}</p>
             <p v-html="$t('other.forecastSources')"></p>
           </v-card-text>
@@ -327,7 +322,7 @@ export default {
 
 <style scoped>
 .faded {
-    min-height: 330px;
+    height: 350px;
     background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
 }
 

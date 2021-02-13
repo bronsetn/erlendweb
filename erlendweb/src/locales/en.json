@@ -1,7 +1,8 @@
 {
     "misc": {
-        "more": "More",
-        "less": "Less",
+        "clickForMore": "Click for more info",
+        "more": "Show more",
+        "less": "Show less",
 
         "about": "About",
         "visit": "Visit site",

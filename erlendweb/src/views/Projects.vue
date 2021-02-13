@@ -26,6 +26,7 @@
             :ripple="{ center: true }"
             elevation="5"
             color="secondary"
+            height="500"
           >
             <v-container>
               <v-img
@@ -53,13 +54,8 @@
                   :max-lines="2"
                 >{{item.description}}
                 </v-clamp>
+                {{ $t('misc.clickForMore') }}
               </p>
-              <v-btn
-                color="accent"
-                text
-              >
-                {{ $t('misc.more') }}
-              </v-btn>
             </v-card-text>
           </v-card>
         </v-col>
