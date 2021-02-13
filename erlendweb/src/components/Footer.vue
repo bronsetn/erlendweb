@@ -24,6 +24,7 @@
               no-gutters
             >
               <v-btn
+                class='animatedLink'
                 title="Github"
                 href="https://github.com/bronsetn?tab=repositories"
                 rel="noopener"
@@ -35,6 +36,7 @@
               </v-btn>
 
               <v-btn
+                class='animatedLink'
                 title="Linkedin"
                 href="https://no.linkedin.com/in/erlend-brønseth-b5a99612b/en-us"
                 rel="noopener"
@@ -47,7 +49,10 @@
 
             </v-row>
             <p class="pt-2">
-              <a href="mailto:bronsetherlend@gmail.com">
+              <a
+                class='animatedLink'
+                href="mailto:bronsetherlend@gmail.com"
+              >
                 bronsetherlend@gmail.com</a>
             </p>
             <p>

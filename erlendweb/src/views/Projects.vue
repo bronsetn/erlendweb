@@ -102,6 +102,7 @@
                   <p><a
                       rel="noopener"
                       target="_blank"
+                      class="animatedLink"
                       :href="projects[activeProject].link"
                     >{{ projects[activeProject].link }}
                     </a></p>
@@ -235,6 +236,7 @@
                   <p><a
                       rel="noopener"
                       target="_blank"
+                      class="animatedLink"
                       :href="projects[activeProject].link"
                     >{{ projects[activeProject].link }}
                     </a></p>

@@ -65,11 +65,15 @@
     
     a {
         text-decoration: none;
+    }
+    
+    .animatedLink {
+        text-decoration: none;
         display: inline-block;
         position: relative;
     }
     
-    a:after {
+    .animatedLink:after {
         bottom: 0;
         content: "";
         display: block;
@@ -81,7 +85,7 @@
         width: 0;
     }
     
-    a:hover:after {
+    .animatedLink:hover:after {
         width: 100%;
         left: 0;
     }
