@@ -56,7 +56,12 @@
                 bronsetherlend@gmail.com</a>
             </p>
             <p>
-              (+47) 45 80 44 52
+              <a
+                class="animatedLink"
+                href="tel:+4745804452"
+              >
+                (+47) 45 80 44 52
+              </a>
             </p>
           </v-col>
 

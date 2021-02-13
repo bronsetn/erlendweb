@@ -76,7 +76,7 @@
 
         "forecast": "Dagens værmelding",
         "forecastCaption": "Hent værmelding",
-        "forecastDescription": "Denne komponenten tar i bruk nettleserens geolokasjon for å hente ut værmeldingen for dine koordinater. Hvis geoloaksjon er deaktivert hentes det værmelding fra Oslo istedet.",
+        "forecastDescription": "Denne komponenten tar i bruk nettleserens geolokasjon for å hente ut værmeldingen for dine koordinater. Om geoloaksjon er deaktivert hentes det værmelding fra Oslo istedet.",
         "forecastSources": "For å hente værdata er det brukt Openweathermap sin 5 dagers værmeldingsAPI. <a class='animatedLink' href='https://openweathermap.org/api' target='_blank' rel='noopener'>https://openweathermap.org/api</a><br>For å hente by eller stedsnavn tar jeg i bruk openstreetmap sin API. <a  class='animatedLink' href='https://www.openstreetmap.org/' rel='noopener' target='_blank'>https://www.openstreetmap.org/</a>",
 
         "threeJs": "3D visning med ThreeJs",

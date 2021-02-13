@@ -43,29 +43,34 @@
                   </v-col>
                   <v-col cols="12">
                     <h1>Erlend Brønseth</h1>
-
                     <p class="pt-4">
-                      <v-icon
-                        small
-                        class="pb-1 pr-2"
-                        color="tertiary"
-                      >mdi-email</v-icon>
                       <a
                         class="animatedLink"
                         href="mailto:bronsetherlend@gmail.com"
                       >
+                        <v-icon
+                          class="pb-1 pr-2"
+                          color="accent"
+                          small
+                        >mdi-email</v-icon>
                         bronsetherlend@gmail.com
                       </a>
                     </p>
                     <p>
-                      <v-icon
-                        small
-                        class="pb-1 pr-2"
-                        color="tertiary"
-                      >mdi-phone</v-icon>(+47) 45 80 44 52
+                      <a
+                        class="animatedLink"
+                        href="tel:+4745804452"
+                      >
+                        <v-icon
+                          class="pb-1 pr-2"
+                          color="accent"
+                          small
+                        >mdi-phone</v-icon>
+                        (+47) 45 80 44 52
+                      </a>
                     </p>
                     <v-btn
-                      class="ma-2 animatedLink"
+                      class="ma-2 mt-4 animatedLink"
                       title="Github"
                       href="https://github.com/bronsetn"
                       rel="noopener"
@@ -76,7 +81,7 @@
                       <v-icon large>mdi-github</v-icon>
                     </v-btn>
                     <v-btn
-                      class="ma-2 animatedLink"
+                      class="ma-2 mt-4 animatedLink"
                       title="Linkedin"
                       href="https://no.linkedin.com/in/erlend-brønseth-b5a99612b/en-us"
                       rel="noopener"
@@ -89,7 +94,8 @@
                   </v-col>
                 </v-row>
 
-                <v-card-text>
+                <v-card-text class="ma-0 pa-0">
+
                   <p class="normal">
                     {{ $t('about.intro1') }}
                   </p>
@@ -116,29 +122,25 @@
                   <h3 class="thick pa-4">{{ $t('about.erlendweb') }}</h3>
 
                   <p
-                    class="normal pb-2"
+                    class="normal"
                     v-html="$t('about.erlendwebDescription')"
                   >
                   </p>
 
-                  <br>
-
-                  <v-divider></v-divider>
-
-                  <h3 class="thick pa-4 pt-8">{{ $t('about.skills') }}</h3>
+                  <h3 class="thick pa-4">{{ $t('about.skills') }}</h3>
 
                   <v-row
                     justify="center"
-                    class="pa-2"
+                    class="pa-4 pb-8"
                   >
                     <v-col
+                      class="pa-0 ma-0"
                       v-for="(item, index) in techs"
                       :item="item"
                       :key="index"
                     >
                       <v-icon
                         disabled
-                        class="pb-2"
                         medium
                       >{{ item.icon }}</v-icon>
                       <p> {{item.name}} </p>
