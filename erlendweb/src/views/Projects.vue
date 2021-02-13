@@ -7,18 +7,23 @@
         <h1>{{ $t('header.projects') }}</h1>
       </v-container>
 
-      <v-row class="d-flex justify-center">
+      <v-row
+        class="d-flex justify-center"
+        v-if="projects"
+      >
         <v-col
-          v-for="(item, index) in $t('projects')"
+          v-for="(item, index) in projects"
           :item="item"
           :key="index"
           cols="12"
           sm="6"
           md="4"
           lg="4"
-          xl="4"
+          xl="3"
         >
           <v-card
+            @click="openDialog(index)"
+            :ripple="{ center: true }"
             elevation="5"
             color="secondary"
           >
@@ -34,7 +39,7 @@
 
             <v-card-title class="pb-2">
               <h2 class="text-truncate">
-                {{ item.title}}
+                {{ item.title }}
               </h2>
             </v-card-title>
 
@@ -49,246 +54,273 @@
                 >{{item.description}}
                 </v-clamp>
               </p>
+              <v-btn
+                color="accent"
+                text
+              >
+                {{ $t('misc.more') }}
+              </v-btn>
             </v-card-text>
-            <v-card-actions class="ma-0">
-              <v-spacer></v-spacer>
-
-              <!-- DIALOG PC screen -->
-              <v-dialog
-                v-model="dialog['dialog_' + index]"
-                transition="slide-x-transition"
-                v-if="!$vuetify.breakpoint.mobile"
-              >
-                <template v-slot:activator="{ on, attrs }">
-                  <v-btn
-                    color="accent"
-                    text
-                    v-bind="attrs"
-                    v-on="on"
-                  >
-                    {{ $t('misc.more') }}
-                  </v-btn>
-                </template>
-                <v-card
-                  color="secondary"
-                  class="pb-8"
-                >
-                  <div
-                    class="skewedContainer"
-                    style="padding: 100px 0 0 0"
-                  >
-                    <div class="content">
-                      <v-btn
-                        class="mml-4"
-                        absolute
-                        top
-                        left
-                        icon
-                        color="tertiary"
-                        title="Go back"
-                        @click="closeDialog(index)"
-                      >
-                        <v-icon large>mdi-arrow-left-bold</v-icon>
-                      </v-btn>
-                      <v-row
-                        justify="center"
-                        no-gutters
-                      >
-                        <v-col cols="12">
-                          <h1 class="pt-4 pb-2">{{ item.title}}</h1>
-                          <p><a
-                              rel="noopener"
-                              target="_blank"
-                              :href="item.link"
-                            >{{ item.link }}
-                            </a></p>
-                          <p class="text--secondary">
-                            {{ item.date }}
-                          </p>
-                        </v-col>
-                      </v-row>
-                      <v-container>
-                        <v-img
-                          max-height="500px"
-                          contain
-                          :alt="item.alt"
-                          :src="item.imageCompressed"
-                          :lazy-src="item.imageCompressed"
-                        ></v-img>
-                      </v-container>
-                    </div>
-                  </div>
-                  <v-card-text>
-                    <v-row justify="center">
-                      <v-col
-                        cols="12"
-                        sm="12"
-                        md="10"
-                        lg="6"
-                        xl="6"
-                      >
-                        <p class="text--primary">{{ item.description }}</p>
-                      </v-col>
-                    </v-row>
-                  </v-card-text>
-                  <v-container>
-                    <v-img
-                      max-height="500px"
-                      contain
-                      :alt="item.alt"
-                      :src="item.imageContent"
-                      :lazy-src="item.imageContent"
-                    ></v-img>
-                  </v-container>
-                  <v-card-text>
-                    <v-row justify="center">
-                      <v-col
-                        cols="12"
-                        sm="12"
-                        md="10"
-                        lg="6"
-                        xl="6"
-                      >
-                        <p class="text--primary pt-8 pb-4">{{ item.content }}</p>
-                        <v-btn
-                          color="accent"
-                          text
-                          rel="noopener"
-                          target="_blank"
-                          :href="item.link"
-                        >{{ $t('misc.visit') }}
-                          <v-icon
-                            color="accent"
-                            class="pb-1 pl-1"
-                            small
-                          >mdi-launch</v-icon>
-                        </v-btn>
-                      </v-col>
-                    </v-row>
-                  </v-card-text>
-                </v-card>
-              </v-dialog>
-
-              <!-- DIALOG TABLET/PHONE -->
-              <v-dialog
-                v-model="dialog['dialog_' + index]"
-                transition="slide-x-transition"
-                fullscreen
-                v-else
-              >
-                <template v-slot:activator="{ on, attrs }">
-                  <v-btn
-                    color="accent"
-                    text
-                    v-bind="attrs"
-                    v-on="on"
-                  >
-                    {{ $t('misc.more') }}
-                  </v-btn>
-                </template>
-                <v-card
-                  color="secondary"
-                  class="pb-16"
-                >
-                  <div
-                    class="skewedContainer"
-                    style="padding: 25px 0 0 0"
-                  >
-                    <div class="content">
-                      <v-btn
-                        absolute
-                        top
-                        left
-                        icon
-                        color="tertiary"
-                        title="Go back"
-                        @click="closeDialog(index)"
-                      >
-                        <v-icon large>mdi-arrow-left-bold</v-icon>
-                      </v-btn>
-                      <v-row
-                        justify="center"
-                        no-gutters
-                        class="pt-16"
-                      >
-                        <v-col cols="12">
-                          <h1 class="pt-4 pb-2">{{ item.title}}</h1>
-                          <p><a
-                              rel="noopener"
-                              target="_blank"
-                              :href="item.link"
-                            >{{ item.link }}
-                            </a></p>
-                          <p class="text--secondary">
-                            {{ item.date }}
-                          </p>
-                        </v-col>
-                      </v-row>
-                      <v-container>
-                        <v-img
-                          contain
-                          :alt="item.alt"
-                          :src="item.imageCompressed"
-                          :lazy-src="item.imageCompressed"
-                        ></v-img>
-                      </v-container>
-                    </div>
-                  </div>
-
-                  <v-card-text>
-                    <v-row justify="center">
-                      <v-col
-                        cols="12"
-                        sm="12"
-                        md="10"
-                        lg="6"
-                        xl="6"
-                      >
-                        <p class="text--primary">{{ item.description }}</p>
-                      </v-col>
-                    </v-row>
-                  </v-card-text>
-                  <v-container>
-                    <v-img
-                      contain
-                      :alt="item.alt"
-                      :src="item.imageContent"
-                      :lazy-src="item.imageContent"
-                    ></v-img>
-                  </v-container>
-                  <v-card-text>
-                    <v-row justify="center">
-                      <v-col
-                        cols="12"
-                        sm="12"
-                        md="10"
-                        lg="6"
-                        xl="6"
-                      >
-                        <p class="text--primary pt-8 pb-4">{{ item.content }}</p>
-                        <v-btn
-                          color="accent"
-                          text
-                          rel="noopener"
-                          target="_blank"
-                          :href="item.link"
-                        >{{ $t('misc.visit') }}
-                          <v-icon
-                            color="accent"
-                            class="pb-1 pl-1"
-                            small
-                          >mdi-launch</v-icon>
-                        </v-btn>
-                      </v-col>
-                    </v-row>
-                  </v-card-text>
-                </v-card>
-              </v-dialog>
-
-            </v-card-actions>
           </v-card>
         </v-col>
       </v-row>
+
+      <!-- DIALOG PC screen -->
+      <v-dialog
+        v-if="!$vuetify.breakpoint.mobile"
+        v-model="dialog"
+        transition="slide-x-transition"
+      >
+        <v-btn
+          class="ml-8 mt-16"
+          style="z-index: 1;"
+          fixed
+          top
+          left
+          icon
+          color="tertiary"
+          title="Go back"
+          @click="dialog = false"
+        >
+          <v-icon large>mdi-arrow-left</v-icon>
+        </v-btn>
+        <v-card
+          color="secondary"
+          class="pb-8"
+        >
+          <div
+            class="skewedContainer"
+            style="padding: 100px 0 0 0"
+          >
+            <div class="content">
+              <v-row
+                justify="center"
+                no-gutters
+              >
+                <v-col cols="12">
+                  <h1 class="pt-4 pb-2">{{ projects[activeProject].title}}</h1>
+                  <p><a
+                      rel="noopener"
+                      target="_blank"
+                      :href="projects[activeProject].link"
+                    >{{ projects[activeProject].link }}
+                    </a></p>
+                  <p class="text--secondary">
+                    {{ projects[activeProject].date }}
+                  </p>
+                </v-col>
+              </v-row>
+              <v-container>
+                <v-img
+                  max-height="500px"
+                  contain
+                  :alt="projects[activeProject].alt"
+                  :src="projects[activeProject].imageCompressed"
+                  :lazy-src="projects[activeProject].imageCompressed"
+                ></v-img>
+              </v-container>
+            </div>
+          </div>
+          <v-card-text>
+            <v-row justify="center">
+              <v-col
+                cols="12"
+                sm="12"
+                md="10"
+                lg="6"
+                xl="6"
+              >
+                <p class="text--primary">{{ projects[activeProject].description }}</p>
+              </v-col>
+            </v-row>
+          </v-card-text>
+          <v-container>
+            <v-img
+              max-height="500px"
+              contain
+              :alt="projects[activeProject].alt"
+              :src="projects[activeProject].imageContent"
+              :lazy-src="projects[activeProject].imageContent"
+            ></v-img>
+          </v-container>
+          <v-card-text>
+            <v-row justify="center">
+              <v-col
+                cols="12"
+                sm="12"
+                md="10"
+                lg="6"
+                xl="6"
+              >
+                <p class="text--primary pt-8 pb-4">{{ projects[activeProject].content }}</p>
+                <v-btn
+                  color="accent"
+                  text
+                  rel="noopener"
+                  target="_blank"
+                  :href="projects[activeProject].link"
+                >{{ $t('misc.visit') }}
+                  <v-icon
+                    color="accent"
+                    class="pb-1 pl-1"
+                    small
+                  >mdi-launch</v-icon>
+                </v-btn>
+              </v-col>
+            </v-row>
+          </v-card-text>
+          <v-btn
+            class="ml-8 mb-12"
+            fixed
+            left
+            bottom
+            text
+            @click="previousProject()"
+          >
+            <v-icon>mdi-chevron-left </v-icon>{{ $t('misc.previous') }}
+          </v-btn>
+          <v-btn
+            class="mr-8 mb-12"
+            fixed
+            right
+            bottom
+            text
+            @click="nextProject()"
+          >
+            {{ $t('misc.next') }}<v-icon>mdi-chevron-right</v-icon>
+          </v-btn>
+        </v-card>
+      </v-dialog>
+
+      <!-- DIALOG TABLET/PHONE -->
+      <v-dialog
+        v-model="dialog"
+        transition="slide-x-transition"
+        fullscreen
+        v-else
+      >
+        <v-btn
+          class="mt-2"
+          fixed
+          top
+          left
+          fab
+          color="tertiary"
+          title="Go back"
+          @click="dialog = false"
+          small
+        >
+          <v-icon
+            color="primary"
+            large
+          >mdi-arrow-left</v-icon>
+        </v-btn>
+        <v-card
+          color="secondary"
+          class="pb-16"
+        >
+          <div
+            class="skewedContainer"
+            style="padding: 25px 0 0 0"
+          >
+            <div class="content">
+
+              <v-row
+                justify="center"
+                no-gutters
+                class="pt-16"
+              >
+                <v-col cols="12">
+                  <h1 class="pt-4 pb-2">{{  projects[activeProject].title }}</h1>
+                  <p><a
+                      rel="noopener"
+                      target="_blank"
+                      :href="projects[activeProject].link"
+                    >{{ projects[activeProject].link }}
+                    </a></p>
+                  <p class="text--secondary">
+                    {{ projects[activeProject].date }}
+                  </p>
+                </v-col>
+              </v-row>
+              <v-container>
+                <v-img
+                  contain
+                  :alt="projects[activeProject].alt"
+                  :src="projects[activeProject].imageCompressed"
+                  :lazy-src="projects[activeProject].imageCompressed"
+                ></v-img>
+              </v-container>
+            </div>
+          </div>
+
+          <v-card-text>
+            <v-row justify="center">
+              <v-col
+                cols="12"
+                sm="12"
+                md="10"
+                lg="6"
+                xl="6"
+              >
+                <p class="text--primary">{{ projects[activeProject].description }}</p>
+              </v-col>
+            </v-row>
+          </v-card-text>
+          <v-container>
+            <v-img
+              contain
+              :alt="projects[activeProject].alt"
+              :src="projects[activeProject].imageContent"
+              :lazy-src="projects[activeProject].imageContent"
+            ></v-img>
+          </v-container>
+          <v-card-text>
+            <v-row justify="center">
+              <v-col
+                cols="12"
+                sm="12"
+                md="10"
+                lg="6"
+                xl="6"
+              >
+                <p class="text--primary pt-8 pb-4">{{ projects[activeProject].content }}</p>
+                <v-btn
+                  color="accent"
+                  text
+                  rel="noopener"
+                  target="_blank"
+                  :href="projects[activeProject].link"
+                >{{ $t('misc.visit') }}
+                  <v-icon
+                    color="accent"
+                    class="pb-1 pl-1"
+                    small
+                  >mdi-launch</v-icon>
+                </v-btn>
+              </v-col>
+            </v-row>
+          </v-card-text>
+          <v-card-actions>
+            <v-row no-gutters>
+              <v-btn
+                text
+                @click="previousProject()"
+              >
+                <v-icon>mdi-chevron-left </v-icon>{{ $t('misc.previous') }}
+              </v-btn>
+              <v-spacer></v-spacer>
+              <v-btn
+                text
+                @click="nextProject()"
+              >
+                {{ $t('misc.next') }}<v-icon>mdi-chevron-right</v-icon>
+              </v-btn>
+            </v-row>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
+
     </v-container>
   </body>
 </template>
@@ -302,15 +334,25 @@ export default {
   },
   data() {
     return {
-      dialog: {},
+      dialog: false,
+      projects: this.$t('projects'),
+      activeProject: '1',
     }
   },
 
   methods: {
-    closeDialog(index) {
-      this.dialog["dialog_" + index] = false;
+    openDialog(index) {
+      this.activeProject = index;
+      this.dialog = true;
     },
 
+    nextProject() {
+      this.activeProject = (this.activeProject + 1 < this.projects.length ? this.activeProject + 1 : 0)
+    },
+
+    previousProject() {
+      this.activeProject = (this.activeProject - 1 >= 0 ? this.activeProject - 1 : this.projects.length - 1)
+    },
   }
 };
 </script>

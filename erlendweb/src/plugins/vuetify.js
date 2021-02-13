@@ -30,7 +30,6 @@ const vuetify = new Vuetify({
                 anchor: colors.amber.darken4,
                 // Computed propery in app main checks this value
                 background: '#BDC9EF',
-
             },
             // Scheme: https://coolors.co/010b14-fdfffc-2ec4b6-e71d36-ff9f1c
             dark: {

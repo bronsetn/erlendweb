@@ -4,7 +4,10 @@
         "less": "Less",
 
         "about": "About",
-        "visit": "Visit site"
+        "visit": "Visit site",
+
+        "next": "Next",
+        "previous": "Previous"
     },
 
     "header": {
@@ -32,7 +35,7 @@
     },
     "projects": [{
             "title": "Maribro.no",
-            "description": "A website made to show of the art made by Mari Brønseth. The site is made with VueJs and hosted on Netlify. The site consist of a page to present the artist aswell as a image-gallery for many of the artworks she's made.",
+            "description": "Website made to show of the art made by Mari Brønseth. The site is made with VueJs and hosted on Netlify. The site consist of a page to present the artist aswell as a image-gallery for many of the artworks she's made.",
             "content": "One of the challenges with the development of the site was to find a good solution for presenting the different versions of each design. In the beginning the gallery consisted of all the images in the database listed one after the other. But I decided to to change it so that each design has it's own cluster, consisting of all of it's versions.",
             "date": "Winter 2021",
             "link": "https://maribro.no",

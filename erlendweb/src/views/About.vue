@@ -64,10 +64,10 @@
                     <v-btn
                       class="ma-2"
                       title="Github"
-                      href="https://github.com/bronsetn?tab=repositories"
+                      href="https://github.com/bronsetn"
                       rel="noopener"
                       target="_blank"
-                      color="tertiary"
+                      color="accent"
                       icon
                     >
                       <v-icon large>mdi-github</v-icon>
@@ -78,7 +78,7 @@
                       href="https://no.linkedin.com/in/erlend-brønseth-b5a99612b/en-us"
                       rel="noopener"
                       target="_blank"
-                      color="tertiary"
+                      color="accent"
                       icon
                     >
                       <v-icon large>mdi-linkedin</v-icon>
@@ -102,6 +102,7 @@
                     class="normal"
                     v-html="$t('about.bachelorDescription')"
                   ></p> -->
+
                   <h3 class="thick pa-4">{{ $t('about.wordpress') }}</h3>
 
                   <p
@@ -132,11 +133,14 @@
                       :item="item"
                       :key="index"
                     >
-                      <v-icon color="tertiary">{{ item.icon }}</v-icon>
+                      <v-icon
+                        disabled
+                        class="pb-2"
+                        medium
+                      >{{ item.icon }}</v-icon>
                       <p> {{item.name}} </p>
                     </v-col>
                   </v-row>
-
                 </v-card-text>
               </v-col>
             </v-row>
@@ -158,12 +162,12 @@ export default {
           icon: "mdi-language-html5",
         },
         {
-          name: "Javascript",
-          icon: "mdi-language-javascript",
-        },
-        {
           name: "CSS",
           icon: "mdi-language-css3",
+        },
+        {
+          name: "Javascript",
+          icon: "mdi-language-javascript",
         },
         {
           name: "VueJS",
