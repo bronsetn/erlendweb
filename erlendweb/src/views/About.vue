@@ -50,7 +50,10 @@
                         class="pb-1 pr-2"
                         color="tertiary"
                       >mdi-email</v-icon>
-                      <a href="mailto:bronsetherlend@gmail.com">
+                      <a
+                        class="animatedLink"
+                        href="mailto:bronsetherlend@gmail.com"
+                      >
                         bronsetherlend@gmail.com
                       </a>
                     </p>
@@ -62,7 +65,7 @@
                       >mdi-phone</v-icon>(+47) 45 80 44 52
                     </p>
                     <v-btn
-                      class="ma-2"
+                      class="ma-2 animatedLink"
                       title="Github"
                       href="https://github.com/bronsetn"
                       rel="noopener"
@@ -73,7 +76,7 @@
                       <v-icon large>mdi-github</v-icon>
                     </v-btn>
                     <v-btn
-                      class="ma-2"
+                      class="ma-2 animatedLink"
                       title="Linkedin"
                       href="https://no.linkedin.com/in/erlend-brønseth-b5a99612b/en-us"
                       rel="noopener"

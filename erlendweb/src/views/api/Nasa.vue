@@ -32,6 +32,7 @@
           :href="spaceData.url"
           rel="noopener"
           target="_blank"
+          class="animatedLink"
         >{{ spaceData.url }}</a></p>
 
       <v-card-title><span class="text-truncate">{{ spaceData.title }}</span></v-card-title>

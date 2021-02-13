@@ -23,13 +23,13 @@
 
     "about": {
         "intro1": "Jeg er en 23 åring fra Inderøy med en bachelor innenfor digitale medier og design. Dette nettstedet er ment som en portefølje i tillegg til et sted jeg kan ekspirementere innenfor utvikling og design.",
-        "intro2": "Jeg har ambisjoner om å bli dreven innenfor frontend utvikling og har i høst arbeidet hos <a target='_blank' rel='noopener' href='https://prios.no' >Prios Kompetanse AS</a>, hvor jeg har blitt kjent med bruk av VueJS.",
+        "intro2": "Jeg har ambisjoner om å bli dreven innenfor frontend utvikling og har i høst arbeidet hos <a class='animatedLink' target='_blank' rel='noopener' href='https://prios.no' >Prios Kompetanse AS</a>, hvor jeg har blitt kjent med bruk av VueJS.",
         "bachelor": "Digitale medier og design",
         "bachelorDescription": "Bachelorstudiumet digitale medier og design på HIØ gir opplæring i mange av stegene innenfor utvikling av digitale ting og applikasjoner. Noen av fagene jeg har vært innom er webutvikling, programmering, 3D-modellering, spillutvikling og grafisk-design.",
         "wordpress": "Wordpress",
-        "wordpressDescription": " Inntil nylig har jeg brukt wordpress for publisering av prosjekter fra studiet, de finnes fortsatt her:<br><a target='_blank' rel='noopener' href='https://erlendworkblog.wordpress.com'>https://erlendworkblog.wordpress.com</a>",
+        "wordpressDescription": " Inntil nylig har jeg brukt wordpress for publisering av prosjekter fra studiet, de finnes fortsatt her:<br><a class='animatedLink' target='_blank' rel='noopener' href='https://erlendworkblog.wordpress.com'>https://erlendworkblog.wordpress.com</a>",
         "erlendweb": "Erlendweb",
-        "erlendwebDescription": "Erlendweb er laget med bruk av VueJS og satt opp med Netlify som vert. Kildekoden til siden ligger åpent her:<br><a target='_blank' rel='noopener' href='https://github.com/bronsetn/erlendweb'>https://github.com/bronsetn/erlendweb</a>",
+        "erlendwebDescription": "Erlendweb er laget med bruk av VueJS og satt opp med Netlify som vert. Kildekoden til siden ligger åpent her:<br><a class='animatedLink' target='_blank' rel='noopener' href='https://github.com/bronsetn/erlendweb'>https://github.com/bronsetn/erlendweb</a>",
         "skills": "Ferdigheter"
     },
 
@@ -72,12 +72,12 @@
     "other": {
         "nasa": "Dagens bilde fra Nasa",
         "nasaDescription": "Her har jeg brukt en av Nasa sine offentlige APIer som publiserer et nytt rom-bilde pluss informasjon hver dag.",
-        "nasaSources": "En liste over alle bildene publisert siden 2015 er å finne her. <a href='https://apod.nasa.gov/apod/archivepix.html' target='_blank' >https://apod.nasa.gov/apod/archivepix.html</a><br>For informasjon om å ta i bruk APIen har jeg hovedsaklig brukt denne veiledningen. <a href='https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/' target='_blank'>https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/</a>",
+        "nasaSources": "En liste over alle bildene publisert siden 2015 er å finne her. <a class='animatedLink' href='https://apod.nasa.gov/apod/archivepix.html' target='_blank' rel='noopener'>https://apod.nasa.gov/apod/archivepix.html</a><br>For informasjon om å ta i bruk APIen har jeg hovedsaklig brukt denne veiledningen. <a class='animatedLink' href='https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/' rel='noopener' target='_blank'>https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/</a>",
 
         "forecast": "Dagens værmelding",
         "forecastCaption": "Hent værmelding",
         "forecastDescription": "Denne komponenten tar i bruk nettleserens geolokasjon for å hente ut værmeldingen for dine koordinater. Hvis geoloaksjon er deaktivert hentes det værmelding fra Oslo istedet.",
-        "forecastSources": "For å hente værdata er det brukt Openweathermap sin 5 dagers værmeldingsAPI. <a href='https://openweathermap.org/api' target='_blank'>https://openweathermap.org/api</a><br>For å hente by eller stedsnavn tar jeg i bruk openstreetmap sin API. <a href='https://www.openstreetmap.org/' target='_blank'>https://www.openstreetmap.org/</a>",
+        "forecastSources": "For å hente værdata er det brukt Openweathermap sin 5 dagers værmeldingsAPI. <a class='animatedLink' href='https://openweathermap.org/api' target='_blank' rel='noopener'>https://openweathermap.org/api</a><br>For å hente by eller stedsnavn tar jeg i bruk openstreetmap sin API. <a  class='animatedLink' href='https://www.openstreetmap.org/' rel='noopener' target='_blank'>https://www.openstreetmap.org/</a>",
 
         "threeJs": "3D visning med ThreeJs",
         "threeJsButton": "Vis 3D box",
