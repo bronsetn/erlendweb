@@ -126,17 +126,9 @@
               <v-btn
                 color="accent"
                 icon
-                v-if="$vuetify.theme.dark"
                 @click="$vuetify.theme.dark = !$vuetify.theme.dark"
               >
-                <v-icon>mdi-weather-night</v-icon>
-              </v-btn>
-              <v-btn
-                icon
-                v-else
-                @click="$vuetify.theme.dark = !$vuetify.theme.dark"
-              >
-                <v-icon>mdi-weather-night</v-icon>
+                <v-icon>{{ $vuetify.theme.dark ? "mdi-weather-night" : "mdi-white-balance-sunny" }}</v-icon>
               </v-btn>
             </div>
           </v-row>
