@@ -7,10 +7,7 @@
         <h1>{{ $t('header.projects') }}</h1>
       </v-container>
 
-      <v-row
-        class="d-flex justify-center"
-        v-if="projects"
-      >
+      <v-row class="d-flex justify-center">
         <v-col
           v-for="(item, index) in projects"
           :item="item"
@@ -26,7 +23,7 @@
             :ripple="{ center: true }"
             elevation="5"
             color="secondary"
-            height="520"
+            height="500"
           >
             <v-container>
               <v-img
@@ -38,26 +35,27 @@
               ></v-img>
             </v-container>
 
-            <v-card-title class="pb-2">
+            <v-card-title class="ma-0 pt-0 pb-0">
               <h2 class="text-truncate">
                 {{ item.title }}
               </h2>
             </v-card-title>
 
             <v-card-text>
-              <p class="subtitle-2 text-left pa-0 ma-0 pb-2">
+              <p class="caption text-left pa-0 ma-0 pb-4">
                 {{ item.date }}
               </p>
-              <p class="text-left">
-                <v-clamp
-                  class="text--primary"
-                  :max-lines="2"
-                >{{item.description}}
-                </v-clamp>
-              </p>
-              <p class="text-left"> {{ $t('misc.clickForMore') }}
+              <p class="text-left text--primary description">
+                {{item.description}}
               </p>
             </v-card-text>
+            <p
+              class="body-2 text-left text--secondary pl-4"
+              bottom
+              absolute
+            >
+              {{ $t('misc.clickForMore') }}
+            </p>
           </v-card>
         </v-col>
       </v-row>
@@ -67,9 +65,10 @@
         v-if="!$vuetify.breakpoint.mobile"
         v-model="dialog"
         transition="slide-x-transition"
+        fullscreen
       >
         <v-btn
-          class="ml-8 mt-16"
+          class="ml-8 mt-8"
           style="z-index: 1;"
           fixed
           top
@@ -83,7 +82,7 @@
         </v-btn>
         <v-card
           color="secondary"
-          class="pb-8"
+          class="pb-16"
         >
           <div
             class="skewedContainer"
@@ -168,7 +167,7 @@
             </v-row>
           </v-card-text>
           <v-btn
-            class="ml-8 mb-12"
+            class="ml-8 mb-8"
             fixed
             left
             bottom
@@ -178,7 +177,7 @@
             <v-icon>mdi-chevron-left </v-icon>{{ $t('misc.previous') }}
           </v-btn>
           <v-btn
-            class="mr-8 mb-12"
+            class="mr-8 mb-8"
             fixed
             right
             bottom
@@ -301,7 +300,10 @@
             </v-row>
           </v-card-text>
           <v-card-actions>
-            <v-row no-gutters>
+            <v-row
+              no-gutters
+              class="mb-6"
+            >
               <v-btn
                 text
                 @click="previousProject()"
@@ -325,11 +327,9 @@
 </template>
 
 <script>
-import VClamp from "vue-clamp";
 
 export default {
   components: {
-    VClamp,
   },
   data() {
     return {
@@ -346,17 +346,37 @@ export default {
     },
 
     nextProject() {
-      this.activeProject = (this.activeProject + 1 < this.projects.length ? this.activeProject + 1 : 0)
+      this.activeProject = (this.activeProject + 1 < this.projects.length ? this.activeProject + 1 : 0);
+
+      // Scrolls to top of v-dialog
+      document.getElementsByClassName('v-dialog--active')[0].scrollTop = 0;
     },
 
     previousProject() {
       this.activeProject = (this.activeProject - 1 >= 0 ? this.activeProject - 1 : this.projects.length - 1)
+      // Scrolls to top of v-dialog
+      document.getElementsByClassName('v-dialog--active')[0].scrollTop = 0;
     },
   }
 };
 </script>
 
 <style scoped>
+
+.description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+
+  /* max-height = line-height (1.2) * lines max number (3) */
+  line-height: 1.4em;
+  max-height: 2.8em; 
+
+  /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: justify;  
+ 
+}
 
 .skewedContainer {
   background: var(--v-primary-base);

@@ -26,7 +26,7 @@
         "bachelor": "Digital Media and Design",
         "bachelorDescription": "A bachelor in digitale media and design at HIØ involves an introduction to many of the steps included in development and design of digital applications. Some of the courses I have been trough are web-development, programming, 3D-modelling and graphical design.",
         "wordpress": "Wordpress",
-        "wordpressDescription": "Until recently I have used wordpress to publish projects from my course, they are still here:<br><a class='animatedLink' target='_blank' rel='noopener' href='https://erlendworkblog.wordpress.com'>https://erlendworkblog.wordpress.com</a>",
+        "wordpressDescription": "Until recently I have used Wordpress to publish projects from my course, they are still here:<br><a class='animatedLink' target='_blank' rel='noopener' href='https://erlendworkblog.wordpress.com'>https://erlendworkblog.wordpress.com</a>",
         "erlendweb": "Erlendweb",
         "erlendwebDescription": "Erlendweb is made with VueJS and hosted on Netlify. The source code for this page is public at:<br><a  class='animatedLink' target='_blank' rel='noopener' href='https://github.com/bronsetn/erlendweb'>https://github.com/bronsetn/erlendweb</a>",
         "skills": "Skills"
@@ -56,8 +56,8 @@
         },
         {
             "title": "Wordpress website",
-            "description": "Website used for publishing some of the projects from my bachelor study. The process of setting up the wordpress-site is relativly easy as you can simply use Wordpresses UX, at the same time it's also a lot less exiting as there are many restrictions with using a CMS.",
-            "content": "I have tried to carry over many of the design choises and elements from the wordpress site to erlendweb.no. Some of the similarities between the site's is the color palette used and some of the graphic elements used such as the logo.",
+            "description": "Website used for publishing some of the projects from my bachelor study. The process of setting up the websiteis relativly easy as you can simply use Wordpresses UX, at the same time it's also a lot less exiting as there are many restrictions with using a CMS.",
+            "content": "I have tried to carry over many of the design choises and elements from the Wordpress-site to erlendweb.no. Some of the similarities between the site's is the color palette used and some of the graphic elements used such as the logo.",
             "date": "Summer 2019",
             "link": "https://erlendworkblog.wordpress.com/",
             "alt": "Sreenshot from https://erlendworkblog.wordpress.com",
@@ -68,14 +68,14 @@
     "other": {
         "nasa": "Daily image from Nasa",
         "nasaDescription": "Here i have used one of Nasa's public API's that gives out a new space-related image each day.",
-        "nasaSources": "For a list of all images published since 2015. <a class='animatedLink' href='https://apod.nasa.gov/apod/archivepix.html' rel='noopener' target='_blank' >https://apod.nasa.gov/apod/archivepix.html</a><br>For information about using the API i have used this tutorial. <a class='animatedLink' href='https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/' rel='noopener' target='_blank'>https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/</a>",
+        "nasaSources": "For a list of all images published since 2015 visit: <a class='animatedLink' href='https://apod.nasa.gov/apod/archivepix.html' rel='noopener' target='_blank' >https://apod.nasa.gov/apod/archivepix.html</a><br>For information about using the API i have used this tutorial: <a class='animatedLink' href='https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/' rel='noopener' target='_blank'>https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/</a>",
 
         "forecast": "Today's forecast",
         "forecastCaption": "Get forecast",
         "forecastDescription": "This component uses the browsers geolocation to get a forecast for your coordinates. If geolocation is disabled a forecast from Oslo is fetched instead.",
-        "forecastSources": "To get watherdata Openweathermap's 5 day forecast API is used. <a class='animatedLink' href='https://openweathermap.org/api' rel='noopener' target='_blank'>https://openweathermap.org/api</a><br>To get the city or place name Openstreetmap's API is used. <a class='animatedLink' href='https://www.openstreetmap.org/' rel='noopener' target='_blank'>https://www.openstreetmap.org/</a>",
+        "forecastSources": "To get watherdata Openweathermap's 5 day forecast API is used: <a class='animatedLink' href='https://openweathermap.org/api' rel='noopener' target='_blank'>https://openweathermap.org/api</a><br>To get the city or place name Openstreetmap's API is used: <a class='animatedLink' href='https://www.openstreetmap.org/' rel='noopener' target='_blank'>https://www.openstreetmap.org/</a>",
 
-        "threeJs": "3D display with ThreeJs",
+        "threeJs": "3D display with ThreeJS",
         "threeJsButton": "Show 3D box",
 
         "svgTest": "SVG animation-test",

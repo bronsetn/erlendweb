@@ -23,14 +23,14 @@
     },
 
     "about": {
-        "intro1": "Jeg er en 23 åring fra Inderøy med en bachelor innenfor digitale medier og design. Dette nettstedet er ment som en portefølje i tillegg til et sted jeg kan ekspirementere innenfor utvikling og design.",
+        "intro1": "Jeg er en 23-åring fra Inderøy med en bachelor innenfor digitale medier og design. Dette nettstedet er ment som en portefølje i tillegg til et sted jeg kan ekspirementere innenfor utvikling og design.",
         "intro2": "Jeg har ambisjoner om å bli dreven innenfor frontend utvikling og har i høst arbeidet hos <a class='animatedLink' target='_blank' rel='noopener' href='https://prios.no' >Prios Kompetanse AS</a>, hvor jeg har blitt kjent med bruk av VueJS.",
         "bachelor": "Digitale medier og design",
         "bachelorDescription": "Bachelorstudiumet digitale medier og design på HIØ gir opplæring i mange av stegene innenfor utvikling av digitale ting og applikasjoner. Noen av fagene jeg har vært innom er webutvikling, programmering, 3D-modellering, spillutvikling og grafisk-design.",
         "wordpress": "Wordpress",
-        "wordpressDescription": " Inntil nylig har jeg brukt wordpress for publisering av prosjekter fra studiet, de finnes fortsatt her:<br><a class='animatedLink' target='_blank' rel='noopener' href='https://erlendworkblog.wordpress.com'>https://erlendworkblog.wordpress.com</a>",
+        "wordpressDescription": " Inntil nylig har jeg brukt Wordpress for publisering av prosjekter fra studiet, de finnes fortsatt her:<br><a class='animatedLink' target='_blank' rel='noopener' href='https://erlendworkblog.wordpress.com'>https://erlendworkblog.wordpress.com</a>",
         "erlendweb": "Erlendweb",
-        "erlendwebDescription": "Erlendweb er laget med bruk av VueJS og satt opp med Netlify som vert. Kildekoden til siden ligger åpent her:<br><a class='animatedLink' target='_blank' rel='noopener' href='https://github.com/bronsetn/erlendweb'>https://github.com/bronsetn/erlendweb</a>",
+        "erlendwebDescription": "Erlendweb er laget med bruk av VueJS og satt opp med Netlify som vert. Kildekoden til siden ligger åpen her:<br><a class='animatedLink' target='_blank' rel='noopener' href='https://github.com/bronsetn/erlendweb'>https://github.com/bronsetn/erlendweb</a>",
         "skills": "Ferdigheter"
     },
 
@@ -40,8 +40,8 @@
 
     "projects": [{
             "title": "Maribro.no",
-            "description": "Nettsted for å vise tegninger og malerier laget av Mari Brønseth. Laget i VueJs og satt opp med Netlify som vert. Nettstedet består av en side for å presentere artisten i tilleg til et bildegalleri for kunstverkene hun har laget.",
-            "content": "Noe av det som var utfordrende ved utviklingen av siden var å tenke ut en god måte å presentere de forskjellige versjonene som var av vært motiv. I starten bestod galleriet av alle bildene i databasen listet opp etter hverandre, men jeg endte opp med å forandre det til at hvert motiv har sin egen klynge på siden med alle sine versjoner.",
+            "description": "Nettsted for å vise tegninger og malerier laget av Mari Brønseth. Laget i VueJs og satt opp med Netlify som vert. Nettstedet består av en side for å presentere artisten, i tilleg til et bildegalleri for kunstverkene hun har laget.",
+            "content": "Noe av det som var utfordrende ved utviklingen av siden var å tenke ut en god måte å presentere de forskjellige versjonene for hvert motiv. I starten bestod galleriet av alle bildene i databasen listet opp etter hverandre, men jeg endte opp med å forandre det til at hvert motiv har sin egen klynge på siden med alle sine versjoner.",
             "date": "Vinter 2021",
             "link": "https://maribro.no",
             "alt": "Screenshot from https://maribro.no",
@@ -51,7 +51,7 @@
         {
             "title": "Prios Events",
             "description": "Nettsted for blant annet å kunne holde jobbmesser og lignende typer messer. Jeg arbeidet med utvikling av frontend og design av nettstedet for Prios kompetanse AS. Nettstedet er et av mine første prosjekter med bruk av VueJs og er fortsatt under utvikling hos Prios.",
-            "content": "Gjennom prosjekt fikk jeg jobbet med implimentering av ett av Prios sine systemer inn i et nytt nettsted, jeg fikk også et innblikk i flere verktøy og metoder for moderne webutvikling. Erfaring jeg blant annet har kunnet tatt i bruk for å sette opp erlendweb",
+            "content": "Gjennom prosjekt fikk jeg jobbet med implimentering av ett av Prios sine systemer inn i et nytt nettsted, jeg fikk også et innblikk i flere verktøy og metoder for moderne webutvikling, erfaring jeg blant annet har kunnet tatt i bruk for å sette opp erlendweb",
             "date": "Høst 2020",
             "link": "https://prios-events.netlify.app/",
             "alt": "Screenshot from prios.events",
@@ -59,9 +59,9 @@
             "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-profile.png?alt=media&token=93c95cc5-f5b6-4fad-b88d-d4e6b4885941"
         },
         {
-            "title": "Wordpress nettsted",
-            "description": "Nettsted jeg brukte til publisering av prosjekter og oppgaver fra bachelorstudiet. Prossesen med å sette opp wordpress-nettstedet er relativt enkelt på grunn av Wordpress sitt grensesnitt, men også noe mindre spennende på grunn av restriksjonene som kommer med CMS løsninger.",
-            "content": "Jeg har forsøkt å videreføre noen av designvalgene og elementene fra wordpress siden videre på erlendweb. Noen av de større likhetene mellom sidene er fargevalget og diverse grafiske elementer som logoen. ",
+            "title": "Wordpress-nettsted",
+            "description": "Nettsted jeg brukte til publisering av prosjekter og oppgaver fra bachelorstudiet. Prossesen med å sette opp nettstedet er relativt enkelt på grunn av Wordpress sitt grensesnitt, men også noe mindre spennende på grunn av restriksjonene som kommer med CMS-løsninger.",
+            "content": "Jeg har forsøkt å videreføre noen av designvalgene og elementene fra Wordpress-siden videre på erlendweb. Noen av de større likhetene mellom sidene er fargevalget og diverse grafiske elementer som sidens logo. ",
             "date": "Sommer 2019",
             "link": "https://erlendworkblog.wordpress.com/",
             "alt": "Sreenshot from https://erlendworkblog.wordpress.com",
@@ -73,14 +73,14 @@
     "other": {
         "nasa": "Dagens bilde fra Nasa",
         "nasaDescription": "Her har jeg brukt en av Nasa sine offentlige APIer som publiserer et nytt rom-bilde pluss informasjon hver dag.",
-        "nasaSources": "En liste over alle bildene publisert siden 2015 er å finne her. <a class='animatedLink' href='https://apod.nasa.gov/apod/archivepix.html' target='_blank' rel='noopener'>https://apod.nasa.gov/apod/archivepix.html</a><br>For informasjon om å ta i bruk APIen har jeg hovedsaklig brukt denne veiledningen. <a class='animatedLink' href='https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/' rel='noopener' target='_blank'>https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/</a>",
+        "nasaSources": "En liste over alle bildene publisert siden 2015 er å finne her: <a class='animatedLink' href='https://apod.nasa.gov/apod/archivepix.html' target='_blank' rel='noopener'>https://apod.nasa.gov/apod/archivepix.html</a><br>For informasjon om å ta i bruk APIen har jeg hovedsaklig brukt denne veiledningen: <a class='animatedLink' href='https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/' rel='noopener' target='_blank'>https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/</a>",
 
         "forecast": "Dagens værmelding",
         "forecastCaption": "Hent værmelding",
         "forecastDescription": "Denne komponenten tar i bruk nettleserens geolokasjon for å hente ut værmeldingen for dine koordinater. Om geoloaksjon er deaktivert hentes det værmelding fra Oslo istedet.",
-        "forecastSources": "For å hente værdata er det brukt Openweathermap sin 5 dagers værmeldingsAPI. <a class='animatedLink' href='https://openweathermap.org/api' target='_blank' rel='noopener'>https://openweathermap.org/api</a><br>For å hente by eller stedsnavn tar jeg i bruk openstreetmap sin API. <a  class='animatedLink' href='https://www.openstreetmap.org/' rel='noopener' target='_blank'>https://www.openstreetmap.org/</a>",
+        "forecastSources": "For å hente værdata er det brukt Openweathermap sin 5 dagers værmeldings-API: <a class='animatedLink' href='https://openweathermap.org/api' target='_blank' rel='noopener'>https://openweathermap.org/api</a><br>For å hente by eller stedsnavn tar jeg i bruk openstreetmap sin API: <a  class='animatedLink' href='https://www.openstreetmap.org/' rel='noopener' target='_blank'>https://www.openstreetmap.org/</a>",
 
-        "threeJs": "3D visning med ThreeJs",
+        "threeJs": "3D visning med ThreeJS",
         "threeJsButton": "Vis 3D box",
 
         "svgTest": "SVG animasjonstest",
