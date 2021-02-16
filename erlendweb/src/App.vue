@@ -6,7 +6,7 @@
         :style="{ background: $vuetify.theme.themes[theme].background }"
         class="pt-10 pb-10"
       >
-        <router-view />
+        <router-view></router-view>
         <FloatingButton></FloatingButton>
       </main>
       <Footer></Footer>

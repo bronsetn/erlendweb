@@ -8,11 +8,11 @@
       </v-container>
 
       <v-row justify="center">
+
         <SvgTest></SvgTest>
         <ModelViewer></ModelViewer>
         <Nasa></Nasa>
         <Forecast></Forecast>
-        <!-- <Gallery></Gallery> -->
 
       </v-row>
     </v-container>
@@ -20,13 +20,13 @@
 </template>
 
 <script>
-import Nasa from "./api/Nasa.vue";
-import Forecast from "./api/Forecast.vue";
+import Nasa from "./api-elements/Nasa.vue";
+import Forecast from "./api-elements/Forecast.vue";
 
-import SvgTest from "./vue-elements/SvgTest.vue";
-// import Gallery from "./vue-elements/Gallery.vue";
+import SvgTest from "./layout-elements/SvgTest.vue";
+// import Gallery from "./layout-elements/Gallery.vue";
 
-import ModelViewer from "./3d/ModelViewer.vue";
+import ModelViewer from "./3d-elements/ModelViewer.vue";
 
 export default {
   components: {
@@ -37,7 +37,6 @@ export default {
     // Gallery,
 
     SvgTest,
-
   },
 };
 </script>

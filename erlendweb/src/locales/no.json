@@ -41,7 +41,7 @@
     "projects": [{
             "title": "Maribro.no",
             "description": "Nettsted for å vise tegninger og malerier laget av Mari Brønseth. Laget i VueJs og satt opp med Netlify som vert. Nettstedet består av en side for å presentere artisten, i tilleg til et bildegalleri for kunstverkene hun har laget.",
-            "content": "Noe av det som var utfordrende ved utviklingen av siden var å tenke ut en god måte å presentere de forskjellige versjonene for hvert motiv. I starten bestod galleriet av alle bildene i databasen listet opp etter hverandre, men jeg endte opp med å forandre det til at hvert motiv har sin egen klynge på siden med alle sine versjoner.",
+            "content": "Noe av det som var utfordrende ved utviklingen av siden var å tenke ut en god måte å presentere de forskjellige designene til hvert motiv. I begynnelsen hadde jeg alle bilder i databasen listet opp ettet hverandre, men Jjg endte opp med å forandre det til at hvert motiv har en egen klynge med alle sine versjoner.",
             "date": "Vinter 2021",
             "link": "https://maribro.no",
             "alt": "Screenshot from https://maribro.no",
@@ -50,7 +50,7 @@
         },
         {
             "title": "Prios Events",
-            "description": "Nettsted for blant annet å kunne holde jobbmesser og lignende typer messer. Jeg arbeidet med utvikling av frontend og design av nettstedet for Prios kompetanse AS. Nettstedet er et av mine første prosjekter med bruk av VueJs og er fortsatt under utvikling hos Prios.",
+            "description": "Nettsted for blant annet å kunne holde jobbmesser og lignende typer messer. Jeg arbeidet med utvikling av frontend og design av nettstedet for Prios kompetanse AS. Nettstedet er et av mine første prosjekter med bruk av VueJS og er fortsatt under utvikling hos Prios.",
             "content": "Gjennom prosjekt fikk jeg jobbet med implimentering av ett av Prios sine systemer inn i et nytt nettsted, jeg fikk også et innblikk i flere verktøy og metoder for moderne webutvikling, erfaring jeg blant annet har kunnet tatt i bruk for å sette opp erlendweb",
             "date": "Høst 2020",
             "link": "https://prios-events.netlify.app/",

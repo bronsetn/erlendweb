@@ -4,7 +4,7 @@
     sm="12"
     md="6"
     lg="6"
-    xl="4"
+    xl="6"
   >
     <v-card
       color="secondary"
@@ -31,7 +31,7 @@
       </v-container>
     </v-card>
 
-    <!-- DIALOG 1 -->
+    <!-- DIALOG -->
     <v-dialog
       v-model="dialog1"
       fullscreen

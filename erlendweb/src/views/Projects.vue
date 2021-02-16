@@ -80,14 +80,8 @@
         >
           <v-icon large>mdi-arrow-left</v-icon>
         </v-btn>
-        <v-card
-          color="secondary"
-          class="pb-16"
-        >
-          <div
-            class="skewedContainer"
-            style="padding: 100px 0 0 0"
-          >
+        <v-card color="secondary">
+          <div class="skewedContainer">
             <div class="content">
               <v-row
                 justify="center"
@@ -119,7 +113,10 @@
             </div>
           </div>
           <v-card-text>
-            <v-row justify="center">
+            <v-row
+              justify="center"
+              no-gutters
+            >
               <v-col
                 cols="12"
                 sm="12"
@@ -128,64 +125,38 @@
                 xl="6"
               >
                 <p class="text--primary">{{ projects[activeProject].description }}</p>
+                <p class="text--primary">{{ projects[activeProject].content }}</p>
               </v-col>
             </v-row>
-          </v-card-text>
-          <v-container>
-            <v-img
-              max-height="500px"
-              contain
-              :alt="projects[activeProject].alt"
-              :src="projects[activeProject].imageContent"
-              :lazy-src="projects[activeProject].imageContent"
-            ></v-img>
-          </v-container>
-          <v-card-text>
-            <v-row justify="center">
-              <v-col
-                cols="12"
-                sm="12"
-                md="10"
-                lg="6"
-                xl="6"
+            <v-row no-gutters>
+              <v-btn
+                text
+                @click="previousProject()"
               >
-                <p class="text--primary pt-8 pb-4">{{ projects[activeProject].content }}</p>
+                <v-icon>mdi-chevron-left </v-icon>{{ $t('misc.previous') }}
+              </v-btn>
+              <v-spacer>
                 <v-btn
-                  color="accent"
                   text
+                  color="accent"
                   rel="noopener"
                   target="_blank"
                   :href="projects[activeProject].link"
                 >{{ $t('misc.visit') }}
                   <v-icon
                     color="accent"
-                    class="pb-1 pl-1"
                     small
                   >mdi-launch</v-icon>
                 </v-btn>
-              </v-col>
+              </v-spacer>
+              <v-btn
+                text
+                @click="nextProject()"
+              >
+                {{ $t('misc.next') }}<v-icon>mdi-chevron-right</v-icon>
+              </v-btn>
             </v-row>
           </v-card-text>
-          <v-btn
-            class="ml-8 mb-8"
-            fixed
-            left
-            bottom
-            text
-            @click="previousProject()"
-          >
-            <v-icon>mdi-chevron-left </v-icon>{{ $t('misc.previous') }}
-          </v-btn>
-          <v-btn
-            class="mr-8 mb-8"
-            fixed
-            right
-            bottom
-            text
-            @click="nextProject()"
-          >
-            {{ $t('misc.next') }}<v-icon>mdi-chevron-right</v-icon>
-          </v-btn>
         </v-card>
       </v-dialog>
 
@@ -221,7 +192,6 @@
             style="padding: 25px 0 0 0"
           >
             <div class="content">
-
               <v-row
                 justify="center"
                 no-gutters
@@ -251,7 +221,6 @@
               </v-container>
             </div>
           </div>
-
           <v-card-text>
             <v-row justify="center">
               <v-col
@@ -262,55 +231,30 @@
                 xl="6"
               >
                 <p class="text--primary">{{ projects[activeProject].description }}</p>
-              </v-col>
-            </v-row>
-          </v-card-text>
-          <v-container>
-            <v-img
-              contain
-              :alt="projects[activeProject].alt"
-              :src="projects[activeProject].imageContent"
-              :lazy-src="projects[activeProject].imageContent"
-            ></v-img>
-          </v-container>
-          <v-card-text>
-            <v-row justify="center">
-              <v-col
-                cols="12"
-                sm="12"
-                md="10"
-                lg="6"
-                xl="6"
-              >
-                <p class="text--primary pt-8 pb-4">{{ projects[activeProject].content }}</p>
+                <p class="text--primary">{{ projects[activeProject].content }}</p>
                 <v-btn
-                  color="accent"
                   text
+                  color="accent"
                   rel="noopener"
                   target="_blank"
                   :href="projects[activeProject].link"
                 >{{ $t('misc.visit') }}
                   <v-icon
                     color="accent"
-                    class="pb-1 pl-1"
                     small
                   >mdi-launch</v-icon>
                 </v-btn>
               </v-col>
             </v-row>
-          </v-card-text>
-          <v-card-actions>
-            <v-row
-              no-gutters
-              class="mb-6"
-            >
+            <v-row no-gutters>
               <v-btn
                 text
                 @click="previousProject()"
               >
                 <v-icon>mdi-chevron-left </v-icon>{{ $t('misc.previous') }}
               </v-btn>
-              <v-spacer></v-spacer>
+              <v-spacer>
+              </v-spacer>
               <v-btn
                 text
                 @click="nextProject()"
@@ -318,7 +262,7 @@
                 {{ $t('misc.next') }}<v-icon>mdi-chevron-right</v-icon>
               </v-btn>
             </v-row>
-          </v-card-actions>
+          </v-card-text>
         </v-card>
       </v-dialog>
 
@@ -375,13 +319,13 @@ export default {
 
   /* fix problem when last visible word doesn't adjoin right side  */
   text-align: justify;  
- 
 }
 
 .skewedContainer {
   background: var(--v-primary-base);
   transform: skew(0deg, 4deg);
   transform-origin: top right;
+  padding: 100px 0 0 0;
 }
 /* Skew back the content */
 .content {

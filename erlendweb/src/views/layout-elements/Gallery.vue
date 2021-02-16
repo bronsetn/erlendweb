@@ -4,7 +4,7 @@
     sm="12"
     md="6"
     lg="6"
-    xl="4"
+    xl="6"
   >
     <v-card
       color="secondary"
@@ -44,7 +44,7 @@
       </v-parallax>
     </v-card>
 
-    <!-- Image gallery: -->
+    <!-- Image gallery -->
     <v-expand-transition>
       <v-row v-show="showGallery">
         <v-col
@@ -53,7 +53,6 @@
           :item="item"
           :key="index"
         >
-          <!-- Image gallery box -->
           <v-card
             elevation="5"
             color="secondary"

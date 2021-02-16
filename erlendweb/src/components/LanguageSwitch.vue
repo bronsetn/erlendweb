@@ -56,13 +56,23 @@
 
 
 <script>
+
 export default {
+  data() {
+    return {
+      renderComponent: true,
+
+    };
+  },
+
   methods: {
     setLocale(locale) {
       this.$i18n.locale = locale
       this.$router.push({
         params: { lang: locale }
       })
+      location.reload();
+
     }
   },
 }
