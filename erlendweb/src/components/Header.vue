@@ -36,7 +36,7 @@
             left
             icon
             v-if="!$vuetify.theme.dark"
-            :to="{hash: 'home'}"
+            :to="{ name: 'Home'}"
           >
             <v-img
               src="../assets/icons/logo-light.svg"
@@ -48,7 +48,7 @@
           <v-btn
             icon
             v-if="$vuetify.theme.dark"
-            :to="{hash: 'home'}"
+            :to="{ name: 'Home'}"
           >
             <v-img
               src="../assets/icons/logo-dark.svg"
@@ -63,14 +63,13 @@
           cols="auto"
           md="8"
         >
+          <!-- If desktop and user is on the homepage -->
           <v-row
-            v-if="!$vuetify.breakpoint.mobile"
+            v-if="!$vuetify.breakpoint.mobile && ['Home'].includes($route.name)"
             class="d-flex justify-center"
           >
             <v-btn
-              :to="{
-              hash: 'projects'
-            }"
+              :to="{ hash: 'projects'}"
               color="tertiary"
               text
             >
@@ -79,9 +78,7 @@
             </v-btn>
 
             <v-btn
-              :to="{
-                hash: 'about'
-               }"
+              :to="{ hash: 'about'}"
               color="tertiary"
               text
             >
@@ -90,19 +87,16 @@
             </v-btn>
 
             <v-btn
-              :to="{
-                hash: 'contact'
-               }"
+              :to="{ hash: 'contact'}"
               color="tertiary"
               text
             >
               <div class="serif">III</div>
               <div class="pl-1">{{ $t('header.contact') }}</div>
             </v-btn>
+
             <v-btn
-              :to="{
-                hash: 'other'
-               }"
+              :to="{ name: 'Other'}"
               color="tertiary"
               text
             >
@@ -110,6 +104,49 @@
               <div class="pl-1">{{ $t('header.other') }}</div>
             </v-btn>
           </v-row>
+
+          <!-- When on other pages than the homepage, header uses these links -->
+          <v-row
+            v-if="!$vuetify.breakpoint.mobile && !['Home'].includes($route.name)"
+            class="d-flex justify-center"
+          >
+            <v-btn
+              @click="$router.push(`/${$i18n.locale}/#projects`)"
+              color="tertiary"
+              text
+            >
+              <div class="serif">I</div>
+              <div class="pl-1">{{ $t('header.projects') }}</div>
+            </v-btn>
+
+            <v-btn
+              @click="$router.push(`/${$i18n.locale}/#about`)"
+              color="tertiary"
+              text
+            >
+              <div class="serif">II</div>
+              <div class="pl-1">{{ $t('header.about') }}</div>
+            </v-btn>
+
+            <v-btn
+              @click="$router.push(`/${$i18n.locale}/#contact`)"
+              color="tertiary"
+              text
+            >
+              <div class="serif">III</div>
+              <div class="pl-1">{{ $t('header.contact') }}</div>
+            </v-btn>
+
+            <v-btn
+              :to="{ name: 'Other'}"
+              color="tertiary"
+              text
+            >
+              <div class="serif">IV</div>
+              <div class="pl-1">{{ $t('header.other') }}</div>
+            </v-btn>
+          </v-row>
+
         </v-col>
 
         <v-col
@@ -131,8 +168,8 @@
                 <v-icon>{{ $vuetify.theme.dark ? "mdi-weather-night" : "mdi-white-balance-sunny" }}</v-icon>
               </v-btn>
             </div>
-          </v-row>
 
+          </v-row>
         </v-col>
       </v-row>
     </v-app-bar>
@@ -147,40 +184,66 @@
       <v-list
         transparent
         class="pl-4"
+        v-if="['Home'].includes($route.name)"
       >
-        <v-list-item :to="{
-              hash: 'projects'
-            }">
+        <v-list-item :to="{ hash: 'projects'  }">
           <v-list-item-icon class="serif">I</v-list-item-icon>
           <v-list-item-content>
             {{ $t('header.projects') }}
           </v-list-item-content>
         </v-list-item>
-        <v-list-item :to="{
-                hash: 'about'
-               }">
+        <v-list-item :to="{ hash: 'about' }">
           <v-list-item-icon class="serif">II</v-list-item-icon>
           <v-list-item-content>
             {{ $t('header.about') }}
           </v-list-item-content>
         </v-list-item>
-        <v-list-item :to="{
-                hash: 'contact'
-               }">
+        <v-list-item :to="{ hash: 'contact'  }">
           <v-list-item-icon class="serif">III</v-list-item-icon>
           <v-list-item-content>
             {{ $t('header.contact') }}
           </v-list-item-content>
         </v-list-item>
-        <v-list-item :to="{
-                hash: 'other'
-               }">
+        <v-list-item :to="{  name: 'Other'  }">
           <v-list-item-icon class="serif">IV</v-list-item-icon>
           <v-list-item-content>
             {{ $t('header.other') }}
           </v-list-item-content>
         </v-list-item>
       </v-list>
+
+      <!-- When on other pages than the homepage, nav-bar uses these links -->
+      <v-list
+        transparent
+        class="pl-4"
+        v-if="!['Home'].includes($route.name)"
+      >
+        <v-list-item @click="$router.push(`/${$i18n.locale}/#projects`)">
+          <v-list-item-icon class="serif">I</v-list-item-icon>
+          <v-list-item-content>
+            {{ $t('header.projects') }}
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item @click="$router.push(`/${$i18n.locale}/#about`)">
+          <v-list-item-icon class="serif">II</v-list-item-icon>
+          <v-list-item-content>
+            {{ $t('header.about') }}
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item @click="$router.push(`/${$i18n.locale}/#contact`)">
+          <v-list-item-icon class="serif">III</v-list-item-icon>
+          <v-list-item-content>
+            {{ $t('header.contact') }}
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item :to="{  name: 'Other'  }">
+          <v-list-item-icon class="serif">IV</v-list-item-icon>
+          <v-list-item-content>
+            {{ $t('header.other') }}
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+
     </v-navigation-drawer>
   </div>
 </template>

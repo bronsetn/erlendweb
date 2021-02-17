@@ -7,19 +7,21 @@ Vue.use(Vuetify);
 // https: //vuetifyjs.com/en/styles/colors/#material-colors
 import colors from 'vuetify/lib/util/colors'
 
-
 const vuetify = new Vuetify({
     theme: {
         options: {
+            // Enabling customProperties generate's a css variable for each theme color, which you can use in your components’ <style> blocks.
             customProperties: true
         },
 
-        dark: true,
+        // Inn App.vue we run a function checking system preference for light/dark mode
+        // dark: true,
 
         themes: {
             font: {
                 family: 'Roboto'
             },
+
             light: {
                 primary: '#BDC9EF',
                 secondary: colors.shades.white,
@@ -31,6 +33,7 @@ const vuetify = new Vuetify({
                 // Computed propery in app main checks this value
                 background: '#BDC9EF',
             },
+
             // Scheme: https://coolors.co/010b14-fdfffc-2ec4b6-e71d36-ff9f1c
             dark: {
                 primary: '#040711',
@@ -47,4 +50,5 @@ const vuetify = new Vuetify({
         },
     },
 })
+
 export default vuetify

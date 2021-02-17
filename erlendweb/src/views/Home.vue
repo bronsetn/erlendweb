@@ -1,7 +1,6 @@
 <template>
 
   <body>
-
     <!-- Front image + title -->
     <Front></Front>
 
@@ -14,9 +13,7 @@
       <v-lazy
         id="projects"
         v-model="isActive1"
-        :options="{
-          threshold: .5
-        }"
+        :options="{ threshold: .5 }"
         class="fill-height"
         transition="fade-transition"
       >
@@ -33,9 +30,7 @@
       <v-lazy
         id="about"
         v-model="isActive2"
-        :options="{
-          threshold: .5
-        }"
+        :options="{ threshold: .5}"
         class="fill-height"
         transition="fade-transition"
       >
@@ -52,34 +47,14 @@
       <v-lazy
         id="contact"
         v-model="isActive3"
-        :options="{
-          threshold: .5
-        }"
+        :options="{ threshold: .5}"
         class="fill-height"
         transition="fade-transition"
       >
-        <Contact class="pt-4"></Contact>
+        <Contact class="pt-4 pb-12"></Contact>
       </v-lazy>
     </v-sheet>
 
-    <!-- Other stuff - section for experiments -->
-    <v-sheet
-      min-height="300"
-      class="fill-height"
-      color="transparent"
-    >
-      <v-lazy
-        id="other"
-        v-model="isActive4"
-        :options="{
-          threshold: .5
-        }"
-        class="fill-height"
-        transition="fade-transition"
-      >
-        <Other class="pt-4 pb-8"></Other>
-      </v-lazy>
-    </v-sheet>
   </body>
 </template>
 
@@ -88,7 +63,6 @@ import Front from "./Front.vue";
 import About from "./About.vue";
 import Projects from "./Projects.vue";
 import Contact from "./Contact.vue";
-import Other from "./Other.vue";
 
 export default {
   components: {
@@ -96,7 +70,6 @@ export default {
     About,
     Projects,
     Contact,
-    Other,
   },
 
   data() {
@@ -104,7 +77,6 @@ export default {
       isActive1: false,
       isActive2: false,
       isActive3: false,
-      isActive4: false,
     }
   },
 

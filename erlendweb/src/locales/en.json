@@ -66,6 +66,8 @@
         }
     ],
     "other": {
+        "description": "Smaller experiments with code and design.",
+
         "nasa": "Daily image from Nasa",
         "nasaDescription": "Here i have used one of Nasa's public API's that gives out a new space-related image each day.",
         "nasaSources": "For a list of all images published since 2015 visit: <a class='animatedLink' href='https://apod.nasa.gov/apod/archivepix.html' rel='noopener' target='_blank' >https://apod.nasa.gov/apod/archivepix.html</a><br>For information about using the API i have used this tutorial: <a class='animatedLink' href='https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/' rel='noopener' target='_blank'>https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/</a>",

@@ -10,6 +10,7 @@
     <v-card
       color="secondary"
       elevation="5"
+      style="overflow: hidden;"
     >
       <v-card-title>{{ $t('other.nasa') }}<v-spacer></v-spacer>
         <v-icon color="tertiary">mdi-rocket-outline</v-icon>
@@ -28,7 +29,7 @@
       >
         <iframe :src="spaceData.url"> </iframe>
       </div>
-      <p class="light pt-2"><a
+      <p class="light pt-2 text--truncate"><a
           :href="spaceData.url"
           rel="noopener"
           target="_blank"

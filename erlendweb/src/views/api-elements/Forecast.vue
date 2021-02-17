@@ -9,6 +9,7 @@
     <v-card
       color="secondary"
       elevation="5"
+      style="overflow: hidden;"
     >
       <v-card-title>{{ $t('other.forecast') }}<v-spacer></v-spacer>
         <v-icon color="tertiary">mdi-satellite-variant</v-icon>

@@ -71,6 +71,8 @@
     ],
 
     "other": {
+        "description": "Mindre eksperimenter med koding og design.",
+
         "nasa": "Dagens bilde fra Nasa",
         "nasaDescription": "Her har jeg brukt en av Nasa sine offentlige APIer som publiserer et nytt rom-bilde pluss informasjon hver dag.",
         "nasaSources": "En liste over alle bildene publisert siden 2015 er å finne her: <a class='animatedLink' href='https://apod.nasa.gov/apod/archivepix.html' target='_blank' rel='noopener'>https://apod.nasa.gov/apod/archivepix.html</a><br>For informasjon om å ta i bruk APIen har jeg hovedsaklig brukt denne veiledningen: <a class='animatedLink' href='https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/' rel='noopener' target='_blank'>https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/</a>",

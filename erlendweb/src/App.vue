@@ -34,6 +34,24 @@ export default {
       return this.$vuetify.theme.dark ? "dark" : "light";
     },
   },
+
+  mounted() {
+    this.selectTheme()
+  },
+
+  methods: {
+
+    // Checks browser preference for light/dark mode
+    selectTheme() {
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        this.$vuetify.theme.dark = true;
+      } else {
+        this.$vuetify.theme.dark = false;
+      }
+    }
+
+  },
+
 };
 </script>
 
