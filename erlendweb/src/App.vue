@@ -6,15 +6,18 @@
         :style="{ background: $vuetify.theme.themes[theme].background }"
         class="pt-10 pb-10"
       >
-        <router-view></router-view>
+        <transition
+          name="fade"
+          mode="out-in"
+        >
+          <router-view></router-view>
+        </transition>
         <FloatingButton></FloatingButton>
       </main>
       <Footer></Footer>
     </v-app>
   </div>
 </template>
-
-
 
 <script>
 import Header from "./components/Header";
@@ -54,5 +57,19 @@ export default {
 
 };
 </script>
+
+<style scoped>
+/* FADE TRANSITION*/
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+</style>
 
 

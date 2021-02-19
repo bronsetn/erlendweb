@@ -81,10 +81,8 @@ export default {
   },
 
   mounted() {
-    console.log("~~~~~~~~~~~~~~~~~~~~~")
-    console.log("Welcome to erlendweb!")
-    console.log("~~~~~~~~~~~~~~~~~~~~~")
-    console.log("")
+    console.log('%cWelcome to Erlendweb!', 'color: purple; font-size: 20px;')
+    console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
   },
 };
 </script>

@@ -59,6 +59,7 @@
           </v-btn>
         </v-col>
 
+        <!-- Navigation links -->
         <v-col
           cols="auto"
           md="8"

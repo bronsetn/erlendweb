@@ -11,7 +11,7 @@
           justify="center"
           class="pt-4"
         >
-          <!-- Contact -->
+          <!-- Contact info -->
           <v-col
             cols="12"
             sm="6"
@@ -65,6 +65,7 @@
             </p>
           </v-col>
 
+          <!-- Navigation links -->
           <v-col
             cols="12"
             sm="6"
@@ -74,8 +75,9 @@
             class="justify-center"
             align="center"
           >
-
+            <!-- If user is on the homepage -->
             <v-row
+              v-if="['Home'].includes($route.name)"
               no-gutters
               justify="center"
               align="center"
@@ -106,7 +108,49 @@
                 <div class="pl-1">{{ $t('header.contact') }}</div>
               </v-btn>
               <v-btn
-                href="#other"
+                :to="{ name: 'Other'}"
+                color="tertiary"
+                text
+              >
+                <div class="serif">IV</div>
+                <div class="pl-1">{{ $t('header.other') }}</div>
+              </v-btn>
+            </v-row>
+
+            <!-- When on other pages than the homepage, footer uses these links -->
+            <v-row
+              v-else
+              no-gutters
+              justify="center"
+              align="center"
+              class="mt-8"
+            >
+              <v-btn
+                @click="$router.push(`/${$i18n.locale}/#projects`)"
+                color="tertiary"
+                text
+              >
+                <div class="serif">I</div>
+                <div class="pl-1">{{ $t('header.projects') }}</div>
+              </v-btn>
+              <v-btn
+                @click="$router.push(`/${$i18n.locale}/#about`)"
+                color="tertiary"
+                text
+              >
+                <div class="serif">II</div>
+                <div class="pl-1">{{ $t('header.about') }}</div>
+              </v-btn>
+              <v-btn
+                @click="$router.push(`/${$i18n.locale}/#contact`)"
+                color="tertiary"
+                text
+              >
+                <div class="serif">III</div>
+                <div class="pl-1">{{ $t('header.contact') }}</div>
+              </v-btn>
+              <v-btn
+                :to="{ name: 'Other'}"
                 color="tertiary"
                 text
               >
