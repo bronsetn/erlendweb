@@ -59,7 +59,6 @@
             @click="openImage(index); imageDialog = true"
           >
             <v-img
-              class="pointer"
               height="250"
               :src="item.link"
             ><template v-slot:placeholder>
@@ -91,11 +90,11 @@
               :src="images[activeImage].link"
             >
               <v-row
-                class="fill-height ma-0"
+                class="fill-height"
                 align="center"
                 justify="center"
               >
-                <div class="pa-2 serif normal card-text">
+                <div class="image-text">
                   {{ images[activeImage].title }}
                 </div>
                 <v-btn
@@ -141,15 +140,19 @@
 
 <style scoped>
 
-.dialogImg:hover .card-text {
+.dialogImg:hover .image-text {
   opacity: 100%;
 }
 
-.card-text {
+.image-text {
+  padding: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em;
   color: white;
   background-color: hsla(226, 62%, 4%, 0.2);
   opacity: 0%;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
+  z-index: 11;
 }
 
 </style>
@@ -168,19 +171,19 @@ export default {
       images: [
         {
           link: "https://picsum.photos/700/700",
-          title: "Placeholder-1",
+          title: "Hei",
         },
         {
           link: "https://picsum.photos/500/500",
-          title: "Placeholder-2",
+          title: "Hoisann",
         },
         {
           link: "https://picsum.photos/800/800",
-          title: "Placeholder-3",
+          title: "Hallaisen",
         },
         {
           link: "https://picsum.photos/600/600",
-          title: "Placeholder-4",
+          title: "Halloen",
         },
       ],
     };

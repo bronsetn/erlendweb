@@ -1,0 +1,156 @@
+<template>
+  <v-col
+    cols="12"
+    sm="12"
+    md="6"
+    lg="6"
+    xl="6"
+  >
+    <v-card
+      color="secondary"
+      elevation="5"
+      height="400"
+      style="overflow-y: scroll"
+    >
+      <v-card-title>{{ $t('other.typography') }}<v-spacer></v-spacer>
+        <v-icon color="tertiary">mdi-language-css3</v-icon>
+      </v-card-title>
+      <v-container fluid>
+
+        <v-container>
+          <p class="parrallax pt-8">Simple<br>Parrallax<br>Effect</p>
+
+          <v-btn
+            icon
+            class="ma-4"
+            color="accent"
+            title="Codepen link"
+            target="_blank"
+            rel="noopener"
+            href="https://codepen.io/bronsetn/pen/VwmMXyV"
+          >
+            <v-icon x-large>mdi-codepen</v-icon>
+          </v-btn>
+        </v-container>
+
+        <v-container>
+          <p class="calligraphy">Welcome to</p>
+          <div class="bold">
+            <p>Hot</p>
+            <p>Coffee</p>
+            <p>Café</p>
+          </div>
+          <p class="calligraphy">Your local coffehouse</p>
+          <v-btn
+            icon
+            class="ma-4"
+            color="accent"
+            title="Codepen link"
+            target="_blank"
+            rel="noopener"
+            href="https://codepen.io/bronsetn/pen/oNYGdjO"
+          >
+            <v-icon x-large>mdi-codepen</v-icon>
+          </v-btn>
+
+        </v-container>
+
+      </v-container>
+    </v-card>
+  </v-col>
+</template>
+
+<style scoped>
+p {
+    margin: 0; 
+}
+
+.container {
+    outline: 1px solid var(--v-tertiary-base);
+}
+
+/* Parrallax */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+* {
+  --glitch-color-red: rgb(225, 32, 10);
+  --glitch-color-blue: rgb(75, 188, 213);
+}
+
+.parrallax {
+  font-family: 'Raleway', sans-serif;  
+  font-style: italic;
+  font-size: 3em;
+	letter-spacing: 0.15em;
+
+ text-shadow: 
+      0.15rem 0.15rem 0.15vw var(--glitch-color-blue), 
+      0.25rem 0.25rem 0.8vw var(--glitch-color-blue), 
+      -0.15rem -0.15rem 0.15vw var(--glitch-color-red), 
+      -0.25rem -0.25rem 0.8vw var(--glitch-color-red);
+
+   color: var(--v-tertiary-base);
+}
+
+
+
+/* Cafe */
+
+/* Cookie */
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+/* Ultra */
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+
+* {
+  --bold-shadow: #8BA0E4;
+}
+
+.calligraphy {
+  margin: 10px;
+  font-family: 'Cookie', cursive;
+  font-size: 3em;
+  line-height: 1;
+  color: var(--v-tertiary-base);
+
+  /* Grid for lines on either side */
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 25px 0;
+  grid-gap: 20px;
+}
+
+.calligraphy::before, .calligraphy::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid var(--v-tertiary-base);
+}
+
+.bold {
+  font-family: 'Ultra', serif;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  line-height: 1.2;
+  color: var(--v-tertiary-base);
+
+  text-shadow: 
+        1px 1px var(--bold-shadow),
+        1px 2px var(--bold-shadow),
+        1px 3px var(--bold-shadow),
+        1px 4px var(--bold-shadow),
+        1px 5px var(--bold-shadow),
+        1px 6px var(--bold-shadow),
+        1px 7px var(--bold-shadow),
+        1px 8px var(--bold-shadow),
+        1px 9px var(--bold-shadow),
+        1px 10px var(--bold-shadow);
+}
+.bold p {
+    font-size: 4em;
+}
+
+.bold p:nth-child(2) {
+  font-size: 5em;
+}
+
+</style>

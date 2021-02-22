@@ -86,7 +86,9 @@
         "threeJsButton": "Vis 3D box",
 
         "svgTest": "SVG animasjonstest",
-        "gallery": "Galleri layout med Vuetify"
+        "gallery": "Galleri layout med Vuetify",
+
+        "typography": "Typografi med CSS"
     }
 
 }

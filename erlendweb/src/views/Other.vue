@@ -16,10 +16,11 @@
 
         <v-row justify="center">
 
+          <Typography></Typography>
           <SvgTest></SvgTest>
-          <ModelViewer></ModelViewer>
-          <Nasa></Nasa>
           <Forecast></Forecast>
+          <Nasa></Nasa>
+          <ModelViewer></ModelViewer>
           <Gallery></Gallery>
 
         </v-row>
@@ -29,19 +30,21 @@
 </template>
 
 <script>
+import Typography from "./layout-elements/Typography.vue";
+import SvgTest from "./layout-elements/SvgTest.vue";
+import ModelViewer from "./3d-elements/ModelViewer.vue";
 import Nasa from "./api-elements/Nasa.vue";
 import Forecast from "./api-elements/Forecast.vue";
-import SvgTest from "./layout-elements/SvgTest.vue";
 import Gallery from "./layout-elements/Gallery.vue";
-import ModelViewer from "./3d-elements/ModelViewer.vue";
 
 export default {
   components: {
-    Nasa,
-    Forecast,
-    ModelViewer,
-    Gallery,
+    Typography,
     SvgTest,
+    ModelViewer,
+    Forecast,
+    Nasa,
+    Gallery,
   },
 
   data() {

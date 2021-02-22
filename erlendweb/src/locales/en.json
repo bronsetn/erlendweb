@@ -81,7 +81,8 @@
         "threeJsButton": "Show 3D box",
 
         "svgTest": "SVG animation-test",
-        "gallery": "Gallery layout with Vuetify"
+        "gallery": "Gallery layout with Vuetify",
+        "typography": "Typography with CSS"
     }
 
 }
