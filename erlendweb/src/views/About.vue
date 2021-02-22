@@ -94,7 +94,7 @@
                   </v-col>
                 </v-row>
 
-                <v-card-text class="ma-0 pa-0">
+                <v-card-text class="ma-0 pa-4">
 
                   <p class="normal">
                     {{ $t('about.intro1') }}
@@ -104,13 +104,6 @@
                     class="normal"
                     v-html="$t('about.intro2')"
                   ></p>
-
-                  <!-- <h3 class="thick pa-4"> {{ $t('about.bachelor') }}
-                  </h3>
-                  <p
-                    class="normal"
-                    v-html="$t('about.bachelorDescription')"
-                  ></p> -->
 
                   <h3 class="thick pa-4">{{ $t('about.wordpress') }}</h3>
 
@@ -134,7 +127,7 @@
                     class="pa-4 pb-8"
                   >
                     <v-col
-                      class="pa-0 ma-0"
+                      class="pr-4 pl-4 ma-0"
                       v-for="(item, index) in techs"
                       :item="item"
                       :key="index"
@@ -181,10 +174,6 @@ export default {
         {
           name: "Vuetify",
           icon: "mdi-vuetify",
-        },
-        {
-          name: "Unity",
-          icon: "mdi-unity",
         },
       ]
     }

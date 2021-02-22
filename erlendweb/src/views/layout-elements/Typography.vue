@@ -41,6 +41,7 @@
             <p>Café</p>
           </div>
           <p class="calligraphy">Your local coffehouse</p>
+
           <v-btn
             icon
             class="ma-4"
@@ -69,6 +70,8 @@ p {
     outline: 1px solid var(--v-tertiary-base);
 }
 
+
+
 /* Parrallax */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
@@ -92,6 +95,12 @@ p {
    color: var(--v-tertiary-base);
 }
 
+@media (max-width: 960px) and (max-height: 960px) {
+  .parrallax {
+      font-size: 2em;
+  }
+}
+
 
 
 /* Cafe */
@@ -107,11 +116,12 @@ p {
 }
 
 .calligraphy {
-  margin: 10px;
   font-family: 'Cookie', cursive;
   font-size: 3em;
   line-height: 1;
   color: var(--v-tertiary-base);
+  padding-top: 20px;
+
 
   /* Grid for lines on either side */
   display: grid;
@@ -130,7 +140,7 @@ p {
   font-family: 'Ultra', serif;
   font-weight: bold;
   letter-spacing: 0.2em;
-  line-height: 1.2;
+  line-height: 1.4;
   color: var(--v-tertiary-base);
 
   text-shadow: 
@@ -151,6 +161,21 @@ p {
 
 .bold p:nth-child(2) {
   font-size: 5em;
+}
+
+@media (max-width: 960px) and (max-height: 960px) {
+  .calligraphy {
+  font-size: 2em;
+}
+
+  .bold p {
+  font-size: 2em;
+}
+
+  .bold p:nth-child(2) {
+  font-size: 3em;
+}
+
 }
 
 </style>

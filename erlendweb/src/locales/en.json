@@ -56,7 +56,7 @@
         },
         {
             "title": "Wordpress website",
-            "description": "Website used for publishing some of the projects from my bachelor study. The process of setting up the websiteis relativly easy as you can simply use Wordpresses UX, at the same time it's also a lot less exiting as there are many restrictions with using a CMS.",
+            "description": "Website used for publishing some of the projects from my bachelor study.",
             "content": "I have tried to carry over many of the design choises and elements from the Wordpress-site to erlendweb.no. Some of the similarities between the site's is the color palette used and some of the graphic elements used such as the logo.",
             "date": "Summer 2019",
             "link": "https://erlendworkblog.wordpress.com/",

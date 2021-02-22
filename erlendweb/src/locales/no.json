@@ -50,7 +50,7 @@
         },
         {
             "title": "Prios Events",
-            "description": "Nettsted for blant annet å kunne holde jobbmesser og lignende typer messer. Jeg arbeidet med utvikling av frontend og design av nettstedet for Prios kompetanse AS. Nettstedet er et av mine første prosjekter med bruk av VueJS og er fortsatt under utvikling hos Prios.",
+            "description": "Nettsted for blant annet å kunne holde jobbmesser og lignende typer messer. Jeg arbeidet med utvikling av frontend og design for nettstedet hos Prios kompetanse AS. Nettstedet er et av mine første prosjekter med bruk av VueJS og er fortsatt under utvikling hos Prios.",
             "content": "Gjennom prosjekt fikk jeg jobbet med implimentering av ett av Prios sine systemer inn i et nytt nettsted, jeg fikk også et innblikk i flere verktøy og metoder for moderne webutvikling, erfaring jeg blant annet har kunnet tatt i bruk for å sette opp erlendweb",
             "date": "Høst 2020",
             "link": "https://prios-events.netlify.app/",
@@ -60,7 +60,7 @@
         },
         {
             "title": "Wordpress-nettsted",
-            "description": "Nettsted jeg brukte til publisering av prosjekter og oppgaver fra bachelorstudiet. Prossesen med å sette opp nettstedet er relativt enkelt på grunn av Wordpress sitt grensesnitt, men også noe mindre spennende på grunn av restriksjonene som kommer med CMS-løsninger.",
+            "description": "Nettsted jeg brukte til publisering av prosjekter og oppgaver fra bachelorstudiet. ",
             "content": "Jeg har forsøkt å videreføre noen av designvalgene og elementene fra Wordpress-siden videre på erlendweb. Noen av de større likhetene mellom sidene er fargevalget og diverse grafiske elementer som sidens logo. ",
             "date": "Sommer 2019",
             "link": "https://erlendworkblog.wordpress.com/",
