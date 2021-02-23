@@ -84,13 +84,13 @@
         >
           <v-card color="primary">
             <v-img
-              class="dialogImg"
+              class="dialogImage"
               max-height="80vh"
               contain
               :src="images[activeImage].link"
             >
               <v-row
-                class="fill-height"
+                class="fill-height imageOverlay"
                 align="center"
                 justify="center"
               >
@@ -140,19 +140,23 @@
 
 <style scoped>
 
-.dialogImg:hover .image-text {
+.imageOverlay {
+  background: linear-gradient(0deg, #00000080 10%, #ffffff00 100%) !important;
+}
+
+.dialogImage:hover .image-text {
   opacity: 100%;
 }
 
 .image-text {
-  padding: 1rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.5em;
-  color: white;
-  background-color: hsla(226, 62%, 4%, 0.2);
   opacity: 0%;
   transition: 0.5s ease-in-out;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+  color: #fff;
   z-index: 11;
+  position: absolute;
+  bottom: 25px;
 }
 
 </style>
@@ -171,19 +175,19 @@ export default {
       images: [
         {
           link: "https://picsum.photos/700/700",
-          title: "Hei",
+          title: "Lorem ipsum dolor sit amet",
         },
         {
           link: "https://picsum.photos/500/500",
-          title: "Hoisann",
+          title: "Consectetur adipiscing elit",
         },
         {
           link: "https://picsum.photos/800/800",
-          title: "Hallaisen",
+          title: "Sed do eiusmod tempor incididunt",
         },
         {
           link: "https://picsum.photos/600/600",
-          title: "Halloen",
+          title: "Lorem ipsum dolor sit amet",
         },
       ],
     };
