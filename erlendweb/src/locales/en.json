@@ -3,14 +3,11 @@
         "clickForMore": "Click for more info",
         "more": "Show more",
         "less": "Show less",
-
         "about": "About",
         "visit": "Visit site",
-
         "next": "Next",
         "previous": "Previous"
     },
-
     "header": {
         "projects": "Projects",
         "about": "About",
@@ -34,7 +31,18 @@
     "contact": {
         "description": "Messages from here are sent to bronsetherlend@gmail.com"
     },
-    "projects": [{
+    "projects": [
+        {
+            "title": "Webography",
+            "description": "Website made to show off some interesting design and tricks for typography on the web.",
+            "content": "I decided on making this page as a smaller personall project because I find typography with CSS to be kinda neat and something I wanted to get better at. I want the page to work as a personal library as well as a place other people can find inspiration or resources for typography on the web.",
+            "date": "Winter 2021",
+            "link": "https://webography.netlify.app",
+            "alt": "Screenshot from https://webography.netlify.app",
+            "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwebography.png?alt=media&token=1923b376-afcd-4789-8176-b3b0b8609e34",
+            "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwebography.png?alt=media&token=1923b376-afcd-4789-8176-b3b0b8609e34"
+        },
+        {
             "title": "Maribro.no",
             "description": "Website made to show of the art made by Mari Brønseth. The site is made with VueJs and hosted on Netlify. The site consist of a page to present the artist aswell as a image-gallery for many of the artworks she's made.",
             "content": "One of the challenges with the development of the site was to find a good solution for presenting the different versions of each design. In the beginning the gallery consisted of all the images in the database listed one after the other. But I decided to to change it so that each design has it's own cluster, consisting of all of it's versions.",
@@ -67,22 +75,17 @@
     ],
     "other": {
         "description": "Smaller experiments with code and design.",
-
         "nasa": "Daily image from Nasa",
         "nasaDescription": "Here i have used one of Nasa's public API's that gives out a new space-related image each day.",
         "nasaSources": "For a list of all images published since 2015 visit: <a class='animatedLink' href='https://apod.nasa.gov/apod/archivepix.html' rel='noopener' target='_blank' >https://apod.nasa.gov/apod/archivepix.html</a><br>For information about using the API i have used this tutorial: <a class='animatedLink' href='https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/' rel='noopener' target='_blank'>https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/</a>",
-
         "forecast": "Today's forecast",
         "forecastCaption": "Get forecast",
         "forecastDescription": "This component uses the browsers geolocation to get a forecast for your coordinates. If geolocation is disabled a forecast from Oslo is fetched instead.",
         "forecastSources": "To get watherdata Openweathermap's 5 day forecast API is used: <a class='animatedLink' href='https://openweathermap.org/api' rel='noopener' target='_blank'>https://openweathermap.org/api</a><br>To get the city or place name Openstreetmap's API is used: <a class='animatedLink' href='https://www.openstreetmap.org/' rel='noopener' target='_blank'>https://www.openstreetmap.org/</a>",
-
         "threeJs": "3D display with ThreeJS",
         "threeJsButton": "Show 3D box",
-
         "svgTest": "SVG animation-test",
         "gallery": "Gallery layout with Vuetify",
         "typography": "Typography with CSS"
     }
-
 }

@@ -3,25 +3,20 @@
         "clickForMore": "Klikk for mer info",
         "more": "Vis mer",
         "less": "Vis mindre",
-
         "about": "Om dette",
         "visit": "Besøk siden",
-
         "next": "Neste",
         "previous": "Forrige"
     },
-
     "header": {
         "projects": "Prosjekter",
         "about": "Om",
         "contact": "Ta kontakt",
         "other": "Annet"
     },
-
     "front": {
         "subtitle": "Junior frontend utvikler"
     },
-
     "about": {
         "intro1": "Jeg er en 23-åring fra Inderøy med en bachelor innenfor digitale medier og design. Dette nettstedet er ment som en portefølje i tillegg til et sted jeg kan ekspirementere innenfor utvikling og design.",
         "intro2": "Jeg har ambisjoner om å bli dreven innenfor frontend utvikling og har i høst arbeidet hos <a class='animatedLink' target='_blank' rel='noopener' href='https://prios.no' >Prios Kompetanse AS</a>, hvor jeg har blitt kjent med bruk av VueJS.",
@@ -33,12 +28,21 @@
         "erlendwebDescription": "Erlendweb er laget med bruk av VueJS og satt opp med Netlify som vert. Kildekoden til siden ligger åpen her:<br><a class='animatedLink' target='_blank' rel='noopener' href='https://github.com/bronsetn/erlendweb'>https://github.com/bronsetn/erlendweb</a>",
         "skills": "Ferdigheter"
     },
-
     "contact": {
         "description": "Beskjeder herfra sendes direkte til bronsetherlend@gmail.com"
     },
-
-    "projects": [{
+    "projects": [
+        {
+            "title": "Webography",
+            "description": "Nettsted for å vise noen interssante design og triks for typografy på nettet.",
+            "content": "Jeg lagde denne siden som et mindre prosjekt for å leke meg med og for å bli bedre i typografi med bruk av CSS. Noe av målet med siden er at den skal fungere som et sted jeg kan lagre eksempler jeg liker, i tillegg til en side hvor man kan finne inspirasjon og nyttige ressurser for typografi på nettet.",
+            "date": "Vinter 2021",
+            "link": "https://webography.netlify.app",
+            "alt": "Screenshot from https://webography.netlify.app",
+            "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwebography.png?alt=media&token=1923b376-afcd-4789-8176-b3b0b8609e34",
+            "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwebography.png?alt=media&token=1923b376-afcd-4789-8176-b3b0b8609e34"
+        },
+        {
             "title": "Maribro.no",
             "description": "Nettsted for å vise tegninger og malerier laget av Mari Brønseth. Laget i VueJs og satt opp med Netlify som vert. Nettstedet består av en side for å presentere artisten, i tilleg til et bildegalleri for kunstverkene hun har laget.",
             "content": "Noe av det som var utfordrende ved utviklingen av siden var å tenke ut en god måte å presentere de forskjellige designene til hvert motiv. I begynnelsen hadde jeg alle bilder i databasen listet opp ettet hverandre, men Jjg endte opp med å forandre det til at hvert motiv har en egen klynge med alle sine versjoner.",
@@ -69,26 +73,19 @@
             "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwordpress-collage.png?alt=media&token=bed681d8-f31a-40c1-b66b-638a2c5fc86e"
         }
     ],
-
     "other": {
         "description": "Mindre eksperimenter med koding og design.",
-
         "nasa": "Dagens bilde fra Nasa",
         "nasaDescription": "Her har jeg brukt en av Nasa sine offentlige APIer som publiserer et nytt rom-bilde pluss informasjon hver dag.",
         "nasaSources": "En liste over alle bildene publisert siden 2015 er å finne her: <a class='animatedLink' href='https://apod.nasa.gov/apod/archivepix.html' target='_blank' rel='noopener'>https://apod.nasa.gov/apod/archivepix.html</a><br>For informasjon om å ta i bruk APIen har jeg hovedsaklig brukt denne veiledningen: <a class='animatedLink' href='https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/' rel='noopener' target='_blank'>https://blog.jakelee.co.uk/an-introduction-to-the-nasa-apod-api/</a>",
-
         "forecast": "Dagens værmelding",
         "forecastCaption": "Hent værmelding",
         "forecastDescription": "Denne komponenten tar i bruk nettleserens geolokasjon for å hente ut værmeldingen for dine koordinater. Om geoloaksjon er deaktivert hentes det værmelding fra Oslo istedet.",
         "forecastSources": "For å hente værdata er det brukt Openweathermap sin 5 dagers værmeldings-API: <a class='animatedLink' href='https://openweathermap.org/api' target='_blank' rel='noopener'>https://openweathermap.org/api</a><br>For å hente by eller stedsnavn tar jeg i bruk openstreetmap sin API: <a  class='animatedLink' href='https://www.openstreetmap.org/' rel='noopener' target='_blank'>https://www.openstreetmap.org/</a>",
-
         "threeJs": "3D visning med ThreeJS",
         "threeJsButton": "Vis 3D box",
-
         "svgTest": "SVG animasjonstest",
         "gallery": "Galleri layout med Vuetify",
-
         "typography": "Typografi med CSS"
     }
-
 }
