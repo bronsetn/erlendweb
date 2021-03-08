@@ -154,7 +154,6 @@ export default {
   data() {
     return {
       techs: [
-
         {
           name: "HTML",
           icon: "mdi-language-html5",

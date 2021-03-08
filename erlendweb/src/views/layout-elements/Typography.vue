@@ -66,10 +66,6 @@ p {
     margin: 0; 
 }
 
-.container {
-    outline: 1px solid var(--v-tertiary-base);
-}
-
 
 
 /* Parrallax */

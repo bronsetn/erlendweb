@@ -4,7 +4,6 @@
         "more": "Show more",
         "less": "Show less",
         "about": "About",
-        "visit": "Visit site",
         "next": "Next",
         "previous": "Previous"
     },
@@ -25,7 +24,7 @@
         "wordpress": "Wordpress",
         "wordpressDescription": "Until recently I have used Wordpress to publish projects from my course, they are still here:<br><a class='animatedLink' target='_blank' rel='noopener' href='https://erlendworkblog.wordpress.com'>https://erlendworkblog.wordpress.com</a>",
         "erlendweb": "Erlendweb",
-        "erlendwebDescription": "Erlendweb is made with VueJS and hosted on Netlify. The source code for this page is public at:<br><a  class='animatedLink' target='_blank' rel='noopener' href='https://github.com/bronsetn/erlendweb'>https://github.com/bronsetn/erlendweb</a>",
+        "erlendwebDescription": "Erlendweb is made with VueJS/Vuetify and hosted on Netlify. The source code for this page is public at:<br><a  class='animatedLink' target='_blank' rel='noopener' href='https://github.com/bronsetn/erlendweb'>https://github.com/bronsetn/erlendweb</a>",
         "skills": "Skills"
     },
     "contact": {
@@ -34,43 +33,109 @@
     "projects": [
         {
             "title": "Webography",
-            "description": "Website made to show off some interesting design and tricks for typography on the web.",
+            "description": "A smaller website made to show off some interesting design and tricks for typography on the web.",
             "content": "I decided on making this page as a smaller personall project because I find typography with CSS to be kinda neat and something I wanted to get better at. I want the page to work as a personal library as well as a place other people can find inspiration or resources for typography on the web.",
             "date": "Winter 2021",
             "link": "https://webography.netlify.app",
             "alt": "Screenshot from https://webography.netlify.app",
             "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwebography.png?alt=media&token=1923b376-afcd-4789-8176-b3b0b8609e34",
-            "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwebography.png?alt=media&token=1923b376-afcd-4789-8176-b3b0b8609e34"
+            "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwebography.png?alt=media&token=1923b376-afcd-4789-8176-b3b0b8609e34",
+            "stack": [
+                {
+                    "name": "CSS",
+                    "icon": "mdi-language-css3"
+                },
+                {
+                    "name": "VueJS",
+                    "icon": "mdi-vuejs"
+                }
+            ]
         },
         {
-            "title": "Maribro.no",
-            "description": "Website made to show of the art made by Mari Brønseth. The site is made with VueJs and hosted on Netlify. The site consist of a page to present the artist aswell as a image-gallery for many of the artworks she's made.",
-            "content": "One of the challenges with the development of the site was to find a good solution for presenting the different versions of each design. In the beginning the gallery consisted of all the images in the database listed one after the other. But I decided to to change it so that each design has it's own cluster, consisting of all of it's versions.",
+            "title": "Maribro",
+            "description": "A website made to show of the art made by Mari Brønseth. The site is made with VueJs and hosted on Netlify. The site consist of a page to present the artist aswell as a image-gallery for many of the artworks she's made.",
+            "content": "One of the challenges with the development of the site was to find a good solution for presenting the different versions of each design. Another challenge was dealing with a large number of image files, as it slowed loadingtime for the site. I have tried to improve loadingtime by compressing all of the imagefiles. The next step will be to add all the images to an external server or to implement Netlify Large Media to the page.",
             "date": "Winter 2021",
             "link": "https://maribro.no",
             "alt": "Screenshot from https://maribro.no",
             "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb-c.png?alt=media&token=08f0da3b-4ea0-41dc-81c4-4848a203923d",
-            "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb-gallery-c.png?alt=media&token=7466e583-dedf-4c9c-b39e-d8e3d4d26b17"
+            "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb-gallery-c.png?alt=media&token=7466e583-dedf-4c9c-b39e-d8e3d4d26b17",
+            "stack": [
+                {
+                    "name": "Vuetify",
+                    "icon": "mdi-vuetify"
+                },
+                {
+                    "name": "VueJS",
+                    "icon": "mdi-vuejs"
+                },
+                {
+                    "name": "NodeJS",
+                    "icon": "mdi-nodejs"
+                }
+            ]
         },
         {
             "title": "Prios Events",
-            "description": "Website meant for job fairs and similar types of events. I worked with the development of the front-end and design of the site for Prios Kompetanse AS. The site is one of my first projects working with VueJS and is still being devolped further at Prios.",
+            "subtitle": "Project for Prios Kompetanse AS",
+            "description": "A website meant for job fairs and similar types of events. I worked with the development of the front-end and design of the site for Prios Kompetanse AS. The site is one of my first projects working with VueJS and is still being devolped further at Prios.",
             "content": "Through this project I got to work with implimenting one of Prios's systems in to a new website, I also got some insight into the tools and methods used in modern web development. Experience I have made us of when developing erlendweb.",
             "date": "Autumn 2020",
             "link": "https://prios-events.netlify.app/",
             "alt": "Screenshot from prios.events",
             "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-c.png?alt=media&token=1bfb24da-73be-404d-9a51-1c832183e9df",
-            "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-profile.png?alt=media&token=93c95cc5-f5b6-4fad-b88d-d4e6b4885941"
+            "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-profile.png?alt=media&token=93c95cc5-f5b6-4fad-b88d-d4e6b4885941",
+            "stack": [
+                {
+                    "name": "Vuetify",
+                    "icon": "mdi-vuetify"
+                },
+                {
+                    "name": "VueJS",
+                    "icon": "mdi-vuejs"
+                },
+                {
+                    "name": "NodeJS",
+                    "icon": "mdi-nodejs"
+                }
+            ]
         },
         {
-            "title": "Wordpress website",
-            "description": "Website used for publishing some of the projects from my bachelor study.",
-            "content": "I have tried to carry over many of the design choises and elements from the Wordpress-site to erlendweb.no. Some of the similarities between the site's is the color palette used and some of the graphic elements used such as the logo.",
+            "title": "Bachelor thesis",
+            "subtitle": "Augmented reality to show the history of emigration",
+            "description": "My bachelor thesis for digital media and design at Østfold University College. The purpose for the project was to lay the foundations for an AR-application to strenghten the experience for visitors to Kvam municipality.",
+            "content": "The task involved developing a AR-application protoype with the possibility of placeing 3D-models through GPS-coordinates. The app was deveolped in Unity and the 3D-models where made with Maya Autodesk. The Ar functionality was achieved through the AR-motor -Vuforia that exist on Android phones and the Unity-extension AR + GPS Location.",
+            "date": "Vår 2020",
+            "link": "https://erlendworkblog.wordpress.com/2020/06/11/bacheloroppgave-augmented-reality-til-a-vise-utvandringshistorie/",
+            "alt": "Screenshot from prios events",
+            "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fbachelor.png?alt=media&token=bcf17ab8-8d4a-4004-be06-b2f0484a790c",
+            "stack": [
+                {
+                    "name": "Unity",
+                    "icon": "mdi-unity"
+                },
+                {
+                    "name": "Android",
+                    "icon": "mdi-android"
+                }
+            ]
+        },
+        {
+            "title": "Erlendworkblog",
+            "subtitle": "Wordpress blog",
+            "description": "A website used for publishing some of the projects from my bachelor study.",
+            "content": "I have tried to carry over many of the design choises and elements from the Wordpress-site to erlendweb.no. Some of the similarities between the site's is the color palette used and some of the graphic elements used -such as the logo.",
             "date": "Summer 2019",
             "link": "https://erlendworkblog.wordpress.com/",
             "alt": "Sreenshot from https://erlendworkblog.wordpress.com",
             "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwordpress-c.png?alt=media&token=a9f8695f-3b05-4fc7-8aec-0cd546f1b402",
-            "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwordpress-collage.png?alt=media&token=bed681d8-f31a-40c1-b66b-638a2c5fc86e"
+            "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwordpress-collage.png?alt=media&token=bed681d8-f31a-40c1-b66b-638a2c5fc86e",
+            "stack": [
+                {
+                    "name": "Wordpress",
+                    "icon": "mdi-wordpress"
+                }
+            ]
         }
     ],
     "other": {

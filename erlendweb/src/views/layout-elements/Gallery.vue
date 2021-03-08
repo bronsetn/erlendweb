@@ -154,7 +154,7 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.5em;
   color: #fff;
-  z-index: 11;
+  z-index: 1;
   position: absolute;
   bottom: 25px;
 }

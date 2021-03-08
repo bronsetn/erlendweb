@@ -1,58 +1,62 @@
     /* For smooth autoscroll */
-    
+
     html {
         scroll-behavior: smooth;
     }
+
     /* ---------- */
+
     /* TYPOGRAPHY */
+
     /* ---------- */
-    
+
     @import url('https://fonts.googleapis.com/css2?family=Domine&family=Roboto:wght@300&display=swap');
-    #app {
+    * {
         font-family: 'Roboto', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
+        line-height: 1.5;
     }
-    
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+
+    h1, h2, h3, h4, h5, h6 {
         font-family: 'Domine', serif;
         font-weight: 350;
     }
-    
+
     .serif {
         font-family: 'Domine', serif !important;
     }
-    
+
     .normal {
         font-weight: 400;
     }
-    
+
     .light {
         font-weight: 300;
         font-size: 0.9rem;
     }
-    
+
     .thick {
         font-weight: 500;
     }
+
     /* --------- */
+
     /* - Other - */
+
     /* --------- */
+
     /* Force into center */
-    
+
     .center {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     /* Decoration for more/less tags on the end of clamped text */
-    
+
     .clamp {
         text-decoration: none;
         font-weight: 400;
@@ -60,20 +64,21 @@
         font-family: 'Roboto', sans-serif;
         margin-left: 2px;
     }
-    
+
     /* Fancy hover links */
+
     /* Technique used taken from: https://www.justin.ly/css-animated-underline-hover-links/ */
-    
+
     a {
         text-decoration: none;
     }
-    
+
     .animatedLink {
         text-decoration: none;
         display: inline-block;
         position: relative;
     }
-    
+
     .animatedLink:after {
         bottom: 0;
         content: "";
@@ -85,7 +90,7 @@
         transition: width 0.5s ease 0s, left 0.5s ease 0s;
         width: 0;
     }
-    
+
     .animatedLink:hover:after {
         width: 100%;
         left: 0;

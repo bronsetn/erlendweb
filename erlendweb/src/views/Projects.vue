@@ -16,7 +16,7 @@
           sm="6"
           md="4"
           lg="4"
-          xl="3"
+          xl="4"
         >
           <v-card
             @click="openDialog(index)"
@@ -27,8 +27,8 @@
           >
             <v-container>
               <v-img
-                alt="Image of website, from earlier projects"
                 height="300"
+                :alt="item.alt"
                 contain
                 :src="item.imageCompressed"
                 :lazy-src="item.imageCompressed"
@@ -36,50 +36,32 @@
             </v-container>
 
             <v-card-title class="ma-0 pt-0 pb-0">
-              <h2 class="text-truncate">
-                {{ item.title }}
-              </h2>
+              <h2 class="text-truncate">{{ item.title }}</h2>
             </v-card-title>
 
             <v-card-text>
-              <p class="caption text-left pa-0 ma-0 pb-4">
+              <p class="subtitle-2 text-left">
                 {{ item.date }}
               </p>
               <p class="text-left text--primary description">
                 {{item.description}}
               </p>
+              <p class="subtitle-2 text-left">
+                {{ $t('misc.clickForMore') }}
+              </p>
             </v-card-text>
-            <p
-              class="body-2 text-left text--secondary pl-4"
-              bottom
-              absolute
-            >
-              {{ $t('misc.clickForMore') }}
-            </p>
+
           </v-card>
         </v-col>
       </v-row>
 
-      <!-- DIALOG PC screen -->
+      <!-- Dialog on desktop -->
       <v-dialog
         v-if="!$vuetify.breakpoint.mobile"
         v-model="dialog"
         transition="slide-x-transition"
-        fullscreen
+        max-width="80vw"
       >
-        <v-btn
-          class="ml-8 mt-8"
-          style="z-index: 1;"
-          fixed
-          top
-          left
-          icon
-          color="tertiary"
-          title="Go back"
-          @click="dialog = false"
-        >
-          <v-icon large>mdi-arrow-left</v-icon>
-        </v-btn>
         <v-card color="secondary">
           <div class="skewedContainer">
             <div class="content">
@@ -88,19 +70,14 @@
                 no-gutters
               >
                 <v-col cols="12">
-                  <h1 class="pt-4 pb-2">{{ projects[activeProject].title}}</h1>
-                  <p><a
-                      rel="noopener"
-                      target="_blank"
-                      class="animatedLink"
-                      :href="projects[activeProject].link"
-                    >{{ projects[activeProject].link }}
-                    </a></p>
-                  <p class="text--secondary">
+                  <h1 class="font-weight-regular">{{ projects[activeProject].title}}</h1>
+                  <h2 class="font-weight-thinr">{{ projects[activeProject].subtitle}}</h2>
+                  <p class="text--secondary body-2 pt-2">
                     {{ projects[activeProject].date }}
                   </p>
                 </v-col>
               </v-row>
+
               <v-container>
                 <v-img
                   max-height="500px"
@@ -112,51 +89,72 @@
               </v-container>
             </div>
           </div>
-          <v-card-text>
-            <v-row
-              justify="center"
-              no-gutters
-            >
-              <v-col
-                cols="12"
-                sm="12"
-                md="10"
-                lg="6"
-                xl="6"
+
+          <v-card-text class="text-content">
+
+            <p><a
+                rel="noopener"
+                target="_blank"
+                class="animatedLink"
+                :href="projects[activeProject].link"
+              >{{ projects[activeProject].link }}
+              </a></p>
+
+            <p class="text--primary">{{ projects[activeProject].description }}</p>
+            <p class="text--primary">{{ projects[activeProject].content }}</p>
+
+            <v-row justify="center">
+              <div
+                v-for="(item, index) in projects[activeProject].stack"
+                :item="item"
+                :key="index"
+                class="pr-2 pl-2"
               >
-                <p class="text--primary">{{ projects[activeProject].description }}</p>
-                <p class="text--primary">{{ projects[activeProject].content }}</p>
-              </v-col>
+                <v-icon
+                  disabled
+                  large
+                  :title="projects[activeProject].stack[index].name"
+                >{{ projects[activeProject].stack[index].icon }}</v-icon>
+                <p class="text--primary pt-2">{{ projects[activeProject].stack[index].name }}</p>
+              </div>
             </v-row>
-            <v-row no-gutters>
-              <v-btn
-                text
-                @click="previousProject()"
-              >
-                <v-icon>mdi-chevron-left </v-icon>{{ $t('misc.previous') }}
-              </v-btn>
-              <v-spacer>
-                <v-btn
-                  text
-                  color="accent"
-                  rel="noopener"
-                  target="_blank"
-                  :href="projects[activeProject].link"
-                >{{ $t('misc.visit') }}
-                  <v-icon
-                    color="accent"
-                    small
-                  >mdi-launch</v-icon>
-                </v-btn>
-              </v-spacer>
-              <v-btn
-                text
-                @click="nextProject()"
-              >
-                {{ $t('misc.next') }}<v-icon>mdi-chevron-right</v-icon>
-              </v-btn>
-            </v-row>
+
           </v-card-text>
+
+          <v-btn
+            absolute
+            top
+            right
+            icon
+            color="tertiary"
+            title="Close"
+            @click="dialog = false"
+          >
+            <v-icon large>mdi-close</v-icon>
+          </v-btn>
+
+          <v-btn
+            absolute
+            bottom
+            left
+            text
+            title="Previous"
+            @click="previousProject()"
+          >
+            <v-icon>mdi-chevron-left </v-icon>{{ $t('misc.previous') }}
+          </v-btn>
+
+          <v-btn
+            absolute
+            bottom
+            right
+            text
+            title="Next"
+            @click="nextProject()"
+          >
+            {{ $t('misc.next') }}<v-icon>mdi-chevron-right</v-icon>
+          </v-btn>
+
         </v-card>
       </v-dialog>
 
@@ -167,26 +165,7 @@
         fullscreen
         v-else
       >
-        <v-btn
-          class="mt-2"
-          fixed
-          top
-          left
-          fab
-          color="tertiary"
-          title="Go back"
-          @click="dialog = false"
-          small
-        >
-          <v-icon
-            color="primary"
-            large
-          >mdi-arrow-left</v-icon>
-        </v-btn>
-        <v-card
-          color="secondary"
-          class="pb-16"
-        >
+        <v-card color="secondary">
           <div
             class="skewedContainer"
             style="padding: 25px 0 0 0"
@@ -198,19 +177,14 @@
                 class="pt-16"
               >
                 <v-col cols="12">
-                  <h1 class="pt-4 pb-2">{{  projects[activeProject].title }}</h1>
-                  <p><a
-                      rel="noopener"
-                      target="_blank"
-                      class="animatedLink"
-                      :href="projects[activeProject].link"
-                    >{{ projects[activeProject].link }}
-                    </a></p>
-                  <p class="text--secondary">
+                  <h1>{{  projects[activeProject].title }}</h1>
+                  <h3>{{ projects[activeProject].subtitle}}</h3>
+                  <p class="text--secondary body-2">
                     {{ projects[activeProject].date }}
                   </p>
                 </v-col>
               </v-row>
+
               <v-container>
                 <v-img
                   contain
@@ -221,48 +195,70 @@
               </v-container>
             </div>
           </div>
-          <v-card-text>
+
+          <v-card-text class="text-content">
+
+            <p><a
+                rel="noopener"
+                target="_blank"
+                class="animatedLink"
+                :href="projects[activeProject].link"
+              >{{ projects[activeProject].link }}
+              </a></p>
+
+            <p class="text--primary">{{ projects[activeProject].description }}</p>
+            <p class="text--primary">{{ projects[activeProject].content }}</p>
+
             <v-row justify="center">
-              <v-col
-                cols="12"
-                sm="12"
-                md="10"
-                lg="6"
-                xl="6"
+              <div
+                v-for="(item, index) in projects[activeProject].stack"
+                :item="item"
+                :key="index"
+                class="pr-2 pl-2"
               >
-                <p class="text--primary">{{ projects[activeProject].description }}</p>
-                <p class="text--primary">{{ projects[activeProject].content }}</p>
-                <v-btn
-                  text
-                  color="accent"
-                  rel="noopener"
-                  target="_blank"
-                  :href="projects[activeProject].link"
-                >{{ $t('misc.visit') }}
-                  <v-icon
-                    color="accent"
-                    small
-                  >mdi-launch</v-icon>
-                </v-btn>
-              </v-col>
+                <v-icon
+                  disabled
+                  medium
+                >{{ projects[activeProject].stack[index].icon }}</v-icon>
+                <p class="text--primary pt-2">{{ projects[activeProject].stack[index].name }}</p>
+              </div>
             </v-row>
-            <v-row no-gutters>
-              <v-btn
-                text
-                @click="previousProject()"
-              >
-                <v-icon>mdi-chevron-left </v-icon>{{ $t('misc.previous') }}
-              </v-btn>
-              <v-spacer>
-              </v-spacer>
-              <v-btn
-                text
-                @click="nextProject()"
-              >
-                {{ $t('misc.next') }}<v-icon>mdi-chevron-right</v-icon>
-              </v-btn>
-            </v-row>
+
           </v-card-text>
+
+          <v-btn
+            fixed
+            top
+            right
+            icon
+            title="Close"
+            @click="dialog = false"
+          >
+            <v-icon large>mdi-close</v-icon>
+          </v-btn>
+
+          <v-btn
+            absolute
+            bottom
+            left
+            text
+            title="Previous"
+            @click="previousProject()"
+          >
+            <v-icon>mdi-chevron-left </v-icon>{{ $t('misc.previous') }}
+          </v-btn>
+
+          <v-btn
+            absolute
+            bottom
+            right
+            text
+            title="Next"
+            @click="nextProject()"
+          >
+            {{ $t('misc.next') }}<v-icon>mdi-chevron-right</v-icon>
+          </v-btn>
+
         </v-card>
       </v-dialog>
 
@@ -307,6 +303,13 @@ export default {
 
 <style scoped>
 
+.text-content {
+  margin: 0 auto;
+  max-width: 50em;
+  padding: 20px !important;
+  padding-bottom: 50px !important;
+}
+
 .description {
     overflow: hidden;
     display: -webkit-box;
@@ -322,14 +325,14 @@ export default {
 }
 
 .skewedContainer {
-  background: var(--v-primary-base);
-  transform: skew(0deg, 4deg);
+  background: var(--v-background-base);
+  transform: skew(0deg, 2deg);
   transform-origin: top right;
   padding: 100px 0 0 0;
 }
 /* Skew back the content */
 .content {
-    transform: skew(0deg, -4deg);
+    transform: skew(0deg, -2deg);
 }
 
 </style>

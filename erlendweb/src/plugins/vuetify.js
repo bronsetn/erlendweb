@@ -18,9 +18,6 @@ const vuetify = new Vuetify({
         // dark: true,
 
         themes: {
-            font: {
-                family: 'Roboto'
-            },
 
             light: {
                 primary: '#BDC9EF',
