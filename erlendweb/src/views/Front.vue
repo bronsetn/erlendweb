@@ -7,15 +7,13 @@
     >
       <v-row
         no-gutters
-        class="imageItems"
+        align="end"
       >
         <v-col
-          xs="12"
-          sm="12"
-          md="3"
-          lg="2"
-          xl="2"
+          cols="12"
+          style="margin-bottom: 150px; "
         >
+
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 400 400"
@@ -60,28 +58,11 @@
             </g>
             Sorry, your browser does not support inline SVG.
           </svg>
-        </v-col>
-        <v-col
-          xs="12"
-          sm="12"
-          md="3"
-          lg="3"
-          xl="3"
-        >
-          <v-container justify="center">
-            <h1
-              style="font-size: 4rem"
-              class="text-md-left"
-            >
-              Erlend Brønseth
-            </h1>
-            <h4
-              style="font-size: 1.2rem"
-              class="text-md-left"
-            >
-              {{ $t('front.subtitle') }}
-            </h4>
-          </v-container>
+
+          <h1 style="font-size: 4em">
+            Erlend Brønseth
+          </h1>
+
         </v-col>
       </v-row>
     </v-parallax>
@@ -123,22 +104,8 @@ export default {
   }
 }
 
-h1, h2 {
+h1 {
   text-shadow: 1px 1px 2px black;
 }
 
-.imageItems {
-  align-items: center;
-  margin-top: 20%;
-  padding: 0;
-}
-
-/* 960px is the height for md breakpoint */
-@media (max-width: 960px) and (max-height: 960px) {
-  .imageItems {
-      align-items: flex-start;
-      margin-top: 0%;
-      flex: none;
-  }
-}
 </style>

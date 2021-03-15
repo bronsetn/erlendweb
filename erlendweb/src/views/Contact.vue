@@ -3,7 +3,7 @@
 
   <body>
     <v-container>
-      <v-container class="justify-center">
+      <v-container>
         <div class="serif">III</div>
         <h1>{{ $t('header.contact') }}</h1>
       </v-container>

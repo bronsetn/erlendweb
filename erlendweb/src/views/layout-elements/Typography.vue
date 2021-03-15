@@ -37,7 +37,7 @@
           <p class="calligraphy">Welcome to</p>
           <div class="bold">
             <p>Hot</p>
-            <p>Coffee</p>
+            <p class="xl">Coffee</p>
             <p>Café</p>
           </div>
           <p class="calligraphy">Your local coffehouse</p>
@@ -65,7 +65,6 @@
 p {
     margin: 0; 
 }
-
 
 
 /* Parrallax */
@@ -118,11 +117,10 @@ p {
   color: var(--v-tertiary-base);
   padding-top: 20px;
 
-
   /* Grid for lines on either side */
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  grid-template-rows: 25px 0;
+  grid-template-rows: 20px 0;
   grid-gap: 20px;
 }
 
@@ -132,14 +130,15 @@ p {
   border-bottom: 2px solid var(--v-tertiary-base);
 }
 
-.bold {
+.bold p {
   font-family: 'Ultra', serif;
   font-weight: bold;
   letter-spacing: 0.2em;
-  line-height: 1.4;
+  line-height: 1.2;
+  font-size: 3em;
   color: var(--v-tertiary-base);
 
-  text-shadow: 
+    text-shadow: 
         1px 1px var(--bold-shadow),
         1px 2px var(--bold-shadow),
         1px 3px var(--bold-shadow),
@@ -151,12 +150,9 @@ p {
         1px 9px var(--bold-shadow),
         1px 10px var(--bold-shadow);
 }
-.bold p {
-    font-size: 4em;
-}
 
 .bold p:nth-child(2) {
-  font-size: 5em;
+  font-size: 4em;
 }
 
 @media (max-width: 960px) and (max-height: 960px) {

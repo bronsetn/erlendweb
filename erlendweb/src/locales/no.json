@@ -13,9 +13,6 @@
         "contact": "Ta kontakt",
         "other": "Annet"
     },
-    "front": {
-        "subtitle": "Junior frontend utvikler"
-    },
     "about": {
         "intro1": "Jeg er en 23-åring fra Inderøy med en bachelor innenfor digitale medier og design. Dette nettstedet er ment som en portefølje i tillegg til et sted jeg kan ekspirementere innenfor utvikling og design.",
         "intro2": "Jeg har ambisjoner om å bli dreven innenfor frontend utvikling og har høsten 2020 arbeidet hos <a class='animatedLink' target='_blank' rel='noopener' href='https://prios.no' >Prios Kompetanse AS</a>, hvor jeg har blitt kjent med bruk av VueJS.",
@@ -54,7 +51,7 @@
         {
             "title": "Maribro",
             "description": "Et nettsted for å vise tegninger og malerier laget av Mari Brønseth. Siden er laget i VueJS og satt opp med Netlify som vert. Nettstedet består av en side for å presentere artisten, i tilleg til et bildegalleri for kunstverkene hun har laget.",
-            "content": "Noe av det som har vært i fokus under utviklingen var hvordan jeg best kunne vise frem alle variasjonene av design for de forskjellige motivene. Det har også vært en utfordring å arbeide med såpass mange bilder ettersom det sakner nedlastningstiden for siden betraktelig. Jeg har forsøkt å forbedre dette ved å konvertere alle bildene til jpeg samt å kjøre de igjennom en komprimerer. Neste steg er nå å sette opp en ekstern server for alle bildene eller å implimentere Netlify Large Media på siden.",
+            "content": "Det har vært en utfordring å arbeide med såpass mange bilder ettersom det sakner nedlastningstiden for siden betraktelig. Jeg har forsøkt å forbedre dette ved implimentere Netlfy Large Media som bruker GIT-LFS (Large file storage) for lagring av bilder. I tillegg har jeg konvertert alle bilder til .jpeg samt kjørt de igjennom en bildekomprimerer.",
             "date": "Vinter 2021",
             "link": "https://maribro.no",
             "alt": "Screenshot from maribro.no",

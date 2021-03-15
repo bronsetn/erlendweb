@@ -13,9 +13,6 @@
         "contact": "Contact",
         "other": "Other"
     },
-    "front": {
-        "subtitle": "Junior front-end developer"
-    },
     "about": {
         "intro1": "I am a 23 year old guy from Inderøy, Norway with a bachelor in digital media & design. This site is meant as a portefolio aswell as a place I can experiment with development and design.",
         "intro2": "My goal is to get better at front-end development and I have this autumn worked at <a  class='animatedLink' target='_blank' href='https://prios.no'> Prios Kompetanse AS </a>, where i have gotten to know VueJS.",
@@ -53,8 +50,8 @@
         },
         {
             "title": "Maribro",
-            "description": "A website made to show of the art made by Mari Brønseth. The site is made with VueJs and hosted on Netlify. The site consist of a page to present the artist aswell as a image-gallery for many of the artworks she's made.",
-            "content": "One of the challenges with the development of the site was to find a good solution for presenting the different versions of each design. Another challenge was dealing with a large number of image files, as it slowed loadingtime for the site. I have tried to improve loadingtime by compressing all of the imagefiles. The next step will be to add all the images to an external server or to implement Netlify Large Media to the page.",
+            "description": "A website made to show of the art made by Mari Brønseth. The site is made with VueJS and hosted on Netlify. The site consist of a page to present the artist aswell as a image-gallery for many of the artworks she's made.",
+            "content": "One of the challenges with the development of the site was dealing with such a large number of image files, as it slowed loadingtime for the site. I have tried to improve loadingtime implementing Netlify Large Media that uses GIT-LFS (Large file storage), I alse converted all images to.jpeg aswell as ran all the files through an image-compressor.",
             "date": "Winter 2021",
             "link": "https://maribro.no",
             "alt": "Screenshot from https://maribro.no",
