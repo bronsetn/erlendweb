@@ -1,7 +1,7 @@
 
 <template>
 
-  <body>
+  <div>
     <v-container>
       <v-container>
         <div class="serif">III</div>
@@ -20,7 +20,7 @@
             elevation="5"
             color="secondary"
           >
-            <p class="pt-6 pb-2 text--secondary">{{ $t('contact.description') }} </p>
+            <p class="pt-6 pb-2 text--secondary text-center">{{ $t('contact.description') }} </p>
 
             <v-form
               ref="form"
@@ -55,18 +55,18 @@
                 label="Message"
                 :rules="rules.message"
               ></v-textarea>
-              <v-row justify="center">
-                <v-col cols=12>
-                  <v-btn
-                    title="Submit"
-                    outlined
-                    color="tertiary"
-                    type="submit"
-                    :disabled="!validate || submitted"
-                  >
-                    <v-icon>mdi-send</v-icon>
-                  </v-btn>
-                </v-col>
+
+              <v-row class="d-flex justify-center">
+                <v-btn
+                  title="Submit"
+                  outlined
+                  color="tertiary"
+                  type="submit"
+                  :disabled="!validate || submitted"
+                >
+                  <v-icon>mdi-send</v-icon>
+                </v-btn>
+
                 <v-col cols=12>
                   <v-alert
                     outlined
@@ -78,13 +78,14 @@
                   >{{ alert.text }}
                   </v-alert>
                 </v-col>
+
               </v-row>
             </v-form>
           </v-card>
         </v-col>
       </v-row>
     </v-container>
-  </body>
+  </div>
 </template>
 
 <script>

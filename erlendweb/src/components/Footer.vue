@@ -177,6 +177,12 @@
   </div>
 </template>
 
+<style scoped>
+* {
+  text-align: center;
+}
+</style>
+
 <script>
 export default {
   data() {

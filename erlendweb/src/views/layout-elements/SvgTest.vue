@@ -3,8 +3,8 @@
     cols="12"
     sm="12"
     md="6"
-    lg="6"
-    xl="6"
+    lg="4"
+    xl="4"
   >
     <v-card
       color="secondary"
@@ -69,10 +69,7 @@
 <script>
 export default {
   data() {
-    return {};
   },
-
-  created() { },
 
   methods: {
     drawFigure() {
@@ -98,6 +95,10 @@ export default {
 </script>
 
 <style scoped>
+* {
+  text-align: center;
+}
+
 #drawing {
   stroke: var(--v-tertiary-base);
   fill: none;

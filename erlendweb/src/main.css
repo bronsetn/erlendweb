@@ -15,17 +15,18 @@
         font-family: 'Roboto', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        text-align: center;
         line-height: 1.5;
     }
 
     h1, h2, h3, h4, h5, h6 {
         font-family: 'Domine', serif;
         font-weight: 350;
+        text-align: center;
     }
 
     .serif {
         font-family: 'Domine', serif !important;
+        text-align: center;
     }
 
     .normal {

@@ -3,8 +3,8 @@
     cols="12"
     sm="12"
     md="6"
-    lg="6"
-    xl="6"
+    lg="4"
+    xl="4"
   >
     <v-card
       color="secondary"
@@ -323,20 +323,26 @@ export default {
 
 <style scoped>
 .faded {
-    height: 350px;
-    background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+  height: 350px;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
 }
 
 .custom-loader {
-    animation: loader 1s infinite;
-    display: flex;
+  animation: loader 1s infinite;
+  display: flex;
+}
+@keyframes loader {
+  from {
+    transform: rotate(0);
   }
-  @keyframes loader {
-    from {
-      transform: rotate(0);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
   }
+}
 </style>

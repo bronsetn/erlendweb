@@ -3,8 +3,8 @@
     cols="12"
     sm="12"
     md="6"
-    lg="6"
-    xl="6"
+    lg="4"
+    xl="4"
   >
     <v-card
       color="secondary"
@@ -73,7 +73,12 @@ export default {
 
 <style scoped>
 .faded {
-    height: 350px;
-    background-image: linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%);
-  }
+  height: 350px;
+  background-image: linear-gradient(
+    -225deg,
+    #ff3cac 0%,
+    #562b7c 52%,
+    #2b86c5 100%
+  );
+}
 </style>

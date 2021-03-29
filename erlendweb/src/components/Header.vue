@@ -32,8 +32,6 @@
           v-if="!$vuetify.breakpoint.mobile"
         >
           <v-btn
-            top
-            left
             icon
             v-if="!$vuetify.theme.dark"
             :to="{ name: 'Home'}"
@@ -181,7 +179,36 @@
       temporary
       color="secondary"
     >
-      <v-list-item></v-list-item>
+      <v-row
+        class="mt-10 mb-10 justify-center"
+        no-gutters
+      >
+        <v-btn
+          icon
+          v-if="!$vuetify.theme.dark"
+          :to="{ name: 'Home'}"
+        >
+          <v-img
+            src="../assets/icons/logo-light.svg"
+            height="40px"
+            width="40px"
+            contain
+          ></v-img>
+        </v-btn>
+        <v-btn
+          icon
+          v-if="$vuetify.theme.dark"
+          :to="{ name: 'Home'}"
+        >
+          <v-img
+            src="../assets/icons/logo-dark.svg"
+            height="40px"
+            width="40px"
+            contain
+          ></v-img>
+        </v-btn>
+      </v-row>
+
       <v-list
         transparent
         class="pl-4"

@@ -3,8 +3,8 @@
     cols="12"
     sm="12"
     md="6"
-    lg="6"
-    xl="6"
+    lg="4"
+    xl="4"
     v-if="spaceData"
   >
     <v-card
@@ -29,7 +29,7 @@
       >
         <iframe :src="spaceData.url"> </iframe>
       </div>
-      <p class="light pt-2 text--truncate"><a
+      <p class="light pt-2 text--truncate text-center"><a
           :href="spaceData.url"
           rel="noopener"
           target="_blank"

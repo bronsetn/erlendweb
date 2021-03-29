@@ -1,6 +1,6 @@
 <template>
 
-  <body>
+  <div>
     <v-container>
       <v-container class="justify-center">
         <div class="serif">II</div>
@@ -35,8 +35,8 @@
                     <v-avatar size="200">
                       <v-img
                         alt="Personbilde"
-                        src="../assets/images/about-image.jpg"
-                        lazy-src="../assets/images/about-image.jpg"
+                        src="/images/about-image.jpg"
+                        lazy-src="/images/about-image.jpg"
                       >
                       </v-img>
                     </v-avatar>
@@ -146,8 +146,14 @@
         </v-col>
       </v-row>
     </v-container>
-  </body>
+  </div>
 </template>
+
+<style scoped>
+* {
+  text-align: center;
+}
+</style>
 
 <script>
 export default {

@@ -1,6 +1,6 @@
 <template>
 
-  <body>
+  <div>
     <v-container>
       <v-container class="justify-center">
         <div class="serif">I</div>
@@ -14,7 +14,7 @@
           :key="index"
           cols="12"
           sm="6"
-          md="4"
+          md="6"
           lg="4"
           xl="4"
         >
@@ -24,6 +24,7 @@
             elevation="5"
             color="secondary"
             height="500"
+            max-width="500"
           >
             <v-container>
               <v-img
@@ -72,7 +73,7 @@
                 <v-col cols="12">
                   <h1 class="font-weight-regular">{{ projects[activeProject].title}}</h1>
                   <h2 class="font-weight-thinr">{{ projects[activeProject].subtitle}}</h2>
-                  <p class="text--secondary body-2 pt-2">
+                  <p class="text--secondary body-2 pt-2 text-center">
                     {{ projects[activeProject].date }}
                   </p>
                 </v-col>
@@ -90,7 +91,7 @@
             </div>
           </div>
 
-          <v-card-text class="text-content">
+          <v-card-text class="text-content text-center">
 
             <p><a
                 rel="noopener"
@@ -179,7 +180,7 @@
                 <v-col cols="12">
                   <h1>{{  projects[activeProject].title }}</h1>
                   <h3>{{ projects[activeProject].subtitle}}</h3>
-                  <p class="text--secondary body-2">
+                  <p class="text--secondary body-2 text-center">
                     {{ projects[activeProject].date }}
                   </p>
                 </v-col>
@@ -196,7 +197,7 @@
             </div>
           </div>
 
-          <v-card-text class="text-content">
+          <v-card-text class="text-content text-center">
 
             <p><a
                 rel="noopener"
@@ -263,7 +264,7 @@
       </v-dialog>
 
     </v-container>
-  </body>
+  </div>
 </template>
 
 <script>
@@ -302,7 +303,6 @@ export default {
 </script>
 
 <style scoped>
-
 .text-content {
   margin: 0 auto;
   max-width: 50em;
@@ -311,17 +311,17 @@ export default {
 }
 
 .description {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;  
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 
   /* max-height = line-height (1.2) * lines max number (3) */
   line-height: 1.4em;
-  max-height: 2.8em; 
+  max-height: 2.8em;
 
   /* fix problem when last visible word doesn't adjoin right side  */
-  text-align: justify;  
+  text-align: justify;
 }
 
 .skewedContainer {
@@ -332,7 +332,6 @@ export default {
 }
 /* Skew back the content */
 .content {
-    transform: skew(0deg, -2deg);
+  transform: skew(0deg, -2deg);
 }
-
 </style>

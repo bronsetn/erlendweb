@@ -3,14 +3,14 @@
     cols="12"
     sm="12"
     md="6"
-    lg="6"
-    xl="6"
+    lg="4"
+    xl="4"
   >
     <v-card
       color="secondary"
       elevation="5"
       height="400"
-      style="overflow:hidden;"
+      style="overflow: hidden;"
     >
       <v-card-title>{{ $t('other.gallery') }}<v-spacer></v-spacer>
         <v-icon color="tertiary">mdi-image-multiple</v-icon>
@@ -139,7 +139,6 @@
 </template>
 
 <style scoped>
-
 .imageOverlay {
   background: linear-gradient(0deg, #00000080 10%, #ffffff00 100%) !important;
 }
@@ -151,14 +150,13 @@
 .image-text {
   opacity: 0%;
   transition: 0.5s ease-in-out;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.5em;
   color: #fff;
   z-index: 1;
   position: absolute;
   bottom: 25px;
 }
-
 </style>
 
 <script>

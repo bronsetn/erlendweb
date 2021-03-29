@@ -2,8 +2,8 @@
   <div>
     <v-parallax
       height="800"
-      src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/front-image-smaller.jpg?alt=media&token=32959531-3baf-40a1-9031-51935e419964"
-      lazy-src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/front-image-smaller.jpg?alt=media&token=32959531-3baf-40a1-9031-51935e419964"
+      src="/images/front-compressed.jpg"
+      lazy-src="/images/front-compressed.jpg"
     >
       <v-row
         no-gutters
@@ -69,16 +69,11 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-    };
-  },
-};
-</script>
-
 <style scoped>
+* {
+  text-align: center;
+}
+
 #drawing {
   stroke: hsl(0, 0%, 96%);
   fill: hsl(0, 0%, 96%);

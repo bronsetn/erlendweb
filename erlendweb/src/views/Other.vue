@@ -1,6 +1,5 @@
 <template>
-
-  <body>
+  <div>
     <v-lazy
       v-model="isActive"
       :options="{ threshold: .5 }"
@@ -11,10 +10,10 @@
         <v-container class="justify-center pt-12">
           <div class="serif">IV</div>
           <h1>{{ $t('header.other') }}</h1>
-          <p class="normal pa-2">{{ $t('other.description') }}</p>
+          <p class="normal pa-2 text-center">{{ $t('other.description') }}</p>
         </v-container>
 
-        <v-row justify="center">
+        <v-row class="d-flex justify-center">
 
           <Typography></Typography>
           <SvgTest></SvgTest>
@@ -26,7 +25,7 @@
         </v-row>
       </v-container>
     </v-lazy>
-  </body>
+  </div>
 </template>
 
 <script>

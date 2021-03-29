@@ -1,10 +1,10 @@
 <template>
   <v-col
-    cols="12"
+     cols="12"
     sm="12"
     md="6"
-    lg="6"
-    xl="6"
+    lg="4"
+    xl="4"
   >
     <v-card
       color="secondary"
@@ -62,13 +62,16 @@
 </template>
 
 <style scoped>
-p {
-    margin: 0; 
+* {
+  text-align: center;
 }
 
+p {
+  margin: 0;
+}
 
 /* Parrallax */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 
 * {
   --glitch-color-red: rgb(225, 32, 10);
@@ -76,42 +79,39 @@ p {
 }
 
 .parrallax {
-  font-family: 'Raleway', sans-serif;  
+  font-family: "Raleway", sans-serif;
   font-style: italic;
   font-size: 3em;
-	letter-spacing: 0.15em;
+  letter-spacing: 0.15em;
 
- text-shadow: 
-      0.15rem 0.15rem 0.15vw var(--glitch-color-blue), 
-      0.25rem 0.25rem 0.8vw var(--glitch-color-blue), 
-      -0.15rem -0.15rem 0.15vw var(--glitch-color-red), 
-      -0.25rem -0.25rem 0.8vw var(--glitch-color-red);
+  text-shadow: 0.15rem 0.15rem 0.15vw var(--glitch-color-blue),
+    0.25rem 0.25rem 0.8vw var(--glitch-color-blue),
+    -0.15rem -0.15rem 0.15vw var(--glitch-color-red),
+    -0.25rem -0.25rem 0.8vw var(--glitch-color-red);
 
-   color: var(--v-tertiary-base);
+  color: var(--v-tertiary-base);
 }
 
 @media (max-width: 960px) and (max-height: 960px) {
   .parrallax {
-      font-size: 2em;
+    font-size: 2em;
   }
 }
-
-
 
 /* Cafe */
 
 /* Cookie */
-@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
 
 /* Ultra */
-@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
 
 * {
-  --bold-shadow: #8BA0E4;
+  --bold-shadow: #8ba0e4;
 }
 
 .calligraphy {
-  font-family: 'Cookie', cursive;
+  font-family: "Cookie", cursive;
   font-size: 3em;
   line-height: 1;
   color: var(--v-tertiary-base);
@@ -124,31 +124,26 @@ p {
   grid-gap: 20px;
 }
 
-.calligraphy::before, .calligraphy::after {
+.calligraphy::before,
+.calligraphy::after {
   content: "";
   display: block;
   border-bottom: 2px solid var(--v-tertiary-base);
 }
 
 .bold p {
-  font-family: 'Ultra', serif;
+  font-family: "Ultra", serif;
   font-weight: bold;
   letter-spacing: 0.2em;
   line-height: 1.2;
   font-size: 3em;
   color: var(--v-tertiary-base);
 
-    text-shadow: 
-        1px 1px var(--bold-shadow),
-        1px 2px var(--bold-shadow),
-        1px 3px var(--bold-shadow),
-        1px 4px var(--bold-shadow),
-        1px 5px var(--bold-shadow),
-        1px 6px var(--bold-shadow),
-        1px 7px var(--bold-shadow),
-        1px 8px var(--bold-shadow),
-        1px 9px var(--bold-shadow),
-        1px 10px var(--bold-shadow);
+  text-shadow: 1px 1px var(--bold-shadow), 1px 2px var(--bold-shadow),
+    1px 3px var(--bold-shadow), 1px 4px var(--bold-shadow),
+    1px 5px var(--bold-shadow), 1px 6px var(--bold-shadow),
+    1px 7px var(--bold-shadow), 1px 8px var(--bold-shadow),
+    1px 9px var(--bold-shadow), 1px 10px var(--bold-shadow);
 }
 
 .bold p:nth-child(2) {
@@ -157,17 +152,15 @@ p {
 
 @media (max-width: 960px) and (max-height: 960px) {
   .calligraphy {
-  font-size: 2em;
-}
+    font-size: 2em;
+  }
 
   .bold p {
-  font-size: 2em;
-}
+    font-size: 2em;
+  }
 
   .bold p:nth-child(2) {
-  font-size: 3em;
+    font-size: 3em;
+  }
 }
-
-}
-
 </style>
