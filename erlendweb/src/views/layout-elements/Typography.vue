@@ -1,6 +1,6 @@
 <template>
   <v-col
-     cols="12"
+    cols="12"
     sm="12"
     md="6"
     lg="4"
@@ -112,7 +112,7 @@ p {
 
 .calligraphy {
   font-family: "Cookie", cursive;
-  font-size: 3em;
+  font-size: 2em;
   line-height: 1;
   color: var(--v-tertiary-base);
   padding-top: 20px;
@@ -136,7 +136,7 @@ p {
   font-weight: bold;
   letter-spacing: 0.2em;
   line-height: 1.2;
-  font-size: 3em;
+  font-size: 2.5em;
   color: var(--v-tertiary-base);
 
   text-shadow: 1px 1px var(--bold-shadow), 1px 2px var(--bold-shadow),
@@ -147,7 +147,7 @@ p {
 }
 
 .bold p:nth-child(2) {
-  font-size: 4em;
+  font-size: 3em;
 }
 
 @media (max-width: 960px) and (max-height: 960px) {
@@ -156,11 +156,11 @@ p {
   }
 
   .bold p {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .bold p:nth-child(2) {
-    font-size: 3em;
+    font-size: 2em;
   }
 }
 </style>
