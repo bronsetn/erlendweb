@@ -7,52 +7,68 @@
         <h1>{{ $t('header.projects') }}</h1>
       </v-container>
 
-      <v-row class="d-flex justify-center">
+
+      <!-- Main project cards -->
+      <v-row
+        class="d-flex justify-center"
+        no-gutters
+      >
         <v-col
-          v-for="(item, index) in projects"
-          :item="item"
-          :key="index"
           cols="12"
-          sm="6"
-          md="6"
-          lg="4"
-          xl="4"
+          sm="12"
+          md="12"
+          lg="10"
+          xl="10"
         >
-          <v-card
-            @click="openDialog(index)"
-            :ripple="{ center: true }"
-            elevation="5"
-            color="secondary"
-            height="500"
-            max-width="500"
-          >
-            <v-container>
-              <v-img
-                height="300"
-                :alt="item.alt"
-                contain
-                :src="item.imageCompressed"
-                :lazy-src="item.imageCompressed"
-              ></v-img>
-            </v-container>
+          <v-row class="d-flex justify-center">
+            <v-col
+              v-for="(item, index) in projects"
+              :item="item"
+              :key="index"
+              cols="12"
+              sm="6"
+              md="6"
+              lg="4"
+              xl="4"
+            >
+              <v-card
+                @click="openDialog(index)"
+                :ripple="{ center: true }"
+                elevation="5"
+                color="secondary"
+                height="500"
+                max-width="500"
+              >
+                <v-container>
+                  <v-img
+                    height="300"
+                    :alt="item.alt"
+                    contain
+                    :src="item.imageCompressed"
+                    :lazy-src="item.imageCompressed"
+                  ></v-img>
+                </v-container>
 
-            <v-card-title class="ma-0 pt-0 pb-0">
-              <h2 class="text-truncate">{{ item.title }}</h2>
-            </v-card-title>
+                <v-card-title class="ma-0 pt-0 pb-0">
+                  <h2 class="text-truncate">{{ item.title }}</h2>
+                </v-card-title>
 
-            <v-card-text>
-              <p class="subtitle-2 text-left">
-                {{ item.date }}
-              </p>
-              <p class="text-left text--primary description">
-                {{item.description}}
-              </p>
-              <p class="subtitle-2 text-left">
-                {{ $t('misc.clickForMore') }}
-              </p>
-            </v-card-text>
+                <v-card-text>
+                  <p class="subtitle-2 text-left">
+                    {{ item.date }}
+                  </p>
+                  <p class="text-left text--primary description">
+                    {{item.description}}
+                  </p>
+                  <p class="subtitle-2 text-left">
+                    {{ $t('misc.clickForMore') }}
+                  </p>
+                </v-card-text>
 
-          </v-card>
+              </v-card>
+            </v-col>
+          </v-row>
+
         </v-col>
       </v-row>
 

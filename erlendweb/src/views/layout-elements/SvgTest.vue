@@ -68,9 +68,7 @@
 
 <script>
 export default {
-  data() {
-  },
-
+  
   methods: {
     drawFigure() {
       var path = document.querySelector(".coffecup");

@@ -1,30 +1,23 @@
 <template>
   <div>
-    <v-lazy
-      v-model="isActive"
-      :options="{ threshold: .5 }"
-      class="fill-height"
-      transition="fade-transition"
-    >
-      <v-container>
-        <v-container class="justify-center pt-12">
-          <div class="serif">IV</div>
-          <h1>{{ $t('header.other') }}</h1>
-          <p class="normal pa-2 text-center">{{ $t('other.description') }}</p>
-        </v-container>
-
-        <v-row class="d-flex justify-center">
-
-          <Typography></Typography>
-          <SvgTest></SvgTest>
-          <Forecast></Forecast>
-          <Nasa></Nasa>
-          <ModelViewer></ModelViewer>
-          <Gallery></Gallery>
-
-        </v-row>
+    <v-container>
+      <v-container class="justify-center pt-12">
+        <div class="serif">IV</div>
+        <h1>{{ $t('header.other') }}</h1>
+        <p class="normal pa-2 text-center">{{ $t('other.description') }}</p>
       </v-container>
-    </v-lazy>
+
+      <v-row class="d-flex justify-center">
+
+        <Typography></Typography>
+        <SvgTest></SvgTest>
+        <Forecast></Forecast>
+        <Nasa></Nasa>
+        <ModelViewer></ModelViewer>
+        <Gallery></Gallery>
+
+      </v-row>
+    </v-container>
   </div>
 </template>
 
@@ -48,7 +41,6 @@ export default {
 
   data() {
     return {
-      isActive: false,
     }
   },
 
