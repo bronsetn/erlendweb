@@ -34,9 +34,9 @@
                   >
                     <v-avatar size="200">
                       <v-img
-                        alt="Personbilde"
-                        src="/images/about-image.jpg"
-                        lazy-src="/images/about-image.jpg"
+                        alt="Bilde av Erlend"
+                        src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/about-image.jpg?alt=media&token=2389d2fb-b60c-46f5-bd55-00c44629c270"
+                        lazy-src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/about-image.jpg?alt=media&token=2389d2fb-b60c-46f5-bd55-00c44629c270"
                       >
                       </v-img>
                     </v-avatar>
