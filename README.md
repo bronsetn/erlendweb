@@ -1,15 +1,12 @@
 ## https://erlendweb.no
 
-Made by: 
-
-Erlend Brønseth
-bronsetherlend@gmail.com
-
 Erlendweb is meant as a portefolio aswell as a place for experimentation with development and design.
 
+Made by: Erlend Brønseth  --  bronsetherlend@gmail.com
 
 
-## To run locally with node:
+
+## To run locally with NodeJS:
 
 cd erlendweb
 
