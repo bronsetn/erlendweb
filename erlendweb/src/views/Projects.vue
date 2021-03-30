@@ -7,7 +7,6 @@
         <h1>{{ $t('header.projects') }}</h1>
       </v-container>
 
-
       <!-- Main project cards -->
       <v-row
         class="d-flex justify-center"
