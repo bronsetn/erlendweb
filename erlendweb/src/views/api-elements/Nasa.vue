@@ -29,7 +29,7 @@
       >
         <iframe :src="spaceData.url"> </iframe>
       </div>
-      <p class="light pt-2 text--truncate text-center"><a
+      <p class="pt-2 text--truncate text-center"><a
           :href="spaceData.url"
           rel="noopener"
           target="_blank"
@@ -39,7 +39,7 @@
       <v-card-title><span class="text-truncate">{{ spaceData.title }}</span></v-card-title>
 
       <v-card-text class="pb-2 pt-0">
-        <p class="normal pa-0 ma-0">
+        <p class="pa-0 ma-0">
           <v-clamp
             autoresize
             :max-lines="2"

@@ -51,7 +51,7 @@
         {
             "title": "Maribro",
             "description": "Et nettsted for å vise tegninger og malerier laget av Mari Brønseth. Siden er laget i VueJS og satt opp med Netlify som vert. Nettstedet består av en side for å presentere artisten, i tilleg til et bildegalleri for kunstverkene hun har laget.",
-            "content": "Det har vært en utfordring å arbeide med såpass mange bilder ettersom det sakner nedlastningstiden for siden betraktelig. Jeg har forsøkt å forbedre dette ved implimentere Netlfy Large Media som bruker GIT-LFS (Large file storage) for lagring av bilder. I tillegg har jeg konvertert alle bilder til .jpeg samt kjørt de igjennom en bildekomprimerer.",
+            "content": "Det har vært en utfordring å arbeide med såpass mange bilder ettersom det sakner nedlastningstiden for siden betraktelig. Jeg har forsøkt å forbedre dette ved å blant annet implimentere Netlfy Large Media som bruker GIT-LFS (Large file storage) for lagring av bilder.",
             "date": "Vinter 2021",
             "link": "https://maribro.no",
             "alt": "Screenshot from maribro.no",

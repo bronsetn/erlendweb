@@ -96,31 +96,21 @@
 
                 <v-card-text class="ma-0 pa-4">
 
-                  <p class="normal">
+                  <p>
                     {{ $t('about.intro1') }}
                   </p>
 
-                  <p
-                    class="normal"
-                    v-html="$t('about.intro2')"
-                  ></p>
+                  <p v-html="$t('about.intro2')"></p>
 
-                  <h3 class="thick pa-4">{{ $t('about.wordpress') }}</h3>
+                  <h3 class=" pa-4">{{ $t('about.wordpress') }}</h3>
 
-                  <p
-                    class="normal"
-                    v-html="$t('about.wordpressDescription')"
-                  ></p>
+                  <p v-html="$t('about.wordpressDescription')"></p>
 
-                  <h3 class="thick pa-4">{{ $t('about.erlendweb') }}</h3>
+                  <h3 class=" pa-4">{{ $t('about.erlendweb') }}</h3>
 
-                  <p
-                    class="normal"
-                    v-html="$t('about.erlendwebDescription')"
-                  >
-                  </p>
+                  <p v-html="$t('about.erlendwebDescription')"></p>
 
-                  <h3 class="thick pa-4">{{ $t('about.skills') }}</h3>
+                  <h3 class="pa-4">{{ $t('about.skills') }}</h3>
 
                   <v-row
                     justify="center"

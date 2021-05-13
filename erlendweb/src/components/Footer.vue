@@ -168,7 +168,7 @@
           </v-col>
 
           <v-col cols="12">
-            <p class="normal">Copyright © {{ new Date().getFullYear() }} | Erlend Brønseth | All Rights Reserved </p>
+            <p>Copyright © {{ new Date().getFullYear() }} | Erlend Brønseth | All Rights Reserved </p>
           </v-col>
 
         </v-row>

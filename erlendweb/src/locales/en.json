@@ -51,7 +51,7 @@
         {
             "title": "Maribro",
             "description": "A website made to show of the art made by Mari Brønseth. The site is made with VueJS and hosted on Netlify. The site consist of a page to present the artist aswell as a image-gallery for many of the artworks she's made.",
-            "content": "One of the challenges with the development of the site was dealing with such a large number of image files, as it slowed loadingtime for the site. I have tried to improve loadingtime implementing Netlify Large Media that uses GIT-LFS (Large file storage), I alse converted all images to.jpeg aswell as ran all the files through an image-compressor.",
+            "content": "One of the challenges with the development of the site was dealing with such a large number of image files, as it slowed loadingtime for the site. I have tried to improve loading time through implementing Netlify Large Media, which uses uses GIT-LFS (Large file storage) for storing images.",
             "date": "Winter 2021",
             "link": "https://maribro.no",
             "alt": "Screenshot from https://maribro.no",
