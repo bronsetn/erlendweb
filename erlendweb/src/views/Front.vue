@@ -55,6 +55,9 @@
 
       </v-col>
     </v-row>
+   
+    <v-icon v-if="$vuetify.breakpoint.smAndUp" color="tertiary" disabled>mdi-chevron-double-down</v-icon>
+
   </div>
 </template>
 
@@ -85,6 +88,13 @@
 .front .row {
   position: absolute;
   top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.v-icon.v-icon {
+  position: absolute;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
