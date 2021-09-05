@@ -16,7 +16,7 @@
     },
     "about": {
         "intro1": "I am a 23 year old guy from Inderøy, Norway with a bachelor in digital media & design. This site is meant as a portefolio aswell as a place I can experiment with development and design.",
-        "intro2": "My goal is to get better at front-end development and I have this autumn worked at <a  class='animatedLink' target='_blank' href='https://prios.no'> Prios Kompetanse AS </a>, where i have gotten to know VueJS.",
+        "intro2": "I have previously worked an autumn at <a class='animatedLink' target='_blank' rel='noopener' href='https://prios.no' >Prios Kompetanse AS</a> in Steinkjer and i am now working for <a class='animatedLink' target='_blank' rel='noopener' href='https://www.digipublishing.no/' >Digi Publishing AS</a> in Trondheim.",
         "bachelor": "Digital Media and Design",
         "bachelorDescription": "A bachelor in digitale media and design at HIØ involves an introduction to many of the steps included in development and design of digital applications. Some of the courses I have been trough are web-development, programming, 3D-modelling and graphical design.",
         "wordpress": "Wordpress",

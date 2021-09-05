@@ -7,32 +7,11 @@
     >
       <v-col cols="12">
         <svg
+          class="logo"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 400 400"
         >
           <g id="drawing">
-            <filter
-              id="shadow"
-              width="200%"
-              height="200%"
-            >
-              <feOffset
-                result="offOut"
-                in="SourceAlpha"
-                dx="2"
-                dy="2"
-              />
-              <feGaussianBlur
-                result="blurOut"
-                in="offOut"
-                stdDeviation="2"
-              />
-              <feBlend
-                in="SourceGraphic"
-                in2="blurOut"
-                mode="normal"
-              />
-            </filter>
             <circle
               cx="170.07"
               cy="122.44"
@@ -55,10 +34,18 @@
     </v-row>
 
     <v-icon
-      v-if="$vuetify.breakpoint.smAndUp"
       color="tertiary"
       disabled
     >mdi-chevron-double-down</v-icon>
+
+    <div class="divider">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path d="M0,224L48,202.7C96,181,192,139,288,138.7C384,139,480,181,576,202.7C672,224,768,224,864,202.7C960,181,1056,139,1152,122.7C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
+    </div>
 
   </div>
 </template>
@@ -79,6 +66,16 @@
   width: 100%;
 }
 
+.front .divider {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.front .divider svg path {
+  fill-opacity: 1;
+  fill: var(--v-primary-base);
+}
+
 .front .row {
   position: absolute;
   top: 300px;
@@ -88,17 +85,17 @@
 
 .v-icon.v-icon {
   position: absolute;
-  top: 80%;
+  bottom: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-#drawing {
+.logo g {
   stroke: #222535;
   fill: #222535;
 }
 
-svg {
+svg.logo {
   width: 100px;
 }
 
@@ -114,22 +111,22 @@ h1 {
 }
 
 .subtitle {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 1600px) {
-  h1 {
-    font-size: 2rem;
-  }
 }
 @media only screen and (max-width: 1200px) {
 }
 @media only screen and (max-width: 991px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1.25rem;
+  }
 }
 @media only screen and (max-width: 767px) {
-  .v-icon.v-icon {
-    display: none;
-  }
 }
 @media only screen and (max-width: 575px) {
 }

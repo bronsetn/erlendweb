@@ -102,9 +102,9 @@
 
                   <p v-html="$t('about.intro2')"></p>
 
-                  <h3 class=" pa-4">{{ $t('about.wordpress') }}</h3>
+                  <!-- <h3 class=" pa-4">{{ $t('about.wordpress') }}</h3> -->
 
-                  <p v-html="$t('about.wordpressDescription')"></p>
+                  <!-- <p v-html="$t('about.wordpressDescription')"></p> -->
 
                   <h3 class=" pa-4">{{ $t('about.erlendweb') }}</h3>
 
