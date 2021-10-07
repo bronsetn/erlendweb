@@ -58,6 +58,9 @@
 
 .front {
   position: relative;
+  isolation: isolate;
+  max-width: 2000px;
+  margin: 0 auto;
 }
 
 .front img {
@@ -88,6 +91,7 @@
   bottom: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .logo g {
@@ -114,6 +118,14 @@ h1 {
   font-size: 1.5rem;
 }
 
+/* Min-width */
+@media only screen and (min-width: 1600px) {
+  .front .divider {
+    bottom: -50px;
+  }
+}
+
+/* Max-width */
 @media only screen and (max-width: 1600px) {
 }
 @media only screen and (max-width: 1200px) {
