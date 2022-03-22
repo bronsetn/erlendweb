@@ -15,12 +15,10 @@
         "other": "Annet"
     },
     "about": {
-        "intro1": "Jeg er en 23-åring fra Inderøy med en bachelor innenfor digitale medier og design. Dette nettstedet er ment som en portefølje i tillegg til et sted jeg kan ekspirementere innenfor utvikling og design.",
+        "intro1": "Jeg er en 24-åring fra Inderøy med en bachelor innenfor digitale medier og design. Dette nettstedet er ment som en portefølje i tillegg til et sted jeg kan ekspirementere innenfor utvikling og design.",
         "intro2": "Jeg har tidliger arbeidet en høst hos <a class='animatedLink' target='_blank' rel='noopener' href='https://prios.no' >Prios Kompetanse AS</a> på Steinkjer og jobber nå for <a class='animatedLink' target='_blank' rel='noopener' href='https://www.digipublishing.no/' >Digi Publishing AS</a> i Trondheim.",
         "bachelor": "Digitale medier og design",
         "bachelorDescription": "Bachelorstudiumet digitale medier og design på HIØ gir opplæring i mange av stegene innenfor utvikling av digitale ting og applikasjoner. Noen av fagene jeg har vært innom er webutvikling, programmering, 3D-modellering, spillutvikling og grafisk-design.",
-        "wordpress": "Wordpress",
-        "wordpressDescription": " Inntil nylig har jeg brukt Wordpress for publisering av prosjekter fra studiet, de finnes fortsatt her:<br><a class='animatedLink' target='_blank' rel='noopener' href='https://erlendworkblog.wordpress.com'>https://erlendworkblog.wordpress.com</a>",
         "erlendweb": "Erlendweb",
         "erlendwebDescription": "Erlendweb er laget med bruk av VueJS/Vuetify og satt opp med Netlify som vert. Kildekoden til siden ligger åpen her:<br><a class='animatedLink' target='_blank' rel='noopener' href='https://github.com/bronsetn/erlendweb'>https://github.com/bronsetn/erlendweb</a>",
         "skills": "Ferdigheter"
@@ -28,16 +26,22 @@
     "contact": {
         "description": "Beskjeder herfra sendes direkte til bronsetherlend@gmail.com"
     },
-    "projects": [{
+    "projects": [
+        {
             "title": "Webography",
             "description": "Et lite nettsted for å vise noen interssante design og triks for typografy på nettet.",
             "content": "Jeg lagde denne siden som et mindre prosjekt for å bli bedre i typografi med bruk av CSS. Noe av målet med siden er at den skal fungere som et sted jeg kan lagre eksempler jeg liker, i tillegg til en side hvor man kan finne inspirasjon og nyttige ressurser for typografi på nettet.",
             "date": "Vinter 2021",
-            "link": "https://webography.netlify.app",
-            "alt": "Screenshot from webography.netlify.app",
+            "link": "https://webography.erlendweb.no/",
+            "alt": "Screenshot from https://webography.erlendweb.no/",
             "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwebography.png?alt=media&token=1923b376-afcd-4789-8176-b3b0b8609e34",
             "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwebography.png?alt=media&token=1923b376-afcd-4789-8176-b3b0b8609e34",
-            "stack": [{
+            "stack": [
+                {
+                    "name": "HTML",
+                    "icon": "mdi-language-html5"
+                },
+                {
                     "name": "CSS",
                     "icon": "mdi-language-css3"
                 },
@@ -56,17 +60,22 @@
             "alt": "Screenshot from maribro.no",
             "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb-c.png?alt=media&token=08f0da3b-4ea0-41dc-81c4-4848a203923d",
             "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb-gallery-c.png?alt=media&token=7466e583-dedf-4c9c-b39e-d8e3d4d26b17",
-            "stack": [{
+            "stack": [
+                {
+                    "name": "HTML",
+                    "icon": "mdi-language-html5"
+                },
+                {
+                    "name": "CSS",
+                    "icon": "mdi-language-css3"
+                },
+                {
                     "name": "Vuetify",
                     "icon": "mdi-vuetify"
                 },
                 {
                     "name": "VueJS",
                     "icon": "mdi-vuejs"
-                },
-                {
-                    "name": "NodeJS",
-                    "icon": "mdi-nodejs"
                 }
             ]
         },
@@ -80,7 +89,8 @@
             "alt": "Screenshot from prios events",
             "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-c.png?alt=media&token=1bfb24da-73be-404d-9a51-1c832183e9df",
             "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-profile.png?alt=media&token=93c95cc5-f5b6-4fad-b88d-d4e6b4885941",
-            "stack": [{
+            "stack": [
+                {
                     "name": "Vuetify",
                     "icon": "mdi-vuetify"
                 },
@@ -103,7 +113,8 @@
             "link": "https://erlendworkblog.wordpress.com/2020/06/11/bacheloroppgave-augmented-reality-til-a-vise-utvandringshistorie/",
             "alt": "Screenshot from prios events",
             "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fbachelor.png?alt=media&token=bcf17ab8-8d4a-4004-be06-b2f0484a790c",
-            "stack": [{
+            "stack": [
+                {
                     "name": "Unity",
                     "icon": "mdi-unity"
                 },
@@ -112,21 +123,6 @@
                     "icon": "mdi-android"
                 }
             ]
-        },
-        {
-            "title": "Erlendworkblog",
-            "subtitle": "Wordpress blog",
-            "description": "Et nettsted jeg brukte til publisering av prosjekter og oppgaver fra bachelorstudiet.",
-            "content": "Jeg har forsøkt å videreføre flere av designvalgene og elementene fra Wordpress-siden videre på erlendweb med målet å skape en felles identitet over flere av nettsidene mine. Noen av elementene jeg har tatt med videre fra wordpress-siden er hovedlogoen og fargevalgene for siden.",
-            "date": "Sommer 2019",
-            "link": "https://erlendworkblog.wordpress.com/",
-            "alt": "Sreenshot from erlendworkblog.wordpress.com",
-            "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwordpress-c.png?alt=media&token=a9f8695f-3b05-4fc7-8aec-0cd546f1b402",
-            "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwordpress-collage.png?alt=media&token=bed681d8-f31a-40c1-b66b-638a2c5fc86e",
-            "stack": [{
-                "name": "Wordpress",
-                "icon": "mdi-wordpress"
-            }]
         }
     ],
     "other": {

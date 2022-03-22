@@ -65,14 +65,15 @@
 
 .front img {
   object-fit: cover;
-  height: 800px;
+  height: 100vh;
+  min-height: 650px;
   width: 100%;
 }
 
 .front .divider {
   position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: -1px;
 }
 .front .divider svg path {
   fill-opacity: 1;
@@ -81,7 +82,7 @@
 
 .front .row {
   position: absolute;
-  top: 300px;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }

@@ -42,7 +42,7 @@
                     </v-avatar>
                   </v-col>
                   <v-col cols="12">
-                    <h1>Erlend Brønseth</h1>
+                    <h2>Erlend Brønseth</h2>
                     <p class="pt-4">
                       <a
                         class="animatedLink"
@@ -102,11 +102,7 @@
 
                   <p v-html="$t('about.intro2')"></p>
 
-                  <!-- <h3 class=" pa-4">{{ $t('about.wordpress') }}</h3> -->
-
-                  <!-- <p v-html="$t('about.wordpressDescription')"></p> -->
-
-                  <h3 class=" pa-4">{{ $t('about.erlendweb') }}</h3>
+                  <h3 class="pa-4">{{ $t('about.erlendweb') }}</h3>
 
                   <p v-html="$t('about.erlendwebDescription')"></p>
 
@@ -143,6 +139,16 @@
 * {
   text-align: center;
 }
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  max-width: 70ch;
+  font-size: clamp(16px, 3vw, 1.1rem);
+  line-height: 1.75;
+  margin-inline: auto;
+}
+
 </style>
 
 <script>
@@ -167,9 +173,9 @@ export default {
           icon: "mdi-vuejs",
         },
         {
-          name: "Vuetify",
-          icon: "mdi-vuetify",
-        },
+          name: "Adobe",
+          icon: "mdi-pencil",
+        }
       ]
     }
   }
