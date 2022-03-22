@@ -34,8 +34,8 @@
             "date": "Vinter 2021",
             "link": "https://webography.erlendweb.no/",
             "alt": "Screenshot from https://webography.erlendweb.no/",
-            "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwebography.png?alt=media&token=1923b376-afcd-4789-8176-b3b0b8609e34",
-            "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwebography.png?alt=media&token=1923b376-afcd-4789-8176-b3b0b8609e34",
+            "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwebography.png?alt=media&token=5fea676d-e345-4d90-bd4c-aff5272e28d5",
+            "imageThumb": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwebography.png?alt=media&token=73d4fedf-17fa-414c-bf5d-bb95edc97635",
             "stack": [
                 {
                     "name": "HTML",
@@ -58,8 +58,8 @@
             "date": "Vinter 2021",
             "link": "https://maribro.no",
             "alt": "Screenshot from maribro.no",
-            "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb-c.png?alt=media&token=08f0da3b-4ea0-41dc-81c4-4848a203923d",
-            "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb-gallery-c.png?alt=media&token=7466e583-dedf-4c9c-b39e-d8e3d4d26b17",
+            "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb.png?alt=media&token=45b718f9-33f2-49f5-84e6-7fc707194dd9",
+            "imageThumb": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb.png?alt=media&token=63285970-2365-49d4-9b15-be132448825e",
             "stack": [
                 {
                     "name": "HTML",
@@ -87,8 +87,8 @@
             "date": "Høst 2020",
             "link": "https://prios-events.netlify.app/",
             "alt": "Screenshot from prios events",
-            "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-c.png?alt=media&token=1bfb24da-73be-404d-9a51-1c832183e9df",
-            "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-profile.png?alt=media&token=93c95cc5-f5b6-4fad-b88d-d4e6b4885941",
+            "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents.png?alt=media&token=54d23550-b580-48ff-91ea-891e57df51e8",
+            "imageThumb": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents.png?alt=media&token=a07073cc-b857-4604-ba73-1a013e290948",
             "stack": [
                 {
                     "name": "Vuetify",
@@ -112,7 +112,8 @@
             "date": "Vår 2020",
             "link": "https://erlendworkblog.wordpress.com/2020/06/11/bacheloroppgave-augmented-reality-til-a-vise-utvandringshistorie/",
             "alt": "Screenshot from prios events",
-            "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fbachelor.png?alt=media&token=bcf17ab8-8d4a-4004-be06-b2f0484a790c",
+            "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fbachelor.png?alt=media&token=60e1daee-72fb-4cb8-a0dd-78f22daab8f1",
+            "imageThumb": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fbachelor.png?alt=media&token=0f3cb2d2-c7fd-484c-abe2-094a7c506933",
             "stack": [
                 {
                     "name": "Unity",

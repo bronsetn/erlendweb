@@ -42,8 +42,8 @@
                     height="300"
                     :alt="item.alt"
                     contain
-                    :src="item.imageCompressed"
-                    :lazy-src="item.imageCompressed"
+                    :src="item.imageThumb"
+                    :lazy-src="item.imageThumb"
                   ></v-img>
                 </v-container>
 
@@ -98,8 +98,8 @@
                   max-height="500px"
                   contain
                   :alt="projects[activeProject].alt"
-                  :src="projects[activeProject].imageCompressed"
-                  :lazy-src="projects[activeProject].imageCompressed"
+                  :src="projects[activeProject].imageLarge"
+                  :lazy-src="projects[activeProject].imageLarge"
                 ></v-img>
               </v-container>
             </div>
@@ -204,8 +204,8 @@
                 <v-img
                   contain
                   :alt="projects[activeProject].alt"
-                  :src="projects[activeProject].imageCompressed"
-                  :lazy-src="projects[activeProject].imageCompressed"
+                  :src="projects[activeProject].imageLarge"
+                  :lazy-src="projects[activeProject].imageLarge"
                 ></v-img>
               </v-container>
             </div>

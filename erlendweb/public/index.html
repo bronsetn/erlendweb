@@ -1,21 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <meta name="robots" content="index, follow">
+
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>
-        <%= htmlWebpackPlugin.options.title %>
-    </title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="author" content="Erlend Brønseth">
+
+    <meta name="title" content="Erlendweb">
+    <meta name="description"
+        content="Side fungerende som portefølje og et sted jeg kan teste ut kule ting innenfor webutvikling. Erlendweb er laget med bruk av VueJS og satt opp med Netlify som vert.">
+    <meta name="keywords" content="Erlend Brønseth, Erlendweb, Porteføje">
+
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
 </head>
 
 <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+        <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+            Please enable it to continue.</strong>
     </noscript>
     <div id="app">
 
@@ -28,7 +38,6 @@
         </form>
 
     </div>
-    <!-- built files will be auto injected -->
 </body>
 
 </html>
