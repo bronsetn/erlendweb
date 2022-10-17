@@ -17,6 +17,7 @@
           xl="8"
         >
           <v-card
+            class="pr-5 pl-5"
             elevation="5"
             color="secondary"
           >

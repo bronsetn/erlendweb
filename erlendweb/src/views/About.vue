@@ -34,9 +34,15 @@
                   >
                     <v-avatar size="200">
                       <v-img
-                        alt="Bilde av Erlend"
-                        src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/about-image.jpg?alt=media&token=2389d2fb-b60c-46f5-bd55-00c44629c270"
-                        lazy-src="https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/about-image.jpg?alt=media&token=2389d2fb-b60c-46f5-bd55-00c44629c270"
+                        v-if="$vuetify.theme.dark"
+                        alt="Logo"
+                        src="../assets/icons/logo-dark.svg"
+                      >
+                      </v-img>
+                      <v-img
+                        v-if="!$vuetify.theme.dark"
+                        alt="Logo"
+                        src="../assets/icons/logo-light.svg"
                       >
                       </v-img>
                     </v-avatar>
@@ -148,7 +154,6 @@ p {
   line-height: 1.75;
   margin-inline: auto;
 }
-
 </style>
 
 <script>

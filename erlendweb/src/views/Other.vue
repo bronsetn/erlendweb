@@ -9,11 +9,11 @@
 
       <v-row class="d-flex justify-center">
 
-        <Typography></Typography>
-        <SvgTest></SvgTest>
         <Forecast></Forecast>
         <Nasa></Nasa>
         <ModelViewer></ModelViewer>
+        <SvgTest></SvgTest>
+        <Typography></Typography>
         <Gallery></Gallery>
 
       </v-row>

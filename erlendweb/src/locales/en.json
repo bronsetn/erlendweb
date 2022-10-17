@@ -15,9 +15,9 @@
         "other": "Other"
     },
     "about": {
-        "intro1": "I am a 24 year old guy from Inderøy, Norway with a bachelor in digital media & design. This site is meant as a portefolio aswell as a place I can experiment with development and design.",
+        "intro1": "I am a web-designer from Norway with a bachelor in digital media & design.",
         "intro2": "I have previously worked an autumn at <a class='animatedLink' target='_blank' rel='noopener' href='https://prios.no' >Prios Kompetanse AS</a> in Steinkjer and i am now working for <a class='animatedLink' target='_blank' rel='noopener' href='https://www.digipublishing.no/' >Digi Publishing AS</a> in Trondheim.",
-        "erlendwebDescription": "Erlendweb is made with VueJS/Vuetify and hosted on Netlify. The source code for this page is public at:<br><a  class='animatedLink' target='_blank' rel='noopener' href='https://github.com/bronsetn/erlendweb'>https://github.com/bronsetn/erlendweb</a>",
+        "erlendwebDescription": "Erlendweb was a portefolio I made in 2021 with the use of VueJS/Vuetify and hosted on Netlify. ",
         "skills": "Skills"
     },
     "contact": {
