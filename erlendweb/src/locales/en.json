@@ -32,8 +32,8 @@
             "date": "Høst 2022",
             "link": "https://kjellarn.no/",
             "alt": "Screenshot from kjellarn.no",
-            "imageLarge": "https://erlendweb.no/images/kjellarn.png",
-            "imageThumb": "https://erlendweb.no/images/thumbnails/kjellarn.png",
+            "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fkjellarn.png?alt=media&token=7663e1ef-72bd-4b4b-82ee-aa4c22c7ea58",
+            "imageThumb": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fkjellarn-thumb.png?alt=media&token=2895cfc0-5fbe-48c9-ab54-1fe6b581e33d",
             "stack": [
                 {
                     "name": "PHP",
@@ -56,8 +56,8 @@
             "date": "Winter 2021",
             "link": "https://webography.erlendweb.no/",
             "alt": "Screenshot from https://webography.erlendweb.no/",
-            "imageLarge": "https://erlendweb.no/images/webography.png",
-            "imageThumb": "https://erlendweb.no/images/thumbnails/webography.png",
+            "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwebography.png?alt=media&token=bb74efd9-f330-4e56-9008-c80222c3800a",
+            "imageThumb": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwebography-thumb.png?alt=media&token=febc026d-2aa6-4115-a776-1f77785f1045",
             "stack": [
                 {
                     "name": "HTML",
@@ -80,8 +80,8 @@
             "date": "Winter 2021",
             "link": "https://maribro.no",
             "alt": "Screenshot from https://maribro.no",
-            "imageLarge": "https://erlendweb.no/images/maribro.png",
-            "imageThumb": "https://erlendweb.no/images/thumbnails/maribro.png",
+            "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmaribro.png?alt=media&token=90088d62-1ec2-4621-b54e-1a4525135e70",
+            "imageThumb": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmaribro-thumb.png?alt=media&token=7255c1c2-470c-47c8-b906-82cc3ea9c068",
             "stack": [
                 {
                     "name": "HTML",
@@ -109,8 +109,8 @@
             "date": "Vår 2020",
             "link": "https://erlendworkblog.wordpress.com/2020/06/11/bacheloroppgave-augmented-reality-til-a-vise-utvandringshistorie/",
             "alt": "Screenshot from prios events",
-            "imageLarge": "/images/erlendworkblog.png",
-            "imageThumb": "/images/thumbnails/erlendworkblog.png",
+            "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Ferlendworkblog.png?alt=media&token=2fab5662-d9a8-4e9f-926d-4c9090532b8f",
+            "imageThumb": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Ferlendworkblog-thumb.png?alt=media&token=8d8035bb-a6fe-40bb-9914-bde263643c80",
             "stack": [
                 {
                     "name": "Unity",
