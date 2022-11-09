@@ -35,8 +35,8 @@
             "date": "Høst 2022",
             "link": "https://kjellarn.no/",
             "alt": "Screenshot fra kjellarn.no",
-            "imageLarge": "/images/kjellarn.png",
-            "imageThumb": "/images/thumbnails/kjellarn.png",
+            "imageLarge": "https://erlendweb.no/images/kjellarn.png",
+            "imageThumb": "https://erlendweb.no/images/thumbnails/kjellarn.png",
             "stack": [
                 {
                     "name": "PHP",
@@ -59,8 +59,8 @@
             "date": "Vinter 2021",
             "link": "https://webography.erlendweb.no/",
             "alt": "Screenshot fra https://webography.erlendweb.no/",
-            "imageLarge": "/images/webography.png",
-            "imageThumb": "/images/thumbnails/webography.png",
+            "imageLarge": "https://erlendweb.no/images/webography.png",
+            "imageThumb": "https://erlendweb.no/images/thumbnails/webography.png",
             "stack": [
                 {
                     "name": "HTML",
@@ -83,8 +83,8 @@
             "date": "Vinter 2021",
             "link": "https://maribro.no",
             "alt": "Screenshot from maribro.no",
-            "imageLarge": "/images/maribro.png",
-            "imageThumb": "/images/thumbnails/maribro.png",
+            "imageLarge": "https://erlendweb.no/images/maribro.png",
+            "imageThumb": "https://erlendweb.no/images/thumbnails/maribro.png",
             "stack": [
                 {
                     "name": "HTML",
@@ -112,8 +112,8 @@
             "date": "Vår 2020",
             "link": "https://erlendworkblog.wordpress.com/2020/06/11/bacheloroppgave-augmented-reality-til-a-vise-utvandringshistorie/",
             "alt": "Screenshot fra Erlendworkblog",
-            "imageLarge": "/images/erlendworkblog.png",
-            "imageThumb": "/images/thumbnails/erlendworkblog.png",
+            "imageLarge": "https://erlendweb.no/images/erlendworkblog.png",
+            "imageThumb": "https://erlendweb.no/images/thumbnails/erlendworkblog.png",
             "stack": [
                 {
                     "name": "Unity",

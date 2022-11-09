@@ -32,8 +32,8 @@
             "date": "Høst 2022",
             "link": "https://kjellarn.no/",
             "alt": "Screenshot from kjellarn.no",
-            "imageLarge": "/images/kjellarn.png",
-            "imageThumb": "/images/thumbnails/kjellarn.png",
+            "imageLarge": "https://erlendweb.no/images/kjellarn.png",
+            "imageThumb": "https://erlendweb.no/images/thumbnails/kjellarn.png",
             "stack": [
                 {
                     "name": "PHP",
@@ -56,8 +56,8 @@
             "date": "Winter 2021",
             "link": "https://webography.erlendweb.no/",
             "alt": "Screenshot from https://webography.erlendweb.no/",
-            "imageLarge": "/images/webography.png",
-            "imageThumb": "/images/thumbnails/webography.png",
+            "imageLarge": "https://erlendweb.no/images/webography.png",
+            "imageThumb": "https://erlendweb.no/images/thumbnails/webography.png",
             "stack": [
                 {
                     "name": "HTML",
@@ -80,8 +80,8 @@
             "date": "Winter 2021",
             "link": "https://maribro.no",
             "alt": "Screenshot from https://maribro.no",
-            "imageLarge": "/images/maribro.png",
-            "imageThumb": "/images/thumbnails/maribro.png",
+            "imageLarge": "https://erlendweb.no/images/maribro.png",
+            "imageThumb": "https://erlendweb.no/images/thumbnails/maribro.png",
             "stack": [
                 {
                     "name": "HTML",
