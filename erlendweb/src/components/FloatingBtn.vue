@@ -6,6 +6,7 @@
       bottom
       right
       fab
+      small
       color="tertiary"
       v-scroll="onScroll"
       v-show="fab"

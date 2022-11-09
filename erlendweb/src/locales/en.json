@@ -25,14 +25,39 @@
     },
     "projects": [
         {
+            "title": "Kjellarn",
+            "subtitle": "Det kreativt kollektivet",
+            "description": "A website showcasing artists and creative people from around Trondheim.",
+            "content": "Built using Kirby CMS with the goal of learning a new tool and some PHP along the way.",
+            "date": "Høst 2022",
+            "link": "https://kjellarn.no/",
+            "alt": "Screenshot from kjellarn.no",
+            "imageLarge": "/images/kjellarn.png",
+            "imageThumb": "/images/thumbnails/kjellarn.png",
+            "stack": [
+                {
+                    "name": "PHP",
+                    "icon": "mdi-language-php"
+                },
+                {
+                    "name": "JQuery",
+                    "icon": "mdi-jquery"
+                },
+                {
+                    "name": "CSS",
+                    "icon": "mdi-language-css3"
+                }
+            ]
+        },
+        {
             "title": "Webography",
             "description": "A smaller website made to show off some interesting design and tricks for typography on the web.",
             "content": "I decided on making this page as a smaller personall project because I find typography with CSS to be kinda neat and something I wanted to get better at. I want the page to work as a personal library as well as a place other people can find inspiration or resources for typography on the web.",
             "date": "Winter 2021",
             "link": "https://webography.erlendweb.no/",
             "alt": "Screenshot from https://webography.erlendweb.no/",
-            "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwebography.png?alt=media&token=1923b376-afcd-4789-8176-b3b0b8609e34",
-            "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwebography.png?alt=media&token=1923b376-afcd-4789-8176-b3b0b8609e34",
+            "imageLarge": "/images/webography.png",
+            "imageThumb": "/images/thumbnails/webography.png",
             "stack": [
                 {
                     "name": "HTML",
@@ -55,8 +80,8 @@
             "date": "Winter 2021",
             "link": "https://maribro.no",
             "alt": "Screenshot from https://maribro.no",
-            "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb-c.png?alt=media&token=08f0da3b-4ea0-41dc-81c4-4848a203923d",
-            "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb-gallery-c.png?alt=media&token=7466e583-dedf-4c9c-b39e-d8e3d4d26b17",
+            "imageLarge": "/images/maribro.png",
+            "imageThumb": "/images/thumbnails/maribro.png",
             "stack": [
                 {
                     "name": "HTML",
@@ -77,31 +102,6 @@
             ]
         },
         {
-            "title": "Prios Events",
-            "subtitle": "Project for Prios Kompetanse AS",
-            "description": "A website meant for job fairs and similar types of events. I worked with the development of the front-end and design of the site for Prios Kompetanse AS. The site is one of my first projects working with VueJS and is still being devolped further at Prios.",
-            "content": "Through this project I got to work with implimenting one of Prios's systems in to a new website, I also got some insight into the tools and methods used in modern web development. Experience I have made us of when developing erlendweb.",
-            "date": "Autumn 2020",
-            "link": "https://prios-events.netlify.app/",
-            "alt": "Screenshot from prios.events",
-            "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-c.png?alt=media&token=1bfb24da-73be-404d-9a51-1c832183e9df",
-            "imageContent": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-profile.png?alt=media&token=93c95cc5-f5b6-4fad-b88d-d4e6b4885941",
-            "stack": [
-                {
-                    "name": "Vuetify",
-                    "icon": "mdi-vuetify"
-                },
-                {
-                    "name": "VueJS",
-                    "icon": "mdi-vuejs"
-                },
-                {
-                    "name": "NodeJS",
-                    "icon": "mdi-nodejs"
-                }
-            ]
-        },
-        {
             "title": "Bachelor thesis",
             "subtitle": "Augmented reality to show the history of emigration",
             "description": "My bachelor thesis for digital media and design at Østfold University College. The purpose for the project was to lay the foundations for an AR-application to strenghten the experience for visitors to Kvam municipality.",
@@ -109,7 +109,8 @@
             "date": "Vår 2020",
             "link": "https://erlendworkblog.wordpress.com/2020/06/11/bacheloroppgave-augmented-reality-til-a-vise-utvandringshistorie/",
             "alt": "Screenshot from prios events",
-            "imageCompressed": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fbachelor.png?alt=media&token=bcf17ab8-8d4a-4004-be06-b2f0484a790c",
+            "imageLarge": "/images/erlendworkblog.png",
+            "imageThumb": "/images/thumbnails/erlendworkblog.png",
             "stack": [
                 {
                     "name": "Unity",

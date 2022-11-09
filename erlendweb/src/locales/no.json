@@ -28,14 +28,39 @@
     },
     "projects": [
         {
+            "title": "Kjellarn",
+            "subtitle": "Det kreativt kollektivet",
+            "description": "Et nettsted for artister og kreative folk i trondheimsområdet.",
+            "content": "Bygget i Kirby CMS med mål å bli litt bedre kjent med php og for å teste ut det som verktøy.",
+            "date": "Høst 2022",
+            "link": "https://kjellarn.no/",
+            "alt": "Screenshot fra kjellarn.no",
+            "imageLarge": "/images/kjellarn.png",
+            "imageThumb": "/images/thumbnails/kjellarn.png",
+            "stack": [
+                {
+                    "name": "PHP",
+                    "icon": "mdi-language-php"
+                },
+                {
+                    "name": "JQuery",
+                    "icon": "mdi-jquery"
+                },
+                {
+                    "name": "CSS",
+                    "icon": "mdi-language-css3"
+                }
+            ]
+        },
+        {
             "title": "Webography",
             "description": "Et lite nettsted for å vise noen interssante design og triks for typografy på nettet.",
             "content": "Jeg lagde denne siden som et mindre prosjekt for å bli bedre i typografi med bruk av CSS. Noe av målet med siden er at den skal fungere som et sted jeg kan lagre eksempler jeg liker, i tillegg til en side hvor man kan finne inspirasjon og nyttige ressurser for typografi på nettet.",
             "date": "Vinter 2021",
             "link": "https://webography.erlendweb.no/",
-            "alt": "Screenshot from https://webography.erlendweb.no/",
-            "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwebography-xl.png?alt=media&token=d2d26405-a1aa-4b13-a0c0-53ba0eec8f9c",
-            "imageThumb": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fwebography.png?alt=media&token=73d4fedf-17fa-414c-bf5d-bb95edc97635",
+            "alt": "Screenshot fra https://webography.erlendweb.no/",
+            "imageLarge": "/images/webography.png",
+            "imageThumb": "/images/thumbnails/webography.png",
             "stack": [
                 {
                     "name": "HTML",
@@ -58,8 +83,8 @@
             "date": "Vinter 2021",
             "link": "https://maribro.no",
             "alt": "Screenshot from maribro.no",
-            "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb-xl.png?alt=media&token=f6ca09f2-fe2d-4f8d-8b8d-d288e32ef887",
-            "imageThumb": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fmariweb.png?alt=media&token=63285970-2365-49d4-9b15-be132448825e",
+            "imageLarge": "/images/maribro.png",
+            "imageThumb": "/images/thumbnails/maribro.png",
             "stack": [
                 {
                     "name": "HTML",
@@ -80,40 +105,15 @@
             ]
         },
         {
-            "title": "Prios Events",
-            "subtitle": "Prosjekt for Prios Kompetanse AS",
-            "description": "Et nettsted for blant annet å kunne holde jobbmesser og lignende typer messer. Jeg arbeidet med utvikling av frontend og design for nettstedet hos Prios kompetanse AS. Nettstedet er et av mine første prosjekter med bruk av VueJS og er fortsatt under utvikling hos Prios kompetanse AS.",
-            "content": "Gjennom prosjekt fikk jeg jobbet med implimentering av ett av Prios sine systemer inn i et nytt nettsted, jeg fikk også et innblikk i flere verktøy og metoder for moderne webutvikling, erfaring jeg blant annet har kunnet tatt i bruk for å sette opp erlendweb",
-            "date": "Høst 2020",
-            "link": "https://prios-events.netlify.app/",
-            "alt": "Screenshot from prios events",
-            "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents-xl.png?alt=media&token=f05436b8-0db5-407d-b96d-8dd81714d255",
-            "imageThumb": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fevents.png?alt=media&token=a07073cc-b857-4604-ba73-1a013e290948",
-            "stack": [
-                {
-                    "name": "Vuetify",
-                    "icon": "mdi-vuetify"
-                },
-                {
-                    "name": "VueJS",
-                    "icon": "mdi-vuejs"
-                },
-                {
-                    "name": "NodeJS",
-                    "icon": "mdi-nodejs"
-                }
-            ]
-        },
-        {
             "title": "Bacheloroppgave",
             "subtitle": "Augmented reality til å vise utvandringshistorie",
             "description": "Hovedoppgaven for bachelorstudiet digitale medier og design på Høgskolen i Østfold. Formalet med prosjektet var å begynne arbeidet å en AR-applikasjon som skulle bidra til å styrke stedsopplevelsen for besøkende i Kvam kommune.",
             "content": "Oppgaven gikk ut på å utvikle en prototype for en AR-applikasjon hvor man kan plassere 3D-modeller ved hjelp av GPS-koordinater. Utviklingen av applikasjonen ble gjort i Unity og 3D-moedellene ble laget i Maya Autodesk. For AR funksjonalitet tok vi i bruk AR-motoren Vuforia som er på Android telefoner og en pakke til Unity som heter AR + GPS Location.",
             "date": "Vår 2020",
             "link": "https://erlendworkblog.wordpress.com/2020/06/11/bacheloroppgave-augmented-reality-til-a-vise-utvandringshistorie/",
-            "alt": "Screenshot from prios events",
-            "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fbachelor-xl.png?alt=media&token=3363afca-0096-4d18-bf96-4c7a67e9c34f",
-            "imageThumb": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fbachelor.png?alt=media&token=0f3cb2d2-c7fd-484c-abe2-094a7c506933",
+            "alt": "Screenshot fra Erlendworkblog",
+            "imageLarge": "/images/erlendworkblog.png",
+            "imageThumb": "/images/thumbnails/erlendworkblog.png",
             "stack": [
                 {
                     "name": "Unity",

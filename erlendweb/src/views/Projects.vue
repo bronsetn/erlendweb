@@ -40,14 +40,14 @@
                 <v-container>
                   <v-img
                     height="300"
-                    :alt="item.alt"
                     contain
+                    :alt="item.alt"
                     :src="item.imageThumb"
                     :lazy-src="item.imageThumb"
                   ></v-img>
                 </v-container>
 
-                <v-card-title class="ma-0 pt-0 pb-0">
+                <v-card-title class=" pt-0 pb-0">
                   <h2 class="text-truncate">{{ item.title }}</h2>
                 </v-card-title>
 
@@ -78,7 +78,7 @@
         max-width="80vw"
       >
         <v-card color="secondary">
-          <div class="skewedContainer">
+          <div class="skewedContainer mb-5">
             <div class="content">
               <v-row
                 justify="center"
@@ -86,7 +86,7 @@
               >
                 <v-col cols="12">
                   <h1 class="font-weight-regular">{{ projects[activeProject].title}}</h1>
-                  <h2 class="font-weight-thinr">{{ projects[activeProject].subtitle}}</h2>
+                  <h2 class="font-weight-thin">{{ projects[activeProject].subtitle}}</h2>
                   <p class="text--secondary body-2 pt-2 text-center">
                     {{ projects[activeProject].date }}
                   </p>
@@ -95,8 +95,8 @@
 
               <v-container>
                 <v-img
-                  max-height="500px"
                   contain
+                  :aspect-ratio="16/9"
                   :alt="projects[activeProject].alt"
                   :src="projects[activeProject].imageLarge"
                   :lazy-src="projects[activeProject].imageLarge"
@@ -104,7 +104,6 @@
               </v-container>
             </div>
           </div>
-
           <v-card-text class="text-content text-center">
 
             <p><a
@@ -181,10 +180,7 @@
         v-else
       >
         <v-card color="secondary">
-          <div
-            class="skewedContainer"
-            style="padding: 25px 0 0 0"
-          >
+          <div class="skewedContainer">
             <div class="content">
               <v-row
                 justify="center"
@@ -203,6 +199,7 @@
               <v-container>
                 <v-img
                   contain
+                  :aspect-ratio="16/9"
                   :alt="projects[activeProject].alt"
                   :src="projects[activeProject].imageLarge"
                   :lazy-src="projects[activeProject].imageLarge"
@@ -342,7 +339,8 @@ export default {
   background: var(--v-background-base);
   transform: skew(0deg, 2deg);
   transform-origin: top right;
-  padding: 100px 0 0 0;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
 }
 /* Skew back the content */
 .content {
