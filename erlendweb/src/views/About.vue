@@ -4,7 +4,7 @@
     <v-container>
       <v-container class="justify-center">
         <div class="serif">II</div>
-        <h1> {{ $t('header.about') }}</h1>
+        <h2> {{ $t('header.about') }}</h2>
       </v-container>
 
       <v-row class="justify-center">
@@ -48,7 +48,7 @@
                     </v-avatar>
                   </v-col>
                   <v-col cols="12">
-                    <h2>Erlend Brønseth</h2>
+                    <h3>Erlend Brønseth</h3>
                     <p class="pt-4">
                       <a
                         class="animatedLink"

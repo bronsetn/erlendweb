@@ -11,6 +11,7 @@
       v-scroll="onScroll"
       v-show="fab"
       :to="{hash: 'home'}"
+      title="Tilbake til topp"
     >
       <v-icon color="primary"> mdi-chevron-up </v-icon>
     </v-btn>

@@ -48,7 +48,7 @@
                 </v-container>
 
                 <v-card-title class=" pt-0 pb-0">
-                  <h2 class="text-truncate">{{ item.title }}</h2>
+                  <h3 class="text-truncate">{{ item.title }}</h3>
                 </v-card-title>
 
                 <v-card-text>

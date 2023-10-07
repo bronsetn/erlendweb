@@ -5,7 +5,7 @@
     <v-container>
       <v-container>
         <div class="serif">III</div>
-        <h1>{{ $t('header.contact') }}</h1>
+        <h2>{{ $t('header.contact') }}</h2>
       </v-container>
 
       <v-row class="d-flex justify-center">

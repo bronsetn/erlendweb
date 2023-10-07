@@ -1,6 +1,6 @@
 <template>
   <div class="front">
-    <img src="../assets/front-illustration.svg" />
+    <img src="../assets/front-illustration.svg" alt="Illustrasjon av islagt vann på vinterstid, med skog på kantene av det." />
     <v-row
       no-gutters
       align="end"
