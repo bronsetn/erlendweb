@@ -15,8 +15,8 @@
         "other": "Other"
     },
     "about": {
-        "intro1": "I am a web-designer from Norway with a bachelor in digital media & design.",
-        "intro2": "I have previously worked an autumn at <a class='animatedLink' target='_blank' rel='noopener' href='https://prios.no' >Prios Kompetanse AS</a> in Steinkjer and i am now working for <a class='animatedLink' target='_blank' rel='noopener' href='https://www.digipublishing.no/' >Digi Publishing AS</a> in Trondheim.",
+        "intro1": "I am a webdesigner from Norway with a bachelors in digital media and design.",
+        "intro2": "My experience stems from previous working at <a class='animatedLink' target='_blank' rel='noopener' href='https://prios.no' >Prios Kompetanse AS</a> in Steinkjer and at <a class='animatedLink' target='_blank' rel='noopener' href='https://www.digipublishing.no/' >Digi Publishing AS</a> in Trondheim.",
         "erlendwebDescription": "Erlendweb was a portefolio I made in 2021 with the use of VueJS/Vuetify and hosted on Netlify. ",
         "skills": "Skills"
     },
@@ -29,7 +29,7 @@
             "subtitle": "Det kreativt kollektivet",
             "description": "A website showcasing artists and creative people from around Trondheim.",
             "content": "Built using Kirby CMS with the goal of learning a new tool and some PHP along the way.",
-            "date": "Høst 2022",
+            "date": "Autumn 2022",
             "link": "https://kjellarn.no/",
             "alt": "Screenshot from kjellarn.no",
             "imageLarge": "https://firebasestorage.googleapis.com/v0/b/erlendweb-3e2d9.appspot.com/o/projects%2Fkjellarn.png?alt=media&token=7663e1ef-72bd-4b4b-82ee-aa4c22c7ea58",

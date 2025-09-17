@@ -15,9 +15,9 @@
         <v-col
           cols="12"
           sm="12"
-          md="12"
+          md="10"
           lg="10"
-          xl="10"
+          xl="8"
         >
           <v-row class="d-flex justify-center">
             <v-col
